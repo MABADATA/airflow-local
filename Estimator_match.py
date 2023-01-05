@@ -1,3 +1,20 @@
+from Bucket_loader import Bucket_loader
+import json
+from art.estimators.classification import PyTorchClassifier
+from art.estimators.regression.pytorch import PyTorchRegressor
+from art.estimators.classification import TensorFlowClassifier, TensorFlowV2Classifier
+from art.estimators.regression.keras import KerasRegressor
+from art.estimators.regression.scikitlearn import ScikitlearnDecisionTreeRegressor
+from art.estimators.classification.scikitlearn import (ScikitlearnAdaBoostClassifier,
+  ScikitlearnBaggingClassifier,
+  ScikitlearnDecisionTreeClassifier,
+  ScikitlearnExtraTreesClassifier,
+  ScikitlearnGradientBoostingClassifier,
+  ScikitlearnLogisticRegression,
+  ScikitlearnRandomForestClassifier,
+  ScikitlearnSVC,
+  ScikitlearnGaussianNB)
+
 class Estimator_handler:
     def __init__(self, input, json_meta_data):
         if isinstance(json_meta_data, str):
@@ -45,7 +62,7 @@ class Estimator_handler:
                         "LinearSVC": ScikitlearnSVC,
                     },
                     "regression": {
-                        "DecisionTree": DecisionTreeRegressor}}
+                        "DecisionTree":  ScikitlearnDecisionTreeRegressor}}
             }
         }
 

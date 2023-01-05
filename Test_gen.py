@@ -1,3 +1,27 @@
+from sklearn.ensemble import (AdaBoostClassifier,BaggingClassifier,
+                              GradientBoostingClassifier,RandomForestClassifier)
+from sklearn.base import BaseEstimator
+from sklearn.tree import DecisionTreeClassifier,ExtraTreeClassifier,DecisionTreeRegressor
+from sklearn.svm import SVC, LinearSVC
+from sklearn.naive_bayes import GaussianNB
+from sklearn.linear_model import LogisticRegression
+from torch.nn.modules.loss import _Loss
+from torch.optim import Optimizer,SGD
+import logging
+import json
+import torch.nn as nn
+import collections
+from Estimator_match import Estimator_handler
+from Input_validation import Input_validatior
+from Env_prep import Envsetter
+
+from torch.utils.data import Dataset
+
+from Bucket_loader import Bucket_loader
+import tensorflow as tf
+from keras.losses import Loss
+import pandas as pd
+import numpy as np
 class Test:
     def __init__(self, model_type, dataloader_type,
                  ml_type='classification', loss=False,
@@ -231,7 +255,10 @@ class Test:
 
     def run_test(self):
         metadata = self.gen_metadata()
-        loader = Bucket_loader(metadata)
+        model = self.gen_model()
+        loss = self.gen_loss()
+        optimizer = self.gen_optimizer()
+        loader = Bucket_loader(meta_data=metadata,model=model,loss=loss,optimizer=optimizer)
         # Downloading the requierments.txt file from S3 to colab
         loader.get_requirements()
         env_setter = Envsetter("/content/requierments.txt")

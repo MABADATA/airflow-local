@@ -1,6 +1,5 @@
-
-from Preprocess.Bucket_loader import Bucket_loader
-
+from Input_validation import Input_validatior
+from Bucket_loader import Bucket_loader
 metadata = {
     "ML_model": {
         "meta": {
@@ -33,9 +32,9 @@ metadata = {
             "data_loader_type": "pandad.DataFrame"
         }
     },
-    "requirements": {
+    "requirements.txt": {
         "meta": {
-            "file_id": "requirements.txt"
+            "file_id": "requierments.txt"
         }
 
     },
@@ -48,7 +47,5 @@ metadata = {
 }
 
 if __name__ == '__main__':
-
-
-    b = Bucket_loader(metadata)
-    r = b.get_requirements()
+    input_val = Input_validatior(metadata)
+    print(input_val.get_input())

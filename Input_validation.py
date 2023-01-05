@@ -1,3 +1,21 @@
+from sklearn.base import BaseEstimator
+from sklearn.tree import DecisionTreeClassifier,ExtraTreeClassifier,DecisionTreeRegressor
+from sklearn.ensemble import (AdaBoostClassifier,BaggingClassifier,
+                              GradientBoostingClassifier,RandomForestClassifier)
+from sklearn.svm import SVC, LinearSVC
+from sklearn.naive_bayes import GaussianNB
+from sklearn.linear_model import LogisticRegression
+from torch.nn.modules.loss import _Loss
+from torch.optim import Optimizer,SGD
+import logging
+import json
+import torch.nn as nn
+import collections
+from Bucket_loader import Bucket_loader
+import tensorflow as tf
+import keras
+from keras.losses import Loss
+
 class Input_validatior:
     def __init__(self, json_meta_data) -> None:
 
@@ -198,7 +216,7 @@ class Input_validatior:
         return all([model_validity, loss_func_validity, optimizer_validity, dataloader_validity, model_params_validity])
 
     def get_input(self):
-        if self.validate:
+        if self.validate():
             return self.__input
         else:
             logging.info("Input is not valid!")
