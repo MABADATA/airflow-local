@@ -103,7 +103,7 @@ class Input_validatior:
     def _validate_dataloder(self):
         try:
             dataloader = self.__file_loader.get_dataloader()
-            return isinstance(dataloader, collections.Iterable)
+            return isinstance(dataloader, collections.abc.Iterable)
         except Exception as err:
             logging.error(f'Did not mannage to validate dataloder, Error occurred\nError:\n{err}')
             return False

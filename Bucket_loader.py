@@ -15,8 +15,15 @@ if __name__ == '__main__':
     def to_pickle(file_name,obj):
         with open(f'./{file_name}.pickle', 'wb') as f:
             pickle.dump(obj, f)
-    t = test()
-    to_pickle('mytest',t)
+    # t = test()
+    # to_pickle('mytest',t)
+    # os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = ACOUNT_SERVICE_KEY
+    # storage_client = storage.Client()
+    # new_bucket = storage_client.create_bucket('user2071251796')
+    # # bucket = storage_client.bucket(BUCKET_NAME)
+    # blob = new_bucket.blob('mytest.pickle')
+    # blob.upload_from_filename("mytest.pickle")
+
 class Bucket_loader:
     def __init__(self, meta_data):
         """
@@ -141,7 +148,7 @@ class Bucket_loader:
 
     @staticmethod
     def from_pickle(file_name):
-        with open(f'{file_name}.pickle','rb') as f:
+        with open(file_name, 'rb') as f:
             loaded_obj = pickle.load(f)
             return loaded_obj
 
@@ -202,7 +209,7 @@ class Bucket_loader:
 
     # Setters starts here
     def upload(self, obj, obj_type, to_pickle=True):
-        hashmap = {"ML model": self.__ML_model_file_id,
+        hashmap = {"ML_model": self.__ML_model_file_id,
                    "loss": self.__loss_function_file_id,
                    "optimizer": self.__optimizer_file_id,
                    "dataloader": self.__dataloader_file_id,
@@ -217,6 +224,6 @@ class Bucket_loader:
             self.upload_to_gcp(file_name, file_name)
             logging.info('Upload was successful!')
         except Exception as err:
-            logging.error(f"Uploading {obj_type} to S3 failed!\nError:\n{err}")
+            logging.error(f"Uploading {obj_type} to GCP failed!\nError:\n{err}")
 
 

@@ -220,36 +220,27 @@ class Test:
         return param_dict
 
     def gen_metadata(self):
+        metadata = {'ML_model': {
+                      'meta': {'file_id': 'ML_model', 'model_type': self.model_type,
+                               'ML_type': self.ml_type, 'algorithm': self.algorithm},
+                      'input': {'input_shape': self.gen_input_shape(),
+                                'input_val_range': self.gen_input_val_range(),
+                                'num_of_classes': self.gen_num_classes()},
+                      'loss': {'meta': {'file_id': 'loss', 'loss_type': self.loss}},
+                      'optimizer': {'meta': {'file_id': 'optimizer', 'optimizer_type': self.optimizer}}
+                      },
+                      'dataloader': {
+                              'meta': {'file_id': 'dataloader', 'data_loader_type': self.dataloader_type}
+                              },
+                      'requirements.txt': {'meta': {'file_id': 'requirements.txt'
+                        }
+                      },
+                      'authentication': {
+                                      'bucket_name': 'mabdata207125196', 'access_key_id': 'key1',
+                                      'secret_access_key': 'Skey1', 'region': 'us'
+                              }
+                    }
 
-        metadata = {'valid': self.valid,
-                    "ML_model": {
-                        "meta": {
-                            "model_type": self.model_type,
-                            "ML_type": self.ml_type,
-                            "algorithm": self.algorithm
-                        },
-                        "input": {
-                            "input_shape": self.gen_input_shape(),
-                            "input_val_range": self.gen_input_val_range(),
-                            "num_of_classes": self.gen_num_classes()
-                        },
-                        "loss": {
-                            "meta": {
-                                "loss_type": self.loss
-                            }
-                        },
-                        "optimizer": {
-                            "meta": {
-                                "optimizer_type": self.optimizer
-                            }
-                        }
-                    },
-                    "dataloader": {
-                        "meta": {
-                            "data_loader_type": self.dataloader_type
-                        }
-                    }
-                    }
         json_metadada = json.dumps(metadata)
         return json_metadada
 
@@ -258,10 +249,17 @@ class Test:
         model = self.gen_model()
         loss = self.gen_loss()
         optimizer = self.gen_optimizer()
-        loader = Bucket_loader(meta_data=metadata,model=model,loss=loss,optimizer=optimizer)
+        dataloader = self.gen_dataloder()
+        loader = Bucket_loader(meta_data=metadata)
+        loader.upload(obj=model, obj_type="ML_model")
+        loader.upload(obj=loss, obj_type='loss')
+        loader.upload(obj=optimizer, obj_type='optimizer')
+        loader.upload(obj=dataloader, obj_type='dataloader')
+        with open('requirements.txt', 'r') as requirements:
+            loader.upload(obj=requirements, obj_type='requirements.txt', to_pickle=False)
         # Downloading the requierments.txt file from S3 to colab
         loader.get_requirements()
-        env_setter = Envsetter("/content/requierments.txt")
+        env_setter = Envsetter("requirements.txt")
         # Installing the file
         env_setter.install_requirements()
         input_validatior = Input_validatior(metadata)
@@ -276,4 +274,9 @@ class Test:
             return False
 
 
+if __name__ == '__main__':
+    test = Test(model_type='pytorch', dataloader_type='list')
+    print(test.run_test())
+    # with open('requirements.txt', 'r') as requirements:
+    #     print(requirements)
 
