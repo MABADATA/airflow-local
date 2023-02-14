@@ -204,19 +204,18 @@ class Input_validatior:
             logging.error(f'Did not manage to validate params, Error occurred\nError:\n{err}')
             return False
 
-    def validate(self):
+    def validate(self,print_res=True):
         model_validity = self._validate_model()
         loss_func_validity = self._validate_loss_func()
         optimizer_validity = self._validate_optimizer()
         dataloader_validity = self._validate_dataloder()
         model_params_validity = self._validatae_model_param()
-        print(f"""Validation results:\nmodel: {model_validity}\nloss function: 
-        {loss_func_validity}\noptimzer: {optimizer_validity}\ndataloader: 
-        {dataloader_validity}\nparams: {model_params_validity} """)
+        if print_res:
+            print(f"""Validation results:\nmodel: {model_validity}\nloss function: {loss_func_validity}\noptimzer: {optimizer_validity}\ndataloader: {dataloader_validity}\nparams: {model_params_validity} """)
         return all([model_validity, loss_func_validity, optimizer_validity, dataloader_validity, model_params_validity])
 
     def get_input(self):
-        if self.validate():
+        if self.validate(print_res=False):
             return self.__input
         else:
             logging.info("Input is not valid!")
