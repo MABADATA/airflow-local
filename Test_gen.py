@@ -42,12 +42,23 @@ class Test:
           loss: bool, if true a loss function will be generated.
 
           input_shape: bool, provide an input shape or not. If True input shape will be generated.
+                        needs to be True if:
+                            1.model_implementation_type == "tensorflow"
+                            2.ml_type != 'regression'
+                            or
+                            1.model_implementation_type == "pytorch"
+                            2. ml_type == 'regression'/"classification"
 
           nb_classes: bool, provide number of classes or not. If True number of classes will be generated.
+                        needs to be True if:
+                            1.model_implementation_type == "tensorflow"
+                            2.ml_type != 'regression'
 
           input_val_range: bool, provide an input_val_range or not. If True input_val_range will be generated.
+                            needs to be True if:
+                                model_implementation_type == "sklearn"
 
-          algorithm: str, type of algorithm used. only relevante for sklearn models.
+          algorithm: str, type of algorithm used. only relevant for sklearn models.
 
           optimizer: bool, if true an optimizer will be generated.
 
@@ -261,7 +272,7 @@ class Test:
         loader.get_requirements()
         env_setter = Envsetter("requirements.txt")
         # Installing the file
-        env_setter.install_requirements()
+        # env_setter.install_requirements()
         input_validatior = Input_validatior(metadata)
         if input_validatior.validate():
             input = input_validatior.get_input()
@@ -275,8 +286,8 @@ class Test:
 
 
 if __name__ == '__main__':
-    test = Test(model_type='pytorch', dataloader_type='list')
-    print(test.run_test())
-    # with open('requirements.txt', 'r') as requirements:
-    #     print(requirements)
+    test = Test(model_type='pytorch', dataloader_type='list', loss=True, input_shape=True,nb_classes=True)
+    test.run_test()
+
+
 

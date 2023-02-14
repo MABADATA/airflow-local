@@ -15,6 +15,9 @@ if __name__ == '__main__':
     def to_pickle(file_name,obj):
         with open(f'./{file_name}.pickle', 'wb') as f:
             pickle.dump(obj, f)
+    with open("Estimator.pickle", 'rb') as f:
+        loaded_obj = pickle.load(f)
+        print(loaded_obj)
     # t = test()
     # to_pickle('mytest',t)
     # os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = ACOUNT_SERVICE_KEY
@@ -213,12 +216,13 @@ class Bucket_loader:
                    "loss": self.__loss_function_file_id,
                    "optimizer": self.__optimizer_file_id,
                    "dataloader": self.__dataloader_file_id,
-                   "requirements.txt": self.__requirements_file_id}
+                   "requirements.txt": self.__requirements_file_id,
+                   "Estimator": "Estimator"}
         try:
             file_name = hashmap[obj_type]
             if to_pickle:
                 logging.info(f'Dumping {obj_type} to pickle file...')
-                self.to_pickle(file_name,obj)
+                self.to_pickle(file_name, obj)
                 file_name += ".pickle"
             logging.info(f'Uploading {obj_type} to GCP bucket starts...')
             self.upload_to_gcp(file_name, file_name)

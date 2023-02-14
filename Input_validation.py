@@ -145,7 +145,7 @@ class Input_validatior:
         try:
             shape = self.metadata['ML_model']['input']["input_shape"]
             is_shape = all([shape is not None,
-                            isinstance(shape, tuple) and
+                            (isinstance(shape, tuple) or isinstance(shape, list)) and
                             len(shape) == 2 and isinstance(shape[0], int) and
                             isinstance(shape[1], int)])
             return is_shape
@@ -201,7 +201,7 @@ class Input_validatior:
             else:
                 logging.info(f"No such implementation: {model_implementation_type}")
         except Exception as err:
-            logging.error(f'Did not mannage to validate params, Error occurred\nError:\n{err}')
+            logging.error(f'Did not manage to validate params, Error occurred\nError:\n{err}')
             return False
 
     def validate(self):
@@ -211,8 +211,8 @@ class Input_validatior:
         dataloader_validity = self._validate_dataloder()
         model_params_validity = self._validatae_model_param()
         print(f"""Validation results:\nmodel: {model_validity}\nloss function: 
-            {loss_func_validity}\noptimzer: {optimizer_validity}\ndataloader: 
-            {dataloader_validity}\nparams: {model_params_validity} """)
+        {loss_func_validity}\noptimzer: {optimizer_validity}\ndataloader: 
+        {dataloader_validity}\nparams: {model_params_validity} """)
         return all([model_validity, loss_func_validity, optimizer_validity, dataloader_validity, model_params_validity])
 
     def get_input(self):

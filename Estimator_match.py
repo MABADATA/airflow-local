@@ -14,7 +14,7 @@ from art.estimators.classification.scikitlearn import (ScikitlearnAdaBoostClassi
   ScikitlearnRandomForestClassifier,
   ScikitlearnSVC,
   ScikitlearnGaussianNB)
-
+from torch.optim import SGD
 class Estimator_handler:
     def __init__(self, input, json_meta_data):
         if isinstance(json_meta_data, str):
@@ -89,7 +89,7 @@ class Estimator_handler:
             else:
                 raise Exception("Can't wrap model!\nML type must be classification or regression")
         elif self.__implementation == 'pytorch':
-            optimizer = None
+            optimizer = SGD(my_model.parameters(), lr=0.01)
             if self.metadata['ML_model']['optimizer']['meta']['optimizer_type']:
                 optimizer = self.__file_loader.get_optimizer()
             loss = self.__file_loader.get_loss()
@@ -113,4 +113,4 @@ class Estimator_handler:
     def wrap(self):
         estimator_obj = self._estimator_match()
         wrap_model = self._wrap_model(estimator_obj)
-        self.__file_loader.upload(wrap_model, "ML model")
+        self.__file_loader.upload(obj=wrap_model, obj_type="Estimator")
