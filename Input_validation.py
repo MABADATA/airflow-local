@@ -166,11 +166,12 @@ class Input_validatior:
         range = self.metadata['ML_model']['input']["input_val_range"]
         is_singel_range = all([range is not None,
                                isinstance(range, tuple) and
-                               len(range) == 2 and isinstance(range[0], int) and
-                               isinstance(range[1], int)])
+                               len(range) == 2 and isinstance(range[0], float) and
+                               isinstance(range[1], float)], range[0] < range[1])
         try:
             is_var_of_ranges = [isinstance(r, tuple) and len(r) == 2 and
-                                isinstance(r[0], int) and isinstance(r[1], int) for r in range]
+                                isinstance(r[0], float) and isinstance(r[1], float)
+                                and r[0] < r[1] for r in range]
         except:
             is_var_of_ranges = [False]
         return is_singel_range or all(is_var_of_ranges)

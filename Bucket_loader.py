@@ -15,9 +15,9 @@ if __name__ == '__main__':
     def to_pickle(file_name,obj):
         with open(f'./{file_name}.pickle', 'wb') as f:
             pickle.dump(obj, f)
-    with open("Estimator.pickle", 'rb') as f:
-        loaded_obj = pickle.load(f)
-        print(loaded_obj)
+    # with open("Estimator.pickle", 'rb') as f:
+    #     loaded_obj = pickle.load(f)
+    #     print(loaded_obj)
     # t = test()
     # to_pickle('mytest',t)
     # os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = ACOUNT_SERVICE_KEY
@@ -26,6 +26,7 @@ if __name__ == '__main__':
     # # bucket = storage_client.bucket(BUCKET_NAME)
     # blob = new_bucket.blob('mytest.pickle')
     # blob.upload_from_filename("mytest.pickle")
+
 
 class Bucket_loader:
     """
