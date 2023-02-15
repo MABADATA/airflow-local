@@ -27,7 +27,11 @@ class Test:
                  ml_type='classification', loss=False,
                  input_shape=False, nb_classes=False,
                  input_val_range=False, algorithm=None,
-                 optimizer=False, valid=True):
+                 optimizer=False, valid=True,
+                 value_dict={'model': None, 'dataloader': None,
+                             'loss': None,'input_shape': None, 'nb_classes': None,
+                             'input_val_range': False, 'algorithm': None,'optimizer': False}
+                 ):
         """
         The test class is a test generator based on the input values.
 
@@ -53,6 +57,9 @@ class Test:
                         needs to be True if:
                             1.model_implementation_type == "tensorflow"
                             2.ml_type != 'regression'
+                            or
+                            1.model_implementation_type == "pytorch"
+                            2. ml_type == "classification"
 
           input_val_range: bool, provide an input_val_range or not. If True input_val_range will be generated.
                             needs to be True if:
@@ -63,6 +70,10 @@ class Test:
           optimizer: bool, if true an optimizer will be generated.
 
           valid: bool, if True, a valid data will be generated.
+
+          value_dict: dict, a dictionary that holds values to be tested on a specified param.
+                            note: if the dict has a value in some param, the argument of the param has to be True.
+
         """
 
         self.model_type = model_type
@@ -75,6 +86,7 @@ class Test:
         self.algorithm = algorithm
         self.optimizer = optimizer
         self.valid = valid
+        self.value_dict = value_dict
         self.valid_model_types = ["sklearn", "pytorch", "tensorflow"]
         self.valid_dataloader_type = ["list", "DataFrame", "ndarray", "array", "dataset"]
         self.valid_ml_type = ["regression", "classification"]
@@ -128,6 +140,8 @@ class Test:
         return model
 
     def gen_model(self):
+        if self.value_dict['model']:
+            return self.value_dict['model']
         if self.model_type in self.valid_model_types:
             if self.model_type == "sklearn":
                 if self.algorithm in self.valid_algorithm_type:
@@ -144,6 +158,8 @@ class Test:
 
     def gen_optimizer(self):
         if self.optimizer:
+            if self.value_dict['optimizer']:
+                return self.value_dict['optimizer']
             if self.valid:
                 if self.model_type != 'pytorch':
                     raise Exception(f"Only pytorch models use optimizers")
@@ -160,6 +176,8 @@ class Test:
 
     def gen_loss(self):
         if self.loss:
+            if self.value_dict['loss']:
+                return self.value_dict['loss']
             if self.valid:
                 if self.model_type == 'tensorflow':
                     return Loss()
@@ -179,6 +197,8 @@ class Test:
 
     def gen_input_val_range(self):
         if self.input_val_range:
+            if self.value_dict['input_val_range']:
+                return self.value_dict['input_val_range']
             if self.valid:
                 return (1, 2.5)
             else:
@@ -188,6 +208,8 @@ class Test:
 
     def gen_input_shape(self):
         if self.input_shape:
+            if self.value_dict['input_shape']:
+                return self.value_dict['input_shape']
             if self.valid:
                 return (10, 30)
             else:
@@ -197,6 +219,8 @@ class Test:
 
     def gen_num_classes(self):
         if self.nb_classes:
+            if self.value_dict['nb_classes']:
+                return self.value_dict['nb_classes']
             if self.valid:
                 return 10
             else:
@@ -205,6 +229,8 @@ class Test:
             return None
 
     def gen_dataloder(self):
+        if self.value_dict['dataloader']:
+            return self.value_dict['dataloader']
         if self.dataloader_type in self.valid_dataloader_type:
             if self.dataloader_type == 'list':
                 return []
@@ -286,7 +312,10 @@ class Test:
 
 
 if __name__ == '__main__':
-    test = Test(model_type='pytorch', dataloader_type='list', loss=True, input_shape=True,nb_classes=True)
+    value_dict = {'model': None, 'data_loader': None,
+                  'loss': None, 'input_shape': None, 'nb_classes': None,
+                  'input_val_range': False, 'algorithm': None, 'optimizer': False}
+    test = Test(model_type='pytorch', dataloader_type='list', loss=True, input_shape=True, nb_classes=True)
     test.run_test()
 
 

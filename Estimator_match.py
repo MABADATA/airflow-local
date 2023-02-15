@@ -16,6 +16,24 @@ from art.estimators.classification.scikitlearn import (ScikitlearnAdaBoostClassi
   ScikitlearnGaussianNB)
 from torch.optim import SGD
 class Estimator_handler:
+    """
+    Attributes:
+    ----------
+    file_loader = Bucket_loader object.
+    ml_type: str, classification/regression.
+    implementation: str, the way the model was implemented(support pytorch, tensorflow and sklearn).
+    algorithm: which ML algorithm the model perform(e.g logistic regression) only relevant to sklearn implementations.
+    input_shape: tuple/list, shape of the data
+    input_val_range: tuple/list, range of values the data gets( it can be tuple of tuples regarding columns).
+    num_of_classes: int, the number of classes in a classification problem.
+    estimator: estimator type(from art lib)  # get a value after self._wrap_model will run.
+    map: dict, maps all objects base on the input above.
+    Methods:
+    _______
+    estimator_match(): mapping an estimator to a ML model form art lib base on params.
+    wrap_model(): wraps the ML model in the estimator.
+    wrap(): serves as main that match, wrap and upload to GCP.
+    """
     def __init__(self, input, json_meta_data):
         if isinstance(json_meta_data, str):
             json_meta_data = json.loads(json_meta_data)
@@ -27,8 +45,6 @@ class Estimator_handler:
         self.__ml_type = input["ML_type"]
         self.__implementation = input["implementation"]
         self.__algorithm = input['algorithm']
-        self.__loss = input['Loss']
-        self.__optimizer = input['Optimizer']
         self.__input_shape = self.metadata['ML_model']['input']['input_shape']
         self.__input_val_range = self.metadata['ML_model']['input']["input_val_range"]
         self.__num_of_classes = self.metadata['ML_model']['input']["num_of_classes"]

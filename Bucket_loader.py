@@ -28,15 +28,41 @@ if __name__ == '__main__':
     # blob.upload_from_filename("mytest.pickle")
 
 class Bucket_loader:
+    """
+    Attributes:
+    __________
+    bucket: str, The name of the bucket holding the files
+    access_key_id: str, access key to the GCP account
+    secret_access_key: str, secret access key to the GCP account
+    region: Bucket region
+    ML_model_file_id: str, name of the file containing the ML model without the file type(e.g pickle)
+    loss_function_file_id: str, name of the file containing the loss function without the file type(e.g pickle)
+    optimizer_file_id: str, name of the file containing the optimizer without the file type(e.g pickle)
+    dataloader_file_id: str, name of the file containing the dataloader without the file type(e.g pickle)
+    requirements_file_id: str, name of the file containing the requirements with the file type(e.g txt)
+
+    Methods:
+    --------
+    upload_to_gcp(): static method, uploading files to GCP bucket.
+    download_from_GCP(): static method, downloading files from GCP bucket.
+    to_pickle(): static method, converting objects to pickle files.
+    from_pickle(): static method, converting pickle files to objects.
+    upload(): wrapper to upload_to_gcp method, that handles different.
+    get_model(): returning the ML model from GCP.
+    get_loss(): returning the loss function as an object from GCP.
+    get_optimizer(): returning the optimizer as an object from GCP.
+    get_dataloader(): returning the dataloader as an object from GCP.
+    get_requirements(): returning the requirements file as txt from GCP.
+    """
     def __init__(self, meta_data):
         """
         The bucket loader is an object that connect with aws and preform downloads
-        and uploads from S3 bucket.
+        and uploads from GCP bucket.
 
         Parameters
         ----------
-        meta_data : str\dict
-            The json from user containig all meta data and structure as above.
+        meta_data : str/dict
+            The json from user containing all metadata and structure as above.
 
             Expected json file:
 
@@ -110,7 +136,7 @@ class Bucket_loader:
         Methods
         ----------
         All the methods are getter, setters and one method of that open connection.
-        Getters dwonloading files from S3 bucket, while setters uploading files to S3.
+        Getters dwonloading files from S3 bucket, while setters uploading files to GCP.
 
 
 

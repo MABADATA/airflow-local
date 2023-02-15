@@ -1,6 +1,9 @@
 import os
 import logging
 class Envsetter:
+  """
+  This class purpose is to set the environment to be same to user's environment
+  """
   def __init__(self, requirements_file_path) -> None:
     """
      Parameters
