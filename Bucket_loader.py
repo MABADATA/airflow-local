@@ -55,7 +55,7 @@ class Bucket_loader:
     get_dataloader(): returning the dataloader as an object from GCP.
     get_requirements(): returning the requirements file as txt from GCP.
     """
-    def __init__(self, meta_data):
+    def __init__(self):
         """
         The bucket loader is an object that connect with aws and preform downloads
         and uploads from GCP bucket.
@@ -142,20 +142,31 @@ class Bucket_loader:
 
 
         """
-        if isinstance(meta_data, str):
-            meta_data = json.loads(meta_data)
-        if isinstance(meta_data, dict):
-            self.__bucket = meta_data['authentication']['bucket_name']
-            self.__access_key_id = meta_data['authentication']['access_key_id']
-            self.__secret_access_key = meta_data['authentication']['secret_access_key']
-            self.__region = meta_data['authentication']['region']
-            self.__ML_model_file_id = meta_data['ML_model']['meta']['file_id']
-            self.__loss_function_file_id = meta_data['ML_model']['loss']['meta']['file_id']
-            self.__optimizer_file_id = meta_data['ML_model']['optimizer']['meta']['file_id']
-            self.__dataloader_file_id = meta_data['dataloader']['meta']['file_id']
-            self.__requirements_file_id = meta_data['requirements.txt']['meta']['file_id']
+        def get_meta_data():
+            os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = ACOUNT_SERVICE_KEY
+            storage_client = storage.Client()
+            bucket = storage_client.bucket(BUCKET_NAME)
+            blob = bucket.blob('meta_data.json')
+            blob.download_to_filename('meta_data.json')
+            metadata = json.loads('meta_data.json')
+            return metadata
+
+        self.metadata = get_meta_data()
+        if isinstance(self.metadata, str):
+            self.metadata = json.loads(self.metadata)
+        if isinstance(self.metadata, dict):
+            self.__bucket = self.metadata['authentication']['bucket_name']
+            self.__access_key_id = self.metadata['authentication']['access_key_id']
+            self.__secret_access_key = self.metadata['authentication']['secret_access_key']
+            self.__region = self.metadata['authentication']['region']
+            self.__ML_model_file_id = self.metadata['ML_model']['meta']['file_id']
+            self.__loss_function_file_id = self.metadata['ML_model']['loss']['meta']['file_id']
+            self.__optimizer_file_id = self.metadata['ML_model']['optimizer']['meta']['file_id']
+            self.__dataloader_file_id = self.metadata['dataloader']['meta']['file_id']
+            self.__requirements_file_id = self.metadata['requirements.txt']['meta']['file_id']
         else:
             raise TypeError('meta data need to be type dict or str')
+
     @staticmethod
     def upload_to_gcp(dest_file_path, src_file_name):
         os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = ACOUNT_SERVICE_KEY
@@ -244,7 +255,7 @@ class Bucket_loader:
                    "optimizer": self.__optimizer_file_id,
                    "dataloader": self.__dataloader_file_id,
                    "requirements.txt": self.__requirements_file_id,
-                   "Estimator": "Estimator"}
+                   "Estimator_params": "Estimator_params.json"}
         try:
             file_name = hashmap[obj_type]
             if to_pickle:

@@ -17,15 +17,14 @@ import keras
 from keras.losses import Loss
 
 class Input_validatior:
-    def __init__(self, json_meta_data) -> None:
-
-        if isinstance(json_meta_data, str):
-            json_meta_data = json.loads(json_meta_data)
-        if isinstance(json_meta_data, dict):
-            self.metadata = json_meta_data
+    def __init__(self) -> None:
+        self.__file_loader = Bucket_loader()
+        if isinstance(self.__file_loader.metadata, str):
+            self.metadata = json.loads(self.__file_loader.metadata)
+        if isinstance(self.__file_loader.metadata, dict):
+            self.metadata = self.__file_loader.metadata
         else:
             raise TypeError('meta data need to be type dict or str')
-        self.__file_loader = Bucket_loader(self.metadata)
         self.__input = {"ML_type": self.metadata['ML_model']['meta']['ML_type']
             , "implementation": None, "algorithm": None,
                         "Loss": None, "Optimizer": None}
@@ -79,7 +78,7 @@ class Input_validatior:
             self.__input['implementation'] = model_implementation_type
             if model_implementation_type == 'sklearn':
                 if self.metadata['ML_model']['meta']['algorithm'] is not None:
-                    # e.g reggerssion, classification
+                    # e.g regression, classification
                     input_ml_type = self.metadata['ML_model']['meta']['ML_type']
                     # e.g ExtraTree, SVC as string
                     input_algorithm = self.metadata['ML_model']['meta']['algorithm']

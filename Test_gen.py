@@ -228,7 +228,7 @@ class Test:
         else:
             return None
 
-    def gen_dataloder(self):
+    def gen_dataloader(self):
         if self.value_dict['dataloader']:
             return self.value_dict['dataloader']
         if self.dataloader_type in self.valid_dataloader_type:
@@ -238,7 +238,7 @@ class Test:
                 return pd.DataFrame()
             elif self.dataloader_type == 'array':
                 return np.array([1, 2, 3])
-            elif self.dataloder_type == 'ndarray':
+            elif self.dataloader_type == 'ndarray':
                 return np.ndarray([1, 2, 3])
             else:
                 return Dataset()
@@ -248,7 +248,7 @@ class Test:
     def gen_test_params(self):
         param_dict = {}
         param_dict['model'] = self.gen_model()
-        param_dict['dataloder'] = self.gen_dataloder()
+        param_dict['dataloader'] = self.gen_dataloader()
         param_dict['loss'] = self.gen_loss()
         param_dict['optimizer'] = self.gen_optimizer()
         param_dict['input_shape'] = self.gen_input_shape()
@@ -286,8 +286,8 @@ class Test:
         model = self.gen_model()
         loss = self.gen_loss()
         optimizer = self.gen_optimizer()
-        dataloader = self.gen_dataloder()
-        loader = Bucket_loader(meta_data=metadata)
+        dataloader = self.gen_dataloader()
+        loader = Bucket_loader()
         loader.upload(obj=model, obj_type="ML_model")
         loader.upload(obj=loss, obj_type='loss')
         loader.upload(obj=optimizer, obj_type='optimizer')
@@ -299,10 +299,10 @@ class Test:
         env_setter = Envsetter("requirements.txt")
         # Installing the file
         # env_setter.install_requirements()
-        input_validatior = Input_validatior(metadata)
+        input_validatior = Input_validatior()
         if input_validatior.validate():
             input = input_validatior.get_input()
-            wrapper = Estimator_handler(input=input, json_meta_data=metadata)
+            wrapper = Estimator_handler(input)
             wrapper.wrap()
             print('Test passed!')
             return True
