@@ -93,7 +93,7 @@ class Estimator_handler:
         return estimator
 
     def _estimator_params(self):
-        param_dict = {'loss': False, 'optimizer': False,'clip_values': None, 'nb_classes': None, 'input_shape': None}
+        param_dict = {'loss': False, 'optimizer': False, 'clip_values': None, 'nb_classes': None, 'input_shape': None}
         if self.__implementation == 'sklearn':
             param_dict['clip_values'] = self.__input_val_range
         elif self.__implementation == 'tensorflow':
@@ -120,6 +120,8 @@ class Estimator_handler:
 
         else:
             raise Exception("Can't wrap model!\nImplementation type must be sklearn,pytorch or tensorflow")
+        #extract the params that needed - meaning not None
+        param_dict = {k: v for k, v in param_dict.items() if v}
         return param_dict
 
 
