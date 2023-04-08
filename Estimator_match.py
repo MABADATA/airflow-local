@@ -1,20 +1,5 @@
 from Bucket_loader import Bucket_loader
 import json
-from art.estimators.classification import PyTorchClassifier
-from art.estimators.regression.pytorch import PyTorchRegressor
-from art.estimators.classification import TensorFlowClassifier, TensorFlowV2Classifier
-from art.estimators.regression.keras import KerasRegressor
-from art.estimators.regression.scikitlearn import ScikitlearnDecisionTreeRegressor
-from art.estimators.classification.scikitlearn import (ScikitlearnAdaBoostClassifier,
-  ScikitlearnBaggingClassifier,
-  ScikitlearnDecisionTreeClassifier,
-  ScikitlearnExtraTreesClassifier,
-  ScikitlearnGradientBoostingClassifier,
-  ScikitlearnLogisticRegression,
-  ScikitlearnRandomForestClassifier,
-  ScikitlearnSVC,
-  ScikitlearnGaussianNB)
-from torch.optim import SGD
 class Estimator_handler:
     """
     Attributes:
@@ -53,33 +38,33 @@ class Estimator_handler:
         self.map = {"implementation": {
             "pytorch": {
                 "ML_type": {
-                    "classification": PyTorchClassifier,
-                    "regression": PyTorchRegressor
+                    "classification": "PyTorchClassifier",
+                    "regression": "PyTorchRegressor"
                 }
             },
             "tensorflow": {
                 "ML_type": {
-                    "classification": TensorFlowV2Classifier,
-                    "regression": KerasRegressor
+                    "classification": "TensorFlowV2Classifier",
+                    "regression": "KerasRegressor"
 
                 }
             },
             "sklearn": {
                 "ML_type": {
                     "classification": {
-                        "DecisionTree": ScikitlearnDecisionTreeClassifier,
-                        "ExtraTree": ScikitlearnExtraTreesClassifier,
-                        "AdaBoost": ScikitlearnAdaBoostClassifier,
-                        "Bagging": ScikitlearnBaggingClassifier,
-                        "GradientBoosting": ScikitlearnGradientBoostingClassifier,
-                        "RandomForest": ScikitlearnRandomForestClassifier,
-                        "LogisticRegression": ScikitlearnLogisticRegression,
-                        "GaussianNB": ScikitlearnGaussianNB,
-                        "SVC": ScikitlearnSVC,
-                        "LinearSVC": ScikitlearnSVC,
+                        "DecisionTree": "ScikitlearnDecisionTreeClassifier",
+                        "ExtraTree": "ScikitlearnExtraTreesClassifier",
+                        "AdaBoost": "ScikitlearnAdaBoostClassifier",
+                        "Bagging": "ScikitlearnBaggingClassifier",
+                        "GradientBoosting": "ScikitlearnGradientBoostingClassifier",
+                        "RandomForest": "ScikitlearnRandomForestClassifier",
+                        "LogisticRegression": "ScikitlearnLogisticRegression",
+                        "GaussianNB": "ScikitlearnGaussianNB",
+                        "SVC": "ScikitlearnSVC",
+                        "LinearSVC": "ScikitlearnSVC",
                     },
                     "regression": {
-                        "DecisionTree":  ScikitlearnDecisionTreeRegressor}}
+                        "DecisionTree":  "ScikitlearnDecisionTreeRegressor"}}
             }
         }
 
@@ -131,4 +116,5 @@ class Estimator_handler:
         estimator_dict ={"object": estimator_obj, "prams": params}
         with open("Estimator_params.json", 'w') as f:
             json.dump(estimator_dict, f)
+
         self.__file_loader.upload(obj=estimator_dict, obj_type="Estimator_params", to_pickle=False)
