@@ -1,0 +1,27 @@
+[2023-03-28 10:49:16,731] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: defence_dag2.to_attack manual__2023-03-28T10:49:05.031168+00:00 [queued]>
+[2023-03-28 10:49:16,741] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: defence_dag2.to_attack manual__2023-03-28T10:49:05.031168+00:00 [queued]>
+[2023-03-28 10:49:16,741] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-28 10:49:16,742] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2023-03-28 10:49:16,747] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-28 10:49:16,764] {taskinstance.py:1377} INFO - Executing <Task(BranchPythonOperator): to_attack> on 2023-03-28 10:49:05.031168+00:00
+[2023-03-28 10:49:16,773] {standard_task_runner.py:52} INFO - Started process 218 to run task
+[2023-03-28 10:49:16,777] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'defence_dag2', 'to_attack', 'manual__2023-03-28T10:49:05.031168+00:00', '--job-id', '4455', '--raw', '--subdir', 'DAGS_FOLDER/defese.py', '--cfg-path', '/tmp/tmpszd1fcck', '--error-file', '/tmp/tmpki7k0mb6']
+[2023-03-28 10:49:16,779] {standard_task_runner.py:80} INFO - Job 4455: Subtask to_attack
+[2023-03-28 10:49:16,860] {task_command.py:369} INFO - Running <TaskInstance: defence_dag2.to_attack manual__2023-03-28T10:49:05.031168+00:00 [running]> on host a826a5b95b6c
+[2023-03-28 10:49:16,959] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=defence_dag2
+AIRFLOW_CTX_TASK_ID=to_attack
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-28T10:49:05.031168+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-03-28T10:49:05.031168+00:00
+[2023-03-28 10:49:16,964] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-03-28 10:49:16,967] {client.py:777} INFO - Refreshing access_token
+[2023-03-28 10:49:18,010] {python.py:173} INFO - Done. Returned value was: trigger_offence
+[2023-03-28 10:49:18,010] {skipmixin.py:140} INFO - Following branch trigger_offence
+[2023-03-28 10:49:18,011] {skipmixin.py:175} INFO - Skipping tasks ['stop']
+[2023-03-28 10:49:18,058] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=defence_dag2, task_id=to_attack, execution_date=20230328T104905, start_date=20230328T104916, end_date=20230328T104918
+[2023-03-28 10:49:18,116] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-03-28 10:49:18,158] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

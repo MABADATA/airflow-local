@@ -1,0 +1,23 @@
+[2023-04-09 13:33:46,587] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.choose_attack manual__2023-04-09T13:33:44.299343+00:00 [queued]>
+[2023-04-09 13:33:46,594] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.choose_attack manual__2023-04-09T13:33:44.299343+00:00 [queued]>
+[2023-04-09 13:33:46,594] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-09 13:33:46,594] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2023-04-09 13:33:46,595] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-09 13:33:46,606] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): choose_attack> on 2023-04-09 13:33:44.299343+00:00
+[2023-04-09 13:33:46,616] {standard_task_runner.py:52} INFO - Started process 303 to run task
+[2023-04-09 13:33:46,619] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'multi_attack_dag', 'choose_attack', 'manual__2023-04-09T13:33:44.299343+00:00', '--job-id', '5048', '--raw', '--subdir', 'DAGS_FOLDER/attack_dag.py', '--cfg-path', '/tmp/tmp0tt7uqzl', '--error-file', '/tmp/tmp6xa2cq2s']
+[2023-04-09 13:33:46,620] {standard_task_runner.py:80} INFO - Job 5048: Subtask choose_attack
+[2023-04-09 13:33:46,668] {task_command.py:369} INFO - Running <TaskInstance: multi_attack_dag.choose_attack manual__2023-04-09T13:33:44.299343+00:00 [running]> on host c5458bb8a35c
+[2023-04-09 13:33:46,729] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=multi_attack_dag
+AIRFLOW_CTX_TASK_ID=choose_attack
+AIRFLOW_CTX_EXECUTION_DATE=2023-04-09T13:33:44.299343+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-04-09T13:33:44.299343+00:00
+[2023-04-09 13:33:46,764] {python.py:173} INFO - Done. Returned value was: None
+[2023-04-09 13:33:46,829] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=multi_attack_dag, task_id=choose_attack, execution_date=20230409T133344, start_date=20230409T133346, end_date=20230409T133346
+[2023-04-09 13:33:46,877] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-04-09 13:33:46,917] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,58 @@
+[2023-04-27 10:54:41,352] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.attack_Wasserstein manual__2023-04-27T10:40:33.319519+00:00 [queued]>
+[2023-04-27 10:54:41,447] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.attack_Wasserstein manual__2023-04-27T10:40:33.319519+00:00 [queued]>
+[2023-04-27 10:54:41,448] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-27 10:54:41,453] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2023-04-27 10:54:41,454] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-27 10:54:41,613] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): attack_Wasserstein> on 2023-04-27 10:40:33.319519+00:00
+[2023-04-27 10:54:41,633] {standard_task_runner.py:52} INFO - Started process 231 to run task
+[2023-04-27 10:54:41,702] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'multi_attack_dag', 'attack_Wasserstein', 'manual__2023-04-27T10:40:33.319519+00:00', '--job-id', '6702', '--raw', '--subdir', 'DAGS_FOLDER/attack_dag.py', '--cfg-path', '/tmp/tmphtd3svwb', '--error-file', '/tmp/tmpalg26ibs']
+[2023-04-27 10:54:41,714] {standard_task_runner.py:80} INFO - Job 6702: Subtask attack_Wasserstein
+[2023-04-27 10:54:42,192] {task_command.py:369} INFO - Running <TaskInstance: multi_attack_dag.attack_Wasserstein manual__2023-04-27T10:40:33.319519+00:00 [running]> on host e7e31d5a6603
+[2023-04-27 10:54:42,667] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=multi_attack_dag
+AIRFLOW_CTX_TASK_ID=attack_Wasserstein
+AIRFLOW_CTX_EXECUTION_DATE=2023-04-27T10:40:33.319519+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-04-27T10:40:33.319519+00:00
+[2023-04-27 10:54:42,674] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-04-27 10:54:42,687] {client.py:777} INFO - Refreshing access_token
+[2023-04-27 10:54:43,462] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-04-27 10:54:43,470] {client.py:777} INFO - Refreshing access_token
+[2023-04-27 10:55:00,441] {pytorch.py:1198} INFO - Inferred 5 hidden layers on PyTorch classifier.
+[2023-04-27 10:58:13,246] {attack_dag.py:643} INFO - Optimizing...
+[2023-04-27 10:58:13,309] {logging_mixin.py:115} INFO - I am right here on <class 'art.attacks.evasion.wasserstein.Wasserstein'>
+[2023-04-27 10:58:13,320] {attack_dag.py:649} INFO - Optimizing failed! using default: 0.07410764694213867
+[2023-04-27 10:58:13,951] {logging_mixin.py:115} WARNING - Wasserstein:   0%|          | 0/197 [00:00<?, ?it/s]
+[2023-04-27 10:58:13,991] {logging_mixin.py:115} WARNING - Wasserstein:   0%|          | 0/197 [00:00<?, ?it/s]
+[2023-04-27 10:58:13,993] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/attack_dag.py", line 430, in attack_Wasserstein
+    model_acc, adversarial_examples  = attack(Wasserstein)
+  File "/opt/airflow/dags/attack_dag.py", line 656, in attack
+    adversarial_examples = optimized_attack.generate(np.asarray(x_test))
+  File "/home/airflow/.local/lib/python3.7/site-packages/art/attacks/evasion/wasserstein.py", line 177, in generate
+    x_adv[batch_index_1:batch_index_2] = self._generate_batch(batch, batch_labels, cost_matrix)
+  File "/home/airflow/.local/lib/python3.7/site-packages/art/attacks/evasion/wasserstein.py", line 202, in _generate_batch
+    adv_x = self._compute(adv_x, x, targets, cost_matrix, eps_, err)
+  File "/home/airflow/.local/lib/python3.7/site-packages/art/attacks/evasion/wasserstein.py", line 250, in _compute
+    x_adv[~err] = self._compute_apply_perturbation(x_adv, y, cost_matrix)[~err]
+  File "/home/airflow/.local/lib/python3.7/site-packages/art/attacks/evasion/wasserstein.py", line 296, in _compute_apply_perturbation
+    x_adv = self._conjugate_sinkhorn(x, grad, cost_matrix)
+  File "/home/airflow/.local/lib/python3.7/site-packages/art/attacks/evasion/wasserstein.py", line 393, in _conjugate_sinkhorn
+    i_nonzero = self._batch_dot(x, self._local_transport(cost_matrix_new, grad, self.kernel_size)) != 0
+  File "/home/airflow/.local/lib/python3.7/site-packages/art/attacks/evasion/wasserstein.py", line 635, in _local_transport
+    unfold_x = self._unfold(x=x, kernel_size=kernel_size, padding=kernel_size // 2)
+  File "/home/airflow/.local/lib/python3.7/site-packages/art/attacks/evasion/wasserstein.py", line 598, in _unfold
+    x_pad[:, :, padding : (shape[0] - padding), padding : (shape[1] - padding)] = x
+IndexError: tuple index out of range
+[2023-04-27 10:58:14,076] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=multi_attack_dag, task_id=attack_Wasserstein, execution_date=20230427T104033, start_date=20230427T105441, end_date=20230427T105814
+[2023-04-27 10:58:14,257] {standard_task_runner.py:97} ERROR - Failed to execute job 6702 for task attack_Wasserstein (tuple index out of range; 231)
+[2023-04-27 10:58:14,329] {local_task_job.py:156} INFO - Task exited with return code 1
+[2023-04-27 10:58:14,681] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

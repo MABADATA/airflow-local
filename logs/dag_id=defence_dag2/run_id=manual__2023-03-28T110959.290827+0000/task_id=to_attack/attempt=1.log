@@ -1,0 +1,48 @@
+[2023-03-28 11:11:14,677] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: defence_dag2.to_attack manual__2023-03-28T11:09:59.290827+00:00 [queued]>
+[2023-03-28 11:11:14,696] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: defence_dag2.to_attack manual__2023-03-28T11:09:59.290827+00:00 [queued]>
+[2023-03-28 11:11:14,698] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-28 11:11:14,699] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2023-03-28 11:11:14,700] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-28 11:11:14,725] {taskinstance.py:1377} INFO - Executing <Task(BranchPythonOperator): to_attack> on 2023-03-28 11:09:59.290827+00:00
+[2023-03-28 11:11:14,761] {standard_task_runner.py:52} INFO - Started process 89 to run task
+[2023-03-28 11:11:14,767] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'defence_dag2', 'to_attack', 'manual__2023-03-28T11:09:59.290827+00:00', '--job-id', '4479', '--raw', '--subdir', 'DAGS_FOLDER/defese.py', '--cfg-path', '/tmp/tmpdrbz28ev', '--error-file', '/tmp/tmppoij7j9o']
+[2023-03-28 11:11:14,769] {standard_task_runner.py:80} INFO - Job 4479: Subtask to_attack
+[2023-03-28 11:11:14,884] {task_command.py:369} INFO - Running <TaskInstance: defence_dag2.to_attack manual__2023-03-28T11:09:59.290827+00:00 [running]> on host a826a5b95b6c
+[2023-03-28 11:11:15,025] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=defence_dag2
+AIRFLOW_CTX_TASK_ID=to_attack
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-28T11:09:59.290827+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-03-28T11:09:59.290827+00:00
+[2023-03-28 11:11:15,031] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-03-28 11:11:15,037] {client.py:777} INFO - Refreshing access_token
+[2023-03-28 11:11:16,315] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 207, in execute
+    branch = super().execute(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/defese.py", line 31, in to_attack
+    cycles = load_from_bucket('Estimator.pickle')
+  File "/opt/airflow/dags/helpers.py", line 45, in load_from_bucket
+    raise err
+  File "/opt/airflow/dags/helpers.py", line 42, in load_from_bucket
+    loaded_obj = cloudpickle.load(f)
+  File "/home/airflow/.local/lib/python3.7/site-packages/art/estimators/classification/pytorch.py", line 1095, in __setstate__
+    model.load_state_dict(torch.load(str(full_path) + ".model"))
+  File "/home/airflow/.local/lib/python3.7/site-packages/torch/serialization.py", line 771, in load
+    with _open_file_like(f, 'rb') as opened_file:
+  File "/home/airflow/.local/lib/python3.7/site-packages/torch/serialization.py", line 270, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/airflow/.local/lib/python3.7/site-packages/torch/serialization.py", line 251, in __init__
+    super(_open_file, self).__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: '/home/airflow/.art/data/1676383983.7273748.model'
+[2023-03-28 11:11:16,341] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=defence_dag2, task_id=to_attack, execution_date=20230328T110959, start_date=20230328T111114, end_date=20230328T111116
+[2023-03-28 11:11:16,366] {standard_task_runner.py:97} ERROR - Failed to execute job 4479 for task to_attack ([Errno 2] No such file or directory: '/home/airflow/.art/data/1676383983.7273748.model'; 89)
+[2023-03-28 11:11:16,397] {local_task_job.py:156} INFO - Task exited with return code 1
+[2023-03-28 11:11:16,487] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

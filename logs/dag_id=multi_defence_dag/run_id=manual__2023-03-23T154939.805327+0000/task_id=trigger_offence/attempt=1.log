@@ -1,0 +1,22 @@
+[2023-03-23 15:50:05,886] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_defence_dag.trigger_offence manual__2023-03-23T15:49:39.805327+00:00 [queued]>
+[2023-03-23 15:50:05,936] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_defence_dag.trigger_offence manual__2023-03-23T15:49:39.805327+00:00 [queued]>
+[2023-03-23 15:50:05,937] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-23 15:50:05,939] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2023-03-23 15:50:05,941] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-23 15:50:05,980] {taskinstance.py:1377} INFO - Executing <Task(TriggerDagRunOperator): trigger_offence> on 2023-03-23 15:49:39.805327+00:00
+[2023-03-23 15:50:05,992] {standard_task_runner.py:52} INFO - Started process 14046 to run task
+[2023-03-23 15:50:06,002] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'multi_defence_dag', 'trigger_offence', 'manual__2023-03-23T15:49:39.805327+00:00', '--job-id', '3605', '--raw', '--subdir', 'DAGS_FOLDER/defence_dag.py', '--cfg-path', '/tmp/tmpjyfewkf3', '--error-file', '/tmp/tmp2xkd7znm']
+[2023-03-23 15:50:06,005] {standard_task_runner.py:80} INFO - Job 3605: Subtask trigger_offence
+[2023-03-23 15:50:06,187] {task_command.py:369} INFO - Running <TaskInstance: multi_defence_dag.trigger_offence manual__2023-03-23T15:49:39.805327+00:00 [running]> on host 6447f1dacd32
+[2023-03-23 15:50:06,399] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=multi_defence_dag
+AIRFLOW_CTX_TASK_ID=trigger_offence
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-23T15:49:39.805327+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-03-23T15:49:39.805327+00:00
+[2023-03-23 15:50:09,973] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=multi_defence_dag, task_id=trigger_offence, execution_date=20230323T154939, start_date=20230323T155005, end_date=20230323T155009
+[2023-03-23 15:50:10,136] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-03-23 15:50:10,363] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

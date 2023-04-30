@@ -1,0 +1,27 @@
+[2023-04-23 09:36:44,167] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_defence_dag.choose_best manual__2023-04-23T09:36:24.954875+00:00 [queued]>
+[2023-04-23 09:36:44,178] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_defence_dag.choose_best manual__2023-04-23T09:36:24.954875+00:00 [queued]>
+[2023-04-23 09:36:44,178] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-23 09:36:44,184] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2023-04-23 09:36:44,184] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-23 09:36:44,199] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): choose_best> on 2023-04-23 09:36:24.954875+00:00
+[2023-04-23 09:36:44,206] {standard_task_runner.py:52} INFO - Started process 1316 to run task
+[2023-04-23 09:36:44,210] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'multi_defence_dag', 'choose_best', 'manual__2023-04-23T09:36:24.954875+00:00', '--job-id', '6126', '--raw', '--subdir', 'DAGS_FOLDER/defence_dag.py', '--cfg-path', '/tmp/tmpssw3923j', '--error-file', '/tmp/tmp1y89cwhq']
+[2023-04-23 09:36:44,211] {standard_task_runner.py:80} INFO - Job 6126: Subtask choose_best
+[2023-04-23 09:36:44,266] {task_command.py:369} INFO - Running <TaskInstance: multi_defence_dag.choose_best manual__2023-04-23T09:36:24.954875+00:00 [running]> on host a3dd7d962104
+[2023-04-23 09:36:44,348] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=multi_defence_dag
+AIRFLOW_CTX_TASK_ID=choose_best
+AIRFLOW_CTX_EXECUTION_DATE=2023-04-23T09:36:24.954875+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-04-23T09:36:24.954875+00:00
+[2023-04-23 09:36:44,409] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-04-23 09:36:44,417] {client.py:777} INFO - Refreshing access_token
+[2023-04-23 09:36:45,240] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-04-23 09:36:45,242] {client.py:777} INFO - Refreshing access_token
+[2023-04-23 09:36:45,736] {python.py:173} INFO - Done. Returned value was: None
+[2023-04-23 09:36:45,757] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=multi_defence_dag, task_id=choose_best, execution_date=20230423T093624, start_date=20230423T093644, end_date=20230423T093645
+[2023-04-23 09:36:45,791] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-04-23 09:36:45,842] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

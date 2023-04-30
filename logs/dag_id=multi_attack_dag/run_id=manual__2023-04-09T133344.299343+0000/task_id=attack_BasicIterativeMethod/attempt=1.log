@@ -1,0 +1,70 @@
+[2023-04-09 13:34:00,980] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.attack_BasicIterativeMethod manual__2023-04-09T13:33:44.299343+00:00 [queued]>
+[2023-04-09 13:34:01,006] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.attack_BasicIterativeMethod manual__2023-04-09T13:33:44.299343+00:00 [queued]>
+[2023-04-09 13:34:01,007] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-09 13:34:01,009] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2023-04-09 13:34:01,009] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-09 13:34:01,040] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): attack_BasicIterativeMethod> on 2023-04-09 13:33:44.299343+00:00
+[2023-04-09 13:34:01,057] {standard_task_runner.py:52} INFO - Started process 330 to run task
+[2023-04-09 13:34:01,065] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'multi_attack_dag', 'attack_BasicIterativeMethod', 'manual__2023-04-09T13:33:44.299343+00:00', '--job-id', '5054', '--raw', '--subdir', 'DAGS_FOLDER/attack_dag.py', '--cfg-path', '/tmp/tmpuweq2jmd', '--error-file', '/tmp/tmpni2jcxrh']
+[2023-04-09 13:34:01,067] {standard_task_runner.py:80} INFO - Job 5054: Subtask attack_BasicIterativeMethod
+[2023-04-09 13:34:01,203] {task_command.py:369} INFO - Running <TaskInstance: multi_attack_dag.attack_BasicIterativeMethod manual__2023-04-09T13:33:44.299343+00:00 [running]> on host c5458bb8a35c
+[2023-04-09 13:34:01,331] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=multi_attack_dag
+AIRFLOW_CTX_TASK_ID=attack_BasicIterativeMethod
+AIRFLOW_CTX_EXECUTION_DATE=2023-04-09T13:33:44.299343+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-04-09T13:33:44.299343+00:00
+[2023-04-09 13:34:01,336] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-04-09 13:34:01,343] {client.py:777} INFO - Refreshing access_token
+[2023-04-09 13:34:01,926] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-04-09 13:34:01,928] {client.py:777} INFO - Refreshing access_token
+[2023-04-09 13:34:02,612] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-04-09 13:34:02,614] {client.py:777} INFO - Refreshing access_token
+[2023-04-09 13:34:03,181] {pytorch.py:1198} INFO - Inferred 5 hidden layers on PyTorch classifier.
+[2023-04-09 13:34:03,184] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-04-09 13:34:03,186] {client.py:777} INFO - Refreshing access_token
+[2023-04-09 13:35:02,282] {projected_gradient_descent.py:199} INFO - Creating adversarial samples.
+[2023-04-09 13:35:02,377] {logging_mixin.py:115} WARNING - PGD - Batches:   0%|          | 0/32 [00:00<?, ?it/s]
+[2023-04-09 13:35:03,241] {logging_mixin.py:115} WARNING - PGD - Batches:   3%|3         | 1/32 [00:00<00:26,  1.16it/s]
+[2023-04-09 13:35:04,508] {logging_mixin.py:115} WARNING - PGD - Batches:   6%|6         | 2/32 [00:02<00:33,  1.10s/it]
+[2023-04-09 13:35:05,477] {logging_mixin.py:115} WARNING - PGD - Batches:   9%|9         | 3/32 [00:03<00:30,  1.04s/it]
+[2023-04-09 13:35:06,142] {logging_mixin.py:115} WARNING - PGD - Batches:  12%|#2        | 4/32 [00:03<00:24,  1.12it/s]
+[2023-04-09 13:35:07,647] {logging_mixin.py:115} WARNING - PGD - Batches:  16%|#5        | 5/32 [00:05<00:30,  1.11s/it]
+[2023-04-09 13:35:08,184] {logging_mixin.py:115} WARNING - PGD - Batches:  19%|#8        | 6/32 [00:05<00:23,  1.09it/s]
+[2023-04-09 13:35:09,694] {logging_mixin.py:115} WARNING - PGD - Batches:  22%|##1       | 7/32 [00:07<00:27,  1.11s/it]
+[2023-04-09 13:35:12,254] {logging_mixin.py:115} WARNING - PGD - Batches:  25%|##5       | 8/32 [00:09<00:37,  1.57s/it]
+[2023-04-09 13:35:15,597] {logging_mixin.py:115} WARNING - PGD - Batches:  28%|##8       | 9/32 [00:13<00:48,  2.13s/it]
+[2023-04-09 13:35:15,819] {logging_mixin.py:115} WARNING - PGD - Batches:  31%|###1      | 10/32 [00:13<00:33,  1.54s/it]
+[2023-04-09 13:35:16,572] {logging_mixin.py:115} WARNING - PGD - Batches:  34%|###4      | 11/32 [00:14<00:27,  1.30s/it]
+[2023-04-09 13:35:16,824] {logging_mixin.py:115} WARNING - PGD - Batches:  38%|###7      | 12/32 [00:14<00:19,  1.02it/s]
+[2023-04-09 13:35:17,493] {logging_mixin.py:115} WARNING - PGD - Batches:  41%|####      | 13/32 [00:15<00:16,  1.13it/s]
+[2023-04-09 13:35:17,962] {logging_mixin.py:115} WARNING - PGD - Batches:  44%|####3     | 14/32 [00:15<00:13,  1.32it/s]
+[2023-04-09 13:35:18,423] {logging_mixin.py:115} WARNING - PGD - Batches:  47%|####6     | 15/32 [00:16<00:11,  1.49it/s]
+[2023-04-09 13:35:18,696] {logging_mixin.py:115} WARNING - PGD - Batches:  50%|#####     | 16/32 [00:16<00:08,  1.82it/s]
+[2023-04-09 13:35:18,885] {logging_mixin.py:115} WARNING - PGD - Batches:  53%|#####3    | 17/32 [00:16<00:06,  2.26it/s]
+[2023-04-09 13:35:19,061] {logging_mixin.py:115} WARNING - PGD - Batches:  56%|#####6    | 18/32 [00:16<00:05,  2.76it/s]
+[2023-04-09 13:35:20,751] {logging_mixin.py:115} WARNING - PGD - Batches:  59%|#####9    | 19/32 [00:18<00:09,  1.31it/s]
+[2023-04-09 13:35:21,236] {logging_mixin.py:115} WARNING - PGD - Batches:  62%|######2   | 20/32 [00:18<00:08,  1.48it/s]
+[2023-04-09 13:35:21,943] {logging_mixin.py:115} WARNING - PGD - Batches:  66%|######5   | 21/32 [00:19<00:07,  1.46it/s]
+[2023-04-09 13:35:23,142] {logging_mixin.py:115} WARNING - PGD - Batches:  69%|######8   | 22/32 [00:20<00:08,  1.19it/s]
+[2023-04-09 13:35:24,990] {logging_mixin.py:115} WARNING - PGD - Batches:  72%|#######1  | 23/32 [00:22<00:10,  1.14s/it]
+[2023-04-09 13:35:25,383] {logging_mixin.py:115} WARNING - PGD - Batches:  75%|#######5  | 24/32 [00:23<00:07,  1.09it/s]
+[2023-04-09 13:35:26,382] {logging_mixin.py:115} WARNING - PGD - Batches:  78%|#######8  | 25/32 [00:24<00:06,  1.06it/s]
+[2023-04-09 13:35:27,086] {logging_mixin.py:115} WARNING - PGD - Batches:  81%|########1 | 26/32 [00:24<00:05,  1.15it/s]
+[2023-04-09 13:35:27,348] {logging_mixin.py:115} WARNING - PGD - Batches:  84%|########4 | 27/32 [00:24<00:03,  1.45it/s]
+[2023-04-09 13:35:27,608] {logging_mixin.py:115} WARNING - PGD - Batches:  88%|########7 | 28/32 [00:25<00:02,  1.79it/s]
+[2023-04-09 13:35:27,819] {logging_mixin.py:115} WARNING - PGD - Batches:  91%|######### | 29/32 [00:25<00:01,  2.20it/s]
+[2023-04-09 13:35:27,977] {logging_mixin.py:115} WARNING - PGD - Batches:  94%|#########3| 30/32 [00:25<00:00,  2.73it/s]
+[2023-04-09 13:35:28,199] {logging_mixin.py:115} WARNING - PGD - Batches:  97%|#########6| 31/32 [00:25<00:00,  3.10it/s]
+[2023-04-09 13:35:28,353] {logging_mixin.py:115} WARNING - PGD - Batches: 100%|##########| 32/32 [00:25<00:00,  3.67it/s]
+[2023-04-09 13:35:28,354] {logging_mixin.py:115} WARNING -                                                               
+[2023-04-09 13:35:28,370] {projected_gradient_descent_pytorch.py:239} INFO - Success rate of attack: 15.10%
+[2023-04-09 13:35:28,390] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-04-09 13:35:28,401] {client.py:777} INFO - Refreshing access_token
+[2023-04-09 13:35:29,775] {python.py:173} INFO - Done. Returned value was: None
+[2023-04-09 13:35:29,787] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=multi_attack_dag, task_id=attack_BasicIterativeMethod, execution_date=20230409T133344, start_date=20230409T133400, end_date=20230409T133529
+[2023-04-09 13:35:29,855] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-04-09 13:35:29,896] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,41 @@
+[2023-04-23 07:50:13,617] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_sklearn_attack_dag.attack_zoo scheduled__2023-04-18T00:00:00+00:00 [queued]>
+[2023-04-23 07:50:13,646] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_sklearn_attack_dag.attack_zoo scheduled__2023-04-18T00:00:00+00:00 [queued]>
+[2023-04-23 07:50:13,647] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-23 07:50:13,648] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2023-04-23 07:50:13,649] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-23 07:50:13,685] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): attack_zoo> on 2023-04-18 00:00:00+00:00
+[2023-04-23 07:50:13,701] {standard_task_runner.py:52} INFO - Started process 194 to run task
+[2023-04-23 07:50:13,715] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'multi_sklearn_attack_dag', 'attack_zoo', 'scheduled__2023-04-18T00:00:00+00:00', '--job-id', '5864', '--raw', '--subdir', 'DAGS_FOLDER/sklearn_attack_dag.py', '--cfg-path', '/tmp/tmp8fieu9ef', '--error-file', '/tmp/tmpykg9psee']
+[2023-04-23 07:50:13,719] {standard_task_runner.py:80} INFO - Job 5864: Subtask attack_zoo
+[2023-04-23 07:50:13,905] {task_command.py:369} INFO - Running <TaskInstance: multi_sklearn_attack_dag.attack_zoo scheduled__2023-04-18T00:00:00+00:00 [running]> on host a3dd7d962104
+[2023-04-23 07:50:14,147] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=multi_sklearn_attack_dag
+AIRFLOW_CTX_TASK_ID=attack_zoo
+AIRFLOW_CTX_EXECUTION_DATE=2023-04-18T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-04-18T00:00:00+00:00
+[2023-04-23 07:50:16,322] {logging_mixin.py:115} INFO - [07:50:16] WARNING: ../src/learner.cc:627: 
+Parameters: { "metric" } might not be used.
+
+  This could be a false alarm, with some parameters getting used by language bindings but
+  then being mistakenly passed down to XGBoost core, or some parameter actually being used
+  but getting flagged wrongly here. Please open an issue if you find any such cases.
+[2023-04-23 07:50:41,948] {logging_mixin.py:115} INFO - [0]	test-mlogloss:1.08678	train-mlogloss:1.35689
+[2023-04-23 07:51:08,847] {logging_mixin.py:115} INFO - [1]	test-mlogloss:0.80412	train-mlogloss:1.02601
+[2023-04-23 07:51:09,070] {logging_mixin.py:115} INFO - Accuracy on benign test examples: 100.0%
+[2023-04-23 07:51:09,071] {zoo.py:155} INFO - Disable resizing and importance sampling because feature vector input has been detected.
+[2023-04-23 07:51:09,088] {logging_mixin.py:115} WARNING - ZOO:   0%|          | 0/5 [00:00<?, ?it/s]
+[2023-04-23 07:51:51,113] {logging_mixin.py:115} WARNING - ZOO:  20%|##        | 1/5 [00:42<02:48, 42.02s/it]
+[2023-04-23 07:52:07,394] {logging_mixin.py:115} WARNING - ZOO:  40%|####      | 2/5 [00:58<01:20, 26.88s/it]
+[2023-04-23 07:52:22,577] {logging_mixin.py:115} WARNING - ZOO:  60%|######    | 3/5 [01:13<00:43, 21.54s/it]
+[2023-04-23 07:52:49,976] {logging_mixin.py:115} WARNING - ZOO:  80%|########  | 4/5 [01:40<00:23, 23.85s/it]
+[2023-04-23 07:53:07,200] {logging_mixin.py:115} WARNING - ZOO: 100%|##########| 5/5 [01:58<00:00, 21.46s/it]
+[2023-04-23 07:53:07,201] {logging_mixin.py:115} WARNING - ZOO: 100%|##########| 5/5 [01:58<00:00, 23.62s/it]
+[2023-04-23 07:53:07,212] {zoo.py:248} INFO - Success rate of ZOO attack: 80.00%
+[2023-04-23 07:53:07,342] {python.py:173} INFO - Done. Returned value was: None
+[2023-04-23 07:53:07,370] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=multi_sklearn_attack_dag, task_id=attack_zoo, execution_date=20230418T000000, start_date=20230423T075013, end_date=20230423T075307
+[2023-04-23 07:53:07,426] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-04-23 07:53:07,510] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

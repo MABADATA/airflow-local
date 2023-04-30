@@ -1,0 +1,169 @@
+[2023-04-23 13:47:05,562] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.attack_BasicIterativeMethod manual__2023-04-23T13:46:48.593466+00:00 [queued]>
+[2023-04-23 13:47:05,589] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.attack_BasicIterativeMethod manual__2023-04-23T13:46:48.593466+00:00 [queued]>
+[2023-04-23 13:47:05,590] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-23 13:47:05,591] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2023-04-23 13:47:05,592] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-23 13:47:05,625] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): attack_BasicIterativeMethod> on 2023-04-23 13:46:48.593466+00:00
+[2023-04-23 13:47:05,637] {standard_task_runner.py:52} INFO - Started process 776 to run task
+[2023-04-23 13:47:05,643] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'multi_attack_dag', 'attack_BasicIterativeMethod', 'manual__2023-04-23T13:46:48.593466+00:00', '--job-id', '6245', '--raw', '--subdir', 'DAGS_FOLDER/attack_dag.py', '--cfg-path', '/tmp/tmp9bcc4rd7', '--error-file', '/tmp/tmpcz8se6i7']
+[2023-04-23 13:47:05,645] {standard_task_runner.py:80} INFO - Job 6245: Subtask attack_BasicIterativeMethod
+[2023-04-23 13:47:05,751] {task_command.py:369} INFO - Running <TaskInstance: multi_attack_dag.attack_BasicIterativeMethod manual__2023-04-23T13:46:48.593466+00:00 [running]> on host e7e31d5a6603
+[2023-04-23 13:47:05,897] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=multi_attack_dag
+AIRFLOW_CTX_TASK_ID=attack_BasicIterativeMethod
+AIRFLOW_CTX_EXECUTION_DATE=2023-04-23T13:46:48.593466+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-04-23T13:46:48.593466+00:00
+[2023-04-23 13:47:05,927] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-04-23 13:47:05,932] {client.py:777} INFO - Refreshing access_token
+[2023-04-23 13:47:06,591] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-04-23 13:47:06,595] {client.py:777} INFO - Refreshing access_token
+[2023-04-23 13:47:11,427] {pytorch.py:1198} INFO - Inferred 5 hidden layers on PyTorch classifier.
+[2023-04-23 13:47:13,771] {attack_dag.py:227} INFO - Optimizing...
+[2023-04-23 13:47:13,772] {logging_mixin.py:115} INFO - I am right here on <class 'art.attacks.evasion.iterative_method.BasicIterativeMethod'>
+[2023-04-23 13:47:13,778] {logging_mixin.py:115} INFO - <function optimize_evasion_attack.<locals>.<lambda> at 0x7efce3de77a0>
+[2023-04-23 13:47:13,797] {logging_mixin.py:115} INFO - This is the attack : <class 'art.attacks.evasion.iterative_method.BasicIterativeMethod'> and its HP : {'eps': 0.37937128464240516, 'eps_step': 0.8644148556301203}
+[2023-04-23 13:47:13,798] {projected_gradient_descent.py:199} INFO - Creating adversarial samples.
+[2023-04-23 13:47:13,822] {logging_mixin.py:115} WARNING - PGD - Batches:   0%|          | 0/7 [00:00<?, ?it/s]
+[2023-04-23 13:47:14,366] {logging_mixin.py:115} WARNING - PGD - Batches:  14%|#4        | 1/7 [00:00<00:03,  1.84it/s]
+[2023-04-23 13:47:14,557] {logging_mixin.py:115} WARNING - PGD - Batches:  29%|##8       | 2/7 [00:00<00:01,  2.98it/s]
+[2023-04-23 13:47:15,540] {logging_mixin.py:115} WARNING - PGD - Batches:  57%|#####7    | 4/7 [00:01<00:01,  2.31it/s]
+[2023-04-23 13:47:16,334] {logging_mixin.py:115} WARNING - PGD - Batches:  71%|#######1  | 5/7 [00:02<00:01,  1.83it/s]
+[2023-04-23 13:47:17,442] {logging_mixin.py:115} WARNING - PGD - Batches:  86%|########5 | 6/7 [00:03<00:00,  1.39it/s]
+[2023-04-23 13:47:17,738] {logging_mixin.py:115} WARNING - PGD - Batches: 100%|##########| 7/7 [00:03<00:00,  1.70it/s]
+[2023-04-23 13:47:17,748] {logging_mixin.py:115} WARNING -                                                             
+[2023-04-23 13:47:17,795] {projected_gradient_descent_pytorch.py:239} INFO - Success rate of attack: 65.48%
+[2023-04-23 13:47:17,861] {logging_mixin.py:115} INFO - This is the attack : <class 'art.attacks.evasion.iterative_method.BasicIterativeMethod'> and its HP : {'eps': 0.5027199240663013, 'eps_step': 0.10053177015517212}
+[2023-04-23 13:47:17,862] {projected_gradient_descent.py:199} INFO - Creating adversarial samples.
+[2023-04-23 13:47:17,993] {logging_mixin.py:115} WARNING - 
+[2023-04-23 13:47:18,000] {logging_mixin.py:115} WARNING - PGD - Batches:   0%|          | 0/7 [00:00<?, ?it/s]
+[2023-04-23 13:47:18,283] {logging_mixin.py:115} WARNING - PGD - Batches:  14%|#4        | 1/7 [00:00<00:01,  3.56it/s]
+[2023-04-23 13:47:18,646] {logging_mixin.py:115} WARNING - PGD - Batches:  29%|##8       | 2/7 [00:00<00:01,  3.03it/s]
+[2023-04-23 13:47:18,828] {logging_mixin.py:115} WARNING - PGD - Batches:  43%|####2     | 3/7 [00:00<00:01,  3.81it/s]
+[2023-04-23 13:47:19,419] {logging_mixin.py:115} WARNING - PGD - Batches:  57%|#####7    | 4/7 [00:01<00:01,  2.55it/s]
+[2023-04-23 13:47:19,727] {logging_mixin.py:115} WARNING - PGD - Batches:  71%|#######1  | 5/7 [00:01<00:00,  2.77it/s]
+[2023-04-23 13:47:20,308] {logging_mixin.py:115} WARNING - PGD - Batches:  86%|########5 | 6/7 [00:02<00:00,  2.29it/s]
+[2023-04-23 13:47:20,644] {logging_mixin.py:115} WARNING - PGD - Batches: 100%|##########| 7/7 [00:02<00:00,  2.48it/s]
+[2023-04-23 13:47:20,645] {logging_mixin.py:115} WARNING -                                                             
+[2023-04-23 13:47:20,648] {projected_gradient_descent_pytorch.py:239} INFO - Success rate of attack: 65.48%
+[2023-04-23 13:47:20,650] {logging_mixin.py:115} INFO - This is the attack : <class 'art.attacks.evasion.iterative_method.BasicIterativeMethod'> and its HP : {'eps': 0.3381513898104757, 'eps_step': 0.45074612464476405}
+[2023-04-23 13:47:20,650] {projected_gradient_descent.py:199} INFO - Creating adversarial samples.
+[2023-04-23 13:47:20,671] {logging_mixin.py:115} WARNING - 
+[2023-04-23 13:47:20,672] {logging_mixin.py:115} WARNING - PGD - Batches:   0%|          | 0/7 [00:00<?, ?it/s]
+[2023-04-23 13:47:21,210] {logging_mixin.py:115} WARNING - PGD - Batches:  14%|#4        | 1/7 [00:00<00:03,  1.93it/s]
+[2023-04-23 13:47:22,187] {logging_mixin.py:115} WARNING - PGD - Batches:  29%|##8       | 2/7 [00:01<00:03,  1.27it/s]
+[2023-04-23 13:47:22,826] {logging_mixin.py:115} WARNING - PGD - Batches:  43%|####2     | 3/7 [00:02<00:02,  1.39it/s]
+[2023-04-23 13:47:22,993] {logging_mixin.py:115} WARNING - PGD - Batches:  57%|#####7    | 4/7 [00:02<00:01,  1.99it/s]
+[2023-04-23 13:47:23,163] {logging_mixin.py:115} WARNING - PGD - Batches:  86%|########5 | 6/7 [00:02<00:00,  3.56it/s]
+[2023-04-23 13:47:23,296] {logging_mixin.py:115} WARNING - PGD - Batches: 100%|##########| 7/7 [00:02<00:00,  4.16it/s]
+[2023-04-23 13:47:23,304] {logging_mixin.py:115} WARNING -                                                             
+[2023-04-23 13:47:23,352] {projected_gradient_descent_pytorch.py:239} INFO - Success rate of attack: 65.48%
+[2023-04-23 13:47:23,355] {logging_mixin.py:115} INFO - This is the attack : <class 'art.attacks.evasion.iterative_method.BasicIterativeMethod'> and its HP : {'eps': 0.5827906005554645, 'eps_step': 0.4649780320638326}
+[2023-04-23 13:47:23,356] {projected_gradient_descent.py:199} INFO - Creating adversarial samples.
+[2023-04-23 13:47:23,359] {logging_mixin.py:115} WARNING - 
+[2023-04-23 13:47:23,359] {logging_mixin.py:115} WARNING - PGD - Batches:   0%|          | 0/7 [00:00<?, ?it/s]
+[2023-04-23 13:47:23,510] {logging_mixin.py:115} WARNING - PGD - Batches:  14%|#4        | 1/7 [00:00<00:00,  6.65it/s]
+[2023-04-23 13:47:23,658] {logging_mixin.py:115} WARNING - PGD - Batches:  29%|##8       | 2/7 [00:00<00:00,  6.72it/s]
+[2023-04-23 13:47:23,896] {logging_mixin.py:115} WARNING - PGD - Batches:  43%|####2     | 3/7 [00:00<00:00,  5.28it/s]
+[2023-04-23 13:47:24,168] {logging_mixin.py:115} WARNING - PGD - Batches:  71%|#######1  | 5/7 [00:00<00:00,  6.28it/s]
+[2023-04-23 13:47:24,543] {logging_mixin.py:115} WARNING - PGD - Batches:  86%|########5 | 6/7 [00:01<00:00,  4.51it/s]
+[2023-04-23 13:47:24,677] {logging_mixin.py:115} WARNING - PGD - Batches: 100%|##########| 7/7 [00:01<00:00,  5.10it/s]
+[2023-04-23 13:47:24,678] {logging_mixin.py:115} WARNING -                                                             
+[2023-04-23 13:47:24,682] {projected_gradient_descent_pytorch.py:239} INFO - Success rate of attack: 65.48%
+[2023-04-23 13:47:24,684] {logging_mixin.py:115} INFO - This is the attack : <class 'art.attacks.evasion.iterative_method.BasicIterativeMethod'> and its HP : {'eps': 0.0977613291817414, 'eps_step': 0.6339892469702672}
+[2023-04-23 13:47:24,685] {projected_gradient_descent.py:199} INFO - Creating adversarial samples.
+[2023-04-23 13:47:24,687] {logging_mixin.py:115} WARNING - 
+[2023-04-23 13:47:24,688] {logging_mixin.py:115} WARNING - PGD - Batches:   0%|          | 0/7 [00:00<?, ?it/s]
+[2023-04-23 13:47:24,925] {logging_mixin.py:115} WARNING - PGD - Batches:  14%|#4        | 1/7 [00:00<00:01,  4.22it/s]
+[2023-04-23 13:47:25,255] {logging_mixin.py:115} WARNING - PGD - Batches:  29%|##8       | 2/7 [00:00<00:01,  3.43it/s]
+[2023-04-23 13:47:25,996] {logging_mixin.py:115} WARNING - PGD - Batches:  43%|####2     | 3/7 [00:01<00:01,  2.01it/s]
+[2023-04-23 13:47:28,789] {logging_mixin.py:115} WARNING - PGD - Batches:  57%|#####7    | 4/7 [00:04<00:04,  1.40s/it]
+[2023-04-23 13:47:29,215] {logging_mixin.py:115} WARNING - PGD - Batches:  71%|#######1  | 5/7 [00:04<00:02,  1.05s/it]
+[2023-04-23 13:47:29,440] {logging_mixin.py:115} WARNING - PGD - Batches:  86%|########5 | 6/7 [00:04<00:00,  1.30it/s]
+[2023-04-23 13:47:29,726] {logging_mixin.py:115} WARNING - PGD - Batches: 100%|##########| 7/7 [00:05<00:00,  1.63it/s]
+[2023-04-23 13:47:29,729] {logging_mixin.py:115} WARNING -                                                             
+[2023-04-23 13:47:29,738] {projected_gradient_descent_pytorch.py:239} INFO - Success rate of attack: 65.48%
+[2023-04-23 13:47:29,750] {logging_mixin.py:115} INFO - This is the attack : <class 'art.attacks.evasion.iterative_method.BasicIterativeMethod'> and its HP : {'eps': 0.11862411427243494, 'eps_step': 0.8792604184754838}
+[2023-04-23 13:47:29,750] {projected_gradient_descent.py:199} INFO - Creating adversarial samples.
+[2023-04-23 13:47:29,753] {logging_mixin.py:115} WARNING - 
+[2023-04-23 13:47:29,754] {logging_mixin.py:115} WARNING - PGD - Batches:   0%|          | 0/7 [00:00<?, ?it/s]
+[2023-04-23 13:47:30,597] {logging_mixin.py:115} WARNING - PGD - Batches:  14%|#4        | 1/7 [00:00<00:05,  1.19it/s]
+[2023-04-23 13:47:32,087] {logging_mixin.py:115} WARNING - PGD - Batches:  29%|##8       | 2/7 [00:02<00:06,  1.22s/it]
+[2023-04-23 13:47:32,468] {logging_mixin.py:115} WARNING - PGD - Batches:  43%|####2     | 3/7 [00:02<00:03,  1.19it/s]
+[2023-04-23 13:47:32,777] {logging_mixin.py:115} WARNING - PGD - Batches:  57%|#####7    | 4/7 [00:03<00:01,  1.59it/s]
+[2023-04-23 13:47:33,166] {logging_mixin.py:115} WARNING - PGD - Batches:  71%|#######1  | 5/7 [00:03<00:01,  1.84it/s]
+[2023-04-23 13:47:33,990] {logging_mixin.py:115} WARNING - PGD - Batches:  86%|########5 | 6/7 [00:04<00:00,  1.57it/s]
+[2023-04-23 13:47:34,176] {logging_mixin.py:115} WARNING - PGD - Batches: 100%|##########| 7/7 [00:04<00:00,  2.04it/s]
+[2023-04-23 13:47:34,179] {logging_mixin.py:115} WARNING -                                                             
+[2023-04-23 13:47:34,196] {projected_gradient_descent_pytorch.py:239} INFO - Success rate of attack: 65.48%
+[2023-04-23 13:47:34,198] {logging_mixin.py:115} INFO - This is the attack : <class 'art.attacks.evasion.iterative_method.BasicIterativeMethod'> and its HP : {'eps': 0.8599965935149619, 'eps_step': 0.26083227103659945}
+[2023-04-23 13:47:34,199] {projected_gradient_descent.py:199} INFO - Creating adversarial samples.
+[2023-04-23 13:47:34,202] {logging_mixin.py:115} WARNING - 
+[2023-04-23 13:47:34,202] {logging_mixin.py:115} WARNING - PGD - Batches:   0%|          | 0/7 [00:00<?, ?it/s]
+[2023-04-23 13:47:34,575] {logging_mixin.py:115} WARNING - PGD - Batches:  14%|#4        | 1/7 [00:00<00:02,  2.69it/s]
+[2023-04-23 13:47:35,064] {logging_mixin.py:115} WARNING - PGD - Batches:  29%|##8       | 2/7 [00:00<00:02,  2.27it/s]
+[2023-04-23 13:47:35,205] {logging_mixin.py:115} WARNING - PGD - Batches:  43%|####2     | 3/7 [00:01<00:01,  3.29it/s]
+[2023-04-23 13:47:35,495] {logging_mixin.py:115} WARNING - PGD - Batches:  57%|#####7    | 4/7 [00:01<00:00,  3.35it/s]
+[2023-04-23 13:47:35,825] {logging_mixin.py:115} WARNING - PGD - Batches:  71%|#######1  | 5/7 [00:01<00:00,  3.23it/s]
+[2023-04-23 13:47:36,261] {logging_mixin.py:115} WARNING - PGD - Batches:  86%|########5 | 6/7 [00:02<00:00,  2.83it/s]
+[2023-04-23 13:47:37,183] {logging_mixin.py:115} WARNING - PGD - Batches: 100%|##########| 7/7 [00:02<00:00,  1.86it/s]
+[2023-04-23 13:47:37,184] {logging_mixin.py:115} WARNING -                                                             
+[2023-04-23 13:47:37,189] {projected_gradient_descent_pytorch.py:239} INFO - Success rate of attack: 65.48%
+[2023-04-23 13:47:37,193] {logging_mixin.py:115} INFO - This is the attack : <class 'art.attacks.evasion.iterative_method.BasicIterativeMethod'> and its HP : {'eps': 0.9366560447269571, 'eps_step': 0.20240816178425786}
+[2023-04-23 13:47:37,202] {projected_gradient_descent.py:199} INFO - Creating adversarial samples.
+[2023-04-23 13:47:37,243] {logging_mixin.py:115} WARNING - 
+[2023-04-23 13:47:37,243] {logging_mixin.py:115} WARNING - PGD - Batches:   0%|          | 0/7 [00:00<?, ?it/s]
+[2023-04-23 13:47:37,563] {logging_mixin.py:115} WARNING - PGD - Batches:  14%|#4        | 1/7 [00:00<00:01,  3.13it/s]
+[2023-04-23 13:47:38,053] {logging_mixin.py:115} WARNING - PGD - Batches:  29%|##8       | 2/7 [00:00<00:02,  2.38it/s]
+[2023-04-23 13:47:38,945] {logging_mixin.py:115} WARNING - PGD - Batches:  43%|####2     | 3/7 [00:01<00:02,  1.57it/s]
+[2023-04-23 13:47:39,428] {logging_mixin.py:115} WARNING - PGD - Batches:  57%|#####7    | 4/7 [00:02<00:01,  1.74it/s]
+[2023-04-23 13:47:40,007] {logging_mixin.py:115} WARNING - PGD - Batches:  71%|#######1  | 5/7 [00:02<00:01,  1.73it/s]
+[2023-04-23 13:47:40,211] {logging_mixin.py:115} WARNING - PGD - Batches:  86%|########5 | 6/7 [00:02<00:00,  2.22it/s]
+[2023-04-23 13:47:40,783] {logging_mixin.py:115} WARNING - PGD - Batches: 100%|##########| 7/7 [00:03<00:00,  2.04it/s]
+[2023-04-23 13:47:40,784] {logging_mixin.py:115} WARNING -                                                             
+[2023-04-23 13:47:40,789] {projected_gradient_descent_pytorch.py:239} INFO - Success rate of attack: 65.48%
+[2023-04-23 13:47:40,805] {logging_mixin.py:115} INFO - This is the attack : <class 'art.attacks.evasion.iterative_method.BasicIterativeMethod'> and its HP : {'eps': 0.2923073155542797, 'eps_step': 0.7294132250668289}
+[2023-04-23 13:47:40,805] {projected_gradient_descent.py:199} INFO - Creating adversarial samples.
+[2023-04-23 13:47:40,808] {logging_mixin.py:115} WARNING - 
+[2023-04-23 13:47:40,809] {logging_mixin.py:115} WARNING - PGD - Batches:   0%|          | 0/7 [00:00<?, ?it/s]
+[2023-04-23 13:47:42,092] {logging_mixin.py:115} WARNING - PGD - Batches:  14%|#4        | 1/7 [00:01<00:07,  1.28s/it]
+[2023-04-23 13:47:42,764] {logging_mixin.py:115} WARNING - PGD - Batches:  29%|##8       | 2/7 [00:01<00:04,  1.08it/s]
+[2023-04-23 13:47:42,886] {logging_mixin.py:115} WARNING - PGD - Batches:  43%|####2     | 3/7 [00:02<00:02,  1.79it/s]
+[2023-04-23 13:47:43,037] {logging_mixin.py:115} WARNING - PGD - Batches:  57%|#####7    | 4/7 [00:02<00:01,  2.52it/s]
+[2023-04-23 13:47:43,182] {logging_mixin.py:115} WARNING - PGD - Batches:  71%|#######1  | 5/7 [00:02<00:00,  3.27it/s]
+[2023-04-23 13:47:43,329] {logging_mixin.py:115} WARNING - PGD - Batches:  86%|########5 | 6/7 [00:02<00:00,  3.97it/s]
+[2023-04-23 13:47:43,445] {logging_mixin.py:115} WARNING - PGD - Batches: 100%|##########| 7/7 [00:02<00:00,  4.82it/s]
+[2023-04-23 13:47:43,446] {logging_mixin.py:115} WARNING -                                                             
+[2023-04-23 13:47:43,450] {projected_gradient_descent_pytorch.py:239} INFO - Success rate of attack: 65.48%
+[2023-04-23 13:47:43,453] {logging_mixin.py:115} INFO - This is the attack : <class 'art.attacks.evasion.iterative_method.BasicIterativeMethod'> and its HP : {'eps': 0.10436425443938976, 'eps_step': 0.1432299907427422}
+[2023-04-23 13:47:43,453] {projected_gradient_descent.py:199} INFO - Creating adversarial samples.
+[2023-04-23 13:47:43,456] {logging_mixin.py:115} WARNING - 
+[2023-04-23 13:47:43,457] {logging_mixin.py:115} WARNING - PGD - Batches:   0%|          | 0/7 [00:00<?, ?it/s]
+[2023-04-23 13:47:43,734] {logging_mixin.py:115} WARNING - PGD - Batches:  14%|#4        | 1/7 [00:00<00:01,  3.62it/s]
+[2023-04-23 13:47:44,047] {logging_mixin.py:115} WARNING - PGD - Batches:  29%|##8       | 2/7 [00:00<00:01,  3.35it/s]
+[2023-04-23 13:47:44,297] {logging_mixin.py:115} WARNING - PGD - Batches:  43%|####2     | 3/7 [00:00<00:01,  3.62it/s]
+[2023-04-23 13:47:44,592] {logging_mixin.py:115} WARNING - PGD - Batches:  57%|#####7    | 4/7 [00:01<00:00,  3.53it/s]
+[2023-04-23 13:47:44,768] {logging_mixin.py:115} WARNING - PGD - Batches:  71%|#######1  | 5/7 [00:01<00:00,  4.09it/s]
+[2023-04-23 13:47:45,064] {logging_mixin.py:115} WARNING - PGD - Batches:  86%|########5 | 6/7 [00:01<00:00,  3.81it/s]
+[2023-04-23 13:47:45,142] {logging_mixin.py:115} WARNING -                                                             
+[2023-04-23 13:47:45,146] {projected_gradient_descent_pytorch.py:239} INFO - Success rate of attack: 65.48%
+[2023-04-23 13:47:45,318] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/attack_dag.py", line 145, in attack_BasicIterativeMethod
+    model_acc, adversarial_examples  = attack(BasicIterativeMethod)
+  File "/opt/airflow/dags/attack_dag.py", line 228, in attack
+    optimized_attack = optimize_evasion_attack(attack_obj,estimator,x_test,y_test)
+  File "/opt/airflow/dags/attack_dag.py", line 207, in optimize_evasion_attack
+    optimized_attack = globals()[type(attack).__name__](classifier,**final_HP)
+KeyError: 'ABCMeta'
+[2023-04-23 13:47:45,331] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=multi_attack_dag, task_id=attack_BasicIterativeMethod, execution_date=20230423T134648, start_date=20230423T134705, end_date=20230423T134745
+[2023-04-23 13:47:45,374] {standard_task_runner.py:97} ERROR - Failed to execute job 6245 for task attack_BasicIterativeMethod ('ABCMeta'; 776)
+[2023-04-23 13:47:45,402] {local_task_job.py:156} INFO - Task exited with return code 1
+[2023-04-23 13:47:45,457] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

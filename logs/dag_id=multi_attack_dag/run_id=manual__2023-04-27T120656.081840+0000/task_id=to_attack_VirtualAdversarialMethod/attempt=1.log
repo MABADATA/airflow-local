@@ -1,0 +1,25 @@
+[2023-04-27 12:07:34,699] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.to_attack_VirtualAdversarialMethod manual__2023-04-27T12:06:56.081840+00:00 [queued]>
+[2023-04-27 12:07:34,781] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.to_attack_VirtualAdversarialMethod manual__2023-04-27T12:06:56.081840+00:00 [queued]>
+[2023-04-27 12:07:34,788] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-27 12:07:34,790] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2023-04-27 12:07:34,790] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-27 12:07:34,894] {taskinstance.py:1377} INFO - Executing <Task(BranchPythonOperator): to_attack_VirtualAdversarialMethod> on 2023-04-27 12:06:56.081840+00:00
+[2023-04-27 12:07:34,937] {standard_task_runner.py:52} INFO - Started process 3064 to run task
+[2023-04-27 12:07:34,988] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'multi_attack_dag', 'to_attack_VirtualAdversarialMethod', 'manual__2023-04-27T12:06:56.081840+00:00', '--job-id', '6757', '--raw', '--subdir', 'DAGS_FOLDER/attack_dag.py', '--cfg-path', '/tmp/tmpe0u3x29a', '--error-file', '/tmp/tmpj62dncbq']
+[2023-04-27 12:07:34,999] {standard_task_runner.py:80} INFO - Job 6757: Subtask to_attack_VirtualAdversarialMethod
+[2023-04-27 12:07:35,223] {task_command.py:369} INFO - Running <TaskInstance: multi_attack_dag.to_attack_VirtualAdversarialMethod manual__2023-04-27T12:06:56.081840+00:00 [running]> on host e7e31d5a6603
+[2023-04-27 12:07:35,599] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=multi_attack_dag
+AIRFLOW_CTX_TASK_ID=to_attack_VirtualAdversarialMethod
+AIRFLOW_CTX_EXECUTION_DATE=2023-04-27T12:06:56.081840+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-04-27T12:06:56.081840+00:00
+[2023-04-27 12:07:35,668] {python.py:173} INFO - Done. Returned value was: attack_VirtualAdversarialMethod
+[2023-04-27 12:07:35,669] {skipmixin.py:140} INFO - Following branch attack_VirtualAdversarialMethod
+[2023-04-27 12:07:35,672] {skipmixin.py:175} INFO - Skipping tasks ['default_attack']
+[2023-04-27 12:07:36,725] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=multi_attack_dag, task_id=to_attack_VirtualAdversarialMethod, execution_date=20230427T120656, start_date=20230427T120734, end_date=20230427T120736
+[2023-04-27 12:07:36,803] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-04-27 12:07:37,741] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

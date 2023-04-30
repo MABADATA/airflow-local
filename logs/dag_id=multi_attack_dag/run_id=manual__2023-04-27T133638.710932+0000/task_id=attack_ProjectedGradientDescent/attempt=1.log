@@ -1,0 +1,53 @@
+[2023-04-27 13:37:04,038] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.attack_ProjectedGradientDescent manual__2023-04-27T13:36:38.710932+00:00 [queued]>
+[2023-04-27 13:37:04,073] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.attack_ProjectedGradientDescent manual__2023-04-27T13:36:38.710932+00:00 [queued]>
+[2023-04-27 13:37:04,074] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-27 13:37:04,076] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2023-04-27 13:37:04,077] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-27 13:37:04,104] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): attack_ProjectedGradientDescent> on 2023-04-27 13:36:38.710932+00:00
+[2023-04-27 13:37:04,118] {standard_task_runner.py:52} INFO - Started process 763 to run task
+[2023-04-27 13:37:04,123] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'multi_attack_dag', 'attack_ProjectedGradientDescent', 'manual__2023-04-27T13:36:38.710932+00:00', '--job-id', '6963', '--raw', '--subdir', 'DAGS_FOLDER/attack_dag.py', '--cfg-path', '/tmp/tmp51pw_bso', '--error-file', '/tmp/tmpz9dtg0rw']
+[2023-04-27 13:37:04,126] {standard_task_runner.py:80} INFO - Job 6963: Subtask attack_ProjectedGradientDescent
+[2023-04-27 13:37:04,243] {task_command.py:369} INFO - Running <TaskInstance: multi_attack_dag.attack_ProjectedGradientDescent manual__2023-04-27T13:36:38.710932+00:00 [running]> on host e7e31d5a6603
+[2023-04-27 13:37:04,451] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=multi_attack_dag
+AIRFLOW_CTX_TASK_ID=attack_ProjectedGradientDescent
+AIRFLOW_CTX_EXECUTION_DATE=2023-04-27T13:36:38.710932+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-04-27T13:36:38.710932+00:00
+[2023-04-27 13:37:04,458] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-04-27 13:37:04,472] {client.py:777} INFO - Refreshing access_token
+[2023-04-27 13:37:05,283] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-04-27 13:37:05,285] {client.py:777} INFO - Refreshing access_token
+[2023-04-27 13:37:23,196] {pytorch.py:1198} INFO - Inferred 5 hidden layers on PyTorch classifier.
+[2023-04-27 13:38:34,024] {attack.py:34} INFO - Optimizing...
+[2023-04-27 13:38:34,025] {logging_mixin.py:115} INFO - I am right here on <class 'art.attacks.evasion.projected_gradient_descent.projected_gradient_descent.ProjectedGradientDescent'>
+[2023-04-27 13:38:34,034] {logging_mixin.py:115} INFO - <function optimize_evasion_attack.<locals>.<lambda> at 0x7f00ea869950>
+[2023-04-27 13:38:34,082] {logging_mixin.py:115} INFO - This is the attack : <class 'art.attacks.evasion.projected_gradient_descent.projected_gradient_descent.ProjectedGradientDescent'> and its HP : {'eps': 0.5822872573987755, 'random_eps': True}
+[2023-04-27 13:38:34,083] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/attack.py", line 213, in attack_ProjectedGradientDescent
+    model_acc,adversarial_examples = attack(ProjectedGradientDescent)
+  File "/opt/airflow/dags/attack.py", line 36, in attack
+    optimized_attack = optimize_evasion_attack(attack_obj,estimator,x_test,y_test)
+  File "/opt/airflow/dags/attack_helpers.py", line 47, in optimize_evasion_attack
+    result = gp_minimize(func, search_space, n_calls=10)
+  File "/home/airflow/.local/lib/python3.7/site-packages/skopt/optimizer/gp.py", line 268, in gp_minimize
+    callback=callback, n_jobs=n_jobs, model_queue_size=model_queue_size)
+  File "/home/airflow/.local/lib/python3.7/site-packages/skopt/optimizer/base.py", line 299, in base_minimize
+    next_y = func(next_x)
+  File "/opt/airflow/dags/attack_helpers.py", line 45, in <lambda>
+    func = lambda params: _optimize(attack, params,classifier=classifier,data=data,true_labels=true_labels)
+  File "/opt/airflow/dags/attack_helpers.py", line 35, in _optimize
+    attack_to_optimize = globals()[attack.__name__](classifier, **HP)
+KeyError: 'ProjectedGradientDescent'
+[2023-04-27 13:38:34,137] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=multi_attack_dag, task_id=attack_ProjectedGradientDescent, execution_date=20230427T133638, start_date=20230427T133704, end_date=20230427T133834
+[2023-04-27 13:38:34,169] {standard_task_runner.py:97} ERROR - Failed to execute job 6963 for task attack_ProjectedGradientDescent ('ProjectedGradientDescent'; 763)
+[2023-04-27 13:38:34,236] {local_task_job.py:156} INFO - Task exited with return code 1
+[2023-04-27 13:38:34,308] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

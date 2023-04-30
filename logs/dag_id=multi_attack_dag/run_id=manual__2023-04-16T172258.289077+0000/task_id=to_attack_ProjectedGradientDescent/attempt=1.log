@@ -1,0 +1,25 @@
+[2023-04-16 17:24:00,133] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.to_attack_ProjectedGradientDescent manual__2023-04-16T17:22:58.289077+00:00 [queued]>
+[2023-04-16 17:24:00,194] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.to_attack_ProjectedGradientDescent manual__2023-04-16T17:22:58.289077+00:00 [queued]>
+[2023-04-16 17:24:00,202] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-16 17:24:00,203] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2023-04-16 17:24:00,204] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-16 17:24:00,364] {taskinstance.py:1377} INFO - Executing <Task(BranchPythonOperator): to_attack_ProjectedGradientDescent> on 2023-04-16 17:22:58.289077+00:00
+[2023-04-16 17:24:00,483] {standard_task_runner.py:52} INFO - Started process 184 to run task
+[2023-04-16 17:24:00,544] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'multi_attack_dag', 'to_attack_ProjectedGradientDescent', 'manual__2023-04-16T17:22:58.289077+00:00', '--job-id', '5358', '--raw', '--subdir', 'DAGS_FOLDER/attack_dag.py', '--cfg-path', '/tmp/tmpvv6qwa3z', '--error-file', '/tmp/tmpopviad02']
+[2023-04-16 17:24:00,564] {standard_task_runner.py:80} INFO - Job 5358: Subtask to_attack_ProjectedGradientDescent
+[2023-04-16 17:24:00,994] {task_command.py:369} INFO - Running <TaskInstance: multi_attack_dag.to_attack_ProjectedGradientDescent manual__2023-04-16T17:22:58.289077+00:00 [running]> on host 6c1ce3ac9ba0
+[2023-04-16 17:24:01,883] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=multi_attack_dag
+AIRFLOW_CTX_TASK_ID=to_attack_ProjectedGradientDescent
+AIRFLOW_CTX_EXECUTION_DATE=2023-04-16T17:22:58.289077+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-04-16T17:22:58.289077+00:00
+[2023-04-16 17:24:02,002] {python.py:173} INFO - Done. Returned value was: attack_ProjectedGradientDescent
+[2023-04-16 17:24:02,012] {skipmixin.py:140} INFO - Following branch attack_ProjectedGradientDescent
+[2023-04-16 17:24:02,013] {skipmixin.py:175} INFO - Skipping tasks ['default']
+[2023-04-16 17:24:02,454] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=multi_attack_dag, task_id=to_attack_ProjectedGradientDescent, execution_date=20230416T172258, start_date=20230416T172400, end_date=20230416T172402
+[2023-04-16 17:24:02,624] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-04-16 17:24:03,312] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

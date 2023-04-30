@@ -1,0 +1,22 @@
+[2023-03-28 10:25:31,956] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: defence_dag2.trigger_offence manual__2023-03-28T10:25:21.604432+00:00 [queued]>
+[2023-03-28 10:25:31,965] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: defence_dag2.trigger_offence manual__2023-03-28T10:25:21.604432+00:00 [queued]>
+[2023-03-28 10:25:31,966] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-28 10:25:31,971] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2023-03-28 10:25:31,972] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-28 10:25:31,984] {taskinstance.py:1377} INFO - Executing <Task(TriggerDagRunOperator): trigger_offence> on 2023-03-28 10:25:21.604432+00:00
+[2023-03-28 10:25:31,991] {standard_task_runner.py:52} INFO - Started process 1738 to run task
+[2023-03-28 10:25:31,993] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'defence_dag2', 'trigger_offence', 'manual__2023-03-28T10:25:21.604432+00:00', '--job-id', '4177', '--raw', '--subdir', 'DAGS_FOLDER/defese.py', '--cfg-path', '/tmp/tmps2v01c0s', '--error-file', '/tmp/tmp7qrjo3cw']
+[2023-03-28 10:25:31,994] {standard_task_runner.py:80} INFO - Job 4177: Subtask trigger_offence
+[2023-03-28 10:25:32,048] {task_command.py:369} INFO - Running <TaskInstance: defence_dag2.trigger_offence manual__2023-03-28T10:25:21.604432+00:00 [running]> on host 70f8824ef075
+[2023-03-28 10:25:32,116] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=defence_dag2
+AIRFLOW_CTX_TASK_ID=trigger_offence
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-28T10:25:21.604432+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-03-28T10:25:21.604432+00:00
+[2023-03-28 10:25:32,657] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=defence_dag2, task_id=trigger_offence, execution_date=20230328T102521, start_date=20230328T102531, end_date=20230328T102532
+[2023-03-28 10:25:32,690] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-03-28 10:25:32,736] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

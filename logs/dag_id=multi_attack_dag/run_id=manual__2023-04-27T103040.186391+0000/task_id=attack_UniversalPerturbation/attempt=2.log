@@ -1,0 +1,281 @@
+[2023-04-27 10:38:59,507] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.attack_UniversalPerturbation manual__2023-04-27T10:30:40.186391+00:00 [queued]>
+[2023-04-27 10:38:59,607] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.attack_UniversalPerturbation manual__2023-04-27T10:30:40.186391+00:00 [queued]>
+[2023-04-27 10:38:59,607] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-27 10:38:59,608] {taskinstance.py:1357} INFO - Starting attempt 2 of 2
+[2023-04-27 10:38:59,609] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-27 10:38:59,816] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): attack_UniversalPerturbation> on 2023-04-27 10:30:40.186391+00:00
+[2023-04-27 10:38:59,904] {standard_task_runner.py:52} INFO - Started process 5683 to run task
+[2023-04-27 10:38:59,956] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'multi_attack_dag', 'attack_UniversalPerturbation', 'manual__2023-04-27T10:30:40.186391+00:00', '--job-id', '6642', '--raw', '--subdir', 'DAGS_FOLDER/attack_dag.py', '--cfg-path', '/tmp/tmpmg7ecrpl', '--error-file', '/tmp/tmpavacx0p1']
+[2023-04-27 10:38:59,988] {standard_task_runner.py:80} INFO - Job 6642: Subtask attack_UniversalPerturbation
+[2023-04-27 10:39:00,635] {task_command.py:369} INFO - Running <TaskInstance: multi_attack_dag.attack_UniversalPerturbation manual__2023-04-27T10:30:40.186391+00:00 [running]> on host e7e31d5a6603
+[2023-04-27 10:39:01,370] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=multi_attack_dag
+AIRFLOW_CTX_TASK_ID=attack_UniversalPerturbation
+AIRFLOW_CTX_EXECUTION_DATE=2023-04-27T10:30:40.186391+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-04-27T10:30:40.186391+00:00
+[2023-04-27 10:39:01,456] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-04-27 10:39:01,511] {client.py:777} INFO - Refreshing access_token
+[2023-04-27 10:39:02,308] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-04-27 10:39:02,317] {client.py:777} INFO - Refreshing access_token
+[2023-04-27 10:39:28,503] {pytorch.py:1198} INFO - Inferred 5 hidden layers on PyTorch classifier.
+[2023-04-27 10:43:21,385] {attack_dag.py:643} INFO - Optimizing...
+[2023-04-27 10:43:21,416] {logging_mixin.py:115} INFO - I am right here on <class 'art.attacks.evasion.universal_perturbation.UniversalPerturbation'>
+[2023-04-27 10:43:21,419] {logging_mixin.py:115} INFO - <function optimize_evasion_attack.<locals>.<lambda> at 0x7fdd0ebea050>
+[2023-04-27 10:43:21,472] {logging_mixin.py:115} INFO - This is the attack : <class 'art.attacks.evasion.universal_perturbation.UniversalPerturbation'> and its HP : {'attacker': 'deepfool', 'delta': 0.4338458543354674}
+[2023-04-27 10:43:21,495] {universal_perturbation.py:154} INFO - Computing universal perturbation based on deepfool attack.
+[2023-04-27 10:43:21,502] {universal_perturbation.py:161} INFO - Using model predictions as true labels.
+[2023-04-27 10:43:21,870] {deepfool.py:88} WARNING - The `clip_values` attribute of the estimator is `None`, therefore this instance of DeepFool will by default generate adversarial perturbations scaled for input values in the range [0, 1] but not clip the adversarial example.
+[2023-04-27 10:43:21,899] {logging_mixin.py:115} WARNING - Universal perturbation:   0%|          | 0/20 [00:00<?, ?it/s]
+[2023-04-27 10:43:21,904] {deepfool.py:111} WARNING - It seems that the attacked model is predicting probabilities. DeepFool expects logits as model output to achieve its full attack strength.
+[2023-04-27 10:43:21,919] {logging_mixin.py:115} WARNING - DeepFool:   0%|          | 0/1 [00:00<?, ?it/s]
+[2023-04-27 10:43:21,922] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:43:37,040] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:15<00:00, 15.12s/it]
+[2023-04-27 10:43:37,042] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:43:37,056] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:15<00:00, 15.13s/it]
+[2023-04-27 10:43:37,062] {deepfool.py:111} WARNING - It seems that the attacked model is predicting probabilities. DeepFool expects logits as model output to achieve its full attack strength.
+[2023-04-27 10:43:37,064] {logging_mixin.py:115} WARNING - DeepFool:   0%|          | 0/1 [00:00<?, ?it/s]
+[2023-04-27 10:43:37,089] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:43:53,623] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:16<00:00, 16.53s/it]
+[2023-04-27 10:43:53,635] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:43:53,641] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:16<00:00, 16.54s/it]
+[2023-04-27 10:43:53,662] {deepfool.py:111} WARNING - It seems that the attacked model is predicting probabilities. DeepFool expects logits as model output to achieve its full attack strength.
+[2023-04-27 10:43:53,690] {logging_mixin.py:115} WARNING - DeepFool:   0%|          | 0/1 [00:00<?, ?it/s]
+[2023-04-27 10:43:53,702] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:44:13,609] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:19<00:00, 19.90s/it]
+[2023-04-27 10:44:13,610] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:44:13,612] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:19<00:00, 19.90s/it]
+[2023-04-27 10:44:13,618] {deepfool.py:111} WARNING - It seems that the attacked model is predicting probabilities. DeepFool expects logits as model output to achieve its full attack strength.
+[2023-04-27 10:44:13,650] {logging_mixin.py:115} WARNING - DeepFool:   0%|          | 0/1 [00:00<?, ?it/s]
+[2023-04-27 10:44:13,699] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:44:37,539] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:23<00:00, 23.83s/it]
+[2023-04-27 10:44:37,540] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:44:37,540] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:23<00:00, 23.84s/it]
+[2023-04-27 10:44:37,543] {deepfool.py:111} WARNING - It seems that the attacked model is predicting probabilities. DeepFool expects logits as model output to achieve its full attack strength.
+[2023-04-27 10:44:37,555] {logging_mixin.py:115} WARNING - DeepFool:   0%|          | 0/1 [00:00<?, ?it/s]
+[2023-04-27 10:44:37,557] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:44:59,959] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:22<00:00, 22.40s/it]
+[2023-04-27 10:44:59,969] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:44:59,971] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:22<00:00, 22.41s/it]
+[2023-04-27 10:44:59,981] {deepfool.py:111} WARNING - It seems that the attacked model is predicting probabilities. DeepFool expects logits as model output to achieve its full attack strength.
+[2023-04-27 10:44:59,991] {logging_mixin.py:115} WARNING - DeepFool:   0%|          | 0/1 [00:00<?, ?it/s]
+[2023-04-27 10:44:59,995] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:45:04,410] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:04<00:00,  4.41s/it]
+[2023-04-27 10:45:04,418] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:45:04,418] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:04<00:00,  4.42s/it]
+[2023-04-27 10:45:04,431] {deepfool.py:111} WARNING - It seems that the attacked model is predicting probabilities. DeepFool expects logits as model output to achieve its full attack strength.
+[2023-04-27 10:45:04,480] {logging_mixin.py:115} WARNING - DeepFool:   0%|          | 0/1 [00:00<?, ?it/s]
+[2023-04-27 10:45:04,481] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:45:34,980] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:30<00:00, 30.50s/it]
+[2023-04-27 10:45:34,981] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:45:34,981] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:30<00:00, 30.50s/it]
+[2023-04-27 10:45:34,984] {deepfool.py:111} WARNING - It seems that the attacked model is predicting probabilities. DeepFool expects logits as model output to achieve its full attack strength.
+[2023-04-27 10:45:34,991] {logging_mixin.py:115} WARNING - DeepFool:   0%|          | 0/1 [00:00<?, ?it/s]
+[2023-04-27 10:45:34,993] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:45:55,800] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:20<00:00, 20.81s/it]
+[2023-04-27 10:45:55,800] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:45:55,801] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:20<00:00, 20.81s/it]
+[2023-04-27 10:45:55,803] {deepfool.py:111} WARNING - It seems that the attacked model is predicting probabilities. DeepFool expects logits as model output to achieve its full attack strength.
+[2023-04-27 10:45:55,804] {logging_mixin.py:115} WARNING - DeepFool:   0%|          | 0/1 [00:00<?, ?it/s]
+[2023-04-27 10:45:55,819] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:45:56,280] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:00<00:00,  2.17it/s]
+[2023-04-27 10:45:56,286] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:45:56,289] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:00<00:00,  2.13it/s]
+[2023-04-27 10:45:56,297] {deepfool.py:111} WARNING - It seems that the attacked model is predicting probabilities. DeepFool expects logits as model output to achieve its full attack strength.
+[2023-04-27 10:45:56,311] {logging_mixin.py:115} WARNING - DeepFool:   0%|          | 0/1 [00:00<?, ?it/s]
+[2023-04-27 10:45:56,326] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:46:18,264] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:21<00:00, 21.93s/it]
+[2023-04-27 10:46:18,284] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:46:18,285] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:21<00:00, 21.96s/it]
+[2023-04-27 10:46:18,337] {deepfool.py:111} WARNING - It seems that the attacked model is predicting probabilities. DeepFool expects logits as model output to achieve its full attack strength.
+[2023-04-27 10:46:18,372] {logging_mixin.py:115} WARNING - DeepFool:   0%|          | 0/1 [00:00<?, ?it/s]
+[2023-04-27 10:46:18,373] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:46:49,520] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:31<00:00, 31.15s/it]
+[2023-04-27 10:46:49,520] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:46:49,521] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:31<00:00, 31.15s/it]
+[2023-04-27 10:46:49,526] {deepfool.py:111} WARNING - It seems that the attacked model is predicting probabilities. DeepFool expects logits as model output to achieve its full attack strength.
+[2023-04-27 10:46:49,565] {logging_mixin.py:115} WARNING - DeepFool:   0%|          | 0/1 [00:00<?, ?it/s]
+[2023-04-27 10:46:49,572] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:47:10,939] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:21<00:00, 21.37s/it]
+[2023-04-27 10:47:10,964] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:47:10,969] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:21<00:00, 21.40s/it]
+[2023-04-27 10:47:10,972] {deepfool.py:111} WARNING - It seems that the attacked model is predicting probabilities. DeepFool expects logits as model output to achieve its full attack strength.
+[2023-04-27 10:47:11,009] {logging_mixin.py:115} WARNING - DeepFool:   0%|          | 0/1 [00:00<?, ?it/s]
+[2023-04-27 10:47:11,010] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:47:38,998] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:27<00:00, 27.98s/it]
+[2023-04-27 10:47:39,101] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:47:39,117] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:28<00:00, 28.10s/it]
+[2023-04-27 10:47:39,131] {deepfool.py:111} WARNING - It seems that the attacked model is predicting probabilities. DeepFool expects logits as model output to achieve its full attack strength.
+[2023-04-27 10:47:39,198] {logging_mixin.py:115} WARNING - DeepFool:   0%|          | 0/1 [00:00<?, ?it/s]
+[2023-04-27 10:47:39,199] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:47:58,825] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:19<00:00, 19.63s/it]
+[2023-04-27 10:47:58,833] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:47:58,841] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:19<00:00, 19.64s/it]
+[2023-04-27 10:47:58,842] {deepfool.py:111} WARNING - It seems that the attacked model is predicting probabilities. DeepFool expects logits as model output to achieve its full attack strength.
+[2023-04-27 10:47:58,843] {logging_mixin.py:115} WARNING - DeepFool:   0%|          | 0/1 [00:00<?, ?it/s]
+[2023-04-27 10:47:58,844] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:48:25,673] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:26<00:00, 26.83s/it]
+[2023-04-27 10:48:25,685] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:48:25,686] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:26<00:00, 26.84s/it]
+[2023-04-27 10:48:25,736] {deepfool.py:111} WARNING - It seems that the attacked model is predicting probabilities. DeepFool expects logits as model output to achieve its full attack strength.
+[2023-04-27 10:48:25,739] {logging_mixin.py:115} WARNING - DeepFool:   0%|          | 0/1 [00:00<?, ?it/s]
+[2023-04-27 10:48:25,747] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:48:51,231] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:25<00:00, 25.48s/it]
+[2023-04-27 10:48:51,258] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:48:51,289] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:25<00:00, 25.54s/it]
+[2023-04-27 10:48:51,300] {deepfool.py:111} WARNING - It seems that the attacked model is predicting probabilities. DeepFool expects logits as model output to achieve its full attack strength.
+[2023-04-27 10:48:51,307] {logging_mixin.py:115} WARNING - DeepFool:   0%|          | 0/1 [00:00<?, ?it/s]
+[2023-04-27 10:48:51,307] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:49:09,537] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:18<00:00, 18.22s/it]
+[2023-04-27 10:49:09,548] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:49:09,549] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:18<00:00, 18.23s/it]
+[2023-04-27 10:49:09,552] {deepfool.py:111} WARNING - It seems that the attacked model is predicting probabilities. DeepFool expects logits as model output to achieve its full attack strength.
+[2023-04-27 10:49:09,559] {logging_mixin.py:115} WARNING - DeepFool:   0%|          | 0/1 [00:00<?, ?it/s]
+[2023-04-27 10:49:09,560] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:49:22,790] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:13<00:00, 13.23s/it]
+[2023-04-27 10:49:22,799] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:49:22,800] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:13<00:00, 13.24s/it]
+[2023-04-27 10:49:22,801] {deepfool.py:111} WARNING - It seems that the attacked model is predicting probabilities. DeepFool expects logits as model output to achieve its full attack strength.
+[2023-04-27 10:49:22,802] {logging_mixin.py:115} WARNING - DeepFool:   0%|          | 0/1 [00:00<?, ?it/s]
+[2023-04-27 10:49:22,802] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:49:33,781] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:10<00:00, 10.98s/it]
+[2023-04-27 10:49:33,783] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:49:33,785] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:10<00:00, 10.98s/it]
+[2023-04-27 10:49:33,789] {deepfool.py:111} WARNING - It seems that the attacked model is predicting probabilities. DeepFool expects logits as model output to achieve its full attack strength.
+[2023-04-27 10:49:33,795] {logging_mixin.py:115} WARNING - DeepFool:   0%|          | 0/1 [00:00<?, ?it/s]
+[2023-04-27 10:49:33,795] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:49:38,859] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:05<00:00,  5.06s/it]
+[2023-04-27 10:49:38,876] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:49:38,877] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:05<00:00,  5.08s/it]
+[2023-04-27 10:49:38,879] {deepfool.py:111} WARNING - It seems that the attacked model is predicting probabilities. DeepFool expects logits as model output to achieve its full attack strength.
+[2023-04-27 10:49:38,889] {logging_mixin.py:115} WARNING - DeepFool:   0%|          | 0/1 [00:00<?, ?it/s]
+[2023-04-27 10:49:38,889] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:49:47,359] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:08<00:00,  8.47s/it]
+[2023-04-27 10:49:47,367] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:49:47,368] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:08<00:00,  8.48s/it]
+[2023-04-27 10:49:47,373] {deepfool.py:111} WARNING - It seems that the attacked model is predicting probabilities. DeepFool expects logits as model output to achieve its full attack strength.
+[2023-04-27 10:49:47,379] {logging_mixin.py:115} WARNING - DeepFool:   0%|          | 0/1 [00:00<?, ?it/s]
+[2023-04-27 10:49:47,380] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:49:54,721] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:07<00:00,  7.34s/it]
+[2023-04-27 10:49:54,725] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:49:54,726] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:07<00:00,  7.35s/it]
+[2023-04-27 10:49:54,728] {deepfool.py:111} WARNING - It seems that the attacked model is predicting probabilities. DeepFool expects logits as model output to achieve its full attack strength.
+[2023-04-27 10:49:54,736] {logging_mixin.py:115} WARNING - DeepFool:   0%|          | 0/1 [00:00<?, ?it/s]
+[2023-04-27 10:49:54,736] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:49:58,481] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:03<00:00,  3.74s/it]
+[2023-04-27 10:49:58,481] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:49:58,482] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:03<00:00,  3.75s/it]
+[2023-04-27 10:49:58,484] {deepfool.py:111} WARNING - It seems that the attacked model is predicting probabilities. DeepFool expects logits as model output to achieve its full attack strength.
+[2023-04-27 10:49:58,488] {logging_mixin.py:115} WARNING - DeepFool:   0%|          | 0/1 [00:00<?, ?it/s]
+[2023-04-27 10:49:58,489] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:50:06,165] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:07<00:00,  7.68s/it]
+[2023-04-27 10:50:06,208] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:50:06,217] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:07<00:00,  7.73s/it]
+[2023-04-27 10:50:06,221] {deepfool.py:111} WARNING - It seems that the attacked model is predicting probabilities. DeepFool expects logits as model output to achieve its full attack strength.
+[2023-04-27 10:50:06,236] {logging_mixin.py:115} WARNING - DeepFool:   0%|          | 0/1 [00:00<?, ?it/s]
+[2023-04-27 10:50:06,236] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:50:12,959] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:06<00:00,  6.72s/it]
+[2023-04-27 10:50:12,968] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:50:12,969] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:06<00:00,  6.73s/it]
+[2023-04-27 10:50:12,974] {deepfool.py:111} WARNING - It seems that the attacked model is predicting probabilities. DeepFool expects logits as model output to achieve its full attack strength.
+[2023-04-27 10:50:12,974] {logging_mixin.py:115} WARNING - DeepFool:   0%|          | 0/1 [00:00<?, ?it/s]
+[2023-04-27 10:50:12,975] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:50:20,370] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:07<00:00,  7.39s/it]
+[2023-04-27 10:50:20,379] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:50:20,389] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:07<00:00,  7.41s/it]
+[2023-04-27 10:50:20,412] {deepfool.py:111} WARNING - It seems that the attacked model is predicting probabilities. DeepFool expects logits as model output to achieve its full attack strength.
+[2023-04-27 10:50:20,413] {logging_mixin.py:115} WARNING - DeepFool:   0%|          | 0/1 [00:00<?, ?it/s]
+[2023-04-27 10:50:20,413] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:50:28,400] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:07<00:00,  7.99s/it]
+[2023-04-27 10:50:28,409] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:50:28,419] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:08<00:00,  8.00s/it]
+[2023-04-27 10:50:28,421] {deepfool.py:111} WARNING - It seems that the attacked model is predicting probabilities. DeepFool expects logits as model output to achieve its full attack strength.
+[2023-04-27 10:50:28,421] {logging_mixin.py:115} WARNING - DeepFool:   0%|          | 0/1 [00:00<?, ?it/s]
+[2023-04-27 10:50:28,422] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:50:35,690] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:07<00:00,  7.27s/it]
+[2023-04-27 10:50:35,690] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:50:35,691] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:07<00:00,  7.27s/it]
+[2023-04-27 10:50:35,719] {deepfool.py:111} WARNING - It seems that the attacked model is predicting probabilities. DeepFool expects logits as model output to achieve its full attack strength.
+[2023-04-27 10:50:35,720] {logging_mixin.py:115} WARNING - DeepFool:   0%|          | 0/1 [00:00<?, ?it/s]
+[2023-04-27 10:50:35,720] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:50:44,970] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:09<00:00,  9.25s/it]
+[2023-04-27 10:50:44,979] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:50:44,980] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:09<00:00,  9.26s/it]
+[2023-04-27 10:50:44,982] {deepfool.py:111} WARNING - It seems that the attacked model is predicting probabilities. DeepFool expects logits as model output to achieve its full attack strength.
+[2023-04-27 10:50:44,983] {logging_mixin.py:115} WARNING - DeepFool:   0%|          | 0/1 [00:00<?, ?it/s]
+[2023-04-27 10:50:44,983] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:50:51,068] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:06<00:00,  6.08s/it]
+[2023-04-27 10:50:51,069] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:50:51,070] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:06<00:00,  6.09s/it]
+[2023-04-27 10:50:51,072] {deepfool.py:111} WARNING - It seems that the attacked model is predicting probabilities. DeepFool expects logits as model output to achieve its full attack strength.
+[2023-04-27 10:50:51,073] {logging_mixin.py:115} WARNING - DeepFool:   0%|          | 0/1 [00:00<?, ?it/s]
+[2023-04-27 10:50:51,073] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:50:57,227] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:06<00:00,  6.15s/it]
+[2023-04-27 10:50:57,228] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:50:57,249] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:06<00:00,  6.17s/it]
+[2023-04-27 10:50:57,252] {deepfool.py:111} WARNING - It seems that the attacked model is predicting probabilities. DeepFool expects logits as model output to achieve its full attack strength.
+[2023-04-27 10:50:57,258] {logging_mixin.py:115} WARNING - DeepFool:   0%|          | 0/1 [00:00<?, ?it/s]
+[2023-04-27 10:50:57,269] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:51:03,870] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:06<00:00,  6.59s/it]
+[2023-04-27 10:51:03,870] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:51:03,871] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:06<00:00,  6.59s/it]
+[2023-04-27 10:51:03,873] {deepfool.py:111} WARNING - It seems that the attacked model is predicting probabilities. DeepFool expects logits as model output to achieve its full attack strength.
+[2023-04-27 10:51:03,874] {logging_mixin.py:115} WARNING - DeepFool:   0%|          | 0/1 [00:00<?, ?it/s]
+[2023-04-27 10:51:03,874] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:51:09,559] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:05<00:00,  5.68s/it]
+[2023-04-27 10:51:09,560] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:51:09,560] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:05<00:00,  5.69s/it]
+[2023-04-27 10:51:09,565] {deepfool.py:111} WARNING - It seems that the attacked model is predicting probabilities. DeepFool expects logits as model output to achieve its full attack strength.
+[2023-04-27 10:51:09,566] {logging_mixin.py:115} WARNING - DeepFool:   0%|          | 0/1 [00:00<?, ?it/s]
+[2023-04-27 10:51:09,566] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:51:15,987] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:06<00:00,  6.42s/it]
+[2023-04-27 10:51:15,988] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:51:15,988] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:06<00:00,  6.42s/it]
+[2023-04-27 10:51:16,003] {deepfool.py:111} WARNING - It seems that the attacked model is predicting probabilities. DeepFool expects logits as model output to achieve its full attack strength.
+[2023-04-27 10:51:16,005] {logging_mixin.py:115} WARNING - DeepFool:   0%|          | 0/1 [00:00<?, ?it/s]
+[2023-04-27 10:51:16,005] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:51:24,142] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:08<00:00,  8.14s/it]
+[2023-04-27 10:51:24,156] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:51:24,157] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:08<00:00,  8.15s/it]
+[2023-04-27 10:51:24,160] {deepfool.py:111} WARNING - It seems that the attacked model is predicting probabilities. DeepFool expects logits as model output to achieve its full attack strength.
+[2023-04-27 10:51:24,169] {logging_mixin.py:115} WARNING - DeepFool:   0%|          | 0/1 [00:00<?, ?it/s]
+[2023-04-27 10:51:24,187] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:51:31,323] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:07<00:00,  7.14s/it]
+[2023-04-27 10:51:31,324] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:51:31,325] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:07<00:00,  7.14s/it]
+[2023-04-27 10:51:31,326] {deepfool.py:111} WARNING - It seems that the attacked model is predicting probabilities. DeepFool expects logits as model output to achieve its full attack strength.
+[2023-04-27 10:51:31,327] {logging_mixin.py:115} WARNING - DeepFool:   0%|          | 0/1 [00:00<?, ?it/s]
+[2023-04-27 10:51:31,327] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:51:38,499] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:07<00:00,  7.17s/it]
+[2023-04-27 10:51:38,499] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:51:38,500] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:07<00:00,  7.17s/it]
+[2023-04-27 10:51:38,502] {deepfool.py:111} WARNING - It seems that the attacked model is predicting probabilities. DeepFool expects logits as model output to achieve its full attack strength.
+[2023-04-27 10:51:38,509] {logging_mixin.py:115} WARNING - DeepFool:   0%|          | 0/1 [00:00<?, ?it/s]
+[2023-04-27 10:51:38,510] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:51:47,721] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:09<00:00,  9.21s/it]
+[2023-04-27 10:51:47,725] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:51:47,767] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:09<00:00,  9.22s/it]
+[2023-04-27 10:51:47,771] {deepfool.py:111} WARNING - It seems that the attacked model is predicting probabilities. DeepFool expects logits as model output to achieve its full attack strength.
+[2023-04-27 10:51:47,785] {logging_mixin.py:115} WARNING - DeepFool:   0%|          | 0/1 [00:00<?, ?it/s]
+[2023-04-27 10:51:47,799] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:51:54,949] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:07<00:00,  7.15s/it]
+[2023-04-27 10:51:54,949] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:51:54,950] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:07<00:00,  7.15s/it]
+[2023-04-27 10:51:54,952] {deepfool.py:111} WARNING - It seems that the attacked model is predicting probabilities. DeepFool expects logits as model output to achieve its full attack strength.
+[2023-04-27 10:51:54,959] {logging_mixin.py:115} WARNING - DeepFool:   0%|          | 0/1 [00:00<?, ?it/s]
+[2023-04-27 10:51:54,968] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:52:02,004] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:07<00:00,  7.04s/it]
+[2023-04-27 10:52:02,004] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:52:02,005] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:07<00:00,  7.04s/it]
+[2023-04-27 10:52:02,007] {deepfool.py:111} WARNING - It seems that the attacked model is predicting probabilities. DeepFool expects logits as model output to achieve its full attack strength.
+[2023-04-27 10:52:02,008] {logging_mixin.py:115} WARNING - DeepFool:   0%|          | 0/1 [00:00<?, ?it/s]
+[2023-04-27 10:52:02,009] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:52:07,407] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:05<00:00,  5.40s/it]
+[2023-04-27 10:52:07,449] {logging_mixin.py:115} WARNING - 
+[2023-04-27 10:52:07,454] {logging_mixin.py:115} WARNING - DeepFool: 100%|##########| 1/1 [00:05<00:00,  5.44s/it]
+[2023-04-27 10:52:07,545] {deepfool.py:111} WARNING - It seems that the attacked model is predicting probabilities. DeepFool expects logits as model output to achieve its full attack strength.
+[2023-04-27 10:52:07,555] {logging_mixin.py:115} WARNING - DeepFool:   0%|          | 0/1 [00:00<?, ?it/s]
+[2023-04-27 10:52:07,556] {logging_mixin.py:115} WARNING - 

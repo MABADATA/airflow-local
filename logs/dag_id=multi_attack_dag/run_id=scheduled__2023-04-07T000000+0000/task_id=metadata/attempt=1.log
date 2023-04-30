@@ -1,0 +1,46 @@
+[2023-04-08 11:15:53,587] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.metadata scheduled__2023-04-07T00:00:00+00:00 [queued]>
+[2023-04-08 11:15:53,607] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.metadata scheduled__2023-04-07T00:00:00+00:00 [queued]>
+[2023-04-08 11:15:53,608] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-08 11:15:53,609] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2023-04-08 11:15:53,610] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-08 11:15:53,639] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): metadata> on 2023-04-07 00:00:00+00:00
+[2023-04-08 11:15:53,653] {standard_task_runner.py:52} INFO - Started process 1350 to run task
+[2023-04-08 11:15:53,659] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'multi_attack_dag', 'metadata', 'scheduled__2023-04-07T00:00:00+00:00', '--job-id', '4639', '--raw', '--subdir', 'DAGS_FOLDER/sklearn_attack_dag.py', '--cfg-path', '/tmp/tmp1sx2h0jm', '--error-file', '/tmp/tmp39pjrk7w']
+[2023-04-08 11:15:53,662] {standard_task_runner.py:80} INFO - Job 4639: Subtask metadata
+[2023-04-08 11:15:53,772] {task_command.py:369} INFO - Running <TaskInstance: multi_attack_dag.metadata scheduled__2023-04-07T00:00:00+00:00 [running]> on host ff3d40af78f9
+[2023-04-08 11:15:53,904] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=multi_attack_dag
+AIRFLOW_CTX_TASK_ID=metadata
+AIRFLOW_CTX_EXECUTION_DATE=2023-04-07T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-04-07T00:00:00+00:00
+[2023-04-08 11:15:53,909] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-04-08 11:15:53,916] {client.py:777} INFO - Refreshing access_token
+[2023-04-08 11:15:54,558] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/sklearn_attack_dag.py", line 157, in set_or_create
+    metadata = load_from_bucket(file_name='attack_defence_metadata.json',as_json=True)
+  File "/opt/airflow/dags/helpers.py", line 83, in load_from_bucket
+    raise err
+  File "/opt/airflow/dags/helpers.py", line 74, in load_from_bucket
+    json_string = blob.download_as_string()
+  File "/home/airflow/.local/lib/python3.7/site-packages/gcloud/storage/blob.py", line 391, in download_as_string
+    client=client)
+  File "/home/airflow/.local/lib/python3.7/site-packages/gcloud/storage/blob.py", line 327, in download_to_file
+    self.reload()
+  File "/home/airflow/.local/lib/python3.7/site-packages/gcloud/storage/_helpers.py", line 77, in reload
+    _target_object=self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/gcloud/connection.py", line 347, in api_request
+    error_info=method + ' ' + url)
+gcloud.exceptions.NotFound: 404 No such object: mabdata207125196/attack_defence_metadata.json (GET https://www.googleapis.com/storage/v1/b/mabdata207125196/o/attack_defence_metadata.json?projection=noAcl)
+[2023-04-08 11:15:54,583] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=multi_attack_dag, task_id=metadata, execution_date=20230407T000000, start_date=20230408T111553, end_date=20230408T111554
+[2023-04-08 11:15:54,608] {standard_task_runner.py:97} ERROR - Failed to execute job 4639 for task metadata (404 No such object: mabdata207125196/attack_defence_metadata.json (GET https://www.googleapis.com/storage/v1/b/mabdata207125196/o/attack_defence_metadata.json?projection=noAcl); 1350)
+[2023-04-08 11:15:54,637] {local_task_job.py:156} INFO - Task exited with return code 1
+[2023-04-08 11:15:54,768] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

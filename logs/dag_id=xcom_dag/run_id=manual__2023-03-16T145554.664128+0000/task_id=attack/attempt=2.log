@@ -1,0 +1,26 @@
+[2023-03-16 15:02:01,941] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: xcom_dag.attack manual__2023-03-16T14:55:54.664128+00:00 [queued]>
+[2023-03-16 15:02:01,958] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: xcom_dag.attack manual__2023-03-16T14:55:54.664128+00:00 [queued]>
+[2023-03-16 15:02:01,959] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-16 15:02:01,959] {taskinstance.py:1357} INFO - Starting attempt 2 of 2
+[2023-03-16 15:02:01,959] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-16 15:02:01,979] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): attack> on 2023-03-16 14:55:54.664128+00:00
+[2023-03-16 15:02:01,984] {standard_task_runner.py:52} INFO - Started process 56 to run task
+[2023-03-16 15:02:01,987] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'xcom_dag', 'attack', 'manual__2023-03-16T14:55:54.664128+00:00', '--job-id', '1400', '--raw', '--subdir', 'DAGS_FOLDER/dynamic_dag.py', '--cfg-path', '/tmp/tmpjrm91d1p', '--error-file', '/tmp/tmpz5k7t5bd']
+[2023-03-16 15:02:01,988] {standard_task_runner.py:80} INFO - Job 1400: Subtask attack
+[2023-03-16 15:02:02,054] {task_command.py:369} INFO - Running <TaskInstance: xcom_dag.attack manual__2023-03-16T14:55:54.664128+00:00 [running]> on host 596adcca7378
+[2023-03-16 15:02:02,147] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=xcom_dag
+AIRFLOW_CTX_TASK_ID=attack
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-16T14:55:54.664128+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-03-16T14:55:54.664128+00:00
+[2023-03-16 15:02:02,166] {logging_mixin.py:115} INFO - Running attack 1
+[2023-03-16 15:02:02,178] {logging_mixin.py:115} INFO - Not running attack 2
+[2023-03-16 15:02:02,189] {logging_mixin.py:115} INFO - Running attack 3
+[2023-03-16 15:02:02,190] {python.py:173} INFO - Done. Returned value was: None
+[2023-03-16 15:02:02,208] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=xcom_dag, task_id=attack, execution_date=20230316T145554, start_date=20230316T150201, end_date=20230316T150202
+[2023-03-16 15:02:02,241] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-03-16 15:02:02,288] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

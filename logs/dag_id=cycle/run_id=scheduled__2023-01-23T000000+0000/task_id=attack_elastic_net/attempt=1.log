@@ -1,0 +1,23 @@
+[2023-03-12 08:56:40,788] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: cycle.attack_elastic_net scheduled__2023-01-23T00:00:00+00:00 [queued]>
+[2023-03-12 08:56:40,830] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: cycle.attack_elastic_net scheduled__2023-01-23T00:00:00+00:00 [queued]>
+[2023-03-12 08:56:40,834] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-12 08:56:40,853] {taskinstance.py:1357} INFO - Starting attempt 1 of 3
+[2023-03-12 08:56:40,867] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-12 08:56:41,049] {taskinstance.py:1377} INFO - Executing <Task(_PythonDecoratedOperator): attack_elastic_net> on 2023-01-23 00:00:00+00:00
+[2023-03-12 08:56:41,099] {standard_task_runner.py:52} INFO - Started process 277 to run task
+[2023-03-12 08:56:41,130] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'cycle', 'attack_elastic_net', 'scheduled__2023-01-23T00:00:00+00:00', '--job-id', '213', '--raw', '--subdir', 'DAGS_FOLDER/cycle_dag.py', '--cfg-path', '/tmp/tmpg0xyhill', '--error-file', '/tmp/tmp0g2apq_a']
+[2023-03-12 08:56:41,132] {standard_task_runner.py:80} INFO - Job 213: Subtask attack_elastic_net
+[2023-03-12 08:56:41,438] {task_command.py:369} INFO - Running <TaskInstance: cycle.attack_elastic_net scheduled__2023-01-23T00:00:00+00:00 [running]> on host 596adcca7378
+[2023-03-12 08:56:41,943] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=cycle
+AIRFLOW_CTX_TASK_ID=attack_elastic_net
+AIRFLOW_CTX_EXECUTION_DATE=2023-01-23T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-01-23T00:00:00+00:00
+[2023-03-12 08:56:41,950] {python.py:173} INFO - Done. Returned value was: None
+[2023-03-12 08:56:41,994] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=cycle, task_id=attack_elastic_net, execution_date=20230123T000000, start_date=20230312T085640, end_date=20230312T085641
+[2023-03-12 08:56:42,482] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-03-12 08:56:42,737] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

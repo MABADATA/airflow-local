@@ -1,0 +1,53 @@
+[2023-04-27 13:37:05,522] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.attack_CarliniL2Method manual__2023-04-27T13:36:38.710932+00:00 [queued]>
+[2023-04-27 13:37:05,535] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.attack_CarliniL2Method manual__2023-04-27T13:36:38.710932+00:00 [queued]>
+[2023-04-27 13:37:05,535] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-27 13:37:05,541] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2023-04-27 13:37:05,541] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-27 13:37:05,558] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): attack_CarliniL2Method> on 2023-04-27 13:36:38.710932+00:00
+[2023-04-27 13:37:05,566] {standard_task_runner.py:52} INFO - Started process 764 to run task
+[2023-04-27 13:37:05,569] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'multi_attack_dag', 'attack_CarliniL2Method', 'manual__2023-04-27T13:36:38.710932+00:00', '--job-id', '6964', '--raw', '--subdir', 'DAGS_FOLDER/attack_dag.py', '--cfg-path', '/tmp/tmp3kt2rviz', '--error-file', '/tmp/tmpncrdhp2y']
+[2023-04-27 13:37:05,570] {standard_task_runner.py:80} INFO - Job 6964: Subtask attack_CarliniL2Method
+[2023-04-27 13:37:05,642] {task_command.py:369} INFO - Running <TaskInstance: multi_attack_dag.attack_CarliniL2Method manual__2023-04-27T13:36:38.710932+00:00 [running]> on host e7e31d5a6603
+[2023-04-27 13:37:05,742] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=multi_attack_dag
+AIRFLOW_CTX_TASK_ID=attack_CarliniL2Method
+AIRFLOW_CTX_EXECUTION_DATE=2023-04-27T13:36:38.710932+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-04-27T13:36:38.710932+00:00
+[2023-04-27 13:37:05,745] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-04-27 13:37:05,749] {client.py:777} INFO - Refreshing access_token
+[2023-04-27 13:37:06,427] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-04-27 13:37:06,432] {client.py:777} INFO - Refreshing access_token
+[2023-04-27 13:37:25,015] {pytorch.py:1198} INFO - Inferred 5 hidden layers on PyTorch classifier.
+[2023-04-27 13:38:31,971] {attack.py:34} INFO - Optimizing...
+[2023-04-27 13:38:31,999] {logging_mixin.py:115} INFO - I am right here on <class 'art.attacks.evasion.carlini.CarliniL2Method'>
+[2023-04-27 13:38:32,005] {logging_mixin.py:115} INFO - <function optimize_evasion_attack.<locals>.<lambda> at 0x7f00ea8e0200>
+[2023-04-27 13:38:32,045] {logging_mixin.py:115} INFO - This is the attack : <class 'art.attacks.evasion.carlini.CarliniL2Method'> and its HP : {'confidence': 0.2909345632626504}
+[2023-04-27 13:38:32,046] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/attack.py", line 96, in attack_CarliniL2Method
+    model_acc, adversarial_examples  = attack(CarliniL2Method)
+  File "/opt/airflow/dags/attack.py", line 36, in attack
+    optimized_attack = optimize_evasion_attack(attack_obj,estimator,x_test,y_test)
+  File "/opt/airflow/dags/attack_helpers.py", line 47, in optimize_evasion_attack
+    result = gp_minimize(func, search_space, n_calls=10)
+  File "/home/airflow/.local/lib/python3.7/site-packages/skopt/optimizer/gp.py", line 268, in gp_minimize
+    callback=callback, n_jobs=n_jobs, model_queue_size=model_queue_size)
+  File "/home/airflow/.local/lib/python3.7/site-packages/skopt/optimizer/base.py", line 299, in base_minimize
+    next_y = func(next_x)
+  File "/opt/airflow/dags/attack_helpers.py", line 45, in <lambda>
+    func = lambda params: _optimize(attack, params,classifier=classifier,data=data,true_labels=true_labels)
+  File "/opt/airflow/dags/attack_helpers.py", line 35, in _optimize
+    attack_to_optimize = globals()[attack.__name__](classifier, **HP)
+KeyError: 'CarliniL2Method'
+[2023-04-27 13:38:32,096] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=multi_attack_dag, task_id=attack_CarliniL2Method, execution_date=20230427T133638, start_date=20230427T133705, end_date=20230427T133832
+[2023-04-27 13:38:32,156] {standard_task_runner.py:97} ERROR - Failed to execute job 6964 for task attack_CarliniL2Method ('CarliniL2Method'; 764)
+[2023-04-27 13:38:32,236] {local_task_job.py:156} INFO - Task exited with return code 1
+[2023-04-27 13:38:32,345] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

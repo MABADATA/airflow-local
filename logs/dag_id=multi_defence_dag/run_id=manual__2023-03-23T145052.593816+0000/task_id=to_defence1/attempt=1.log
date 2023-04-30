@@ -1,0 +1,29 @@
+[2023-03-23 14:51:19,489] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_defence_dag.to_defence1 manual__2023-03-23T14:50:52.593816+00:00 [queued]>
+[2023-03-23 14:51:19,603] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_defence_dag.to_defence1 manual__2023-03-23T14:50:52.593816+00:00 [queued]>
+[2023-03-23 14:51:19,611] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-23 14:51:19,615] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2023-03-23 14:51:19,618] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-23 14:51:19,808] {taskinstance.py:1377} INFO - Executing <Task(BranchPythonOperator): to_defence1> on 2023-03-23 14:50:52.593816+00:00
+[2023-03-23 14:51:19,833] {standard_task_runner.py:52} INFO - Started process 10843 to run task
+[2023-03-23 14:51:19,862] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'multi_defence_dag', 'to_defence1', 'manual__2023-03-23T14:50:52.593816+00:00', '--job-id', '2743', '--raw', '--subdir', 'DAGS_FOLDER/defence_dag.py', '--cfg-path', '/tmp/tmpkytenxcf', '--error-file', '/tmp/tmpnwsrs6w0']
+[2023-03-23 14:51:19,867] {standard_task_runner.py:80} INFO - Job 2743: Subtask to_defence1
+[2023-03-23 14:51:20,434] {task_command.py:369} INFO - Running <TaskInstance: multi_defence_dag.to_defence1 manual__2023-03-23T14:50:52.593816+00:00 [running]> on host 6447f1dacd32
+[2023-03-23 14:51:21,485] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=multi_defence_dag
+AIRFLOW_CTX_TASK_ID=to_defence1
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-23T14:50:52.593816+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-03-23T14:50:52.593816+00:00
+[2023-03-23 14:51:21,648] {python.py:173} INFO - Done. Returned value was: Defence1
+[2023-03-23 14:51:21,804] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 221, in execute
+    f"Branch callable must return valid task_ids. Invalid tasks found: {invalid_task_ids}"
+airflow.exceptions.AirflowException: Branch callable must return valid task_ids. Invalid tasks found: {'Defence1'}
+[2023-03-23 14:51:21,835] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=multi_defence_dag, task_id=to_defence1, execution_date=20230323T145052, start_date=20230323T145119, end_date=20230323T145121
+[2023-03-23 14:51:21,931] {standard_task_runner.py:97} ERROR - Failed to execute job 2743 for task to_defence1 (Branch callable must return valid task_ids. Invalid tasks found: {'Defence1'}; 10843)
+[2023-03-23 14:51:21,998] {local_task_job.py:156} INFO - Task exited with return code 1
+[2023-03-23 14:51:22,726] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

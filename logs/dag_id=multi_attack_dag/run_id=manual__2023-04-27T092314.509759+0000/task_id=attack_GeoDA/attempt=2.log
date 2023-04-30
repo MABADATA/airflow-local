@@ -1,0 +1,159 @@
+[2023-04-27 09:36:59,201] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.attack_GeoDA manual__2023-04-27T09:23:14.509759+00:00 [queued]>
+[2023-04-27 09:36:59,431] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.attack_GeoDA manual__2023-04-27T09:23:14.509759+00:00 [queued]>
+[2023-04-27 09:36:59,441] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-27 09:36:59,442] {taskinstance.py:1357} INFO - Starting attempt 2 of 2
+[2023-04-27 09:36:59,443] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-27 09:36:59,581] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): attack_GeoDA> on 2023-04-27 09:23:14.509759+00:00
+[2023-04-27 09:36:59,674] {standard_task_runner.py:52} INFO - Started process 3948 to run task
+[2023-04-27 09:36:59,686] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'multi_attack_dag', 'attack_GeoDA', 'manual__2023-04-27T09:23:14.509759+00:00', '--job-id', '6548', '--raw', '--subdir', 'DAGS_FOLDER/attack_dag.py', '--cfg-path', '/tmp/tmpn8l2wv4r', '--error-file', '/tmp/tmp0vdl3jxn']
+[2023-04-27 09:36:59,711] {standard_task_runner.py:80} INFO - Job 6548: Subtask attack_GeoDA
+[2023-04-27 09:37:00,046] {task_command.py:369} INFO - Running <TaskInstance: multi_attack_dag.attack_GeoDA manual__2023-04-27T09:23:14.509759+00:00 [running]> on host e7e31d5a6603
+[2023-04-27 09:37:00,734] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=multi_attack_dag
+AIRFLOW_CTX_TASK_ID=attack_GeoDA
+AIRFLOW_CTX_EXECUTION_DATE=2023-04-27T09:23:14.509759+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-04-27T09:23:14.509759+00:00
+[2023-04-27 09:37:00,750] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-04-27 09:37:00,827] {client.py:777} INFO - Refreshing access_token
+[2023-04-27 09:37:01,883] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-04-27 09:37:01,885] {client.py:777} INFO - Refreshing access_token
+[2023-04-27 09:37:25,731] {pytorch.py:1198} INFO - Inferred 5 hidden layers on PyTorch classifier.
+[2023-04-27 09:52:53,313] {base_job.py:229} ERROR - LocalTaskJob heartbeat got an exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 3141, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 301, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 755, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 419, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/impl.py", line 259, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 247, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 362, in __init__
+    self.__connect(first_connect_check=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 605, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/langhelpers.py", line 72, in __exit__
+    with_traceback=exc_tb,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 599, in __connect
+    connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/create.py", line 578, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 583, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "postgres" (172.18.0.2), port 5432 failed: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/jobs/base_job.py", line 219, in heartbeat
+    session.merge(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 2877, in merge
+    _resolve_conflict_map=_resolve_conflict_map,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 2950, in _merge
+    merged = self.get(mapper.class_, key[1], identity_token=key[2])
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 2702, in get
+    identity_token=identity_token,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 2800, in _get_impl
+    load_options=load_options,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/loading.py", line 535, in load_on_pk_identity
+    bind_arguments=bind_arguments,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 1669, in execute
+    conn = self._connection_for_bind(bind, close_with_result=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 1520, in _connection_for_bind
+    engine, execution_options
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 747, in _connection_for_bind
+    conn = bind.connect()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 3095, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 91, in __init__
+    else engine.raw_connection()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 3174, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 3145, in _wrap_pool_connect
+    e, dialect, self
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 2004, in _handle_dbapi_exception_noconnection
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 3141, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 301, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 755, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 419, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/impl.py", line 259, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 247, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 362, in __init__
+    self.__connect(first_connect_check=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 605, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/langhelpers.py", line 72, in __exit__
+    with_traceback=exc_tb,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 599, in __connect
+    connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/create.py", line 578, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 583, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) connection to server at "postgres" (172.18.0.2), port 5432 failed: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+(Background on this error at: http://sqlalche.me/e/14/e3q8)
+[2023-04-27 09:52:53,664] {local_task_job.py:144} ERROR - Heartbeat time limit exceeded!
+[2023-04-27 09:52:53,670] {process_utils.py:129} INFO - Sending Signals.SIGTERM to group 3948. PIDs of all processes in the group: [3948]
+[2023-04-27 09:52:53,675] {process_utils.py:80} INFO - Sending the signal Signals.SIGTERM to group 3948
+[2023-04-27 09:52:53,972] {taskinstance.py:1541} ERROR - Received SIGTERM. Terminating subprocesses.
+[2023-04-27 09:52:54,568] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/attack_dag.py", line 444, in attack_GeoDA
+    model_acc, adversarial_examples  = attack(GeoDA)
+  File "/opt/airflow/dags/attack_dag.py", line 640, in attack
+    estimator,x_test,y_test = get_estimator()
+  File "/opt/airflow/dags/attack_dag.py", line 84, in get_estimator
+    clf, data,true_labels = s.make_trained_model(model)
+  File "/opt/airflow/dags/Model_Factory.py", line 106, in make_trained_model
+    clf, data, true_labels = self.__make_trained_CC_model(model)
+  File "/opt/airflow/dags/Model_Factory.py", line 71, in __make_trained_CC_model
+    classifier_CC.fit(X_train, y_train, batch_size=32, nb_epochs=20)
+  File "/home/airflow/.local/lib/python3.7/site-packages/art/estimators/classification/classifier.py", line 73, in replacement_function
+    return fdict[func_name](self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/art/estimators/classification/pytorch.py", line 456, in fit
+    loss.backward()
+  File "/home/airflow/.local/lib/python3.7/site-packages/torch/_tensor.py", line 489, in backward
+    self, gradient, retain_graph, create_graph, inputs=inputs
+  File "/home/airflow/.local/lib/python3.7/site-packages/torch/autograd/__init__.py", line 199, in backward
+    allow_unreachable=True, accumulate_grad=True)  # Calls into the C++ engine to run the backward pass
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1543, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2023-04-27 09:52:54,656] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=multi_attack_dag, task_id=attack_GeoDA, execution_date=20230427T092314, start_date=20230427T093659, end_date=20230427T095254
+[2023-04-27 09:52:54,774] {standard_task_runner.py:97} ERROR - Failed to execute job 6548 for task attack_GeoDA (Task received SIGTERM signal; 3948)
+[2023-04-27 09:52:54,879] {process_utils.py:75} INFO - Process psutil.Process(pid=3948, status='terminated', exitcode=1, started='09:36:59') (3948) terminated with exit code 1

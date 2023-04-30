@@ -1,0 +1,25 @@
+[2023-04-27 10:31:50,371] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.to_attack_LaserAttack manual__2023-04-27T10:30:40.186391+00:00 [queued]>
+[2023-04-27 10:31:50,580] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.to_attack_LaserAttack manual__2023-04-27T10:30:40.186391+00:00 [queued]>
+[2023-04-27 10:31:50,589] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-27 10:31:50,596] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2023-04-27 10:31:50,604] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-27 10:31:50,802] {taskinstance.py:1377} INFO - Executing <Task(BranchPythonOperator): to_attack_LaserAttack> on 2023-04-27 10:30:40.186391+00:00
+[2023-04-27 10:31:50,834] {standard_task_runner.py:52} INFO - Started process 5347 to run task
+[2023-04-27 10:31:50,957] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'multi_attack_dag', 'to_attack_LaserAttack', 'manual__2023-04-27T10:30:40.186391+00:00', '--job-id', '6607', '--raw', '--subdir', 'DAGS_FOLDER/attack_dag.py', '--cfg-path', '/tmp/tmpwm19_b96', '--error-file', '/tmp/tmpmmlueg8j']
+[2023-04-27 10:31:51,009] {standard_task_runner.py:80} INFO - Job 6607: Subtask to_attack_LaserAttack
+[2023-04-27 10:31:51,634] {task_command.py:369} INFO - Running <TaskInstance: multi_attack_dag.to_attack_LaserAttack manual__2023-04-27T10:30:40.186391+00:00 [running]> on host e7e31d5a6603
+[2023-04-27 10:31:52,496] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=multi_attack_dag
+AIRFLOW_CTX_TASK_ID=to_attack_LaserAttack
+AIRFLOW_CTX_EXECUTION_DATE=2023-04-27T10:30:40.186391+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-04-27T10:30:40.186391+00:00
+[2023-04-27 10:31:52,579] {python.py:173} INFO - Done. Returned value was: attack_LaserAttack
+[2023-04-27 10:31:52,589] {skipmixin.py:140} INFO - Following branch attack_LaserAttack
+[2023-04-27 10:31:52,599] {skipmixin.py:175} INFO - Skipping tasks ['default']
+[2023-04-27 10:31:52,830] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=multi_attack_dag, task_id=to_attack_LaserAttack, execution_date=20230427T103040, start_date=20230427T103150, end_date=20230427T103152
+[2023-04-27 10:31:53,051] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-04-27 10:31:53,428] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

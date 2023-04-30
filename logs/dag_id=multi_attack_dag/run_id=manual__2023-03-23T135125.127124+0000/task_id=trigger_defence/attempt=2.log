@@ -1,0 +1,32 @@
+[2023-03-23 14:01:41,024] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.trigger_defence manual__2023-03-23T13:51:25.127124+00:00 [queued]>
+[2023-03-23 14:01:41,035] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.trigger_defence manual__2023-03-23T13:51:25.127124+00:00 [queued]>
+[2023-03-23 14:01:41,035] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-23 14:01:41,036] {taskinstance.py:1357} INFO - Starting attempt 2 of 2
+[2023-03-23 14:01:41,037] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-23 14:01:41,050] {taskinstance.py:1377} INFO - Executing <Task(TriggerDagRunOperator): trigger_defence> on 2023-03-23 13:51:25.127124+00:00
+[2023-03-23 14:01:41,054] {standard_task_runner.py:52} INFO - Started process 9444 to run task
+[2023-03-23 14:01:41,057] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'multi_attack_dag', 'trigger_defence', 'manual__2023-03-23T13:51:25.127124+00:00', '--job-id', '2728', '--raw', '--subdir', 'DAGS_FOLDER/dynamic_dag.py', '--cfg-path', '/tmp/tmpvp5inqc3', '--error-file', '/tmp/tmp4cpyo3yh']
+[2023-03-23 14:01:41,058] {standard_task_runner.py:80} INFO - Job 2728: Subtask trigger_defence
+[2023-03-23 14:01:41,110] {task_command.py:369} INFO - Running <TaskInstance: multi_attack_dag.trigger_defence manual__2023-03-23T13:51:25.127124+00:00 [running]> on host 6447f1dacd32
+[2023-03-23 14:01:41,173] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=multi_attack_dag
+AIRFLOW_CTX_TASK_ID=trigger_defence
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-23T13:51:25.127124+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-03-23T13:51:25.127124+00:00
+[2023-03-23 14:01:41,207] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/trigger_dagrun.py", line 147, in execute
+    replace_microseconds=False,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/api/common/trigger_dag.py", line 129, in trigger_dag
+    replace_microseconds=replace_microseconds,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/api/common/trigger_dag.py", line 53, in _trigger_dag
+    raise DagNotFound(f"Dag id {dag_id} not found")
+airflow.exceptions.DagNotFound: Dag id defence_dag not found
+[2023-03-23 14:01:41,211] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=multi_attack_dag, task_id=trigger_defence, execution_date=20230323T135125, start_date=20230323T140141, end_date=20230323T140141
+[2023-03-23 14:01:41,223] {standard_task_runner.py:97} ERROR - Failed to execute job 2728 for task trigger_defence (Dag id defence_dag not found; 9444)
+[2023-03-23 14:01:41,229] {local_task_job.py:156} INFO - Task exited with return code 1
+[2023-03-23 14:01:41,260] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

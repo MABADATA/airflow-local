@@ -1,0 +1,24 @@
+[2023-03-12 15:52:20,642] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: attack_dag.attack manual__2023-03-12T15:52:19.694557+00:00 [queued]>
+[2023-03-12 15:52:20,648] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: attack_dag.attack manual__2023-03-12T15:52:19.694557+00:00 [queued]>
+[2023-03-12 15:52:20,648] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-12 15:52:20,649] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2023-03-12 15:52:20,649] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-12 15:52:20,659] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): attack> on 2023-03-12 15:52:19.694557+00:00
+[2023-03-12 15:52:20,663] {standard_task_runner.py:52} INFO - Started process 98 to run task
+[2023-03-12 15:52:20,665] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'attack_dag', 'attack', 'manual__2023-03-12T15:52:19.694557+00:00', '--job-id', '605', '--raw', '--subdir', 'DAGS_FOLDER/attack.py', '--cfg-path', '/tmp/tmpvt27v3hi', '--error-file', '/tmp/tmpsq8gskc1']
+[2023-03-12 15:52:20,666] {standard_task_runner.py:80} INFO - Job 605: Subtask attack
+[2023-03-12 15:52:20,706] {task_command.py:369} INFO - Running <TaskInstance: attack_dag.attack manual__2023-03-12T15:52:19.694557+00:00 [running]> on host 596adcca7378
+[2023-03-12 15:52:20,759] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=attack_dag
+AIRFLOW_CTX_TASK_ID=attack
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-12T15:52:19.694557+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-03-12T15:52:19.694557+00:00
+[2023-03-12 15:52:20,760] {logging_mixin.py:115} INFO - attacking!
+[2023-03-12 15:52:20,760] {python.py:173} INFO - Done. Returned value was: None
+[2023-03-12 15:52:20,769] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=attack_dag, task_id=attack, execution_date=20230312T155219, start_date=20230312T155220, end_date=20230312T155220
+[2023-03-12 15:52:20,798] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-03-12 15:52:20,826] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

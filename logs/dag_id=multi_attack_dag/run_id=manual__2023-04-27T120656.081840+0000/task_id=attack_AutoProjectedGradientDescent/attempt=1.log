@@ -1,0 +1,31 @@
+[2023-04-27 12:13:03,958] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.attack_AutoProjectedGradientDescent manual__2023-04-27T12:06:56.081840+00:00 [queued]>
+[2023-04-27 12:13:04,030] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.attack_AutoProjectedGradientDescent manual__2023-04-27T12:06:56.081840+00:00 [queued]>
+[2023-04-27 12:13:04,031] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-27 12:13:04,037] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2023-04-27 12:13:04,038] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-27 12:13:04,187] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): attack_AutoProjectedGradientDescent> on 2023-04-27 12:06:56.081840+00:00
+[2023-04-27 12:13:04,229] {standard_task_runner.py:52} INFO - Started process 3364 to run task
+[2023-04-27 12:13:04,292] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'multi_attack_dag', 'attack_AutoProjectedGradientDescent', 'manual__2023-04-27T12:06:56.081840+00:00', '--job-id', '6803', '--raw', '--subdir', 'DAGS_FOLDER/attack_dag.py', '--cfg-path', '/tmp/tmpms2htk2h', '--error-file', '/tmp/tmpith60cbd']
+[2023-04-27 12:13:04,317] {standard_task_runner.py:80} INFO - Job 6803: Subtask attack_AutoProjectedGradientDescent
+[2023-04-27 12:13:04,639] {task_command.py:369} INFO - Running <TaskInstance: multi_attack_dag.attack_AutoProjectedGradientDescent manual__2023-04-27T12:06:56.081840+00:00 [running]> on host e7e31d5a6603
+[2023-04-27 12:13:04,982] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=multi_attack_dag
+AIRFLOW_CTX_TASK_ID=attack_AutoProjectedGradientDescent
+AIRFLOW_CTX_EXECUTION_DATE=2023-04-27T12:06:56.081840+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-04-27T12:06:56.081840+00:00
+[2023-04-27 12:13:05,028] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-04-27 12:13:05,059] {client.py:777} INFO - Refreshing access_token
+[2023-04-27 12:13:05,774] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-04-27 12:13:05,778] {client.py:777} INFO - Refreshing access_token
+[2023-04-27 12:13:18,628] {pytorch.py:1198} INFO - Inferred 5 hidden layers on PyTorch classifier.
+[2023-04-27 12:16:36,735] {attack.py:33} INFO - Optimizing...
+[2023-04-27 12:16:36,767] {logging_mixin.py:115} INFO - I am right here on <class 'art.attacks.evasion.auto_projected_gradient_descent.AutoProjectedGradientDescent'>
+[2023-04-27 12:16:36,775] {attack.py:39} INFO - Optimizing failed! using default: 0.04063892364501953
+[2023-04-27 12:16:36,924] {python.py:173} INFO - Done. Returned value was: None
+[2023-04-27 12:16:36,948] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=multi_attack_dag, task_id=attack_AutoProjectedGradientDescent, execution_date=20230427T120656, start_date=20230427T121303, end_date=20230427T121636
+[2023-04-27 12:16:37,066] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-04-27 12:16:37,167] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

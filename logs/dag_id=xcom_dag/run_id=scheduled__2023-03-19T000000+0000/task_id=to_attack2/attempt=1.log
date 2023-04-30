@@ -1,0 +1,25 @@
+[2023-03-23 07:54:59,841] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: xcom_dag.to_attack2 scheduled__2023-03-19T00:00:00+00:00 [queued]>
+[2023-03-23 07:54:59,868] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: xcom_dag.to_attack2 scheduled__2023-03-19T00:00:00+00:00 [queued]>
+[2023-03-23 07:54:59,869] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-23 07:54:59,869] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2023-03-23 07:54:59,870] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-23 07:54:59,892] {taskinstance.py:1377} INFO - Executing <Task(BranchPythonOperator): to_attack2> on 2023-03-19 00:00:00+00:00
+[2023-03-23 07:54:59,899] {standard_task_runner.py:52} INFO - Started process 88 to run task
+[2023-03-23 07:54:59,903] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'xcom_dag', 'to_attack2', 'scheduled__2023-03-19T00:00:00+00:00', '--job-id', '2139', '--raw', '--subdir', 'DAGS_FOLDER/dynamic_dag.py', '--cfg-path', '/tmp/tmpb5iy1dlc', '--error-file', '/tmp/tmpumx7vi9l']
+[2023-03-23 07:54:59,908] {standard_task_runner.py:80} INFO - Job 2139: Subtask to_attack2
+[2023-03-23 07:54:59,994] {task_command.py:369} INFO - Running <TaskInstance: xcom_dag.to_attack2 scheduled__2023-03-19T00:00:00+00:00 [running]> on host 6447f1dacd32
+[2023-03-23 07:55:00,112] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=xcom_dag
+AIRFLOW_CTX_TASK_ID=to_attack2
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-19T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-03-19T00:00:00+00:00
+[2023-03-23 07:55:00,127] {python.py:173} INFO - Done. Returned value was: default
+[2023-03-23 07:55:00,128] {skipmixin.py:140} INFO - Following branch default
+[2023-03-23 07:55:00,129] {skipmixin.py:175} INFO - Skipping tasks ['attack2']
+[2023-03-23 07:55:00,231] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=xcom_dag, task_id=to_attack2, execution_date=20230319T000000, start_date=20230323T075459, end_date=20230323T075500
+[2023-03-23 07:55:00,284] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-03-23 07:55:00,381] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

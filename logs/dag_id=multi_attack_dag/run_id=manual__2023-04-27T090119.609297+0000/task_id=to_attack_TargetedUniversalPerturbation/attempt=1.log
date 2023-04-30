@@ -1,0 +1,25 @@
+[2023-04-27 09:01:51,355] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.to_attack_TargetedUniversalPerturbation manual__2023-04-27T09:01:19.609297+00:00 [queued]>
+[2023-04-27 09:01:51,460] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.to_attack_TargetedUniversalPerturbation manual__2023-04-27T09:01:19.609297+00:00 [queued]>
+[2023-04-27 09:01:51,461] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-27 09:01:51,462] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2023-04-27 09:01:51,463] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-27 09:01:51,624] {taskinstance.py:1377} INFO - Executing <Task(BranchPythonOperator): to_attack_TargetedUniversalPerturbation> on 2023-04-27 09:01:19.609297+00:00
+[2023-04-27 09:01:51,650] {standard_task_runner.py:52} INFO - Started process 2486 to run task
+[2023-04-27 09:01:51,683] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'multi_attack_dag', 'to_attack_TargetedUniversalPerturbation', 'manual__2023-04-27T09:01:19.609297+00:00', '--job-id', '6432', '--raw', '--subdir', 'DAGS_FOLDER/attack_dag.py', '--cfg-path', '/tmp/tmpu9n9oef4', '--error-file', '/tmp/tmp9du_zrpa']
+[2023-04-27 09:01:51,686] {standard_task_runner.py:80} INFO - Job 6432: Subtask to_attack_TargetedUniversalPerturbation
+[2023-04-27 09:01:51,952] {task_command.py:369} INFO - Running <TaskInstance: multi_attack_dag.to_attack_TargetedUniversalPerturbation manual__2023-04-27T09:01:19.609297+00:00 [running]> on host e7e31d5a6603
+[2023-04-27 09:01:53,140] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=multi_attack_dag
+AIRFLOW_CTX_TASK_ID=to_attack_TargetedUniversalPerturbation
+AIRFLOW_CTX_EXECUTION_DATE=2023-04-27T09:01:19.609297+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-04-27T09:01:19.609297+00:00
+[2023-04-27 09:01:53,193] {python.py:173} INFO - Done. Returned value was: attack_TargetedUniversalPerturbation
+[2023-04-27 09:01:53,198] {skipmixin.py:140} INFO - Following branch attack_TargetedUniversalPerturbation
+[2023-04-27 09:01:53,199] {skipmixin.py:175} INFO - Skipping tasks ['default']
+[2023-04-27 09:01:54,335] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=multi_attack_dag, task_id=to_attack_TargetedUniversalPerturbation, execution_date=20230427T090119, start_date=20230427T090151, end_date=20230427T090154
+[2023-04-27 09:01:54,433] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-04-27 09:01:54,995] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

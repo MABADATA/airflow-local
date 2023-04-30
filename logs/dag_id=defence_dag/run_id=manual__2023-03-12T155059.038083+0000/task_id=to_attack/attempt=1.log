@@ -1,0 +1,12 @@
+[2023-03-16 11:58:09,119] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: defence_dag.to_attack manual__2023-03-12T15:50:59.038083+00:00 [queued]>
+[2023-03-16 11:58:09,136] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: defence_dag.to_attack manual__2023-03-12T15:50:59.038083+00:00 [queued]>
+[2023-03-16 11:58:09,136] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-16 11:58:09,137] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2023-03-16 11:58:09,138] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-16 11:58:09,274] {taskinstance.py:1377} INFO - Executing <Task(BranchPythonOperator): to_attack> on 2023-03-12 15:50:59.038083+00:00
+[2023-03-16 11:58:09,284] {standard_task_runner.py:52} INFO - Started process 1287 to run task
+[2023-03-16 11:58:09,333] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'defence_dag', 'to_attack', 'manual__2023-03-12T15:50:59.038083+00:00', '--job-id', '1211', '--raw', '--subdir', 'DAGS_FOLDER/defese.py', '--cfg-path', '/tmp/tmp4ana7em7', '--error-file', '/tmp/tmp7mfz_tb1']
+[2023-03-16 11:58:09,352] {standard_task_runner.py:80} INFO - Job 1211: Subtask to_attack
+[2023-03-16 11:58:09,583] {task_command.py:369} INFO - Running <TaskInstance: defence_dag.to_attack manual__2023-03-12T15:50:59.038083+00:00 [running]> on host 596adcca7378

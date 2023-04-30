@@ -1,0 +1,33 @@
+[2023-04-27 13:26:44,051] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.attack_FastGradientMethod manual__2023-04-27T13:26:10.552448+00:00 [queued]>
+[2023-04-27 13:26:44,067] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.attack_FastGradientMethod manual__2023-04-27T13:26:10.552448+00:00 [queued]>
+[2023-04-27 13:26:44,068] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-27 13:26:44,068] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2023-04-27 13:26:44,069] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-27 13:26:44,103] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): attack_FastGradientMethod> on 2023-04-27 13:26:10.552448+00:00
+[2023-04-27 13:26:44,120] {standard_task_runner.py:52} INFO - Started process 154 to run task
+[2023-04-27 13:26:44,124] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'multi_attack_dag', 'attack_FastGradientMethod', 'manual__2023-04-27T13:26:10.552448+00:00', '--job-id', '6907', '--raw', '--subdir', 'DAGS_FOLDER/attack_dag.py', '--cfg-path', '/tmp/tmparf2d9a6', '--error-file', '/tmp/tmp_2ui5srz']
+[2023-04-27 13:26:44,125] {standard_task_runner.py:80} INFO - Job 6907: Subtask attack_FastGradientMethod
+[2023-04-27 13:26:44,233] {task_command.py:369} INFO - Running <TaskInstance: multi_attack_dag.attack_FastGradientMethod manual__2023-04-27T13:26:10.552448+00:00 [running]> on host e7e31d5a6603
+[2023-04-27 13:26:44,340] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=multi_attack_dag
+AIRFLOW_CTX_TASK_ID=attack_FastGradientMethod
+AIRFLOW_CTX_EXECUTION_DATE=2023-04-27T13:26:10.552448+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-04-27T13:26:10.552448+00:00
+[2023-04-27 13:26:44,360] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-04-27 13:26:44,368] {client.py:777} INFO - Refreshing access_token
+[2023-04-27 13:26:45,068] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-04-27 13:26:45,070] {client.py:777} INFO - Refreshing access_token
+[2023-04-27 13:27:14,935] {pytorch.py:1198} INFO - Inferred 5 hidden layers on PyTorch classifier.
+[2023-04-27 13:28:11,030] {attack.py:34} INFO - Optimizing...
+[2023-04-27 13:28:11,031] {logging_mixin.py:115} INFO - I am right here on <class 'art.attacks.evasion.fast_gradient.FastGradientMethod'>
+[2023-04-27 13:28:11,032] {logging_mixin.py:115} INFO - <function optimize_evasion_attack.<locals>.<lambda> at 0x7f00ea728e60>
+[2023-04-27 13:28:11,041] {logging_mixin.py:115} INFO - This is the attack : <class 'art.attacks.evasion.fast_gradient.FastGradientMethod'> and its HP : {'eps': 0.5819109396126483}
+[2023-04-27 13:28:11,042] {attack.py:40} INFO - Optimizing failed! using default: 0.012315034866333008
+[2023-04-27 13:28:11,076] {python.py:173} INFO - Done. Returned value was: None
+[2023-04-27 13:28:11,093] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=multi_attack_dag, task_id=attack_FastGradientMethod, execution_date=20230427T132610, start_date=20230427T132644, end_date=20230427T132811
+[2023-04-27 13:28:11,133] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-04-27 13:28:11,190] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

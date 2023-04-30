@@ -1,0 +1,167 @@
+[2023-04-23 13:47:05,360] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.attack_ProjectedGradientDescent manual__2023-04-23T13:46:48.593466+00:00 [queued]>
+[2023-04-23 13:47:05,379] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.attack_ProjectedGradientDescent manual__2023-04-23T13:46:48.593466+00:00 [queued]>
+[2023-04-23 13:47:05,380] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-23 13:47:05,380] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2023-04-23 13:47:05,381] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-23 13:47:05,409] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): attack_ProjectedGradientDescent> on 2023-04-23 13:46:48.593466+00:00
+[2023-04-23 13:47:05,421] {standard_task_runner.py:52} INFO - Started process 775 to run task
+[2023-04-23 13:47:05,427] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'multi_attack_dag', 'attack_ProjectedGradientDescent', 'manual__2023-04-23T13:46:48.593466+00:00', '--job-id', '6244', '--raw', '--subdir', 'DAGS_FOLDER/attack_dag.py', '--cfg-path', '/tmp/tmpgq75u3ou', '--error-file', '/tmp/tmp45juln3t']
+[2023-04-23 13:47:05,429] {standard_task_runner.py:80} INFO - Job 6244: Subtask attack_ProjectedGradientDescent
+[2023-04-23 13:47:05,543] {task_command.py:369} INFO - Running <TaskInstance: multi_attack_dag.attack_ProjectedGradientDescent manual__2023-04-23T13:46:48.593466+00:00 [running]> on host e7e31d5a6603
+[2023-04-23 13:47:05,680] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=multi_attack_dag
+AIRFLOW_CTX_TASK_ID=attack_ProjectedGradientDescent
+AIRFLOW_CTX_EXECUTION_DATE=2023-04-23T13:46:48.593466+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-04-23T13:46:48.593466+00:00
+[2023-04-23 13:47:05,684] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-04-23 13:47:05,688] {client.py:777} INFO - Refreshing access_token
+[2023-04-23 13:47:06,365] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-04-23 13:47:06,370] {client.py:777} INFO - Refreshing access_token
+[2023-04-23 13:47:11,414] {pytorch.py:1198} INFO - Inferred 5 hidden layers on PyTorch classifier.
+[2023-04-23 13:47:13,984] {attack_dag.py:227} INFO - Optimizing...
+[2023-04-23 13:47:13,992] {logging_mixin.py:115} INFO - I am right here on <class 'art.attacks.evasion.projected_gradient_descent.projected_gradient_descent.ProjectedGradientDescent'>
+[2023-04-23 13:47:13,992] {logging_mixin.py:115} INFO - <function optimize_evasion_attack.<locals>.<lambda> at 0x7efce3f7ac20>
+[2023-04-23 13:47:14,005] {logging_mixin.py:115} INFO - This is the attack : <class 'art.attacks.evasion.projected_gradient_descent.projected_gradient_descent.ProjectedGradientDescent'> and its HP : {'eps': 0.37992990634839763, 'random_eps': True}
+[2023-04-23 13:47:14,007] {projected_gradient_descent.py:199} INFO - Creating adversarial samples.
+[2023-04-23 13:47:14,016] {logging_mixin.py:115} WARNING - PGD - Batches:   0%|          | 0/7 [00:00<?, ?it/s]
+[2023-04-23 13:47:14,236] {logging_mixin.py:115} WARNING - PGD - Batches:  14%|#4        | 1/7 [00:00<00:01,  4.57it/s]
+[2023-04-23 13:47:16,370] {logging_mixin.py:115} WARNING - PGD - Batches:  29%|##8       | 2/7 [00:02<00:06,  1.35s/it]
+[2023-04-23 13:47:17,755] {logging_mixin.py:115} WARNING - PGD - Batches:  43%|####2     | 3/7 [00:03<00:05,  1.36s/it]
+[2023-04-23 13:47:18,109] {logging_mixin.py:115} WARNING - PGD - Batches:  57%|#####7    | 4/7 [00:04<00:02,  1.04it/s]
+[2023-04-23 13:47:18,576] {logging_mixin.py:115} WARNING - PGD - Batches:  71%|#######1  | 5/7 [00:04<00:01,  1.27it/s]
+[2023-04-23 13:47:18,821] {logging_mixin.py:115} WARNING - PGD - Batches:  86%|########5 | 6/7 [00:04<00:00,  1.66it/s]
+[2023-04-23 13:47:19,411] {logging_mixin.py:115} WARNING - PGD - Batches: 100%|##########| 7/7 [00:05<00:00,  1.67it/s]
+[2023-04-23 13:47:19,422] {logging_mixin.py:115} WARNING -                                                             
+[2023-04-23 13:47:19,447] {projected_gradient_descent_pytorch.py:239} INFO - Success rate of attack: 64.97%
+[2023-04-23 13:47:19,458] {logging_mixin.py:115} INFO - This is the attack : <class 'art.attacks.evasion.projected_gradient_descent.projected_gradient_descent.ProjectedGradientDescent'> and its HP : {'eps': 0.0015902648722410507, 'random_eps': False}
+[2023-04-23 13:47:19,467] {projected_gradient_descent.py:199} INFO - Creating adversarial samples.
+[2023-04-23 13:47:19,492] {logging_mixin.py:115} WARNING - 
+[2023-04-23 13:47:19,493] {logging_mixin.py:115} WARNING - PGD - Batches:   0%|          | 0/7 [00:00<?, ?it/s]
+[2023-04-23 13:47:21,018] {logging_mixin.py:115} WARNING - PGD - Batches:  14%|#4        | 1/7 [00:01<00:09,  1.51s/it]
+[2023-04-23 13:47:22,567] {logging_mixin.py:115} WARNING - PGD - Batches:  29%|##8       | 2/7 [00:03<00:07,  1.53s/it]
+[2023-04-23 13:47:22,932] {logging_mixin.py:115} WARNING - PGD - Batches:  43%|####2     | 3/7 [00:03<00:03,  1.00it/s]
+[2023-04-23 13:47:23,425] {logging_mixin.py:115} WARNING - PGD - Batches:  57%|#####7    | 4/7 [00:03<00:02,  1.25it/s]
+[2023-04-23 13:47:23,609] {logging_mixin.py:115} WARNING - PGD - Batches:  71%|#######1  | 5/7 [00:04<00:01,  1.73it/s]
+[2023-04-23 13:47:23,987] {logging_mixin.py:115} WARNING - PGD - Batches:  86%|########5 | 6/7 [00:04<00:00,  1.96it/s]
+[2023-04-23 13:47:24,135] {logging_mixin.py:115} WARNING - PGD - Batches: 100%|##########| 7/7 [00:04<00:00,  2.55it/s]
+[2023-04-23 13:47:24,137] {logging_mixin.py:115} WARNING -                                                             
+[2023-04-23 13:47:24,141] {projected_gradient_descent_pytorch.py:239} INFO - Success rate of attack: 1.02%
+[2023-04-23 13:47:24,153] {logging_mixin.py:115} INFO - This is the attack : <class 'art.attacks.evasion.projected_gradient_descent.projected_gradient_descent.ProjectedGradientDescent'> and its HP : {'eps': 0.3903281983556881, 'random_eps': True}
+[2023-04-23 13:47:24,162] {projected_gradient_descent.py:199} INFO - Creating adversarial samples.
+[2023-04-23 13:47:24,175] {logging_mixin.py:115} WARNING - 
+[2023-04-23 13:47:24,182] {logging_mixin.py:115} WARNING - PGD - Batches:   0%|          | 0/7 [00:00<?, ?it/s]
+[2023-04-23 13:47:24,408] {logging_mixin.py:115} WARNING - PGD - Batches:  14%|#4        | 1/7 [00:00<00:01,  4.59it/s]
+[2023-04-23 13:47:24,701] {logging_mixin.py:115} WARNING - PGD - Batches:  29%|##8       | 2/7 [00:00<00:01,  3.82it/s]
+[2023-04-23 13:47:24,826] {logging_mixin.py:115} WARNING - PGD - Batches:  43%|####2     | 3/7 [00:00<00:00,  5.02it/s]
+[2023-04-23 13:47:24,991] {logging_mixin.py:115} WARNING - PGD - Batches:  71%|#######1  | 5/7 [00:00<00:00,  7.51it/s]
+[2023-04-23 13:47:25,137] {logging_mixin.py:115} WARNING - PGD - Batches:  86%|########5 | 6/7 [00:00<00:00,  7.31it/s]
+[2023-04-23 13:47:25,611] {logging_mixin.py:115} WARNING - PGD - Batches: 100%|##########| 7/7 [00:01<00:00,  4.25it/s]
+[2023-04-23 13:47:25,611] {logging_mixin.py:115} WARNING -                                                             
+[2023-04-23 13:47:25,617] {projected_gradient_descent_pytorch.py:239} INFO - Success rate of attack: 64.97%
+[2023-04-23 13:47:25,644] {logging_mixin.py:115} INFO - This is the attack : <class 'art.attacks.evasion.projected_gradient_descent.projected_gradient_descent.ProjectedGradientDescent'> and its HP : {'eps': 0.09857342519507915, 'random_eps': True}
+[2023-04-23 13:47:25,654] {projected_gradient_descent.py:199} INFO - Creating adversarial samples.
+[2023-04-23 13:47:25,680] {logging_mixin.py:115} WARNING - 
+[2023-04-23 13:47:25,682] {logging_mixin.py:115} WARNING - PGD - Batches:   0%|          | 0/7 [00:00<?, ?it/s]
+[2023-04-23 13:47:27,756] {logging_mixin.py:115} WARNING - PGD - Batches:  14%|#4        | 1/7 [00:02<00:12,  2.07s/it]
+[2023-04-23 13:47:27,986] {logging_mixin.py:115} WARNING - PGD - Batches:  29%|##8       | 2/7 [00:02<00:04,  1.01it/s]
+[2023-04-23 13:47:29,540] {logging_mixin.py:115} WARNING - PGD - Batches:  43%|####2     | 3/7 [00:03<00:04,  1.25s/it]
+[2023-04-23 13:47:30,162] {logging_mixin.py:115} WARNING - PGD - Batches:  57%|#####7    | 4/7 [00:04<00:02,  1.00it/s]
+[2023-04-23 13:47:30,916] {logging_mixin.py:115} WARNING - PGD - Batches:  71%|#######1  | 5/7 [00:05<00:01,  1.10it/s]
+[2023-04-23 13:47:31,087] {logging_mixin.py:115} WARNING - PGD - Batches:  86%|########5 | 6/7 [00:05<00:00,  1.52it/s]
+[2023-04-23 13:47:31,312] {logging_mixin.py:115} WARNING - PGD - Batches: 100%|##########| 7/7 [00:05<00:00,  1.93it/s]
+[2023-04-23 13:47:31,331] {logging_mixin.py:115} WARNING -                                                             
+[2023-04-23 13:47:31,435] {projected_gradient_descent_pytorch.py:239} INFO - Success rate of attack: 3.55%
+[2023-04-23 13:47:31,450] {logging_mixin.py:115} INFO - This is the attack : <class 'art.attacks.evasion.projected_gradient_descent.projected_gradient_descent.ProjectedGradientDescent'> and its HP : {'eps': 0.8659790645077869, 'random_eps': True}
+[2023-04-23 13:47:31,452] {projected_gradient_descent.py:199} INFO - Creating adversarial samples.
+[2023-04-23 13:47:31,509] {logging_mixin.py:115} WARNING - 
+[2023-04-23 13:47:31,516] {logging_mixin.py:115} WARNING - PGD - Batches:   0%|          | 0/7 [00:00<?, ?it/s]
+[2023-04-23 13:47:32,084] {logging_mixin.py:115} WARNING - PGD - Batches:  14%|#4        | 1/7 [00:00<00:03,  1.76it/s]
+[2023-04-23 13:47:32,512] {logging_mixin.py:115} WARNING - PGD - Batches:  29%|##8       | 2/7 [00:00<00:02,  2.06it/s]
+[2023-04-23 13:47:32,800] {logging_mixin.py:115} WARNING - PGD - Batches:  43%|####2     | 3/7 [00:01<00:01,  2.53it/s]
+[2023-04-23 13:47:33,015] {logging_mixin.py:115} WARNING - PGD - Batches:  57%|#####7    | 4/7 [00:01<00:00,  3.08it/s]
+[2023-04-23 13:47:33,501] {logging_mixin.py:115} WARNING - PGD - Batches:  71%|#######1  | 5/7 [00:01<00:00,  2.61it/s]
+[2023-04-23 13:47:34,585] {logging_mixin.py:115} WARNING - PGD - Batches:  86%|########5 | 6/7 [00:03<00:00,  1.61it/s]
+[2023-04-23 13:47:35,053] {logging_mixin.py:115} WARNING - PGD - Batches: 100%|##########| 7/7 [00:03<00:00,  1.75it/s]
+[2023-04-23 13:47:35,061] {logging_mixin.py:115} WARNING -                                                             
+[2023-04-23 13:47:35,075] {projected_gradient_descent_pytorch.py:239} INFO - Success rate of attack: 64.97%
+[2023-04-23 13:47:35,078] {logging_mixin.py:115} INFO - This is the attack : <class 'art.attacks.evasion.projected_gradient_descent.projected_gradient_descent.ProjectedGradientDescent'> and its HP : {'eps': 0.9367130599882288, 'random_eps': False}
+[2023-04-23 13:47:35,079] {projected_gradient_descent.py:199} INFO - Creating adversarial samples.
+[2023-04-23 13:47:35,094] {logging_mixin.py:115} WARNING - 
+[2023-04-23 13:47:35,096] {logging_mixin.py:115} WARNING - PGD - Batches:   0%|          | 0/7 [00:00<?, ?it/s]
+[2023-04-23 13:47:35,490] {logging_mixin.py:115} WARNING - PGD - Batches:  14%|#4        | 1/7 [00:00<00:02,  2.54it/s]
+[2023-04-23 13:47:35,764] {logging_mixin.py:115} WARNING - PGD - Batches:  29%|##8       | 2/7 [00:00<00:01,  3.09it/s]
+[2023-04-23 13:47:36,320] {logging_mixin.py:115} WARNING - PGD - Batches:  43%|####2     | 3/7 [00:01<00:01,  2.33it/s]
+[2023-04-23 13:47:36,606] {logging_mixin.py:115} WARNING - PGD - Batches:  57%|#####7    | 4/7 [00:01<00:01,  2.68it/s]
+[2023-04-23 13:47:36,975] {logging_mixin.py:115} WARNING - PGD - Batches:  71%|#######1  | 5/7 [00:01<00:00,  2.69it/s]
+[2023-04-23 13:47:38,769] {logging_mixin.py:115} WARNING - PGD - Batches:  86%|########5 | 6/7 [00:03<00:00,  1.17it/s]
+[2023-04-23 13:47:40,053] {logging_mixin.py:115} WARNING - PGD - Batches: 100%|##########| 7/7 [00:04<00:00,  1.00it/s]
+[2023-04-23 13:47:40,072] {logging_mixin.py:115} WARNING -                                                             
+[2023-04-23 13:47:40,084] {projected_gradient_descent_pytorch.py:239} INFO - Success rate of attack: 64.97%
+[2023-04-23 13:47:40,182] {logging_mixin.py:115} INFO - This is the attack : <class 'art.attacks.evasion.projected_gradient_descent.projected_gradient_descent.ProjectedGradientDescent'> and its HP : {'eps': 0.29294430266899235, 'random_eps': True}
+[2023-04-23 13:47:40,184] {projected_gradient_descent.py:199} INFO - Creating adversarial samples.
+[2023-04-23 13:47:40,256] {logging_mixin.py:115} WARNING - 
+[2023-04-23 13:47:40,267] {logging_mixin.py:115} WARNING - PGD - Batches:   0%|          | 0/7 [00:00<?, ?it/s]
+[2023-04-23 13:47:40,984] {logging_mixin.py:115} WARNING - PGD - Batches:  14%|#4        | 1/7 [00:00<00:04,  1.40it/s]
+[2023-04-23 13:47:41,777] {logging_mixin.py:115} WARNING - PGD - Batches:  29%|##8       | 2/7 [00:01<00:03,  1.31it/s]
+[2023-04-23 13:47:42,000] {logging_mixin.py:115} WARNING - PGD - Batches:  43%|####2     | 3/7 [00:01<00:02,  1.94it/s]
+[2023-04-23 13:47:42,471] {logging_mixin.py:115} WARNING - PGD - Batches:  57%|#####7    | 4/7 [00:02<00:01,  2.01it/s]
+[2023-04-23 13:47:42,733] {logging_mixin.py:115} WARNING - PGD - Batches:  71%|#######1  | 5/7 [00:02<00:00,  2.42it/s]
+[2023-04-23 13:47:43,025] {logging_mixin.py:115} WARNING - PGD - Batches:  86%|########5 | 6/7 [00:02<00:00,  2.69it/s]
+[2023-04-23 13:47:43,162] {logging_mixin.py:115} WARNING - PGD - Batches: 100%|##########| 7/7 [00:02<00:00,  3.39it/s]
+[2023-04-23 13:47:43,162] {logging_mixin.py:115} WARNING -                                                             
+[2023-04-23 13:47:43,167] {projected_gradient_descent_pytorch.py:239} INFO - Success rate of attack: 5.58%
+[2023-04-23 13:47:43,169] {logging_mixin.py:115} INFO - This is the attack : <class 'art.attacks.evasion.projected_gradient_descent.projected_gradient_descent.ProjectedGradientDescent'> and its HP : {'eps': 0.048985289724443826, 'random_eps': False}
+[2023-04-23 13:47:43,170] {projected_gradient_descent.py:199} INFO - Creating adversarial samples.
+[2023-04-23 13:47:43,173] {logging_mixin.py:115} WARNING - 
+[2023-04-23 13:47:43,173] {logging_mixin.py:115} WARNING - PGD - Batches:   0%|          | 0/7 [00:00<?, ?it/s]
+[2023-04-23 13:47:43,352] {logging_mixin.py:115} WARNING - PGD - Batches:  14%|#4        | 1/7 [00:00<00:01,  5.62it/s]
+[2023-04-23 13:47:43,525] {logging_mixin.py:115} WARNING - PGD - Batches:  43%|####2     | 3/7 [00:00<00:00,  9.06it/s]
+[2023-04-23 13:47:43,683] {logging_mixin.py:115} WARNING - PGD - Batches:  57%|#####7    | 4/7 [00:00<00:00,  7.89it/s]
+[2023-04-23 13:47:43,827] {logging_mixin.py:115} WARNING - PGD - Batches:  71%|#######1  | 5/7 [00:00<00:00,  7.54it/s]
+[2023-04-23 13:47:43,977] {logging_mixin.py:115} WARNING - PGD - Batches:  86%|########5 | 6/7 [00:00<00:00,  7.23it/s]
+[2023-04-23 13:47:44,088] {logging_mixin.py:115} WARNING - PGD - Batches: 100%|##########| 7/7 [00:00<00:00,  7.72it/s]
+[2023-04-23 13:47:44,089] {logging_mixin.py:115} WARNING -                                                             
+[2023-04-23 13:47:44,093] {projected_gradient_descent_pytorch.py:239} INFO - Success rate of attack: 50.25%
+[2023-04-23 13:47:44,096] {logging_mixin.py:115} INFO - This is the attack : <class 'art.attacks.evasion.projected_gradient_descent.projected_gradient_descent.ProjectedGradientDescent'> and its HP : {'eps': 0.49189127176885816, 'random_eps': False}
+[2023-04-23 13:47:44,096] {projected_gradient_descent.py:199} INFO - Creating adversarial samples.
+[2023-04-23 13:47:44,099] {logging_mixin.py:115} WARNING - 
+[2023-04-23 13:47:44,100] {logging_mixin.py:115} WARNING - PGD - Batches:   0%|          | 0/7 [00:00<?, ?it/s]
+[2023-04-23 13:47:44,248] {logging_mixin.py:115} WARNING - PGD - Batches:  14%|#4        | 1/7 [00:00<00:00,  6.76it/s]
+[2023-04-23 13:47:44,453] {logging_mixin.py:115} WARNING - PGD - Batches:  43%|####2     | 3/7 [00:00<00:00,  8.75it/s]
+[2023-04-23 13:47:44,609] {logging_mixin.py:115} WARNING - PGD - Batches:  57%|#####7    | 4/7 [00:00<00:00,  7.78it/s]
+[2023-04-23 13:47:44,740] {logging_mixin.py:115} WARNING - PGD - Batches:  71%|#######1  | 5/7 [00:00<00:00,  7.72it/s]
+[2023-04-23 13:47:44,865] {logging_mixin.py:115} WARNING - PGD - Batches: 100%|##########| 7/7 [00:00<00:00, 10.32it/s]
+[2023-04-23 13:47:44,866] {logging_mixin.py:115} WARNING -                                                             
+[2023-04-23 13:47:44,870] {projected_gradient_descent_pytorch.py:239} INFO - Success rate of attack: 64.97%
+[2023-04-23 13:47:44,873] {logging_mixin.py:115} INFO - This is the attack : <class 'art.attacks.evasion.projected_gradient_descent.projected_gradient_descent.ProjectedGradientDescent'> and its HP : {'eps': 0.9045736695722989, 'random_eps': False}
+[2023-04-23 13:47:44,873] {projected_gradient_descent.py:199} INFO - Creating adversarial samples.
+[2023-04-23 13:47:44,886] {logging_mixin.py:115} WARNING - 
+[2023-04-23 13:47:44,887] {logging_mixin.py:115} WARNING - PGD - Batches:   0%|          | 0/7 [00:00<?, ?it/s]
+[2023-04-23 13:47:45,106] {logging_mixin.py:115} WARNING - PGD - Batches:  14%|#4        | 1/7 [00:00<00:01,  4.57it/s]
+[2023-04-23 13:47:45,237] {logging_mixin.py:115} WARNING - PGD - Batches:  29%|##8       | 2/7 [00:00<00:00,  5.99it/s]
+[2023-04-23 13:47:45,338] {logging_mixin.py:115} WARNING - PGD - Batches:  43%|####2     | 3/7 [00:00<00:00,  7.31it/s]
+[2023-04-23 13:47:45,585] {logging_mixin.py:115} WARNING - PGD - Batches:  71%|#######1  | 5/7 [00:00<00:00,  7.74it/s]
+[2023-04-23 13:47:45,698] {logging_mixin.py:115} WARNING - PGD - Batches:  86%|########5 | 6/7 [00:00<00:00,  8.03it/s]
+[2023-04-23 13:47:45,761] {logging_mixin.py:115} WARNING -                                                             
+[2023-04-23 13:47:45,765] {projected_gradient_descent_pytorch.py:239} INFO - Success rate of attack: 64.97%
+[2023-04-23 13:47:45,991] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/attack_dag.py", line 156, in attack_ProjectedGradientDescent
+    model_acc,adversarial_examples = attack(ProjectedGradientDescent)
+  File "/opt/airflow/dags/attack_dag.py", line 228, in attack
+    optimized_attack = optimize_evasion_attack(attack_obj,estimator,x_test,y_test)
+  File "/opt/airflow/dags/attack_dag.py", line 207, in optimize_evasion_attack
+    optimized_attack = globals()[type(attack).__name__](classifier,**final_HP)
+KeyError: 'ABCMeta'
+[2023-04-23 13:47:46,006] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=multi_attack_dag, task_id=attack_ProjectedGradientDescent, execution_date=20230423T134648, start_date=20230423T134705, end_date=20230423T134746
+[2023-04-23 13:47:46,038] {standard_task_runner.py:97} ERROR - Failed to execute job 6244 for task attack_ProjectedGradientDescent ('ABCMeta'; 775)
+[2023-04-23 13:47:46,064] {local_task_job.py:156} INFO - Task exited with return code 1
+[2023-04-23 13:47:46,156] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,163 @@
+[2023-04-27 09:02:35,494] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.attack_CarliniL2Method manual__2023-04-27T09:01:19.609297+00:00 [queued]>
+[2023-04-27 09:02:35,584] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.attack_CarliniL2Method manual__2023-04-27T09:01:19.609297+00:00 [queued]>
+[2023-04-27 09:02:35,591] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-27 09:02:35,592] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2023-04-27 09:02:35,593] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-27 09:02:35,644] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): attack_CarliniL2Method> on 2023-04-27 09:01:19.609297+00:00
+[2023-04-27 09:02:35,693] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'multi_attack_dag', 'attack_CarliniL2Method', 'manual__2023-04-27T09:01:19.609297+00:00', '--job-id', '6455', '--raw', '--subdir', 'DAGS_FOLDER/attack_dag.py', '--cfg-path', '/tmp/tmpf8lmjgtk', '--error-file', '/tmp/tmpj5r3llw6']
+[2023-04-27 09:02:35,662] {standard_task_runner.py:52} INFO - Started process 2591 to run task
+[2023-04-27 09:02:35,719] {standard_task_runner.py:80} INFO - Job 6455: Subtask attack_CarliniL2Method
+[2023-04-27 09:02:36,075] {task_command.py:369} INFO - Running <TaskInstance: multi_attack_dag.attack_CarliniL2Method manual__2023-04-27T09:01:19.609297+00:00 [running]> on host e7e31d5a6603
+[2023-04-27 09:02:36,910] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=multi_attack_dag
+AIRFLOW_CTX_TASK_ID=attack_CarliniL2Method
+AIRFLOW_CTX_EXECUTION_DATE=2023-04-27T09:01:19.609297+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-04-27T09:01:19.609297+00:00
+[2023-04-27 09:02:36,915] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-04-27 09:02:36,961] {client.py:777} INFO - Refreshing access_token
+[2023-04-27 09:02:38,090] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-04-27 09:02:38,118] {client.py:777} INFO - Refreshing access_token
+[2023-04-27 09:03:08,933] {pytorch.py:1198} INFO - Inferred 5 hidden layers on PyTorch classifier.
+[2023-04-27 09:08:45,842] {attack_dag.py:642} INFO - Optimizing...
+[2023-04-27 09:08:45,871] {logging_mixin.py:115} INFO - I am right here on <class 'art.attacks.evasion.carlini.CarliniL2Method'>
+[2023-04-27 09:08:45,872] {logging_mixin.py:115} INFO - <function optimize_evasion_attack.<locals>.<lambda> at 0x7fdd0ebeb560>
+[2023-04-27 09:08:46,013] {logging_mixin.py:115} INFO - This is the attack : <class 'art.attacks.evasion.carlini.CarliniL2Method'> and its HP : {'confidence': 0.37550354377452205}
+[2023-04-27 09:08:46,376] {logging_mixin.py:115} WARNING - C&W L_2:   0%|          | 0/197 [00:00<?, ?it/s]
+[2023-04-27 09:09:11,258] {logging_mixin.py:115} WARNING - C&W L_2:   1%|          | 1/197 [00:24<1:21:16, 24.88s/it]
+[2023-04-27 09:09:33,838] {logging_mixin.py:115} WARNING - C&W L_2:   1%|1         | 2/197 [00:47<1:16:27, 23.53s/it]
+[2023-04-27 09:09:51,318] {logging_mixin.py:115} WARNING - C&W L_2:   2%|1         | 3/197 [01:04<1:07:08, 20.76s/it]
+[2023-04-27 09:10:10,006] {logging_mixin.py:115} WARNING - C&W L_2:   2%|2         | 4/197 [01:23<1:04:09, 19.95s/it]
+[2023-04-27 09:10:27,385] {logging_mixin.py:115} WARNING - C&W L_2:   3%|2         | 5/197 [01:41<1:00:51, 19.02s/it]
+[2023-04-27 09:10:46,785] {logging_mixin.py:115} WARNING - C&W L_2:   3%|3         | 6/197 [02:00<1:00:57, 19.15s/it]
+[2023-04-27 09:11:04,038] {logging_mixin.py:115} WARNING - C&W L_2:   4%|3         | 7/197 [02:17<58:40, 18.53s/it]  
+[2023-04-27 09:11:26,350] {logging_mixin.py:115} WARNING - C&W L_2:   4%|4         | 8/197 [02:39<1:02:09, 19.73s/it]
+[2023-04-27 09:11:46,318] {logging_mixin.py:115} WARNING - C&W L_2:   5%|4         | 9/197 [02:59<1:02:03, 19.81s/it]
+[2023-04-27 09:12:05,887] {logging_mixin.py:115} WARNING - C&W L_2:   5%|5         | 10/197 [03:19<1:01:30, 19.73s/it]
+[2023-04-27 09:12:23,494] {logging_mixin.py:115} WARNING - C&W L_2:   6%|5         | 11/197 [03:37<59:09, 19.08s/it]  
+[2023-04-27 09:12:42,616] {logging_mixin.py:115} WARNING - C&W L_2:   6%|6         | 12/197 [03:56<58:52, 19.09s/it]
+[2023-04-27 09:12:55,672] {logging_mixin.py:115} WARNING - C&W L_2:   7%|6         | 13/197 [04:09<52:56, 17.27s/it]
+[2023-04-27 09:13:06,976] {logging_mixin.py:115} WARNING - C&W L_2:   7%|7         | 14/197 [04:20<47:10, 15.46s/it]
+[2023-04-27 09:13:14,969] {logging_mixin.py:115} WARNING - C&W L_2:   8%|7         | 15/197 [04:28<40:04, 13.21s/it]
+[2023-04-27 09:13:20,029] {logging_mixin.py:115} WARNING - C&W L_2:   8%|8         | 16/197 [04:33<32:27, 10.76s/it]
+[2023-04-27 09:13:27,919] {logging_mixin.py:115} WARNING - C&W L_2:   9%|8         | 17/197 [04:41<29:41,  9.90s/it]
+[2023-04-27 09:13:35,748] {logging_mixin.py:115} WARNING - C&W L_2:   9%|9         | 18/197 [04:49<27:40,  9.27s/it]
+[2023-04-27 09:13:45,942] {logging_mixin.py:115} WARNING - C&W L_2:  10%|9         | 19/197 [04:59<28:20,  9.55s/it]
+[2023-04-27 09:13:57,278] {logging_mixin.py:115} WARNING - C&W L_2:  10%|#         | 20/197 [05:10<29:45, 10.09s/it]
+[2023-04-27 09:14:13,712] {logging_mixin.py:115} WARNING - C&W L_2:  11%|#         | 21/197 [05:27<35:10, 11.99s/it]
+[2023-04-27 09:14:39,725] {logging_mixin.py:115} WARNING - C&W L_2:  11%|#1        | 22/197 [05:53<47:15, 16.20s/it]
+[2023-04-27 09:15:03,133] {logging_mixin.py:115} WARNING - C&W L_2:  12%|#1        | 23/197 [06:16<53:15, 18.36s/it]
+[2023-04-27 09:15:36,251] {logging_mixin.py:115} WARNING - C&W L_2:  12%|#2        | 24/197 [06:49<1:05:42, 22.79s/it]
+[2023-04-27 09:16:14,666] {logging_mixin.py:115} WARNING - C&W L_2:  13%|#2        | 25/197 [07:28<1:18:46, 27.48s/it]
+[2023-04-27 09:16:51,135] {logging_mixin.py:115} WARNING - C&W L_2:  13%|#3        | 26/197 [08:04<1:26:00, 30.18s/it]
+[2023-04-27 09:17:19,472] {logging_mixin.py:115} WARNING - C&W L_2:  14%|#3        | 27/197 [08:33<1:23:56, 29.62s/it]
+[2023-04-27 09:17:45,573] {logging_mixin.py:115} WARNING - C&W L_2:  14%|#4        | 28/197 [08:59<1:20:27, 28.57s/it]
+[2023-04-27 09:18:18,919] {logging_mixin.py:115} WARNING - C&W L_2:  15%|#4        | 29/197 [09:32<1:24:00, 30.00s/it]
+[2023-04-27 09:18:47,469] {logging_mixin.py:115} WARNING - C&W L_2:  15%|#5        | 30/197 [10:01<1:22:17, 29.57s/it]
+[2023-04-27 09:19:18,076] {logging_mixin.py:115} WARNING - C&W L_2:  16%|#5        | 31/197 [10:31<1:22:39, 29.88s/it]
+[2023-04-27 09:19:47,340] {logging_mixin.py:115} WARNING - C&W L_2:  16%|#6        | 32/197 [11:00<1:21:39, 29.69s/it]
+[2023-04-27 09:20:16,673] {logging_mixin.py:115} WARNING - C&W L_2:  17%|#6        | 33/197 [11:30<1:20:52, 29.59s/it]
+[2023-04-27 09:20:38,365] {logging_mixin.py:115} WARNING - C&W L_2:  17%|#7        | 34/197 [11:51<1:13:56, 27.22s/it]
+[2023-04-27 09:20:51,015] {logging_mixin.py:115} WARNING - C&W L_2:  18%|#7        | 35/197 [12:04<1:01:41, 22.85s/it]
+[2023-04-27 09:21:06,764] {logging_mixin.py:115} WARNING - C&W L_2:  18%|#8        | 36/197 [12:20<55:35, 20.72s/it]  
+[2023-04-27 09:21:21,539] {logging_mixin.py:115} WARNING - C&W L_2:  19%|#8        | 37/197 [12:35<50:29, 18.93s/it]
+[2023-04-27 09:21:33,844] {logging_mixin.py:115} WARNING - C&W L_2:  19%|#9        | 38/197 [12:47<44:54, 16.95s/it]
+[2023-04-27 09:21:45,260] {logging_mixin.py:115} WARNING - C&W L_2:  20%|#9        | 39/197 [12:58<40:15, 15.29s/it]
+[2023-04-27 09:21:57,572] {logging_mixin.py:115} WARNING - C&W L_2:  20%|##        | 40/197 [13:11<37:39, 14.39s/it]
+[2023-04-27 09:22:06,053] {logging_mixin.py:115} WARNING - C&W L_2:  21%|##        | 41/197 [13:19<32:48, 12.62s/it]
+[2023-04-27 09:22:10,514] {logging_mixin.py:115} WARNING - C&W L_2:  21%|##1       | 42/197 [13:24<26:16, 10.17s/it]
+[2023-04-27 09:22:17,801] {logging_mixin.py:115} WARNING - C&W L_2:  22%|##1       | 43/197 [13:31<23:53,  9.31s/it]
+[2023-04-27 09:22:25,766] {logging_mixin.py:115} WARNING - C&W L_2:  22%|##2       | 44/197 [13:39<22:42,  8.90s/it]
+[2023-04-27 09:22:31,181] {logging_mixin.py:115} WARNING - C&W L_2:  23%|##2       | 45/197 [13:44<19:54,  7.86s/it]
+[2023-04-27 09:22:38,218] {logging_mixin.py:115} WARNING - C&W L_2:  23%|##3       | 46/197 [13:51<19:09,  7.61s/it]
+[2023-04-27 09:22:44,563] {logging_mixin.py:115} WARNING - C&W L_2:  24%|##3       | 47/197 [13:58<18:04,  7.23s/it]
+[2023-04-27 09:22:48,872] {logging_mixin.py:115} WARNING - C&W L_2:  24%|##4       | 48/197 [14:02<15:46,  6.35s/it]
+[2023-04-27 09:22:55,355] {logging_mixin.py:115} WARNING - C&W L_2:  25%|##4       | 49/197 [14:08<15:46,  6.39s/it]
+[2023-04-27 09:23:01,834] {logging_mixin.py:115} WARNING - C&W L_2:  25%|##5       | 50/197 [14:15<15:43,  6.42s/it]
+[2023-04-27 09:23:09,829] {logging_mixin.py:115} WARNING - C&W L_2:  26%|##5       | 51/197 [14:23<16:46,  6.89s/it]
+[2023-04-27 09:23:15,531] {logging_mixin.py:115} WARNING - C&W L_2:  26%|##6       | 52/197 [14:29<15:47,  6.53s/it]
+[2023-04-27 09:23:24,679] {logging_mixin.py:115} WARNING - C&W L_2:  27%|##6       | 53/197 [14:38<17:33,  7.32s/it]
+[2023-04-27 09:23:31,619] {logging_mixin.py:115} WARNING - C&W L_2:  27%|##7       | 54/197 [14:45<17:10,  7.21s/it]
+[2023-04-27 09:23:39,051] {logging_mixin.py:115} WARNING - C&W L_2:  28%|##7       | 55/197 [14:52<17:11,  7.27s/it]
+[2023-04-27 09:23:47,100] {logging_mixin.py:115} WARNING - C&W L_2:  28%|##8       | 56/197 [15:00<17:38,  7.51s/it]
+[2023-04-27 09:23:57,397] {logging_mixin.py:115} WARNING - C&W L_2:  29%|##8       | 57/197 [15:11<19:28,  8.34s/it]
+[2023-04-27 09:24:09,288] {logging_mixin.py:115} WARNING - C&W L_2:  29%|##9       | 58/197 [15:22<21:47,  9.41s/it]
+[2023-04-27 09:24:26,963] {logging_mixin.py:115} WARNING - C&W L_2:  30%|##9       | 59/197 [15:40<27:20, 11.89s/it]
+[2023-04-27 09:24:46,252] {logging_mixin.py:115} WARNING - C&W L_2:  30%|###       | 60/197 [15:59<32:12, 14.11s/it]
+[2023-04-27 09:25:06,761] {logging_mixin.py:115} WARNING - C&W L_2:  31%|###       | 61/197 [16:20<36:18, 16.02s/it]
+[2023-04-27 09:25:28,821] {logging_mixin.py:115} WARNING - C&W L_2:  31%|###1      | 62/197 [16:42<40:08, 17.84s/it]
+[2023-04-27 09:25:52,258] {logging_mixin.py:115} WARNING - C&W L_2:  32%|###1      | 63/197 [17:05<43:35, 19.52s/it]
+[2023-04-27 09:26:15,727] {logging_mixin.py:115} WARNING - C&W L_2:  32%|###2      | 64/197 [17:29<45:53, 20.70s/it]
+[2023-04-27 09:26:44,280] {logging_mixin.py:115} WARNING - C&W L_2:  33%|###2      | 65/197 [17:57<50:36, 23.00s/it]
+[2023-04-27 09:27:21,226] {logging_mixin.py:115} WARNING - C&W L_2:  34%|###3      | 66/197 [18:34<59:28, 27.24s/it]
+[2023-04-27 09:27:49,023] {logging_mixin.py:115} WARNING - C&W L_2:  34%|###4      | 67/197 [19:02<59:23, 27.41s/it]
+[2023-04-27 09:28:17,959] {logging_mixin.py:115} WARNING - C&W L_2:  35%|###4      | 68/197 [19:31<59:54, 27.87s/it]
+[2023-04-27 09:28:49,560] {logging_mixin.py:115} WARNING - C&W L_2:  35%|###5      | 69/197 [20:03<1:01:50, 28.99s/it]
+[2023-04-27 09:29:15,847] {logging_mixin.py:115} WARNING - C&W L_2:  36%|###5      | 70/197 [20:29<59:38, 28.18s/it]  
+[2023-04-27 09:29:46,026] {logging_mixin.py:115} WARNING - C&W L_2:  36%|###6      | 71/197 [20:59<1:00:25, 28.78s/it]
+[2023-04-27 09:30:11,501] {logging_mixin.py:115} WARNING - C&W L_2:  37%|###6      | 72/197 [21:25<57:53, 27.79s/it]  
+[2023-04-27 09:30:39,313] {logging_mixin.py:115} WARNING - C&W L_2:  37%|###7      | 73/197 [21:52<57:26, 27.79s/it]
+[2023-04-27 09:31:07,844] {logging_mixin.py:115} WARNING - C&W L_2:  38%|###7      | 74/197 [22:21<57:25, 28.02s/it]
+[2023-04-27 09:31:35,661] {logging_mixin.py:115} WARNING - C&W L_2:  38%|###8      | 75/197 [22:49<56:50, 27.96s/it]
+[2023-04-27 09:31:54,986] {logging_mixin.py:115} WARNING - C&W L_2:  39%|###8      | 76/197 [23:08<51:09, 25.37s/it]
+[2023-04-27 09:32:18,968] {logging_mixin.py:115} WARNING - C&W L_2:  39%|###9      | 77/197 [23:32<49:54, 24.95s/it]
+[2023-04-27 09:32:44,884] {logging_mixin.py:115} WARNING - C&W L_2:  40%|###9      | 78/197 [23:58<50:02, 25.23s/it]
+[2023-04-27 09:33:10,631] {logging_mixin.py:115} WARNING - C&W L_2:  40%|####      | 79/197 [24:24<49:56, 25.39s/it]
+[2023-04-27 09:33:40,945] {logging_mixin.py:115} WARNING - C&W L_2:  41%|####      | 80/197 [24:54<52:23, 26.87s/it]
+[2023-04-27 09:34:11,717] {logging_mixin.py:115} WARNING - C&W L_2:  41%|####1     | 81/197 [25:25<54:12, 28.04s/it]
+[2023-04-27 09:34:39,522] {logging_mixin.py:115} WARNING - C&W L_2:  42%|####1     | 82/197 [25:53<53:36, 27.97s/it]
+[2023-04-27 09:35:06,080] {logging_mixin.py:115} WARNING - C&W L_2:  42%|####2     | 83/197 [26:19<52:16, 27.51s/it]
+[2023-04-27 09:35:34,804] {logging_mixin.py:115} WARNING - C&W L_2:  43%|####2     | 84/197 [26:48<52:33, 27.91s/it]
+[2023-04-27 09:36:01,566] {logging_mixin.py:115} WARNING - C&W L_2:  43%|####3     | 85/197 [27:15<51:27, 27.57s/it]
+[2023-04-27 09:36:27,076] {logging_mixin.py:115} WARNING - C&W L_2:  44%|####3     | 86/197 [27:40<49:51, 26.95s/it]
+[2023-04-27 09:36:56,444] {logging_mixin.py:115} WARNING - C&W L_2:  44%|####4     | 87/197 [28:10<50:44, 27.67s/it]
+[2023-04-27 09:37:25,507] {logging_mixin.py:115} WARNING - C&W L_2:  45%|####4     | 88/197 [28:39<51:01, 28.09s/it]
+[2023-04-27 09:37:52,859] {logging_mixin.py:115} WARNING - C&W L_2:  45%|####5     | 89/197 [29:06<50:09, 27.87s/it]
+[2023-04-27 09:38:19,580] {logging_mixin.py:115} WARNING - C&W L_2:  46%|####5     | 90/197 [29:33<49:05, 27.52s/it]
+[2023-04-27 09:38:44,393] {logging_mixin.py:115} WARNING - C&W L_2:  46%|####6     | 91/197 [29:58<47:11, 26.71s/it]
+[2023-04-27 09:39:10,804] {logging_mixin.py:115} WARNING - C&W L_2:  47%|####6     | 92/197 [30:24<46:35, 26.62s/it]
+[2023-04-27 09:39:36,354] {logging_mixin.py:115} WARNING - C&W L_2:  47%|####7     | 93/197 [30:49<45:35, 26.30s/it]
+[2023-04-27 10:02:18,563] {local_task_job.py:221} WARNING - State of this instance has been externally set to up_for_retry. Terminating instance.
+[2023-04-27 10:02:19,201] {process_utils.py:129} INFO - Sending Signals.SIGTERM to group 2591. PIDs of all processes in the group: [2591]
+[2023-04-27 10:02:19,278] {process_utils.py:80} INFO - Sending the signal Signals.SIGTERM to group 2591
+[2023-04-27 10:02:19,451] {taskinstance.py:1541} ERROR - Received SIGTERM. Terminating subprocesses.
+[2023-04-27 10:02:20,232] {logging_mixin.py:115} WARNING - C&W L_2:  47%|####7     | 93/197 [53:33<59:53, 34.56s/it]
+[2023-04-27 10:02:24,319] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/attack_dag.py", line 454, in attack_CarliniL2Method
+    model_acc, adversarial_examples  = attack(CarliniL2Method)
+  File "/opt/airflow/dags/attack_dag.py", line 643, in attack
+    optimized_attack = optimize_evasion_attack(attack_obj,estimator,x_test,y_test)
+  File "/opt/airflow/dags/attack_dag.py", line 619, in optimize_evasion_attack
+    result = gp_minimize(func, search_space, n_calls=10)
+  File "/home/airflow/.local/lib/python3.7/site-packages/skopt/optimizer/gp.py", line 268, in gp_minimize
+    callback=callback, n_jobs=n_jobs, model_queue_size=model_queue_size)
+  File "/home/airflow/.local/lib/python3.7/site-packages/skopt/optimizer/base.py", line 299, in base_minimize
+    next_y = func(next_x)
+  File "/opt/airflow/dags/attack_dag.py", line 617, in <lambda>
+    func = lambda params: _optimize(attack, params,classifier=classifier,data=data,true_labels=true_labels)
+  File "/opt/airflow/dags/attack_dag.py", line 609, in _optimize
+    adv_examples = attack_to_optimize.generate(data)
+  File "/home/airflow/.local/lib/python3.7/site-packages/art/attacks/evasion/carlini.py", line 343, in generate
+    clip_max,
+  File "/home/airflow/.local/lib/python3.7/site-packages/art/attacks/evasion/carlini.py", line 215, in _loss_gradient
+    loss_gradient -= self.estimator.class_gradient(x_adv, label=i_sub)
+  File "/home/airflow/.local/lib/python3.7/site-packages/art/estimators/classification/pytorch.py", line 686, in class_gradient
+    retain_graph=True,
+  File "/home/airflow/.local/lib/python3.7/site-packages/torch/autograd/__init__.py", line 199, in backward
+    allow_unreachable=True, accumulate_grad=True)  # Calls into the C++ engine to run the backward pass
+  File "/home/airflow/.local/lib/python3.7/site-packages/art/estimators/classification/pytorch.py", line 649, in hook
+    def hook(grad):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1543, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2023-04-27 10:02:24,692] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=multi_attack_dag, task_id=attack_CarliniL2Method, execution_date=20230427T090119, start_date=20230427T090235, end_date=20230427T100224
+[2023-04-27 10:02:25,226] {standard_task_runner.py:97} ERROR - Failed to execute job 6455 for task attack_CarliniL2Method (Task received SIGTERM signal; 2591)
+[2023-04-27 10:02:25,352] {process_utils.py:75} INFO - Process psutil.Process(pid=2591, status='terminated', exitcode=1, started='09:02:35') (2591) terminated with exit code 1

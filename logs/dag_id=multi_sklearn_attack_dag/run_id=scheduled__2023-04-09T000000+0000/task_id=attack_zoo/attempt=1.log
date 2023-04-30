@@ -1,0 +1,34 @@
+[2023-04-16 13:28:56,969] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_sklearn_attack_dag.attack_zoo scheduled__2023-04-09T00:00:00+00:00 [queued]>
+[2023-04-16 13:28:57,077] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_sklearn_attack_dag.attack_zoo scheduled__2023-04-09T00:00:00+00:00 [queued]>
+[2023-04-16 13:28:57,078] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-16 13:28:57,080] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2023-04-16 13:28:57,080] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-16 13:28:57,192] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): attack_zoo> on 2023-04-09 00:00:00+00:00
+[2023-04-16 13:28:57,251] {standard_task_runner.py:52} INFO - Started process 504 to run task
+[2023-04-16 13:28:57,289] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'multi_sklearn_attack_dag', 'attack_zoo', 'scheduled__2023-04-09T00:00:00+00:00', '--job-id', '5172', '--raw', '--subdir', 'DAGS_FOLDER/sklearn_attack_dag.py', '--cfg-path', '/tmp/tmp_w_ogoef', '--error-file', '/tmp/tmpco918lp9']
+[2023-04-16 13:28:57,292] {standard_task_runner.py:80} INFO - Job 5172: Subtask attack_zoo
+[2023-04-16 13:28:57,659] {task_command.py:369} INFO - Running <TaskInstance: multi_sklearn_attack_dag.attack_zoo scheduled__2023-04-09T00:00:00+00:00 [running]> on host c5458bb8a35c
+[2023-04-16 13:28:58,091] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=multi_sklearn_attack_dag
+AIRFLOW_CTX_TASK_ID=attack_zoo
+AIRFLOW_CTX_EXECUTION_DATE=2023-04-09T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-04-09T00:00:00+00:00
+[2023-04-16 13:29:06,205] {logging_mixin.py:115} INFO - [13:29:06] WARNING: ../src/learner.cc:627: 
+Parameters: { "metric" } might not be used.
+
+  This could be a false alarm, with some parameters getting used by language bindings but
+  then being mistakenly passed down to XGBoost core, or some parameter actually being used
+  but getting flagged wrongly here. Please open an issue if you find any such cases.
+[2023-04-16 13:30:46,873] {logging_mixin.py:115} INFO - [0]	test-mlogloss:1.08678	train-mlogloss:1.35689
+[2023-04-16 13:31:57,219] {logging_mixin.py:115} INFO - [1]	test-mlogloss:0.80412	train-mlogloss:1.02601
+[2023-04-16 13:31:59,070] {logging_mixin.py:115} INFO - Accuracy on benign test examples: 100.0%
+[2023-04-16 13:31:59,188] {zoo.py:155} INFO - Disable resizing and importance sampling because feature vector input has been detected.
+[2023-04-16 13:31:59,632] {logging_mixin.py:115} WARNING - ZOO:   0%|          | 0/5 [00:00<?, ?it/s]
+[2023-04-16 13:35:14,075] {logging_mixin.py:115} WARNING - ZOO:  20%|##        | 1/5 [03:14<12:57, 194.43s/it]
+[2023-04-16 13:37:47,301] {logging_mixin.py:115} WARNING - ZOO:  40%|####      | 2/5 [05:47<08:30, 170.20s/it]
+[2023-04-16 13:40:10,458] {logging_mixin.py:115} WARNING - ZOO:  60%|######    | 3/5 [08:10<05:15, 157.85s/it]
+[2023-04-16 13:44:07,100] {logging_mixin.py:115} WARNING - ZOO:  80%|########  | 4/5 [12:07<03:08, 188.96s/it]

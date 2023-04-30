@@ -1,0 +1,31 @@
+[2023-04-27 12:16:44,815] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.attack_FeatureAdversariesPyTorch manual__2023-04-27T12:06:56.081840+00:00 [queued]>
+[2023-04-27 12:16:45,006] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.attack_FeatureAdversariesPyTorch manual__2023-04-27T12:06:56.081840+00:00 [queued]>
+[2023-04-27 12:16:45,007] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-27 12:16:45,008] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2023-04-27 12:16:45,008] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-27 12:16:45,083] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): attack_FeatureAdversariesPyTorch> on 2023-04-27 12:06:56.081840+00:00
+[2023-04-27 12:16:45,131] {standard_task_runner.py:52} INFO - Started process 3509 to run task
+[2023-04-27 12:16:45,170] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'multi_attack_dag', 'attack_FeatureAdversariesPyTorch', 'manual__2023-04-27T12:06:56.081840+00:00', '--job-id', '6813', '--raw', '--subdir', 'DAGS_FOLDER/attack_dag.py', '--cfg-path', '/tmp/tmpi1ap690e', '--error-file', '/tmp/tmpxdpg7pvg']
+[2023-04-27 12:16:45,214] {standard_task_runner.py:80} INFO - Job 6813: Subtask attack_FeatureAdversariesPyTorch
+[2023-04-27 12:16:45,366] {task_command.py:369} INFO - Running <TaskInstance: multi_attack_dag.attack_FeatureAdversariesPyTorch manual__2023-04-27T12:06:56.081840+00:00 [running]> on host e7e31d5a6603
+[2023-04-27 12:16:45,690] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=multi_attack_dag
+AIRFLOW_CTX_TASK_ID=attack_FeatureAdversariesPyTorch
+AIRFLOW_CTX_EXECUTION_DATE=2023-04-27T12:06:56.081840+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-04-27T12:06:56.081840+00:00
+[2023-04-27 12:16:45,721] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-04-27 12:16:45,736] {client.py:777} INFO - Refreshing access_token
+[2023-04-27 12:16:46,519] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-04-27 12:16:46,523] {client.py:777} INFO - Refreshing access_token
+[2023-04-27 12:17:11,880] {pytorch.py:1198} INFO - Inferred 5 hidden layers on PyTorch classifier.
+[2023-04-27 12:17:57,878] {attack.py:33} INFO - Optimizing...
+[2023-04-27 12:17:57,881] {logging_mixin.py:115} INFO - I am right here on <class 'art.attacks.evasion.feature_adversaries.feature_adversaries_pytorch.FeatureAdversariesPyTorch'>
+[2023-04-27 12:17:57,896] {attack.py:39} INFO - Optimizing failed! using default: 0.018537521362304688
+[2023-04-27 12:17:57,990] {python.py:173} INFO - Done. Returned value was: None
+[2023-04-27 12:17:58,032] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=multi_attack_dag, task_id=attack_FeatureAdversariesPyTorch, execution_date=20230427T120656, start_date=20230427T121644, end_date=20230427T121758
+[2023-04-27 12:17:58,246] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-04-27 12:17:58,566] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

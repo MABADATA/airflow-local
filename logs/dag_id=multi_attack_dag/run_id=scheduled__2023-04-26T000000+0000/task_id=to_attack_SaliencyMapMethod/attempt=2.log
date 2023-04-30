@@ -1,0 +1,25 @@
+[2023-04-27 08:27:36,606] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.to_attack_SaliencyMapMethod scheduled__2023-04-26T00:00:00+00:00 [queued]>
+[2023-04-27 08:27:36,709] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.to_attack_SaliencyMapMethod scheduled__2023-04-26T00:00:00+00:00 [queued]>
+[2023-04-27 08:27:36,724] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-27 08:27:36,728] {taskinstance.py:1357} INFO - Starting attempt 2 of 2
+[2023-04-27 08:27:36,728] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-27 08:27:36,793] {taskinstance.py:1377} INFO - Executing <Task(BranchPythonOperator): to_attack_SaliencyMapMethod> on 2023-04-26 00:00:00+00:00
+[2023-04-27 08:27:36,822] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'multi_attack_dag', 'to_attack_SaliencyMapMethod', 'scheduled__2023-04-26T00:00:00+00:00', '--job-id', '6344', '--raw', '--subdir', 'DAGS_FOLDER/attack_dag.py', '--cfg-path', '/tmp/tmpyhi7j4dy', '--error-file', '/tmp/tmp2ysnm3_r']
+[2023-04-27 08:27:36,810] {standard_task_runner.py:52} INFO - Started process 679 to run task
+[2023-04-27 08:27:36,830] {standard_task_runner.py:80} INFO - Job 6344: Subtask to_attack_SaliencyMapMethod
+[2023-04-27 08:27:37,136] {task_command.py:369} INFO - Running <TaskInstance: multi_attack_dag.to_attack_SaliencyMapMethod scheduled__2023-04-26T00:00:00+00:00 [running]> on host e7e31d5a6603
+[2023-04-27 08:27:37,619] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=multi_attack_dag
+AIRFLOW_CTX_TASK_ID=to_attack_SaliencyMapMethod
+AIRFLOW_CTX_EXECUTION_DATE=2023-04-26T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-04-26T00:00:00+00:00
+[2023-04-27 08:27:37,723] {python.py:173} INFO - Done. Returned value was: default
+[2023-04-27 08:27:37,725] {skipmixin.py:140} INFO - Following branch default
+[2023-04-27 08:27:37,732] {skipmixin.py:175} INFO - Skipping tasks ['attack_SaliencyMapMethod']
+[2023-04-27 08:27:38,212] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=multi_attack_dag, task_id=to_attack_SaliencyMapMethod, execution_date=20230426T000000, start_date=20230427T082736, end_date=20230427T082738
+[2023-04-27 08:27:38,345] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-04-27 08:27:38,785] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

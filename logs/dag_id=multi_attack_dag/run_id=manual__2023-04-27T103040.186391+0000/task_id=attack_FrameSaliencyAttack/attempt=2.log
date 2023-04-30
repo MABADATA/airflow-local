@@ -1,0 +1,50 @@
+[2023-04-27 10:44:53,186] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.attack_FrameSaliencyAttack manual__2023-04-27T10:30:40.186391+00:00 [queued]>
+[2023-04-27 10:44:53,381] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.attack_FrameSaliencyAttack manual__2023-04-27T10:30:40.186391+00:00 [queued]>
+[2023-04-27 10:44:53,409] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-27 10:44:53,429] {taskinstance.py:1357} INFO - Starting attempt 2 of 2
+[2023-04-27 10:44:53,430] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-27 10:44:53,595] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): attack_FrameSaliencyAttack> on 2023-04-27 10:30:40.186391+00:00
+[2023-04-27 10:44:53,607] {standard_task_runner.py:52} INFO - Started process 5940 to run task
+[2023-04-27 10:44:53,615] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'multi_attack_dag', 'attack_FrameSaliencyAttack', 'manual__2023-04-27T10:30:40.186391+00:00', '--job-id', '6654', '--raw', '--subdir', 'DAGS_FOLDER/attack_dag.py', '--cfg-path', '/tmp/tmpfifmhfo4', '--error-file', '/tmp/tmp9d9wjtyx']
+[2023-04-27 10:44:53,617] {standard_task_runner.py:80} INFO - Job 6654: Subtask attack_FrameSaliencyAttack
+[2023-04-27 10:44:53,941] {task_command.py:369} INFO - Running <TaskInstance: multi_attack_dag.attack_FrameSaliencyAttack manual__2023-04-27T10:30:40.186391+00:00 [running]> on host e7e31d5a6603
+[2023-04-27 10:44:54,201] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=multi_attack_dag
+AIRFLOW_CTX_TASK_ID=attack_FrameSaliencyAttack
+AIRFLOW_CTX_EXECUTION_DATE=2023-04-27T10:30:40.186391+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-04-27T10:30:40.186391+00:00
+[2023-04-27 10:44:54,212] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-04-27 10:44:54,231] {client.py:777} INFO - Refreshing access_token
+[2023-04-27 10:44:55,237] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-04-27 10:44:55,263] {client.py:777} INFO - Refreshing access_token
+[2023-04-27 10:45:21,571] {pytorch.py:1198} INFO - Inferred 5 hidden layers on PyTorch classifier.
+[2023-04-27 10:49:34,813] {attack_dag.py:643} INFO - Optimizing...
+[2023-04-27 10:49:34,816] {logging_mixin.py:115} INFO - I am right here on <class 'art.attacks.evasion.frame_saliency.FrameSaliencyAttack'>
+[2023-04-27 10:49:34,829] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/opt/airflow/dags/attack_dag.py", line 645, in attack
+    optimized_attack = optimize_evasion_attack(attack_obj,estimator,x_test,y_test)
+  File "/opt/airflow/dags/attack_dag.py", line 617, in optimize_evasion_attack
+    search_space = [v for k, v in attack_parameter_range[attack.__name__].items()]
+KeyError: 'FrameSaliencyAttack'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/attack_dag.py", line 440, in attack_FrameSaliencyAttack
+    model_acc, adversarial_examples  = attack(FrameSaliencyAttack)
+  File "/opt/airflow/dags/attack_dag.py", line 648, in attack
+    optimized_attack = attack_obj(estimator=estimator, eps=0.2)
+TypeError: __init__() got an unexpected keyword argument 'estimator'
+[2023-04-27 10:49:34,842] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=multi_attack_dag, task_id=attack_FrameSaliencyAttack, execution_date=20230427T103040, start_date=20230427T104453, end_date=20230427T104934
+[2023-04-27 10:49:34,870] {standard_task_runner.py:97} ERROR - Failed to execute job 6654 for task attack_FrameSaliencyAttack (__init__() got an unexpected keyword argument 'estimator'; 5940)
+[2023-04-27 10:49:34,949] {local_task_job.py:156} INFO - Task exited with return code 1
+[2023-04-27 10:49:35,090] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

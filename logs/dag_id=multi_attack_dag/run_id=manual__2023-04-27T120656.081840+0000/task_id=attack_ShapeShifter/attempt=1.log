@@ -1,0 +1,31 @@
+[2023-04-27 12:08:59,609] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.attack_ShapeShifter manual__2023-04-27T12:06:56.081840+00:00 [queued]>
+[2023-04-27 12:08:59,788] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.attack_ShapeShifter manual__2023-04-27T12:06:56.081840+00:00 [queued]>
+[2023-04-27 12:08:59,789] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-27 12:08:59,790] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2023-04-27 12:08:59,790] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-27 12:08:59,897] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): attack_ShapeShifter> on 2023-04-27 12:06:56.081840+00:00
+[2023-04-27 12:08:59,935] {standard_task_runner.py:52} INFO - Started process 3213 to run task
+[2023-04-27 12:08:59,953] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'multi_attack_dag', 'attack_ShapeShifter', 'manual__2023-04-27T12:06:56.081840+00:00', '--job-id', '6799', '--raw', '--subdir', 'DAGS_FOLDER/attack_dag.py', '--cfg-path', '/tmp/tmp8h3sdhg6', '--error-file', '/tmp/tmpb9i_8ttn']
+[2023-04-27 12:08:59,970] {standard_task_runner.py:80} INFO - Job 6799: Subtask attack_ShapeShifter
+[2023-04-27 12:09:00,473] {task_command.py:369} INFO - Running <TaskInstance: multi_attack_dag.attack_ShapeShifter manual__2023-04-27T12:06:56.081840+00:00 [running]> on host e7e31d5a6603
+[2023-04-27 12:09:01,093] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=multi_attack_dag
+AIRFLOW_CTX_TASK_ID=attack_ShapeShifter
+AIRFLOW_CTX_EXECUTION_DATE=2023-04-27T12:06:56.081840+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-04-27T12:06:56.081840+00:00
+[2023-04-27 12:09:01,099] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-04-27 12:09:01,108] {client.py:777} INFO - Refreshing access_token
+[2023-04-27 12:09:01,905] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-04-27 12:09:01,911] {client.py:777} INFO - Refreshing access_token
+[2023-04-27 12:09:26,028] {pytorch.py:1198} INFO - Inferred 5 hidden layers on PyTorch classifier.
+[2023-04-27 12:13:00,411] {attack.py:33} INFO - Optimizing...
+[2023-04-27 12:13:00,424] {logging_mixin.py:115} INFO - I am right here on <class 'art.attacks.evasion.shapeshifter.ShapeShifter'>
+[2023-04-27 12:13:00,428] {attack.py:39} INFO - Optimizing failed! using default: 0.01703643798828125
+[2023-04-27 12:13:00,567] {python.py:173} INFO - Done. Returned value was: None
+[2023-04-27 12:13:00,779] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=multi_attack_dag, task_id=attack_ShapeShifter, execution_date=20230427T120656, start_date=20230427T120859, end_date=20230427T121300
+[2023-04-27 12:13:00,969] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-04-27 12:13:01,310] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,27 @@
+[2023-03-12 15:50:33,519] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: defence_dag.storing manual__2023-03-12T15:50:32.340653+00:00 [queued]>
+[2023-03-12 15:50:33,530] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: defence_dag.storing manual__2023-03-12T15:50:32.340653+00:00 [queued]>
+[2023-03-12 15:50:33,531] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-12 15:50:33,531] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2023-03-12 15:50:33,537] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-12 15:50:33,557] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): storing> on 2023-03-12 15:50:32.340653+00:00
+[2023-03-12 15:50:33,561] {standard_task_runner.py:52} INFO - Started process 90 to run task
+[2023-03-12 15:50:33,565] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'defence_dag', 'storing', 'manual__2023-03-12T15:50:32.340653+00:00', '--job-id', '575', '--raw', '--subdir', 'DAGS_FOLDER/defese.py', '--cfg-path', '/tmp/tmpwh6ceav7', '--error-file', '/tmp/tmpilz_o12k']
+[2023-03-12 15:50:33,566] {standard_task_runner.py:80} INFO - Job 575: Subtask storing
+[2023-03-12 15:50:33,628] {task_command.py:369} INFO - Running <TaskInstance: defence_dag.storing manual__2023-03-12T15:50:32.340653+00:00 [running]> on host 596adcca7378
+[2023-03-12 15:50:33,699] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=defence_dag
+AIRFLOW_CTX_TASK_ID=storing
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-12T15:50:32.340653+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-03-12T15:50:32.340653+00:00
+[2023-03-12 15:50:33,701] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2023-03-12 15:50:33,702] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'sleep 1']
+[2023-03-12 15:50:33,710] {subprocess.py:85} INFO - Output:
+[2023-03-12 15:50:34,712] {subprocess.py:96} INFO - Command exited with return code 0
+[2023-03-12 15:50:34,735] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=defence_dag, task_id=storing, execution_date=20230312T155032, start_date=20230312T155033, end_date=20230312T155034
+[2023-03-12 15:50:34,784] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-03-12 15:50:34,822] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

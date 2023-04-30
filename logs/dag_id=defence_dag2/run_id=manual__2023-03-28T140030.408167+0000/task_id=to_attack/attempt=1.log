@@ -1,0 +1,40 @@
+[2023-03-28 14:00:47,028] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: defence_dag2.to_attack manual__2023-03-28T14:00:30.408167+00:00 [queued]>
+[2023-03-28 14:00:47,035] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: defence_dag2.to_attack manual__2023-03-28T14:00:30.408167+00:00 [queued]>
+[2023-03-28 14:00:47,036] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-28 14:00:47,036] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2023-03-28 14:00:47,037] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-28 14:00:47,047] {taskinstance.py:1377} INFO - Executing <Task(BranchPythonOperator): to_attack> on 2023-03-28 14:00:30.408167+00:00
+[2023-03-28 14:00:47,054] {standard_task_runner.py:52} INFO - Started process 7603 to run task
+[2023-03-28 14:00:47,057] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'defence_dag2', 'to_attack', 'manual__2023-03-28T14:00:30.408167+00:00', '--job-id', '4604', '--raw', '--subdir', 'DAGS_FOLDER/defese.py', '--cfg-path', '/tmp/tmpr3zi_2a6', '--error-file', '/tmp/tmp2tzlyaab']
+[2023-03-28 14:00:47,058] {standard_task_runner.py:80} INFO - Job 4604: Subtask to_attack
+[2023-03-28 14:00:47,100] {task_command.py:369} INFO - Running <TaskInstance: defence_dag2.to_attack manual__2023-03-28T14:00:30.408167+00:00 [running]> on host ff3d40af78f9
+[2023-03-28 14:00:47,163] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=defence_dag2
+AIRFLOW_CTX_TASK_ID=to_attack
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-28T14:00:30.408167+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-03-28T14:00:30.408167+00:00
+[2023-03-28 14:00:47,166] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-03-28 14:00:47,172] {client.py:777} INFO - Refreshing access_token
+[2023-03-28 14:00:48,315] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 207, in execute
+    branch = super().execute(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/defese.py", line 31, in to_attack
+    cycles = load_from_bucket('wrap_Pytorch_Estimator.pickle')
+  File "/opt/airflow/dags/helpers.py", line 46, in load_from_bucket
+    raise err
+  File "/opt/airflow/dags/helpers.py", line 43, in load_from_bucket
+    loaded_obj = cloudpickle.load(f)
+TypeError: code() takes at most 15 arguments (16 given)
+[2023-03-28 14:00:48,325] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=defence_dag2, task_id=to_attack, execution_date=20230328T140030, start_date=20230328T140047, end_date=20230328T140048
+[2023-03-28 14:00:48,338] {standard_task_runner.py:97} ERROR - Failed to execute job 4604 for task to_attack (code() takes at most 15 arguments (16 given); 7603)
+[2023-03-28 14:00:48,357] {local_task_job.py:156} INFO - Task exited with return code 1
+[2023-03-28 14:00:48,394] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

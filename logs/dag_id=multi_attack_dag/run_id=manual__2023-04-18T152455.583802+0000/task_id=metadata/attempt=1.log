@@ -1,0 +1,26 @@
+[2023-04-18 15:25:03,814] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.metadata manual__2023-04-18T15:24:55.583802+00:00 [queued]>
+[2023-04-18 15:25:03,837] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.metadata manual__2023-04-18T15:24:55.583802+00:00 [queued]>
+[2023-04-18 15:25:03,839] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-18 15:25:03,841] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2023-04-18 15:25:03,842] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-18 15:25:03,878] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): metadata> on 2023-04-18 15:24:55.583802+00:00
+[2023-04-18 15:25:03,897] {standard_task_runner.py:52} INFO - Started process 4002 to run task
+[2023-04-18 15:25:03,908] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'multi_attack_dag', 'metadata', 'manual__2023-04-18T15:24:55.583802+00:00', '--job-id', '5707', '--raw', '--subdir', 'DAGS_FOLDER/attack_dag.py', '--cfg-path', '/tmp/tmpcldfbh00', '--error-file', '/tmp/tmpi7oywxzx']
+[2023-04-18 15:25:03,911] {standard_task_runner.py:80} INFO - Job 5707: Subtask metadata
+[2023-04-18 15:25:04,040] {task_command.py:369} INFO - Running <TaskInstance: multi_attack_dag.metadata manual__2023-04-18T15:24:55.583802+00:00 [running]> on host a3dd7d962104
+[2023-04-18 15:25:04,175] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=multi_attack_dag
+AIRFLOW_CTX_TASK_ID=metadata
+AIRFLOW_CTX_EXECUTION_DATE=2023-04-18T15:24:55.583802+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-04-18T15:24:55.583802+00:00
+[2023-04-18 15:25:10,380] {pytorch.py:1198} INFO - Inferred 5 hidden layers on PyTorch classifier.
+[2023-04-18 15:25:11,623] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-04-18 15:25:11,630] {client.py:777} INFO - Refreshing access_token
+[2023-04-18 15:25:12,564] {python.py:173} INFO - Done. Returned value was: None
+[2023-04-18 15:25:12,581] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=multi_attack_dag, task_id=metadata, execution_date=20230418T152455, start_date=20230418T152503, end_date=20230418T152512
+[2023-04-18 15:25:12,639] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-04-18 15:25:12,695] {local_task_job.py:273} INFO - 3 downstream tasks scheduled from follow-on schedule check

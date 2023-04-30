@@ -1,0 +1,27 @@
+[2023-03-28 10:29:08,606] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: attack_dag2.attack manual__2023-03-28T10:29:05.859605+00:00 [queued]>
+[2023-03-28 10:29:08,616] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: attack_dag2.attack manual__2023-03-28T10:29:05.859605+00:00 [queued]>
+[2023-03-28 10:29:08,617] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-28 10:29:08,618] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2023-03-28 10:29:08,618] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-28 10:29:08,635] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): attack> on 2023-03-28 10:29:05.859605+00:00
+[2023-03-28 10:29:08,643] {standard_task_runner.py:52} INFO - Started process 2225 to run task
+[2023-03-28 10:29:08,646] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'attack_dag2', 'attack', 'manual__2023-03-28T10:29:05.859605+00:00', '--job-id', '4278', '--raw', '--subdir', 'DAGS_FOLDER/attack.py', '--cfg-path', '/tmp/tmp_yzt0aha', '--error-file', '/tmp/tmp60spzr2l']
+[2023-03-28 10:29:08,648] {standard_task_runner.py:80} INFO - Job 4278: Subtask attack
+[2023-03-28 10:29:08,719] {task_command.py:369} INFO - Running <TaskInstance: attack_dag2.attack manual__2023-03-28T10:29:05.859605+00:00 [running]> on host 70f8824ef075
+[2023-03-28 10:29:08,863] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=attack_dag2
+AIRFLOW_CTX_TASK_ID=attack
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-28T10:29:05.859605+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-03-28T10:29:05.859605+00:00
+[2023-03-28 10:29:08,866] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-03-28 10:29:08,870] {client.py:777} INFO - Refreshing access_token
+[2023-03-28 10:29:09,805] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-03-28 10:29:09,808] {client.py:777} INFO - Refreshing access_token
+[2023-03-28 10:29:10,404] {python.py:173} INFO - Done. Returned value was: None
+[2023-03-28 10:29:10,427] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=attack_dag2, task_id=attack, execution_date=20230328T102905, start_date=20230328T102908, end_date=20230328T102910
+[2023-03-28 10:29:10,469] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-03-28 10:29:10,543] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

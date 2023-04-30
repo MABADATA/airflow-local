@@ -1,0 +1,62 @@
+[2023-04-08 14:38:18,153] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.attack_ProjectedGradientDescent manual__2023-04-08T14:31:40.539890+00:00 [queued]>
+[2023-04-08 14:38:18,174] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.attack_ProjectedGradientDescent manual__2023-04-08T14:31:40.539890+00:00 [queued]>
+[2023-04-08 14:38:18,174] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-08 14:38:18,176] {taskinstance.py:1357} INFO - Starting attempt 2 of 2
+[2023-04-08 14:38:18,176] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-08 14:38:18,203] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): attack_ProjectedGradientDescent> on 2023-04-08 14:31:40.539890+00:00
+[2023-04-08 14:38:18,213] {standard_task_runner.py:52} INFO - Started process 9426 to run task
+[2023-04-08 14:38:18,218] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'multi_attack_dag', 'attack_ProjectedGradientDescent', 'manual__2023-04-08T14:31:40.539890+00:00', '--job-id', '4684', '--raw', '--subdir', 'DAGS_FOLDER/attack_dag.py', '--cfg-path', '/tmp/tmp566gmmxu', '--error-file', '/tmp/tmpfnvddqly']
+[2023-04-08 14:38:18,219] {standard_task_runner.py:80} INFO - Job 4684: Subtask attack_ProjectedGradientDescent
+[2023-04-08 14:38:18,309] {task_command.py:369} INFO - Running <TaskInstance: multi_attack_dag.attack_ProjectedGradientDescent manual__2023-04-08T14:31:40.539890+00:00 [running]> on host ff3d40af78f9
+[2023-04-08 14:38:18,426] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=multi_attack_dag
+AIRFLOW_CTX_TASK_ID=attack_ProjectedGradientDescent
+AIRFLOW_CTX_EXECUTION_DATE=2023-04-08T14:31:40.539890+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-04-08T14:31:40.539890+00:00
+[2023-04-08 14:38:18,429] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-04-08 14:38:18,433] {client.py:777} INFO - Refreshing access_token
+[2023-04-08 14:38:19,307] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-04-08 14:38:19,310] {client.py:777} INFO - Refreshing access_token
+[2023-04-08 14:38:20,135] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-04-08 14:38:20,137] {client.py:777} INFO - Refreshing access_token
+[2023-04-08 14:38:20,796] {pytorch.py:1198} INFO - Inferred 5 hidden layers on PyTorch classifier.
+[2023-04-08 14:38:20,814] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-04-08 14:38:20,818] {client.py:777} INFO - Refreshing access_token
+[2023-04-08 14:39:34,262] {projected_gradient_descent.py:199} INFO - Creating adversarial samples.
+[2023-04-08 14:39:34,307] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/attack_dag.py", line 127, in attack_ProjectedGradientDescent
+    model_acc = attack(ProjectedGradientDescent)
+  File "/opt/airflow/dags/attack_dag.py", line 135, in attack
+    adversarial_examples = wrap_attack.generate(x_train)
+  File "/home/airflow/.local/lib/python3.7/site-packages/art/attacks/evasion/projected_gradient_descent/projected_gradient_descent.py", line 200, in generate
+    return self._attack.generate(x=x, y=y, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/art/attacks/evasion/projected_gradient_descent/projected_gradient_descent_pytorch.py", line 154, in generate
+    targets = self._set_targets(x, y)
+  File "/home/airflow/.local/lib/python3.7/site-packages/art/attacks/evasion/projected_gradient_descent/projected_gradient_descent_numpy.py", line 171, in _set_targets
+    targets = get_labels_np_array(self.estimator.predict(x, batch_size=self.batch_size))
+  File "/home/airflow/.local/lib/python3.7/site-packages/art/estimators/classification/classifier.py", line 73, in replacement_function
+    return fdict[func_name](self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/art/estimators/classification/pytorch.py", line 331, in predict
+    model_outputs = self._model(torch.from_numpy(x_preprocessed[begin:end]).to(self._device))
+  File "/home/airflow/.local/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/art/estimators/classification/pytorch.py", line 1161, in forward
+    x = module_(x)
+  File "/home/airflow/.local/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/torch/nn/modules/linear.py", line 114, in forward
+    return F.linear(input, self.weight, self.bias)
+RuntimeError: mat1 and mat2 shapes cannot be multiplied (32x785 and 784x128)
+[2023-04-08 14:39:34,329] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=multi_attack_dag, task_id=attack_ProjectedGradientDescent, execution_date=20230408T143140, start_date=20230408T143818, end_date=20230408T143934
+[2023-04-08 14:39:34,353] {standard_task_runner.py:97} ERROR - Failed to execute job 4684 for task attack_ProjectedGradientDescent (mat1 and mat2 shapes cannot be multiplied (32x785 and 784x128); 9426)
+[2023-04-08 14:39:34,438] {local_task_job.py:156} INFO - Task exited with return code 1
+[2023-04-08 14:39:34,533] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

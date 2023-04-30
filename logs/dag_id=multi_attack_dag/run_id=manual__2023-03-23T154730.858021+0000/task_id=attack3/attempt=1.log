@@ -1,0 +1,23 @@
+[2023-03-23 15:47:47,462] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.attack3 manual__2023-03-23T15:47:30.858021+00:00 [queued]>
+[2023-03-23 15:47:47,501] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.attack3 manual__2023-03-23T15:47:30.858021+00:00 [queued]>
+[2023-03-23 15:47:47,502] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-23 15:47:47,504] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2023-03-23 15:47:47,505] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-23 15:47:47,559] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): attack3> on 2023-03-23 15:47:30.858021+00:00
+[2023-03-23 15:47:47,571] {standard_task_runner.py:52} INFO - Started process 13862 to run task
+[2023-03-23 15:47:47,582] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'multi_attack_dag', 'attack3', 'manual__2023-03-23T15:47:30.858021+00:00', '--job-id', '3555', '--raw', '--subdir', 'DAGS_FOLDER/attack_dag.py', '--cfg-path', '/tmp/tmpdnjfc573', '--error-file', '/tmp/tmpk6di1lwh']
+[2023-03-23 15:47:47,585] {standard_task_runner.py:80} INFO - Job 3555: Subtask attack3
+[2023-03-23 15:47:47,773] {task_command.py:369} INFO - Running <TaskInstance: multi_attack_dag.attack3 manual__2023-03-23T15:47:30.858021+00:00 [running]> on host 6447f1dacd32
+[2023-03-23 15:47:48,118] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=multi_attack_dag
+AIRFLOW_CTX_TASK_ID=attack3
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-23T15:47:30.858021+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-03-23T15:47:30.858021+00:00
+[2023-03-23 15:47:48,178] {python.py:173} INFO - Done. Returned value was: None
+[2023-03-23 15:47:48,256] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=multi_attack_dag, task_id=attack3, execution_date=20230323T154730, start_date=20230323T154747, end_date=20230323T154748
+[2023-03-23 15:47:48,360] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-03-23 15:47:48,670] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

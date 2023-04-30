@@ -1,0 +1,25 @@
+[2023-04-23 09:33:43,307] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.to_attack_BasicIterativeMethod manual__2023-04-23T09:33:28.849268+00:00 [queued]>
+[2023-04-23 09:33:43,341] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.to_attack_BasicIterativeMethod manual__2023-04-23T09:33:28.849268+00:00 [queued]>
+[2023-04-23 09:33:43,346] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-23 09:33:43,354] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2023-04-23 09:33:43,357] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-23 09:33:43,387] {taskinstance.py:1377} INFO - Executing <Task(BranchPythonOperator): to_attack_BasicIterativeMethod> on 2023-04-23 09:33:28.849268+00:00
+[2023-04-23 09:33:43,400] {standard_task_runner.py:52} INFO - Started process 1021 to run task
+[2023-04-23 09:33:43,414] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'multi_attack_dag', 'to_attack_BasicIterativeMethod', 'manual__2023-04-23T09:33:28.849268+00:00', '--job-id', '6075', '--raw', '--subdir', 'DAGS_FOLDER/attack_dag.py', '--cfg-path', '/tmp/tmpq3y7uonz', '--error-file', '/tmp/tmph5gqd1lt']
+[2023-04-23 09:33:43,416] {standard_task_runner.py:80} INFO - Job 6075: Subtask to_attack_BasicIterativeMethod
+[2023-04-23 09:33:43,536] {task_command.py:369} INFO - Running <TaskInstance: multi_attack_dag.to_attack_BasicIterativeMethod manual__2023-04-23T09:33:28.849268+00:00 [running]> on host a3dd7d962104
+[2023-04-23 09:33:43,857] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=multi_attack_dag
+AIRFLOW_CTX_TASK_ID=to_attack_BasicIterativeMethod
+AIRFLOW_CTX_EXECUTION_DATE=2023-04-23T09:33:28.849268+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-04-23T09:33:28.849268+00:00
+[2023-04-23 09:33:43,909] {python.py:173} INFO - Done. Returned value was: attack_BasicIterativeMethod
+[2023-04-23 09:33:43,913] {skipmixin.py:140} INFO - Following branch attack_BasicIterativeMethod
+[2023-04-23 09:33:43,914] {skipmixin.py:175} INFO - Skipping tasks ['default']
+[2023-04-23 09:33:44,124] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=multi_attack_dag, task_id=to_attack_BasicIterativeMethod, execution_date=20230423T093328, start_date=20230423T093343, end_date=20230423T093344
+[2023-04-23 09:33:44,197] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-04-23 09:33:44,324] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

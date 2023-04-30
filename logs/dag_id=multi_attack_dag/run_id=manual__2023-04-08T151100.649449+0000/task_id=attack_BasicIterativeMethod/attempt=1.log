@@ -1,0 +1,48 @@
+[2023-04-08 15:11:22,883] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.attack_BasicIterativeMethod manual__2023-04-08T15:11:00.649449+00:00 [queued]>
+[2023-04-08 15:11:22,909] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.attack_BasicIterativeMethod manual__2023-04-08T15:11:00.649449+00:00 [queued]>
+[2023-04-08 15:11:22,910] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-08 15:11:22,911] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2023-04-08 15:11:22,911] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-08 15:11:22,942] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): attack_BasicIterativeMethod> on 2023-04-08 15:11:00.649449+00:00
+[2023-04-08 15:11:22,961] {standard_task_runner.py:52} INFO - Started process 10973 to run task
+[2023-04-08 15:11:22,968] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'multi_attack_dag', 'attack_BasicIterativeMethod', 'manual__2023-04-08T15:11:00.649449+00:00', '--job-id', '4691', '--raw', '--subdir', 'DAGS_FOLDER/attack_dag.py', '--cfg-path', '/tmp/tmprg_qi2a6', '--error-file', '/tmp/tmp5sag67mk']
+[2023-04-08 15:11:22,970] {standard_task_runner.py:80} INFO - Job 4691: Subtask attack_BasicIterativeMethod
+[2023-04-08 15:11:23,105] {task_command.py:369} INFO - Running <TaskInstance: multi_attack_dag.attack_BasicIterativeMethod manual__2023-04-08T15:11:00.649449+00:00 [running]> on host ff3d40af78f9
+[2023-04-08 15:11:23,267] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=multi_attack_dag
+AIRFLOW_CTX_TASK_ID=attack_BasicIterativeMethod
+AIRFLOW_CTX_EXECUTION_DATE=2023-04-08T15:11:00.649449+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-04-08T15:11:00.649449+00:00
+[2023-04-08 15:11:23,271] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-04-08 15:11:23,281] {client.py:777} INFO - Refreshing access_token
+[2023-04-08 15:11:24,088] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-04-08 15:11:24,094] {client.py:777} INFO - Refreshing access_token
+[2023-04-08 15:11:25,000] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-04-08 15:11:25,004] {client.py:777} INFO - Refreshing access_token
+[2023-04-08 15:11:25,739] {pytorch.py:1198} INFO - Inferred 5 hidden layers on PyTorch classifier.
+[2023-04-08 15:11:25,758] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-04-08 15:11:25,760] {client.py:777} INFO - Refreshing access_token
+[2023-04-08 15:12:46,881] {projected_gradient_descent.py:199} INFO - Creating adversarial samples.
+[2023-04-08 15:12:46,918] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/attack_dag.py", line 119, in attack_BasicIterativeMethod
+    model_acc = attack(BasicIterativeMethod)
+  File "/opt/airflow/dags/attack_dag.py", line 135, in attack
+    adversarial_examples = wrap_attack.generate(x_train)
+  File "/home/airflow/.local/lib/python3.7/site-packages/art/attacks/evasion/projected_gradient_descent/projected_gradient_descent.py", line 200, in generate
+    return self._attack.generate(x=x, y=y, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/art/attacks/evasion/projected_gradient_descent/projected_gradient_descent_pytorch.py", line 176, in generate
+    torch.from_numpy(x.astype(ART_NUMPY_DTYPE)),
+TypeError: expected np.ndarray (got DataFrame)
+[2023-04-08 15:12:46,938] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=multi_attack_dag, task_id=attack_BasicIterativeMethod, execution_date=20230408T151100, start_date=20230408T151122, end_date=20230408T151246
+[2023-04-08 15:12:46,958] {standard_task_runner.py:97} ERROR - Failed to execute job 4691 for task attack_BasicIterativeMethod (expected np.ndarray (got DataFrame); 10973)
+[2023-04-08 15:12:47,015] {local_task_job.py:156} INFO - Task exited with return code 1
+[2023-04-08 15:12:47,117] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

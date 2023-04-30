@@ -1,0 +1,24 @@
+[2023-03-23 12:49:19,683] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.to_attack1 scheduled__2023-03-22T00:00:00+00:00 [queued]>
+[2023-03-23 12:49:19,725] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.to_attack1 scheduled__2023-03-22T00:00:00+00:00 [queued]>
+[2023-03-23 12:49:19,726] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-23 12:49:19,727] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2023-03-23 12:49:19,728] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-23 12:49:19,789] {taskinstance.py:1377} INFO - Executing <Task(BranchPythonOperator): to_attack1> on 2023-03-22 00:00:00+00:00
+[2023-03-23 12:49:19,807] {standard_task_runner.py:52} INFO - Started process 5979 to run task
+[2023-03-23 12:49:19,832] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'multi_attack_dag', 'to_attack1', 'scheduled__2023-03-22T00:00:00+00:00', '--job-id', '2695', '--raw', '--subdir', 'DAGS_FOLDER/dynamic_dag.py', '--cfg-path', '/tmp/tmp2rx0zho2', '--error-file', '/tmp/tmprp4ui23o']
+[2023-03-23 12:49:19,838] {standard_task_runner.py:80} INFO - Job 2695: Subtask to_attack1
+[2023-03-23 12:49:20,128] {task_command.py:369} INFO - Running <TaskInstance: multi_attack_dag.to_attack1 scheduled__2023-03-22T00:00:00+00:00 [running]> on host 6447f1dacd32
+[2023-03-23 12:49:20,555] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=multi_attack_dag
+AIRFLOW_CTX_TASK_ID=to_attack1
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-22T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-03-22T00:00:00+00:00
+[2023-03-23 12:49:20,660] {python.py:173} INFO - Done. Returned value was: default
+[2023-03-23 12:49:20,670] {skipmixin.py:140} INFO - Following branch default
+[2023-03-23 12:49:21,441] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=multi_attack_dag, task_id=to_attack1, execution_date=20230322T000000, start_date=20230323T124919, end_date=20230323T124921
+[2023-03-23 12:49:21,510] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-03-23 12:49:22,079] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

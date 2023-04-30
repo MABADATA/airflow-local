@@ -1,0 +1,12 @@
+[2023-03-16 11:58:08,898] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: defence_dag.trigger_offence manual__2023-03-12T15:21:03.331517+00:00 [queued]>
+[2023-03-16 11:58:08,936] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: defence_dag.trigger_offence manual__2023-03-12T15:21:03.331517+00:00 [queued]>
+[2023-03-16 11:58:08,937] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-16 11:58:08,938] {taskinstance.py:1357} INFO - Starting attempt 2 of 2
+[2023-03-16 11:58:08,939] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-16 11:58:09,138] {taskinstance.py:1377} INFO - Executing <Task(TriggerDagRunOperator): trigger_offence> on 2023-03-12 15:21:03.331517+00:00
+[2023-03-16 11:58:09,144] {standard_task_runner.py:52} INFO - Started process 1286 to run task
+[2023-03-16 11:58:09,165] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'defence_dag', 'trigger_offence', 'manual__2023-03-12T15:21:03.331517+00:00', '--job-id', '1205', '--raw', '--subdir', 'DAGS_FOLDER/defese.py', '--cfg-path', '/tmp/tmpu9liqy07', '--error-file', '/tmp/tmpgfoqgusl']
+[2023-03-16 11:58:09,166] {standard_task_runner.py:80} INFO - Job 1205: Subtask trigger_offence
+[2023-03-16 11:58:09,591] {task_command.py:369} INFO - Running <TaskInstance: defence_dag.trigger_offence manual__2023-03-12T15:21:03.331517+00:00 [running]> on host 596adcca7378

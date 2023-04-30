@@ -1,0 +1,44 @@
+[2023-04-09 08:47:04,712] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.choose_best manual__2023-04-09T08:22:58.418918+00:00 [queued]>
+[2023-04-09 08:47:04,730] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.choose_best manual__2023-04-09T08:22:58.418918+00:00 [queued]>
+[2023-04-09 08:47:04,731] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-09 08:47:04,736] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2023-04-09 08:47:04,737] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-09 08:47:04,767] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): choose_best> on 2023-04-09 08:22:58.418918+00:00
+[2023-04-09 08:47:04,785] {standard_task_runner.py:52} INFO - Started process 5071 to run task
+[2023-04-09 08:47:04,792] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'multi_attack_dag', 'choose_best', 'manual__2023-04-09T08:22:58.418918+00:00', '--job-id', '4830', '--raw', '--subdir', 'DAGS_FOLDER/attack_dag.py', '--cfg-path', '/tmp/tmpl4hq9aeo', '--error-file', '/tmp/tmp23vkxi5z']
+[2023-04-09 08:47:04,795] {standard_task_runner.py:80} INFO - Job 4830: Subtask choose_best
+[2023-04-09 08:47:04,934] {task_command.py:369} INFO - Running <TaskInstance: multi_attack_dag.choose_best manual__2023-04-09T08:22:58.418918+00:00 [running]> on host ff3d40af78f9
+[2023-04-09 08:47:05,084] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=multi_attack_dag
+AIRFLOW_CTX_TASK_ID=choose_best
+AIRFLOW_CTX_EXECUTION_DATE=2023-04-09T08:22:58.418918+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-04-09T08:22:58.418918+00:00
+[2023-04-09 08:47:05,144] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-04-09 08:47:05,163] {client.py:777} INFO - Refreshing access_token
+[2023-04-09 08:47:05,872] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/attack_dag.py", line 159, in choose_best_attack
+    metadata = load_from_bucket(file_name='attack_defence_metadata.json',as_json=True)
+  File "/opt/airflow/dags/helpers.py", line 95, in load_from_bucket
+    raise err
+  File "/opt/airflow/dags/helpers.py", line 86, in load_from_bucket
+    json_string = blob.download_as_string()
+  File "/home/airflow/.local/lib/python3.7/site-packages/gcloud/storage/blob.py", line 391, in download_as_string
+    client=client)
+  File "/home/airflow/.local/lib/python3.7/site-packages/gcloud/storage/blob.py", line 349, in download_to_file
+    download.initialize_download(request, client._connection.http)
+  File "/home/airflow/.local/lib/python3.7/site-packages/gcloud/streaming/transfer.py", line 383, in initialize_download
+    raise HttpError.from_response(response)
+gcloud.streaming.exceptions.HttpError: HttpError accessing <https://www.googleapis.com/download/storage/v1/b/mabdata207125196/o/attack_defence_metadata.json?generation=1681029912450007&alt=media>: response: <{'x-guploader-uploadid': 'ADPycduxXUG4rGtEXSzNHluO9m0GeXJbH4hE-8eXpjELBdWaDnSzUf5pubCnDyxvk6PiTgbCANbAkQVuJ1GVxXfZVSvwmw', 'content-type': 'text/html; charset=UTF-8', 'date': 'Sun, 09 Apr 2023 08:47:06 GMT', 'vary': 'Origin, X-Origin', 'expires': 'Sun, 09 Apr 2023 08:47:06 GMT', 'cache-control': 'private, max-age=0', 'content-length': '61', 'server': 'UploadServer', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'status': '404'}>, content <No such object: mabdata207125196/attack_defence_metadata.json>
+[2023-04-09 08:47:05,909] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=multi_attack_dag, task_id=choose_best, execution_date=20230409T082258, start_date=20230409T084704, end_date=20230409T084705
+[2023-04-09 08:47:05,940] {standard_task_runner.py:97} ERROR - Failed to execute job 4830 for task choose_best (HttpError accessing <https://www.googleapis.com/download/storage/v1/b/mabdata207125196/o/attack_defence_metadata.json?generation=1681029912450007&alt=media>: response: <{'x-guploader-uploadid': 'ADPycduxXUG4rGtEXSzNHluO9m0GeXJbH4hE-8eXpjELBdWaDnSzUf5pubCnDyxvk6PiTgbCANbAkQVuJ1GVxXfZVSvwmw', 'content-type': 'text/html; charset=UTF-8', 'date': 'Sun, 09 Apr 2023 08:47:06 GMT', 'vary': 'Origin, X-Origin', 'expires': 'Sun, 09 Apr 2023 08:47:06 GMT', 'cache-control': 'private, max-age=0', 'content-length': '61', 'server': 'UploadServer', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'status': '404'}>, content <No such object: mabdata207125196/attack_defence_metadata.json>; 5071)
+[2023-04-09 08:47:05,973] {local_task_job.py:156} INFO - Task exited with return code 1
+[2023-04-09 08:47:06,200] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

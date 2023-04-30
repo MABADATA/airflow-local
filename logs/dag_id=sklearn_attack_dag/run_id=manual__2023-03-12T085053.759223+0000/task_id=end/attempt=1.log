@@ -1,0 +1,28 @@
+[2023-03-12 08:50:58,306] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: sklearn_attack_dag.end manual__2023-03-12T08:50:53.759223+00:00 [queued]>
+[2023-03-12 08:50:58,314] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: sklearn_attack_dag.end manual__2023-03-12T08:50:53.759223+00:00 [queued]>
+[2023-03-12 08:50:58,314] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-12 08:50:58,315] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2023-03-12 08:50:58,315] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-12 08:50:58,327] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): end> on 2023-03-12 08:50:53.759223+00:00
+[2023-03-12 08:50:58,332] {standard_task_runner.py:52} INFO - Started process 124 to run task
+[2023-03-12 08:50:58,334] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'sklearn_attack_dag', 'end', 'manual__2023-03-12T08:50:53.759223+00:00', '--job-id', '143', '--raw', '--subdir', 'DAGS_FOLDER/attack_sklearn.py', '--cfg-path', '/tmp/tmp6e6e1opb', '--error-file', '/tmp/tmp9bvntwot']
+[2023-03-12 08:50:58,335] {standard_task_runner.py:80} INFO - Job 143: Subtask end
+[2023-03-12 08:50:58,383] {task_command.py:369} INFO - Running <TaskInstance: sklearn_attack_dag.end manual__2023-03-12T08:50:53.759223+00:00 [running]> on host 596adcca7378
+[2023-03-12 08:50:58,551] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=sklearn_attack_dag
+AIRFLOW_CTX_TASK_ID=end
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-12T08:50:53.759223+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-03-12T08:50:53.759223+00:00
+[2023-03-12 08:50:58,552] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2023-03-12 08:50:58,553] {subprocess.py:74} INFO - Running command: ['bash', '-c', "echo 'attack ended'"]
+[2023-03-12 08:50:58,561] {subprocess.py:85} INFO - Output:
+[2023-03-12 08:50:58,562] {subprocess.py:92} INFO - attack ended
+[2023-03-12 08:50:58,562] {subprocess.py:96} INFO - Command exited with return code 0
+[2023-03-12 08:50:58,587] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=sklearn_attack_dag, task_id=end, execution_date=20230312T085053, start_date=20230312T085058, end_date=20230312T085058
+[2023-03-12 08:50:58,628] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-03-12 08:50:58,658] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

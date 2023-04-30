@@ -1,0 +1,61 @@
+[2023-03-12 09:00:09,121] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: sklearn_attack_dag.attack_zoo scheduled__2023-03-12T08:00:00+00:00 [queued]>
+[2023-03-12 09:00:09,143] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: sklearn_attack_dag.attack_zoo scheduled__2023-03-12T08:00:00+00:00 [queued]>
+[2023-03-12 09:00:09,144] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-12 09:00:09,145] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2023-03-12 09:00:09,146] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-12 09:00:09,180] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): attack_zoo> on 2023-03-12 08:00:00+00:00
+[2023-03-12 09:00:09,190] {standard_task_runner.py:52} INFO - Started process 66 to run task
+[2023-03-12 09:00:09,198] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'sklearn_attack_dag', 'attack_zoo', 'scheduled__2023-03-12T08:00:00+00:00', '--job-id', '361', '--raw', '--subdir', 'DAGS_FOLDER/attack_sklearn.py', '--cfg-path', '/tmp/tmp_rveu5kg', '--error-file', '/tmp/tmplip5uut0']
+[2023-03-12 09:00:09,200] {standard_task_runner.py:80} INFO - Job 361: Subtask attack_zoo
+[2023-03-12 09:00:09,351] {task_command.py:369} INFO - Running <TaskInstance: sklearn_attack_dag.attack_zoo scheduled__2023-03-12T08:00:00+00:00 [running]> on host 596adcca7378
+[2023-03-12 09:00:09,782] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=sklearn_attack_dag
+AIRFLOW_CTX_TASK_ID=attack_zoo
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-12T08:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-03-12T08:00:00+00:00
+[2023-03-12 09:00:09,909] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/sklearn/utils/deprecation.py:103: FutureWarning: Attribute `n_features_` was deprecated in version 1.0 and will be removed in 1.2. Use `n_features_in_` instead.
+  warnings.warn(msg, category=FutureWarning)
+
+[2023-03-12 09:00:09,911] {zoo.py:155} INFO - Disable resizing and importance sampling because feature vector input has been detected.
+[2023-03-12 09:00:09,917] {logging_mixin.py:115} WARNING - ZOO:   0%|          | 0/100 [00:00<?, ?it/s]
+[2023-03-12 09:00:10,141] {logging_mixin.py:115} WARNING - ZOO:   2%|2         | 2/100 [00:00<00:10,  8.97it/s]
+[2023-03-12 09:00:10,338] {logging_mixin.py:115} WARNING - ZOO:   3%|3         | 3/100 [00:00<00:14,  6.80it/s]
+[2023-03-12 09:00:10,459] {logging_mixin.py:115} WARNING - ZOO:   4%|4         | 4/100 [00:00<00:13,  7.28it/s]
+[2023-03-12 09:00:10,589] {logging_mixin.py:115} WARNING - ZOO:   5%|5         | 5/100 [00:00<00:12,  7.42it/s]
+[2023-03-12 09:00:10,706] {logging_mixin.py:115} WARNING - ZOO:   6%|6         | 6/100 [00:00<00:12,  7.75it/s]
+[2023-03-12 09:00:10,877] {logging_mixin.py:115} WARNING - ZOO:   8%|8         | 8/100 [00:00<00:09,  9.27it/s]
+[2023-03-12 09:00:10,981] {logging_mixin.py:115} WARNING - ZOO:   9%|9         | 9/100 [00:01<00:09,  9.37it/s]
+[2023-03-12 09:00:11,244] {logging_mixin.py:115} WARNING - ZOO:  11%|#1        | 11/100 [00:01<00:10,  8.53it/s]
+[2023-03-12 09:00:11,431] {logging_mixin.py:115} WARNING - ZOO:  12%|#2        | 12/100 [00:01<00:11,  7.49it/s]
+[2023-03-12 09:00:11,575] {logging_mixin.py:115} WARNING - ZOO:  13%|#3        | 13/100 [00:01<00:11,  7.35it/s]
+[2023-03-12 09:00:11,699] {logging_mixin.py:115} WARNING - ZOO:  15%|#5        | 15/100 [00:01<00:08,  9.49it/s]
+[2023-03-12 09:00:11,822] {logging_mixin.py:115} WARNING - ZOO:  17%|#7        | 17/100 [00:01<00:07, 11.25it/s]
+[2023-03-12 09:00:11,983] {logging_mixin.py:115} WARNING - ZOO:  20%|##        | 20/100 [00:02<00:05, 13.65it/s]
+[2023-03-12 09:00:12,112] {logging_mixin.py:115} WARNING - ZOO:  22%|##2       | 22/100 [00:02<00:05, 14.16it/s]
+[2023-03-12 09:00:12,217] {logging_mixin.py:115} WARNING - ZOO:  24%|##4       | 24/100 [00:02<00:04, 15.32it/s]
+[2023-03-12 09:00:12,343] {logging_mixin.py:115} WARNING - ZOO:  27%|##7       | 27/100 [00:02<00:04, 17.79it/s]
+[2023-03-12 09:00:12,458] {logging_mixin.py:115} WARNING - ZOO:  30%|###       | 30/100 [00:02<00:03, 20.07it/s]
+[2023-03-12 09:00:12,585] {logging_mixin.py:115} WARNING - ZOO:  34%|###4      | 34/100 [00:02<00:02, 23.53it/s]
+[2023-03-12 09:00:12,700] {logging_mixin.py:115} WARNING - ZOO:  38%|###8      | 38/100 [00:02<00:02, 26.69it/s]
+[2023-03-12 09:00:12,822] {logging_mixin.py:115} WARNING - ZOO:  43%|####3     | 43/100 [00:02<00:01, 30.99it/s]
+[2023-03-12 09:00:12,941] {logging_mixin.py:115} WARNING - ZOO:  48%|####8     | 48/100 [00:03<00:01, 34.25it/s]
+[2023-03-12 09:00:13,051] {logging_mixin.py:115} WARNING - ZOO:  52%|#####2    | 52/100 [00:03<00:01, 34.78it/s]
+[2023-03-12 09:00:13,157] {logging_mixin.py:115} WARNING - ZOO:  57%|#####6    | 57/100 [00:03<00:01, 38.27it/s]
+[2023-03-12 09:00:13,273] {logging_mixin.py:115} WARNING - ZOO:  62%|######2   | 62/100 [00:03<00:00, 39.70it/s]
+[2023-03-12 09:00:13,378] {logging_mixin.py:115} WARNING - ZOO:  67%|######7   | 67/100 [00:03<00:00, 41.95it/s]
+[2023-03-12 09:00:13,494] {logging_mixin.py:115} WARNING - ZOO:  73%|#######3  | 73/100 [00:03<00:00, 44.88it/s]
+[2023-03-12 09:00:13,597] {logging_mixin.py:115} WARNING - ZOO:  78%|#######8  | 78/100 [00:03<00:00, 45.98it/s]
+[2023-03-12 09:00:13,698] {logging_mixin.py:115} WARNING - ZOO:  83%|########2 | 83/100 [00:03<00:00, 46.95it/s]
+[2023-03-12 09:00:13,803] {logging_mixin.py:115} WARNING - ZOO:  88%|########8 | 88/100 [00:03<00:00, 47.22it/s]
+[2023-03-12 09:00:13,919] {logging_mixin.py:115} WARNING - ZOO:  93%|#########3| 93/100 [00:04<00:00, 45.80it/s]
+[2023-03-12 09:00:14,083] {logging_mixin.py:115} WARNING - ZOO:  98%|#########8| 98/100 [00:04<00:00, 39.86it/s]
+[2023-03-12 09:00:14,166] {logging_mixin.py:115} WARNING - ZOO: 100%|##########| 100/100 [00:04<00:00, 23.54it/s]
+[2023-03-12 09:00:14,168] {zoo.py:248} INFO - Success rate of ZOO attack: 95.00%
+[2023-03-12 09:00:14,187] {python.py:173} INFO - Done. Returned value was: None
+[2023-03-12 09:00:14,200] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=sklearn_attack_dag, task_id=attack_zoo, execution_date=20230312T080000, start_date=20230312T090009, end_date=20230312T090014
+[2023-03-12 09:00:14,241] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-03-12 09:00:14,403] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

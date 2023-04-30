@@ -1,0 +1,44 @@
+[2023-04-16 17:10:58,859] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.attack_BasicIterativeMethod manual__2023-04-16T17:04:00.049341+00:00 [queued]>
+[2023-04-16 17:10:58,957] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.attack_BasicIterativeMethod manual__2023-04-16T17:04:00.049341+00:00 [queued]>
+[2023-04-16 17:10:58,958] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-16 17:10:58,958] {taskinstance.py:1357} INFO - Starting attempt 2 of 2
+[2023-04-16 17:10:58,959] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-16 17:10:59,079] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): attack_BasicIterativeMethod> on 2023-04-16 17:04:00.049341+00:00
+[2023-04-16 17:10:59,128] {standard_task_runner.py:52} INFO - Started process 377 to run task
+[2023-04-16 17:10:59,148] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'multi_attack_dag', 'attack_BasicIterativeMethod', 'manual__2023-04-16T17:04:00.049341+00:00', '--job-id', '5313', '--raw', '--subdir', 'DAGS_FOLDER/attack_dag.py', '--cfg-path', '/tmp/tmp82kmggmg', '--error-file', '/tmp/tmpuw216j23']
+[2023-04-16 17:10:59,159] {standard_task_runner.py:80} INFO - Job 5313: Subtask attack_BasicIterativeMethod
+[2023-04-16 17:10:59,556] {task_command.py:369} INFO - Running <TaskInstance: multi_attack_dag.attack_BasicIterativeMethod manual__2023-04-16T17:04:00.049341+00:00 [running]> on host 6c1ce3ac9ba0
+[2023-04-16 17:11:00,237] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=multi_attack_dag
+AIRFLOW_CTX_TASK_ID=attack_BasicIterativeMethod
+AIRFLOW_CTX_EXECUTION_DATE=2023-04-16T17:04:00.049341+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-04-16T17:04:00.049341+00:00
+[2023-04-16 17:11:00,266] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-04-16 17:11:00,289] {client.py:777} INFO - Refreshing access_token
+[2023-04-16 17:11:01,128] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-04-16 17:11:01,167] {client.py:777} INFO - Refreshing access_token
+[2023-04-16 17:11:02,446] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/attack_dag.py", line 120, in attack_BasicIterativeMethod
+    model_acc, adversarial_examples  = attack(BasicIterativeMethod)
+  File "/opt/airflow/dags/attack_dag.py", line 150, in attack
+    estimator = get_estimator()
+  File "/opt/airflow/dags/attack_dag.py", line 65, in get_estimator
+    model = load_from_bucket("ML_model.pickle", as_json=False)
+  File "/opt/airflow/dags/helpers.py", line 120, in load_from_bucket
+    raise err
+  File "/opt/airflow/dags/helpers.py", line 117, in load_from_bucket
+    loaded_obj = cloudpickle.load(f)
+AttributeError: Can't get attribute 'NeuralNetworkClassificationModel' on <module '__main__' from '/home/***/.local/bin/***'>
+[2023-04-16 17:11:02,589] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=multi_attack_dag, task_id=attack_BasicIterativeMethod, execution_date=20230416T170400, start_date=20230416T171058, end_date=20230416T171102
+[2023-04-16 17:11:02,689] {standard_task_runner.py:97} ERROR - Failed to execute job 5313 for task attack_BasicIterativeMethod (Can't get attribute 'NeuralNetworkClassificationModel' on <module '__main__' from '/home/***/.local/bin/***'>; 377)
+[2023-04-16 17:11:02,807] {local_task_job.py:156} INFO - Task exited with return code 1
+[2023-04-16 17:11:03,376] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

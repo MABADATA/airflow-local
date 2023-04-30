@@ -1,0 +1,25 @@
+[2023-03-27 13:05:36,524] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.to_attack_FastGradientMethod manual__2023-03-27T12:55:57.607222+00:00 [queued]>
+[2023-03-27 13:05:36,547] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.to_attack_FastGradientMethod manual__2023-03-27T12:55:57.607222+00:00 [queued]>
+[2023-03-27 13:05:36,548] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-27 13:05:36,549] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2023-03-27 13:05:36,550] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-27 13:05:36,599] {taskinstance.py:1377} INFO - Executing <Task(BranchPythonOperator): to_attack_FastGradientMethod> on 2023-03-27 12:55:57.607222+00:00
+[2023-03-27 13:05:40,936] {standard_task_runner.py:52} INFO - Started process 961 to run task
+[2023-03-27 13:06:05,170] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'multi_attack_dag', 'to_attack_FastGradientMethod', 'manual__2023-03-27T12:55:57.607222+00:00', '--job-id', '3902', '--raw', '--subdir', 'DAGS_FOLDER/attack_dag.py', '--cfg-path', '/tmp/tmpteoo0eb3', '--error-file', '/tmp/tmpjdr6x7oe']
+[2023-03-27 13:06:09,004] {standard_task_runner.py:80} INFO - Job 3902: Subtask to_attack_FastGradientMethod
+[2023-03-27 13:06:22,446] {task_command.py:369} INFO - Running <TaskInstance: multi_attack_dag.to_attack_FastGradientMethod manual__2023-03-27T12:55:57.607222+00:00 [running]> on host 9ccd24501083
+[2023-03-27 13:06:24,074] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=multi_attack_dag
+AIRFLOW_CTX_TASK_ID=to_attack_FastGradientMethod
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-27T12:55:57.607222+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-03-27T12:55:57.607222+00:00
+[2023-03-27 13:06:53,672] {python.py:173} INFO - Done. Returned value was: default
+[2023-03-27 13:06:54,107] {skipmixin.py:140} INFO - Following branch default
+[2023-03-27 13:06:54,109] {skipmixin.py:175} INFO - Skipping tasks ['attack_FastGradientMethod']
+[2023-03-27 13:07:14,755] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=multi_attack_dag, task_id=to_attack_FastGradientMethod, execution_date=20230327T125557, start_date=20230327T130536, end_date=20230327T130714
+[2023-03-27 13:07:22,604] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-03-27 13:07:58,080] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

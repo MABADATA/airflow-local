@@ -1,0 +1,42 @@
+[2023-03-28 14:34:42,437] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: defence_dag2.to_attack manual__2023-03-28T14:34:33.889621+00:00 [queued]>
+[2023-03-28 14:34:42,444] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: defence_dag2.to_attack manual__2023-03-28T14:34:33.889621+00:00 [queued]>
+[2023-03-28 14:34:42,444] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-28 14:34:42,445] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2023-03-28 14:34:42,446] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-28 14:34:42,462] {taskinstance.py:1377} INFO - Executing <Task(BranchPythonOperator): to_attack> on 2023-03-28 14:34:33.889621+00:00
+[2023-03-28 14:34:42,509] {standard_task_runner.py:52} INFO - Started process 9309 to run task
+[2023-03-28 14:34:42,512] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'defence_dag2', 'to_attack', 'manual__2023-03-28T14:34:33.889621+00:00', '--job-id', '4626', '--raw', '--subdir', 'DAGS_FOLDER/defese.py', '--cfg-path', '/tmp/tmp68ciqerq', '--error-file', '/tmp/tmpskxyedhj']
+[2023-03-28 14:34:42,513] {standard_task_runner.py:80} INFO - Job 4626: Subtask to_attack
+[2023-03-28 14:34:42,569] {task_command.py:369} INFO - Running <TaskInstance: defence_dag2.to_attack manual__2023-03-28T14:34:33.889621+00:00 [running]> on host ff3d40af78f9
+[2023-03-28 14:34:42,636] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=defence_dag2
+AIRFLOW_CTX_TASK_ID=to_attack
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-28T14:34:33.889621+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-03-28T14:34:33.889621+00:00
+[2023-03-28 14:34:42,640] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 207, in execute
+    branch = super().execute(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/defese.py", line 31, in to_attack
+    cycles = cloudpickle.load(f)
+  File "/home/airflow/.local/lib/python3.7/site-packages/art/estimators/classification/pytorch.py", line 1095, in __setstate__
+    model.load_state_dict(torch.load(str(full_path) + ".model"))
+  File "/home/airflow/.local/lib/python3.7/site-packages/torch/serialization.py", line 771, in load
+    with _open_file_like(f, 'rb') as opened_file:
+  File "/home/airflow/.local/lib/python3.7/site-packages/torch/serialization.py", line 270, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/airflow/.local/lib/python3.7/site-packages/torch/serialization.py", line 251, in __init__
+    super(_open_file, self).__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: '/home/airflow/.art/data/1680013021.806291.model'
+[2023-03-28 14:34:42,647] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=defence_dag2, task_id=to_attack, execution_date=20230328T143433, start_date=20230328T143442, end_date=20230328T143442
+[2023-03-28 14:34:42,655] {standard_task_runner.py:97} ERROR - Failed to execute job 4626 for task to_attack ([Errno 2] No such file or directory: '/home/airflow/.art/data/1680013021.806291.model'; 9309)
+[2023-03-28 14:34:42,685] {local_task_job.py:156} INFO - Task exited with return code 1
+[2023-03-28 14:34:42,730] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,36 @@
+[2023-03-19 10:04:03,999] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_local_to_gcs.upload_file manual__2023-03-19T10:04:03.290279+00:00 [queued]>
+[2023-03-19 10:04:04,008] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_local_to_gcs.upload_file manual__2023-03-19T10:04:03.290279+00:00 [queued]>
+[2023-03-19 10:04:04,009] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-19 10:04:04,014] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2023-03-19 10:04:04,014] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-19 10:04:04,031] {taskinstance.py:1377} INFO - Executing <Task(LocalFilesystemToGCSOperator): upload_file> on 2023-03-19 10:04:03.290279+00:00
+[2023-03-19 10:04:04,036] {standard_task_runner.py:52} INFO - Started process 178 to run task
+[2023-03-19 10:04:04,039] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'example_local_to_gcs', 'upload_file', 'manual__2023-03-19T10:04:03.290279+00:00', '--job-id', '1549', '--raw', '--subdir', 'DAGS_FOLDER/gcs.py', '--cfg-path', '/tmp/tmpvyl3f665', '--error-file', '/tmp/tmp1_t5tfjb']
+[2023-03-19 10:04:04,040] {standard_task_runner.py:80} INFO - Job 1549: Subtask upload_file
+[2023-03-19 10:04:04,090] {task_command.py:369} INFO - Running <TaskInstance: example_local_to_gcs.upload_file manual__2023-03-19T10:04:03.290279+00:00 [running]> on host cff84a72f41c
+[2023-03-19 10:04:04,158] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=example_local_to_gcs
+AIRFLOW_CTX_TASK_ID=upload_file
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-19T10:04:03.290279+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-03-19T10:04:03.290279+00:00
+[2023-03-19 10:04:04,177] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/cloud/transfers/local_to_gcs.py", line 108, in execute
+    impersonation_chain=self.impersonation_chain,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/cloud/hooks/gcs.py", line 152, in __init__
+    impersonation_chain=impersonation_chain,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/common/hooks/base_google.py", line 219, in __init__
+    self.extras = self.get_connection(self.gcp_conn_id).extra_dejson  # type: Dict
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/hooks/base.py", line 67, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/connection.py", line 430, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `google_cloud_default` isn't defined
+[2023-03-19 10:04:04,182] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=example_local_to_gcs, task_id=upload_file, execution_date=20230319T100403, start_date=20230319T100404, end_date=20230319T100404
+[2023-03-19 10:04:04,191] {standard_task_runner.py:97} ERROR - Failed to execute job 1549 for task upload_file (The conn_id `google_cloud_default` isn't defined; 178)
+[2023-03-19 10:04:04,213] {local_task_job.py:156} INFO - Task exited with return code 1
+[2023-03-19 10:04:04,247] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

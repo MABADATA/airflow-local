@@ -1,0 +1,4 @@
+[2023-03-16 11:56:48,420] {taskinstance.py:1153} INFO - Dependencies not met for <TaskInstance: defence_dag.storing scheduled__2023-03-11T00:00:00+00:00 [scheduled]>, dependency 'Task Instance State' FAILED: Task is in the 'scheduled' state.
+[2023-03-16 11:56:48,506] {local_task_job.py:101} INFO - Task is not able to be run
+[2023-03-16 11:56:54,713] {taskinstance.py:1153} INFO - Dependencies not met for <TaskInstance: defence_dag.storing scheduled__2023-03-11T00:00:00+00:00 [failed]>, dependency 'Task Instance State' FAILED: Task is in the 'failed' state.
+[2023-03-16 11:56:54,804] {local_task_job.py:101} INFO - Task is not able to be run

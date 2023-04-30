@@ -1,0 +1,16 @@
+adversarial-robustness-toolbox
+scikit-learn
+Pillow
+gcloud
+pickle5
+cloudpickle
+pandas
+numpy
+torch
+xgboost
+google-api-python-client==1.7.3
+oauth2client==4.1.2
+progressbar2==3.38.0
+httplib2==0.15.0
+imblearn
+Scikit-Optimize

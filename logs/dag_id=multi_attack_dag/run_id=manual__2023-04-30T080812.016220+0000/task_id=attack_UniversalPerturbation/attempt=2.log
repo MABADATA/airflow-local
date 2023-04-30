@@ -1,0 +1,36 @@
+[2023-04-30 08:13:45,862] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.attack_UniversalPerturbation manual__2023-04-30T08:08:12.016220+00:00 [queued]>
+[2023-04-30 08:13:45,921] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.attack_UniversalPerturbation manual__2023-04-30T08:08:12.016220+00:00 [queued]>
+[2023-04-30 08:13:45,922] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-30 08:13:45,923] {taskinstance.py:1357} INFO - Starting attempt 2 of 2
+[2023-04-30 08:13:45,924] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-30 08:13:45,970] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): attack_UniversalPerturbation> on 2023-04-30 08:08:12.016220+00:00
+[2023-04-30 08:13:45,994] {standard_task_runner.py:52} INFO - Started process 1193 to run task
+[2023-04-30 08:13:46,013] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'multi_attack_dag', 'attack_UniversalPerturbation', 'manual__2023-04-30T08:08:12.016220+00:00', '--job-id', '7151', '--raw', '--subdir', 'DAGS_FOLDER/attack_dag.py', '--cfg-path', '/tmp/tmpw3uzth19', '--error-file', '/tmp/tmpjhkd695h']
+[2023-04-30 08:13:46,016] {standard_task_runner.py:80} INFO - Job 7151: Subtask attack_UniversalPerturbation
+[2023-04-30 08:13:46,269] {task_command.py:369} INFO - Running <TaskInstance: multi_attack_dag.attack_UniversalPerturbation manual__2023-04-30T08:08:12.016220+00:00 [running]> on host e7e31d5a6603
+[2023-04-30 08:13:46,592] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=multi_attack_dag
+AIRFLOW_CTX_TASK_ID=attack_UniversalPerturbation
+AIRFLOW_CTX_EXECUTION_DATE=2023-04-30T08:08:12.016220+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-04-30T08:08:12.016220+00:00
+[2023-04-30 08:13:46,600] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-04-30 08:13:46,652] {client.py:777} INFO - Refreshing access_token
+[2023-04-30 08:13:47,451] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/attack.py", line 61, in attack_UniversalPerturbation
+    model_acc, adversarial_examples  = attack(UniversalPerturbation)
+  File "/opt/airflow/dags/attack.py", line 30, in attack
+    x_train, y_train,x_test, y_test =  get_data()
+TypeError: cannot unpack non-iterable NoneType object
+[2023-04-30 08:13:47,492] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=multi_attack_dag, task_id=attack_UniversalPerturbation, execution_date=20230430T080812, start_date=20230430T081345, end_date=20230430T081347
+[2023-04-30 08:13:47,530] {standard_task_runner.py:97} ERROR - Failed to execute job 7151 for task attack_UniversalPerturbation (cannot unpack non-iterable NoneType object; 1193)
+[2023-04-30 08:13:47,574] {local_task_job.py:156} INFO - Task exited with return code 1
+[2023-04-30 08:13:47,735] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

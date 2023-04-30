@@ -1,0 +1,55 @@
+[2023-03-23 09:45:39,513] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: defence_dag2.to_attack manual__2023-03-23T09:44:44.703322+00:00 [queued]>
+[2023-03-23 09:45:39,522] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: defence_dag2.to_attack manual__2023-03-23T09:44:44.703322+00:00 [queued]>
+[2023-03-23 09:45:39,522] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-23 09:45:39,523] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2023-03-23 09:45:39,523] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-23 09:45:39,535] {taskinstance.py:1377} INFO - Executing <Task(BranchPythonOperator): to_attack> on 2023-03-23 09:44:44.703322+00:00
+[2023-03-23 09:45:39,539] {standard_task_runner.py:52} INFO - Started process 71 to run task
+[2023-03-23 09:45:39,542] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'defence_dag2', 'to_attack', 'manual__2023-03-23T09:44:44.703322+00:00', '--job-id', '2333', '--raw', '--subdir', 'DAGS_FOLDER/defese.py', '--cfg-path', '/tmp/tmpw7gitawc', '--error-file', '/tmp/tmp461_n_ox']
+[2023-03-23 09:45:39,543] {standard_task_runner.py:80} INFO - Job 2333: Subtask to_attack
+[2023-03-23 09:45:39,584] {task_command.py:369} INFO - Running <TaskInstance: defence_dag2.to_attack manual__2023-03-23T09:44:44.703322+00:00 [running]> on host 6447f1dacd32
+[2023-03-23 09:45:39,637] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=defence_dag2
+AIRFLOW_CTX_TASK_ID=to_attack
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-23T09:44:44.703322+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-03-23T09:44:44.703322+00:00
+[2023-03-23 09:45:39,645] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-03-23 09:45:39,647] {client.py:777} INFO - Refreshing access_token
+[2023-03-23 09:45:41,012] {xcom.py:585} ERROR - Could not serialize the XCom value into JSON. If you are using pickle instead of JSON for XCom, then you need to enable pickle support for XCom in your *** config.
+[2023-03-23 09:45:41,013] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 207, in execute
+    branch = super().execute(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/defese.py", line 55, in to_attack
+    ti.xcom_push(key='cycles number', value=type(cycles))
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 71, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 2380, in xcom_push
+    session=session,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 68, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/xcom.py", line 197, in set
+    map_index=map_index,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/xcom.py", line 582, in serialize_value
+    return json.dumps(value).encode('UTF-8')
+  File "/usr/local/lib/python3.7/json/__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/local/lib/python3.7/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/local/lib/python3.7/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/local/lib/python3.7/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type type is not JSON serializable
+[2023-03-23 09:45:41,030] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=defence_dag2, task_id=to_attack, execution_date=20230323T094444, start_date=20230323T094539, end_date=20230323T094541
+[2023-03-23 09:45:41,047] {standard_task_runner.py:97} ERROR - Failed to execute job 2333 for task to_attack (Object of type type is not JSON serializable; 71)
+[2023-03-23 09:45:41,065] {local_task_job.py:156} INFO - Task exited with return code 1
+[2023-03-23 09:45:41,121] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

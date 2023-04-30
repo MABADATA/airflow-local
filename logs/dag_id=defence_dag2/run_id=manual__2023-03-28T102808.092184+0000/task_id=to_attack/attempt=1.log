@@ -1,0 +1,31 @@
+[2023-03-28 10:28:13,925] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: defence_dag2.to_attack manual__2023-03-28T10:28:08.092184+00:00 [queued]>
+[2023-03-28 10:28:13,936] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: defence_dag2.to_attack manual__2023-03-28T10:28:08.092184+00:00 [queued]>
+[2023-03-28 10:28:13,937] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-28 10:28:13,938] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2023-03-28 10:28:13,944] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-28 10:28:13,959] {taskinstance.py:1377} INFO - Executing <Task(BranchPythonOperator): to_attack> on 2023-03-28 10:28:08.092184+00:00
+[2023-03-28 10:28:13,966] {standard_task_runner.py:52} INFO - Started process 2104 to run task
+[2023-03-28 10:28:13,970] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'defence_dag2', 'to_attack', 'manual__2023-03-28T10:28:08.092184+00:00', '--job-id', '4252', '--raw', '--subdir', 'DAGS_FOLDER/defese.py', '--cfg-path', '/tmp/tmpl4oksaqf', '--error-file', '/tmp/tmp03c8b551']
+[2023-03-28 10:28:13,971] {standard_task_runner.py:80} INFO - Job 4252: Subtask to_attack
+[2023-03-28 10:28:14,029] {task_command.py:369} INFO - Running <TaskInstance: defence_dag2.to_attack manual__2023-03-28T10:28:08.092184+00:00 [running]> on host 70f8824ef075
+[2023-03-28 10:28:14,104] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=defence_dag2
+AIRFLOW_CTX_TASK_ID=to_attack
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-28T10:28:08.092184+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-03-28T10:28:08.092184+00:00
+[2023-03-28 10:28:14,108] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-03-28 10:28:14,112] {client.py:777} INFO - Refreshing access_token
+[2023-03-28 10:28:15,272] {config.py:55} INFO - set ART_DATA_PATH to /home/***/.art/data
+[2023-03-28 10:28:15,558] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/art/estimators/certification/__init__.py:14: UserWarning: PyTorch not found. Not importing DeepZ or Interval Bound Propagation functionality
+  warnings.warn("PyTorch not found. Not importing DeepZ or Interval Bound Propagation functionality")
+
+[2023-03-28 10:28:15,663] {python.py:173} INFO - Done. Returned value was: trigger_offence
+[2023-03-28 10:28:15,665] {skipmixin.py:140} INFO - Following branch trigger_offence
+[2023-03-28 10:28:15,666] {skipmixin.py:175} INFO - Skipping tasks ['stop']
+[2023-03-28 10:28:15,712] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=defence_dag2, task_id=to_attack, execution_date=20230328T102808, start_date=20230328T102813, end_date=20230328T102815
+[2023-03-28 10:28:15,757] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-03-28 10:28:15,816] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

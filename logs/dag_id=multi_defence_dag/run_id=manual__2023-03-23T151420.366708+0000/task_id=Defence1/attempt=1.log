@@ -1,0 +1,23 @@
+[2023-03-23 15:14:32,667] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_defence_dag.Defence1 manual__2023-03-23T15:14:20.366708+00:00 [queued]>
+[2023-03-23 15:14:32,738] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_defence_dag.Defence1 manual__2023-03-23T15:14:20.366708+00:00 [queued]>
+[2023-03-23 15:14:32,740] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-23 15:14:32,745] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2023-03-23 15:14:32,746] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-23 15:14:32,843] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): Defence1> on 2023-03-23 15:14:20.366708+00:00
+[2023-03-23 15:14:32,865] {standard_task_runner.py:52} INFO - Started process 11694 to run task
+[2023-03-23 15:14:32,877] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'multi_defence_dag', 'Defence1', 'manual__2023-03-23T15:14:20.366708+00:00', '--job-id', '2894', '--raw', '--subdir', 'DAGS_FOLDER/defence_dag.py', '--cfg-path', '/tmp/tmpokumta1u', '--error-file', '/tmp/tmpna4w8z9v']
+[2023-03-23 15:14:32,882] {standard_task_runner.py:80} INFO - Job 2894: Subtask Defence1
+[2023-03-23 15:14:33,313] {task_command.py:369} INFO - Running <TaskInstance: multi_defence_dag.Defence1 manual__2023-03-23T15:14:20.366708+00:00 [running]> on host 6447f1dacd32
+[2023-03-23 15:14:34,176] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=multi_defence_dag
+AIRFLOW_CTX_TASK_ID=Defence1
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-23T15:14:20.366708+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-03-23T15:14:20.366708+00:00
+[2023-03-23 15:14:34,280] {python.py:173} INFO - Done. Returned value was: None
+[2023-03-23 15:14:34,361] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=multi_defence_dag, task_id=Defence1, execution_date=20230323T151420, start_date=20230323T151432, end_date=20230323T151434
+[2023-03-23 15:14:34,444] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-03-23 15:14:34,695] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,62 @@
+[2023-04-08 15:21:24,762] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.attack_ProjectedGradientDescent manual__2023-04-08T15:14:51.270420+00:00 [queued]>
+[2023-04-08 15:21:24,791] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.attack_ProjectedGradientDescent manual__2023-04-08T15:14:51.270420+00:00 [queued]>
+[2023-04-08 15:21:24,792] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-08 15:21:24,794] {taskinstance.py:1357} INFO - Starting attempt 2 of 2
+[2023-04-08 15:21:24,794] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-08 15:21:24,826] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): attack_ProjectedGradientDescent> on 2023-04-08 15:14:51.270420+00:00
+[2023-04-08 15:21:24,840] {standard_task_runner.py:52} INFO - Started process 11451 to run task
+[2023-04-08 15:21:24,849] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'multi_attack_dag', 'attack_ProjectedGradientDescent', 'manual__2023-04-08T15:14:51.270420+00:00', '--job-id', '4702', '--raw', '--subdir', 'DAGS_FOLDER/attack_dag.py', '--cfg-path', '/tmp/tmpk1toej_4', '--error-file', '/tmp/tmpg5l8sxl4']
+[2023-04-08 15:21:24,851] {standard_task_runner.py:80} INFO - Job 4702: Subtask attack_ProjectedGradientDescent
+[2023-04-08 15:21:24,986] {task_command.py:369} INFO - Running <TaskInstance: multi_attack_dag.attack_ProjectedGradientDescent manual__2023-04-08T15:14:51.270420+00:00 [running]> on host ff3d40af78f9
+[2023-04-08 15:21:25,176] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=multi_attack_dag
+AIRFLOW_CTX_TASK_ID=attack_ProjectedGradientDescent
+AIRFLOW_CTX_EXECUTION_DATE=2023-04-08T15:14:51.270420+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-04-08T15:14:51.270420+00:00
+[2023-04-08 15:21:25,183] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-04-08 15:21:25,191] {client.py:777} INFO - Refreshing access_token
+[2023-04-08 15:21:26,311] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-04-08 15:21:26,315] {client.py:777} INFO - Refreshing access_token
+[2023-04-08 15:21:27,149] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-04-08 15:21:27,154] {client.py:777} INFO - Refreshing access_token
+[2023-04-08 15:21:27,835] {pytorch.py:1198} INFO - Inferred 5 hidden layers on PyTorch classifier.
+[2023-04-08 15:21:27,838] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-04-08 15:21:27,842] {client.py:777} INFO - Refreshing access_token
+[2023-04-08 15:22:33,812] {projected_gradient_descent.py:199} INFO - Creating adversarial samples.
+[2023-04-08 15:22:33,846] {logging_mixin.py:115} WARNING - PGD - Batches:   0%|          | 0/32 [00:00<?, ?it/s]
+[2023-04-08 15:22:33,852] {logging_mixin.py:115} WARNING -                                                      
+[2023-04-08 15:22:33,853] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/attack_dag.py", line 127, in attack_ProjectedGradientDescent
+    model_acc = attack(ProjectedGradientDescent)
+  File "/opt/airflow/dags/attack_dag.py", line 135, in attack
+    adversarial_examples = wrap_attack.generate(np.asarray(x_train))
+  File "/home/airflow/.local/lib/python3.7/site-packages/art/attacks/evasion/projected_gradient_descent/projected_gradient_descent.py", line 200, in generate
+    return self._attack.generate(x=x, y=y, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/art/attacks/evasion/projected_gradient_descent/projected_gradient_descent_pytorch.py", line 219, in generate
+    x=batch, targets=batch_labels, mask=mask_batch, eps=batch_eps, eps_step=batch_eps_step
+  File "/home/airflow/.local/lib/python3.7/site-packages/art/attacks/evasion/projected_gradient_descent/projected_gradient_descent_pytorch.py", line 280, in _generate_batch
+    adv_x, inputs, targets, mask, eps, eps_step, self.num_random_init > 0 and i_max_iter == 0, momentum
+  File "/home/airflow/.local/lib/python3.7/site-packages/art/attacks/evasion/projected_gradient_descent/projected_gradient_descent_pytorch.py", line 435, in _compute_pytorch
+    perturbation = self._compute_perturbation_pytorch(x_adv, y, mask, momentum)
+  File "/home/airflow/.local/lib/python3.7/site-packages/art/attacks/evasion/projected_gradient_descent/projected_gradient_descent_pytorch.py", line 307, in _compute_perturbation_pytorch
+    grad = self.estimator.loss_gradient(x=x, y=y) * (1 - 2 * int(self.targeted))
+  File "/home/airflow/.local/lib/python3.7/site-packages/art/estimators/classification/pytorch.py", line 843, in loss_gradient
+    loss = self._loss(model_outputs[-1], labels_t)
+  File "/home/airflow/.local/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/torch/nn/modules/module.py", line 246, in _forward_unimplemented
+    raise NotImplementedError(f"Module [{type(self).__name__}] is missing the required \"forward\" function")
+NotImplementedError: Module [_Loss] is missing the required "forward" function
+[2023-04-08 15:22:33,871] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=multi_attack_dag, task_id=attack_ProjectedGradientDescent, execution_date=20230408T151451, start_date=20230408T152124, end_date=20230408T152233
+[2023-04-08 15:22:33,890] {standard_task_runner.py:97} ERROR - Failed to execute job 4702 for task attack_ProjectedGradientDescent (Module [_Loss] is missing the required "forward" function; 11451)
+[2023-04-08 15:22:33,944] {local_task_job.py:156} INFO - Task exited with return code 1
+[2023-04-08 15:22:34,020] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,50 @@
+[2023-04-27 11:08:57,656] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.attack_ElasticNet manual__2023-04-27T10:40:33.319519+00:00 [queued]>
+[2023-04-27 11:08:57,928] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.attack_ElasticNet manual__2023-04-27T10:40:33.319519+00:00 [queued]>
+[2023-04-27 11:08:57,938] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-27 11:08:57,939] {taskinstance.py:1357} INFO - Starting attempt 2 of 2
+[2023-04-27 11:08:57,939] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-27 11:08:58,301] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): attack_ElasticNet> on 2023-04-27 10:40:33.319519+00:00
+[2023-04-27 11:08:58,459] {standard_task_runner.py:52} INFO - Started process 788 to run task
+[2023-04-27 11:08:58,475] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'multi_attack_dag', 'attack_ElasticNet', 'manual__2023-04-27T10:40:33.319519+00:00', '--job-id', '6733', '--raw', '--subdir', 'DAGS_FOLDER/attack_dag.py', '--cfg-path', '/tmp/tmp0ebybp6q', '--error-file', '/tmp/tmp0abg6biw']
+[2023-04-27 11:08:58,566] {standard_task_runner.py:80} INFO - Job 6733: Subtask attack_ElasticNet
+[2023-04-27 11:08:59,030] {task_command.py:369} INFO - Running <TaskInstance: multi_attack_dag.attack_ElasticNet manual__2023-04-27T10:40:33.319519+00:00 [running]> on host e7e31d5a6603
+[2023-04-27 11:08:59,494] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=multi_attack_dag
+AIRFLOW_CTX_TASK_ID=attack_ElasticNet
+AIRFLOW_CTX_EXECUTION_DATE=2023-04-27T10:40:33.319519+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-04-27T10:40:33.319519+00:00
+[2023-04-27 11:08:59,504] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-04-27 11:08:59,512] {client.py:777} INFO - Refreshing access_token
+[2023-04-27 11:09:00,250] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-04-27 11:09:00,252] {client.py:777} INFO - Refreshing access_token
+[2023-04-27 11:09:24,984] {pytorch.py:1198} INFO - Inferred 5 hidden layers on PyTorch classifier.
+[2023-04-27 11:13:29,687] {attack_dag.py:643} INFO - Optimizing...
+[2023-04-27 11:13:29,698] {logging_mixin.py:115} INFO - I am right here on <class 'art.attacks.evasion.elastic_net.ElasticNet'>
+[2023-04-27 11:13:29,704] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/opt/airflow/dags/attack_dag.py", line 645, in attack
+    python_callable=to_attack_MalwareGDTensorFlow
+  File "/opt/airflow/dags/attack_dag.py", line 617, in optimize_evasion_attack
+    task_id=f"attack_DeepFool",
+KeyError: 'ElasticNet'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/attack_dag.py", line 450, in attack_ElasticNet
+    return -acc
+  File "/opt/airflow/dags/attack_dag.py", line 648, in attack
+    run_attack_MalwareGDTensorFlow = PythonOperator(
+TypeError: __init__() got an unexpected keyword argument 'estimator'
+[2023-04-27 11:13:29,748] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=multi_attack_dag, task_id=attack_ElasticNet, execution_date=20230427T104033, start_date=20230427T110857, end_date=20230427T111329
+[2023-04-27 11:13:29,859] {standard_task_runner.py:97} ERROR - Failed to execute job 6733 for task attack_ElasticNet (__init__() got an unexpected keyword argument 'estimator'; 788)
+[2023-04-27 11:13:29,988] {local_task_job.py:156} INFO - Task exited with return code 1
+[2023-04-27 11:13:30,378] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

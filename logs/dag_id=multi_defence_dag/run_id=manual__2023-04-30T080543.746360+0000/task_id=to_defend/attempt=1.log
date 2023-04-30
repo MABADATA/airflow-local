@@ -1,0 +1,27 @@
+[2023-04-30 08:11:13,926] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_defence_dag.to_defend manual__2023-04-30T08:05:43.746360+00:00 [queued]>
+[2023-04-30 08:11:13,942] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_defence_dag.to_defend manual__2023-04-30T08:05:43.746360+00:00 [queued]>
+[2023-04-30 08:11:13,943] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-30 08:11:13,948] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2023-04-30 08:11:13,948] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-30 08:11:13,973] {taskinstance.py:1377} INFO - Executing <Task(BranchPythonOperator): to_defend> on 2023-04-30 08:05:43.746360+00:00
+[2023-04-30 08:11:13,982] {standard_task_runner.py:52} INFO - Started process 1050 to run task
+[2023-04-30 08:11:13,987] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'multi_defence_dag', 'to_defend', 'manual__2023-04-30T08:05:43.746360+00:00', '--job-id', '7148', '--raw', '--subdir', 'DAGS_FOLDER/defence_dag.py', '--cfg-path', '/tmp/tmpwjy3nca0', '--error-file', '/tmp/tmppxcxq55a']
+[2023-04-30 08:11:13,988] {standard_task_runner.py:80} INFO - Job 7148: Subtask to_defend
+[2023-04-30 08:11:14,064] {task_command.py:369} INFO - Running <TaskInstance: multi_defence_dag.to_defend manual__2023-04-30T08:05:43.746360+00:00 [running]> on host e7e31d5a6603
+[2023-04-30 08:11:14,238] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=multi_defence_dag
+AIRFLOW_CTX_TASK_ID=to_defend
+AIRFLOW_CTX_EXECUTION_DATE=2023-04-30T08:05:43.746360+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-04-30T08:05:43.746360+00:00
+[2023-04-30 08:11:14,243] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-04-30 08:11:14,248] {client.py:777} INFO - Refreshing access_token
+[2023-04-30 08:11:15,369] {python.py:173} INFO - Done. Returned value was: stop
+[2023-04-30 08:11:15,370] {skipmixin.py:140} INFO - Following branch stop
+[2023-04-30 08:11:15,372] {skipmixin.py:175} INFO - Skipping tasks ['trigger_offence']
+[2023-04-30 08:11:15,450] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=multi_defence_dag, task_id=to_defend, execution_date=20230430T080543, start_date=20230430T081113, end_date=20230430T081115
+[2023-04-30 08:11:15,488] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-04-30 08:11:15,528] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

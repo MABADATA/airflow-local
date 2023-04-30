@@ -1,0 +1,44 @@
+[2023-04-18 07:37:44,882] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.attack_BasicIterativeMethod manual__2023-04-18T07:37:26.237935+00:00 [queued]>
+[2023-04-18 07:37:44,911] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.attack_BasicIterativeMethod manual__2023-04-18T07:37:26.237935+00:00 [queued]>
+[2023-04-18 07:37:44,911] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-18 07:37:44,913] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2023-04-18 07:37:44,913] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-18 07:37:44,944] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): attack_BasicIterativeMethod> on 2023-04-18 07:37:26.237935+00:00
+[2023-04-18 07:37:44,957] {standard_task_runner.py:52} INFO - Started process 4333 to run task
+[2023-04-18 07:37:44,963] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'multi_attack_dag', 'attack_BasicIterativeMethod', 'manual__2023-04-18T07:37:26.237935+00:00', '--job-id', '5583', '--raw', '--subdir', 'DAGS_FOLDER/attack_dag.py', '--cfg-path', '/tmp/tmpth6uy1u2', '--error-file', '/tmp/tmp0xp5ec92']
+[2023-04-18 07:37:44,965] {standard_task_runner.py:80} INFO - Job 5583: Subtask attack_BasicIterativeMethod
+[2023-04-18 07:37:45,072] {task_command.py:369} INFO - Running <TaskInstance: multi_attack_dag.attack_BasicIterativeMethod manual__2023-04-18T07:37:26.237935+00:00 [running]> on host a3dd7d962104
+[2023-04-18 07:37:45,229] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=multi_attack_dag
+AIRFLOW_CTX_TASK_ID=attack_BasicIterativeMethod
+AIRFLOW_CTX_EXECUTION_DATE=2023-04-18T07:37:26.237935+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-04-18T07:37:26.237935+00:00
+[2023-04-18 07:37:45,232] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/attack_dag.py", line 127, in attack_BasicIterativeMethod
+    model_acc, adversarial_examples  = attack(BasicIterativeMethod)
+  File "/opt/airflow/dags/attack_dag.py", line 160, in attack
+    wrap_attack = set_attack_params(attack_obj,attack_params,estimator)
+  File "/opt/airflow/dags/attack_dag.py", line 142, in set_attack_params
+    attack_with_params = attack(**params,estimator=estimator)
+  File "/home/airflow/.local/lib/python3.7/site-packages/art/attacks/evasion/iterative_method.py", line 78, in __init__
+    verbose=verbose,
+  File "/home/airflow/.local/lib/python3.7/site-packages/art/attacks/evasion/projected_gradient_descent/projected_gradient_descent.py", line 120, in __init__
+    super().__init__(estimator=estimator, summary_writer=False)
+  File "/home/airflow/.local/lib/python3.7/site-packages/art/attacks/attack.py", line 197, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/art/attacks/attack.py", line 125, in __init__
+    raise EstimatorError(self.__class__, self.estimator_requirements, estimator)
+art.exceptions.EstimatorError: BasicIterativeMethod requires an estimator derived from <class 'art.estimators.estimator.BaseEstimator'> and <class 'art.estimators.estimator.LossGradientsMixin'>, the provided classifier is an instance of <class 'NoneType'> and is derived from (<class 'object'>,).
+[2023-04-18 07:37:45,260] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=multi_attack_dag, task_id=attack_BasicIterativeMethod, execution_date=20230418T073726, start_date=20230418T073744, end_date=20230418T073745
+[2023-04-18 07:37:45,288] {standard_task_runner.py:97} ERROR - Failed to execute job 5583 for task attack_BasicIterativeMethod (BasicIterativeMethod requires an estimator derived from <class 'art.estimators.estimator.BaseEstimator'> and <class 'art.estimators.estimator.LossGradientsMixin'>, the provided classifier is an instance of <class 'NoneType'> and is derived from (<class 'object'>,).; 4333)
+[2023-04-18 07:37:45,341] {local_task_job.py:156} INFO - Task exited with return code 1
+[2023-04-18 07:37:45,466] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

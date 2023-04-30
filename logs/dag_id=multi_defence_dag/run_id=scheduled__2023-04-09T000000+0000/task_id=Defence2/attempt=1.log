@@ -1,0 +1,23 @@
+[2023-04-16 13:23:58,060] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_defence_dag.Defence2 scheduled__2023-04-09T00:00:00+00:00 [queued]>
+[2023-04-16 13:23:58,152] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_defence_dag.Defence2 scheduled__2023-04-09T00:00:00+00:00 [queued]>
+[2023-04-16 13:23:58,153] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-16 13:23:58,153] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2023-04-16 13:23:58,158] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-16 13:23:58,219] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): Defence2> on 2023-04-09 00:00:00+00:00
+[2023-04-16 13:23:58,260] {standard_task_runner.py:52} INFO - Started process 191 to run task
+[2023-04-16 13:23:58,280] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'multi_defence_dag', 'Defence2', 'scheduled__2023-04-09T00:00:00+00:00', '--job-id', '5117', '--raw', '--subdir', 'DAGS_FOLDER/defence_dag.py', '--cfg-path', '/tmp/tmp_r2chrh9', '--error-file', '/tmp/tmp871f_jpz']
+[2023-04-16 13:23:58,292] {standard_task_runner.py:80} INFO - Job 5117: Subtask Defence2
+[2023-04-16 13:23:58,700] {task_command.py:369} INFO - Running <TaskInstance: multi_defence_dag.Defence2 scheduled__2023-04-09T00:00:00+00:00 [running]> on host c5458bb8a35c
+[2023-04-16 13:23:59,502] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=multi_defence_dag
+AIRFLOW_CTX_TASK_ID=Defence2
+AIRFLOW_CTX_EXECUTION_DATE=2023-04-09T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-04-09T00:00:00+00:00
+[2023-04-16 13:23:59,573] {python.py:173} INFO - Done. Returned value was: None
+[2023-04-16 13:23:59,621] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=multi_defence_dag, task_id=Defence2, execution_date=20230409T000000, start_date=20230416T132358, end_date=20230416T132359
+[2023-04-16 13:23:59,731] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-04-16 13:23:59,912] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

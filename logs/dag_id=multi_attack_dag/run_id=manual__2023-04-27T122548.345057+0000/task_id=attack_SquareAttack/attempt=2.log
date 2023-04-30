@@ -1,0 +1,66 @@
+[2023-04-27 12:34:11,280] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.attack_SquareAttack manual__2023-04-27T12:25:48.345057+00:00 [queued]>
+[2023-04-27 12:34:11,576] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.attack_SquareAttack manual__2023-04-27T12:25:48.345057+00:00 [queued]>
+[2023-04-27 12:34:11,578] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-27 12:34:11,579] {taskinstance.py:1357} INFO - Starting attempt 2 of 2
+[2023-04-27 12:34:11,581] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-27 12:34:18,258] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): attack_SquareAttack> on 2023-04-27 12:25:48.345057+00:00
+[2023-04-27 12:34:18,845] {standard_task_runner.py:52} INFO - Started process 4318 to run task
+[2023-04-27 12:34:19,801] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'multi_attack_dag', 'attack_SquareAttack', 'manual__2023-04-27T12:25:48.345057+00:00', '--job-id', '6846', '--raw', '--subdir', 'DAGS_FOLDER/attack_dag.py', '--cfg-path', '/tmp/tmpja0_u0a5', '--error-file', '/tmp/tmpsnfrh00y']
+[2023-04-27 12:34:19,925] {standard_task_runner.py:80} INFO - Job 6846: Subtask attack_SquareAttack
+[2023-04-27 12:34:25,341] {task_command.py:369} INFO - Running <TaskInstance: multi_attack_dag.attack_SquareAttack manual__2023-04-27T12:25:48.345057+00:00 [running]> on host e7e31d5a6603
+[2023-04-27 12:34:30,768] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=multi_attack_dag
+AIRFLOW_CTX_TASK_ID=attack_SquareAttack
+AIRFLOW_CTX_EXECUTION_DATE=2023-04-27T12:25:48.345057+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-04-27T12:25:48.345057+00:00
+[2023-04-27 12:34:31,212] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-04-27 12:34:32,132] {client.py:777} INFO - Refreshing access_token
+[2023-04-27 12:34:35,020] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-04-27 12:34:35,041] {client.py:777} INFO - Refreshing access_token
+[2023-04-27 12:34:50,307] {local_task_job.py:221} WARNING - State of this instance has been externally set to removed. Terminating instance.
+[2023-04-27 12:34:50,337] {process_utils.py:129} INFO - Sending Signals.SIGTERM to group 4318. PIDs of all processes in the group: [4318]
+[2023-04-27 12:34:50,340] {process_utils.py:80} INFO - Sending the signal Signals.SIGTERM to group 4318
+[2023-04-27 12:34:50,396] {taskinstance.py:1541} ERROR - Received SIGTERM. Terminating subprocesses.
+[2023-04-27 12:34:51,515] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/attack.py", line 56, in attack_SquareAttack
+    model_acc, adversarial_examples  = attack(SquareAttack)
+  File "/opt/airflow/dags/attack.py", line 31, in attack
+    estimator,x_test,y_test = get_estimator()
+  File "/opt/airflow/dags/estimator_helpers.py", line 51, in get_estimator
+    clf, data,true_labels = s.make_trained_model(model)
+  File "/opt/airflow/dags/Model_Factory.py", line 106, in make_trained_model
+    clf, data, true_labels = self.__make_trained_CC_model(model)
+  File "/opt/airflow/dags/Model_Factory.py", line 42, in __make_trained_CC_model
+    data = pd.read_csv('dags/creditcard.csv')
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/util/_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/parsers/readers.py", line 586, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/parsers/readers.py", line 488, in _read
+    return parser.read(nrows)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/parsers/readers.py", line 1047, in read
+    index, columns, col_dict = self._engine.read(nrows)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 224, in read
+    chunks = self._reader.read_low_memory(nrows)
+  File "pandas/_libs/parsers.pyx", line 801, in pandas._libs.parsers.TextReader.read_low_memory
+  File "pandas/_libs/parsers.pyx", line 880, in pandas._libs.parsers.TextReader._read_rows
+  File "pandas/_libs/parsers.pyx", line 1026, in pandas._libs.parsers.TextReader._convert_column_data
+  File "pandas/_libs/parsers.pyx", line 1073, in pandas._libs.parsers.TextReader._convert_tokens
+  File "pandas/_libs/parsers.pyx", line 1129, in pandas._libs.parsers.TextReader._convert_with_dtype
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/dtypes/common.py", line 1420, in is_extension_array_dtype
+    def is_extension_array_dtype(arr_or_dtype) -> bool:
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1543, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2023-04-27 12:34:51,722] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=multi_attack_dag, task_id=attack_SquareAttack, execution_date=20230427T122548, start_date=20230427T123411, end_date=20230427T123451
+[2023-04-27 12:34:52,187] {standard_task_runner.py:97} ERROR - Failed to execute job 6846 for task attack_SquareAttack (Task received SIGTERM signal; 4318)
+[2023-04-27 12:34:52,400] {process_utils.py:75} INFO - Process psutil.Process(pid=4318, status='terminated', exitcode=1, started='12:34:18') (4318) terminated with exit code 1

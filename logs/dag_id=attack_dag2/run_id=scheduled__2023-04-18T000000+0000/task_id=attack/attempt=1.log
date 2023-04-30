@@ -1,0 +1,46 @@
+[2023-04-23 07:49:32,827] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: attack_dag2.attack scheduled__2023-04-18T00:00:00+00:00 [queued]>
+[2023-04-23 07:49:32,906] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: attack_dag2.attack scheduled__2023-04-18T00:00:00+00:00 [queued]>
+[2023-04-23 07:49:32,939] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-23 07:49:32,939] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2023-04-23 07:49:32,941] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-23 07:49:33,149] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): attack> on 2023-04-18 00:00:00+00:00
+[2023-04-23 07:49:33,186] {standard_task_runner.py:52} INFO - Started process 110 to run task
+[2023-04-23 07:49:33,238] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'attack_dag2', 'attack', 'scheduled__2023-04-18T00:00:00+00:00', '--job-id', '5843', '--raw', '--subdir', 'DAGS_FOLDER/attack.py', '--cfg-path', '/tmp/tmpuazj8nra', '--error-file', '/tmp/tmpqtz3i6dq']
+[2023-04-23 07:49:33,250] {standard_task_runner.py:80} INFO - Job 5843: Subtask attack
+[2023-04-23 07:49:34,141] {task_command.py:369} INFO - Running <TaskInstance: attack_dag2.attack scheduled__2023-04-18T00:00:00+00:00 [running]> on host a3dd7d962104
+[2023-04-23 07:49:34,827] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=attack_dag2
+AIRFLOW_CTX_TASK_ID=attack
+AIRFLOW_CTX_EXECUTION_DATE=2023-04-18T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-04-18T00:00:00+00:00
+[2023-04-23 07:49:34,841] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-04-23 07:49:34,861] {client.py:777} INFO - Refreshing access_token
+[2023-04-23 07:49:35,434] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/attack.py", line 36, in attack_A
+    counter = load_from_bucket('counter.pickle')
+  File "/opt/airflow/dags/helpers.py", line 121, in load_from_bucket
+    raise err
+  File "/opt/airflow/dags/helpers.py", line 116, in load_from_bucket
+    blob.download_to_filename(file_name)
+  File "/home/airflow/.local/lib/python3.7/site-packages/gcloud/storage/blob.py", line 369, in download_to_filename
+    client=client)
+  File "/home/airflow/.local/lib/python3.7/site-packages/gcloud/storage/blob.py", line 327, in download_to_file
+    self.reload()
+  File "/home/airflow/.local/lib/python3.7/site-packages/gcloud/storage/_helpers.py", line 77, in reload
+    _target_object=self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/gcloud/connection.py", line 347, in api_request
+    error_info=method + ' ' + url)
+gcloud.exceptions.NotFound: 404 No such object: mabdata207125196/counter.pickle (GET https://www.googleapis.com/storage/v1/b/mabdata207125196/o/counter.pickle?projection=noAcl)
+[2023-04-23 07:49:35,467] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=attack_dag2, task_id=attack, execution_date=20230418T000000, start_date=20230423T074932, end_date=20230423T074935
+[2023-04-23 07:49:35,512] {standard_task_runner.py:97} ERROR - Failed to execute job 5843 for task attack (404 No such object: mabdata207125196/counter.pickle (GET https://www.googleapis.com/storage/v1/b/mabdata207125196/o/counter.pickle?projection=noAcl); 110)
+[2023-04-23 07:49:35,564] {local_task_job.py:156} INFO - Task exited with return code 1
+[2023-04-23 07:49:35,766] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

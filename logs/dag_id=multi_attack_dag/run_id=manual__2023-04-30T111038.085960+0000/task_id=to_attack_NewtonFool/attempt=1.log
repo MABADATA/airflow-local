@@ -1,0 +1,25 @@
+[2023-04-30 11:10:53,939] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.to_attack_NewtonFool manual__2023-04-30T11:10:38.085960+00:00 [queued]>
+[2023-04-30 11:10:53,982] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.to_attack_NewtonFool manual__2023-04-30T11:10:38.085960+00:00 [queued]>
+[2023-04-30 11:10:53,984] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-30 11:10:53,985] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2023-04-30 11:10:53,986] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-30 11:10:54,018] {taskinstance.py:1377} INFO - Executing <Task(BranchPythonOperator): to_attack_NewtonFool> on 2023-04-30 11:10:38.085960+00:00
+[2023-04-30 11:10:54,047] {standard_task_runner.py:52} INFO - Started process 556 to run task
+[2023-04-30 11:10:54,069] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'multi_attack_dag', 'to_attack_NewtonFool', 'manual__2023-04-30T11:10:38.085960+00:00', '--job-id', '7457', '--raw', '--subdir', 'DAGS_FOLDER/attack_dag.py', '--cfg-path', '/tmp/tmp8e87cmo0', '--error-file', '/tmp/tmp3rnq1kq8']
+[2023-04-30 11:10:54,084] {standard_task_runner.py:80} INFO - Job 7457: Subtask to_attack_NewtonFool
+[2023-04-30 11:10:54,271] {task_command.py:369} INFO - Running <TaskInstance: multi_attack_dag.to_attack_NewtonFool manual__2023-04-30T11:10:38.085960+00:00 [running]> on host 873e5d3a4399
+[2023-04-30 11:10:54,517] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=multi_attack_dag
+AIRFLOW_CTX_TASK_ID=to_attack_NewtonFool
+AIRFLOW_CTX_EXECUTION_DATE=2023-04-30T11:10:38.085960+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-04-30T11:10:38.085960+00:00
+[2023-04-30 11:10:54,573] {python.py:173} INFO - Done. Returned value was: attack_NewtonFool
+[2023-04-30 11:10:54,577] {skipmixin.py:140} INFO - Following branch attack_NewtonFool
+[2023-04-30 11:10:54,578] {skipmixin.py:175} INFO - Skipping tasks ['default_attack']
+[2023-04-30 11:10:55,341] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=multi_attack_dag, task_id=to_attack_NewtonFool, execution_date=20230430T111038, start_date=20230430T111053, end_date=20230430T111055
+[2023-04-30 11:10:55,461] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-04-30 11:10:55,700] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

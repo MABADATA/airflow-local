@@ -1,0 +1,48 @@
+[2023-03-27 10:23:51,276] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.metadata scheduled__2023-03-26T00:00:00+00:00 [queued]>
+[2023-03-27 10:23:51,288] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.metadata scheduled__2023-03-26T00:00:00+00:00 [queued]>
+[2023-03-27 10:23:51,289] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-27 10:23:51,289] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2023-03-27 10:23:51,290] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-27 10:23:51,305] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): metadata> on 2023-03-26 00:00:00+00:00
+[2023-03-27 10:23:51,312] {standard_task_runner.py:52} INFO - Started process 759 to run task
+[2023-03-27 10:23:51,318] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'multi_attack_dag', 'metadata', 'scheduled__2023-03-26T00:00:00+00:00', '--job-id', '3690', '--raw', '--subdir', 'DAGS_FOLDER/attack_dag.py', '--cfg-path', '/tmp/tmp2czujwyl', '--error-file', '/tmp/tmp2l43zxre']
+[2023-03-27 10:23:51,319] {standard_task_runner.py:80} INFO - Job 3690: Subtask metadata
+[2023-03-27 10:23:51,379] {task_command.py:369} INFO - Running <TaskInstance: multi_attack_dag.metadata scheduled__2023-03-26T00:00:00+00:00 [running]> on host daa6fc235d3b
+[2023-03-27 10:23:51,471] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=multi_attack_dag
+AIRFLOW_CTX_TASK_ID=metadata
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-26T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-03-26T00:00:00+00:00
+[2023-03-27 10:23:51,472] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/attack_dag.py", line 188, in set_or_create
+    metadata = load_from_bucket(file_name='attack_defence_metadata.json',as_json=True)
+  File "/opt/airflow/dags/helpers.py", line 30, in load_from_bucket
+    bucket = get_client()
+  File "/opt/airflow/dags/helpers.py", line 13, in get_client
+    storage_client = storage.Client()
+  File "/home/airflow/.local/lib/python3.7/site-packages/gcloud/storage/client.py", line 53, in __init__
+    http=http)
+  File "/home/airflow/.local/lib/python3.7/site-packages/gcloud/client.py", line 185, in __init__
+    _ClientProjectMixin.__init__(self, project=project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/gcloud/client.py", line 141, in __init__
+    project = self._determine_default(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/gcloud/client.py", line 154, in _determine_default
+    return _determine_default_project(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/gcloud/_helpers.py", line 270, in _determine_default_project
+    project = _file_project_id()
+  File "/home/airflow/.local/lib/python3.7/site-packages/gcloud/_helpers.py", line 175, in _file_project_id
+    with open(credentials_file_path, 'rb') as credentials_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'mabadata-733abc189d01.json'
+[2023-03-27 10:23:51,488] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=multi_attack_dag, task_id=metadata, execution_date=20230326T000000, start_date=20230327T102351, end_date=20230327T102351
+[2023-03-27 10:23:51,501] {standard_task_runner.py:97} ERROR - Failed to execute job 3690 for task metadata ([Errno 2] No such file or directory: 'mabadata-733abc189d01.json'; 759)
+[2023-03-27 10:23:51,531] {local_task_job.py:156} INFO - Task exited with return code 1
+[2023-03-27 10:23:51,587] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

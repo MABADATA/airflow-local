@@ -1,0 +1,62 @@
+[2023-04-18 14:16:47,926] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.attack_BasicIterativeMethod manual__2023-04-18T14:16:25.342756+00:00 [queued]>
+[2023-04-18 14:16:47,959] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.attack_BasicIterativeMethod manual__2023-04-18T14:16:25.342756+00:00 [queued]>
+[2023-04-18 14:16:47,960] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-18 14:16:47,966] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2023-04-18 14:16:47,967] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-18 14:16:47,994] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): attack_BasicIterativeMethod> on 2023-04-18 14:16:25.342756+00:00
+[2023-04-18 14:16:48,006] {standard_task_runner.py:52} INFO - Started process 689 to run task
+[2023-04-18 14:16:48,013] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'multi_attack_dag', 'attack_BasicIterativeMethod', 'manual__2023-04-18T14:16:25.342756+00:00', '--job-id', '5675', '--raw', '--subdir', 'DAGS_FOLDER/attack_dag.py', '--cfg-path', '/tmp/tmp63rknkqi', '--error-file', '/tmp/tmpy1f8yilp']
+[2023-04-18 14:16:48,014] {standard_task_runner.py:80} INFO - Job 5675: Subtask attack_BasicIterativeMethod
+[2023-04-18 14:16:48,103] {task_command.py:369} INFO - Running <TaskInstance: multi_attack_dag.attack_BasicIterativeMethod manual__2023-04-18T14:16:25.342756+00:00 [running]> on host a3dd7d962104
+[2023-04-18 14:16:48,199] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=multi_attack_dag
+AIRFLOW_CTX_TASK_ID=attack_BasicIterativeMethod
+AIRFLOW_CTX_EXECUTION_DATE=2023-04-18T14:16:25.342756+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-04-18T14:16:25.342756+00:00
+[2023-04-18 14:16:48,203] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-04-18 14:16:48,209] {client.py:777} INFO - Refreshing access_token
+[2023-04-18 14:16:54,023] {pytorch.py:1198} INFO - Inferred 5 hidden layers on PyTorch classifier.
+[2023-04-18 14:16:57,873] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-04-18 14:16:57,890] {client.py:777} INFO - Refreshing access_token
+[2023-04-18 14:16:59,226] {projected_gradient_descent.py:199} INFO - Creating adversarial samples.
+[2023-04-18 14:16:59,238] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/attack_dag.py", line 133, in attack_BasicIterativeMethod
+    model_acc, adversarial_examples  = attack(BasicIterativeMethod)
+  File "/opt/airflow/dags/attack_dag.py", line 169, in attack
+    adversarial_examples = wrap_attack.generate(np.asarray(x_test))
+  File "/home/airflow/.local/lib/python3.7/site-packages/art/attacks/evasion/projected_gradient_descent/projected_gradient_descent.py", line 200, in generate
+    return self._attack.generate(x=x, y=y, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/art/attacks/evasion/projected_gradient_descent/projected_gradient_descent_pytorch.py", line 154, in generate
+    targets = self._set_targets(x, y)
+  File "/home/airflow/.local/lib/python3.7/site-packages/art/attacks/evasion/projected_gradient_descent/projected_gradient_descent_numpy.py", line 171, in _set_targets
+    targets = get_labels_np_array(self.estimator.predict(x, batch_size=self.batch_size))
+  File "/home/airflow/.local/lib/python3.7/site-packages/art/estimators/classification/classifier.py", line 73, in replacement_function
+    return fdict[func_name](self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/art/estimators/classification/pytorch.py", line 331, in predict
+    model_outputs = self._model(torch.from_numpy(x_preprocessed[begin:end]).to(self._device))
+  File "/home/airflow/.local/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/art/estimators/classification/pytorch.py", line 1165, in forward
+    x = self._model(x)
+  File "/home/airflow/.local/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/airflow/dags/Model_Factory.py", line 27, in forward
+    out = self.relu(self.input_layer(x))
+  File "/home/airflow/.local/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/torch/nn/modules/linear.py", line 114, in forward
+    return F.linear(input, self.weight, self.bias)
+RuntimeError: mat1 and mat2 must have the same dtype
+[2023-04-18 14:16:59,264] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=multi_attack_dag, task_id=attack_BasicIterativeMethod, execution_date=20230418T141625, start_date=20230418T141647, end_date=20230418T141659
+[2023-04-18 14:16:59,293] {standard_task_runner.py:97} ERROR - Failed to execute job 5675 for task attack_BasicIterativeMethod (mat1 and mat2 must have the same dtype; 689)
+[2023-04-18 14:16:59,339] {local_task_job.py:156} INFO - Task exited with return code 1
+[2023-04-18 14:16:59,423] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

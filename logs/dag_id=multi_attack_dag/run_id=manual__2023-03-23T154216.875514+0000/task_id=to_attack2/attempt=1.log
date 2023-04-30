@@ -1,0 +1,25 @@
+[2023-03-23 15:42:26,098] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.to_attack2 manual__2023-03-23T15:42:16.875514+00:00 [queued]>
+[2023-03-23 15:42:26,135] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.to_attack2 manual__2023-03-23T15:42:16.875514+00:00 [queued]>
+[2023-03-23 15:42:26,137] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-23 15:42:26,141] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2023-03-23 15:42:26,143] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-23 15:42:26,188] {taskinstance.py:1377} INFO - Executing <Task(BranchPythonOperator): to_attack2> on 2023-03-23 15:42:16.875514+00:00
+[2023-03-23 15:42:26,201] {standard_task_runner.py:52} INFO - Started process 13613 to run task
+[2023-03-23 15:42:26,217] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'multi_attack_dag', 'to_attack2', 'manual__2023-03-23T15:42:16.875514+00:00', '--job-id', '3513', '--raw', '--subdir', 'DAGS_FOLDER/attack_dag.py', '--cfg-path', '/tmp/tmpo_8w00dy', '--error-file', '/tmp/tmp5tobm3dh']
+[2023-03-23 15:42:26,220] {standard_task_runner.py:80} INFO - Job 3513: Subtask to_attack2
+[2023-03-23 15:42:26,617] {task_command.py:369} INFO - Running <TaskInstance: multi_attack_dag.to_attack2 manual__2023-03-23T15:42:16.875514+00:00 [running]> on host 6447f1dacd32
+[2023-03-23 15:42:27,051] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=multi_attack_dag
+AIRFLOW_CTX_TASK_ID=to_attack2
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-23T15:42:16.875514+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-03-23T15:42:16.875514+00:00
+[2023-03-23 15:42:27,111] {python.py:173} INFO - Done. Returned value was: default
+[2023-03-23 15:42:27,114] {skipmixin.py:140} INFO - Following branch default
+[2023-03-23 15:42:27,116] {skipmixin.py:175} INFO - Skipping tasks ['attack2']
+[2023-03-23 15:42:27,388] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=multi_attack_dag, task_id=to_attack2, execution_date=20230323T154216, start_date=20230323T154226, end_date=20230323T154227
+[2023-03-23 15:42:27,455] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-03-23 15:42:27,746] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

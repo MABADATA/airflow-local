@@ -1,0 +1,25 @@
+[2023-03-23 15:33:26,540] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_defence_dag.to_defence3 manual__2023-03-23T15:33:22.772833+00:00 [queued]>
+[2023-03-23 15:33:26,558] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_defence_dag.to_defence3 manual__2023-03-23T15:33:22.772833+00:00 [queued]>
+[2023-03-23 15:33:26,559] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-23 15:33:26,560] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2023-03-23 15:33:26,560] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-23 15:33:26,582] {taskinstance.py:1377} INFO - Executing <Task(BranchPythonOperator): to_defence3> on 2023-03-23 15:33:22.772833+00:00
+[2023-03-23 15:33:26,588] {standard_task_runner.py:52} INFO - Started process 12705 to run task
+[2023-03-23 15:33:26,593] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'multi_defence_dag', 'to_defence3', 'manual__2023-03-23T15:33:22.772833+00:00', '--job-id', '3246', '--raw', '--subdir', 'DAGS_FOLDER/defence_dag.py', '--cfg-path', '/tmp/tmpsnig9qc_', '--error-file', '/tmp/tmp67trbm7l']
+[2023-03-23 15:33:26,595] {standard_task_runner.py:80} INFO - Job 3246: Subtask to_defence3
+[2023-03-23 15:33:26,699] {task_command.py:369} INFO - Running <TaskInstance: multi_defence_dag.to_defence3 manual__2023-03-23T15:33:22.772833+00:00 [running]> on host 6447f1dacd32
+[2023-03-23 15:33:26,828] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=multi_defence_dag
+AIRFLOW_CTX_TASK_ID=to_defence3
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-23T15:33:22.772833+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-03-23T15:33:22.772833+00:00
+[2023-03-23 15:33:26,850] {python.py:173} INFO - Done. Returned value was: Defence3
+[2023-03-23 15:33:26,851] {skipmixin.py:140} INFO - Following branch Defence3
+[2023-03-23 15:33:26,852] {skipmixin.py:175} INFO - Skipping tasks ['default']
+[2023-03-23 15:33:26,956] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=multi_defence_dag, task_id=to_defence3, execution_date=20230323T153322, start_date=20230323T153326, end_date=20230323T153326
+[2023-03-23 15:33:27,007] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-03-23 15:33:27,119] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

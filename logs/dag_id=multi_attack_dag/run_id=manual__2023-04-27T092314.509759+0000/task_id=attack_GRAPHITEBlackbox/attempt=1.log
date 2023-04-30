@@ -1,0 +1,43 @@
+[2023-04-27 10:02:38,108] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.attack_GRAPHITEBlackbox manual__2023-04-27T09:23:14.509759+00:00 [queued]>
+[2023-04-27 10:02:38,214] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.attack_GRAPHITEBlackbox manual__2023-04-27T09:23:14.509759+00:00 [queued]>
+[2023-04-27 10:02:38,216] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-27 10:02:38,217] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2023-04-27 10:02:38,220] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-27 10:02:38,346] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): attack_GRAPHITEBlackbox> on 2023-04-27 09:23:14.509759+00:00
+[2023-04-27 10:02:38,413] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'multi_attack_dag', 'attack_GRAPHITEBlackbox', 'manual__2023-04-27T09:23:14.509759+00:00', '--job-id', '6562', '--raw', '--subdir', 'DAGS_FOLDER/attack_dag.py', '--cfg-path', '/tmp/tmpzgzk9_9g', '--error-file', '/tmp/tmphgb22fvn']
+[2023-04-27 10:02:38,407] {standard_task_runner.py:52} INFO - Started process 4129 to run task
+[2023-04-27 10:02:38,449] {standard_task_runner.py:80} INFO - Job 6562: Subtask attack_GRAPHITEBlackbox
+[2023-04-27 10:02:38,633] {task_command.py:369} INFO - Running <TaskInstance: multi_attack_dag.attack_GRAPHITEBlackbox manual__2023-04-27T09:23:14.509759+00:00 [running]> on host e7e31d5a6603
+[2023-04-27 10:02:39,071] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=multi_attack_dag
+AIRFLOW_CTX_TASK_ID=attack_GRAPHITEBlackbox
+AIRFLOW_CTX_EXECUTION_DATE=2023-04-27T09:23:14.509759+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-04-27T09:23:14.509759+00:00
+[2023-04-27 10:02:39,116] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-04-27 10:02:39,150] {client.py:777} INFO - Refreshing access_token
+[2023-04-27 10:02:40,009] {transport.py:157} INFO - Attempting refresh to obtain initial access_token
+[2023-04-27 10:02:40,012] {client.py:777} INFO - Refreshing access_token
+[2023-04-27 10:03:04,244] {pytorch.py:1198} INFO - Inferred 5 hidden layers on PyTorch classifier.
+[2023-04-27 10:05:36,630] {attack_dag.py:642} INFO - Optimizing...
+[2023-04-27 10:05:36,632] {logging_mixin.py:115} INFO - I am right here on <class 'art.attacks.evasion.graphite.graphite_blackbox.GRAPHITEBlackbox'>
+[2023-04-27 10:05:36,655] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/attack_dag.py", line 539, in attack_GRAPHITEBlackbox
+    model_acc, adversarial_examples  = attack(GRAPHITEBlackbox)
+  File "/opt/airflow/dags/attack_dag.py", line 643, in attack
+    optimized_attack = optimize_evasion_attack(attack_obj,estimator,x_test,y_test)
+  File "/opt/airflow/dags/attack_dag.py", line 616, in optimize_evasion_attack
+    search_space = [v for k, v in attack_parameter_range[attack.__name__].items()]
+KeyError: 'GRAPHITEBlackbox'
+[2023-04-27 10:05:36,704] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=multi_attack_dag, task_id=attack_GRAPHITEBlackbox, execution_date=20230427T092314, start_date=20230427T100238, end_date=20230427T100536
+[2023-04-27 10:05:36,736] {standard_task_runner.py:97} ERROR - Failed to execute job 6562 for task attack_GRAPHITEBlackbox ('GRAPHITEBlackbox'; 4129)
+[2023-04-27 10:05:36,761] {local_task_job.py:156} INFO - Task exited with return code 1
+[2023-04-27 10:05:37,019] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

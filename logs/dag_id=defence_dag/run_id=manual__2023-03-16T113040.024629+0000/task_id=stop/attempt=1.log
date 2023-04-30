@@ -1,0 +1,2 @@
+[2023-03-16 11:31:37,506] {taskinstance.py:1153} INFO - Dependencies not met for <TaskInstance: defence_dag.stop manual__2023-03-16T11:30:40.024629+00:00 [queued]>, dependency 'Trigger Rule' FAILED: Task's trigger rule 'all_success' requires all upstream tasks to have succeeded, but found 1 non-success(es). upstream_tasks_state={'total': 1, 'successes': 0, 'skipped': 0, 'failed': 1, 'upstream_failed': 0, 'done': 1}, upstream_task_ids={'to_attack'}
+[2023-03-16 11:31:37,540] {local_task_job.py:101} INFO - Task is not able to be run

@@ -1,0 +1,992 @@
+[2023-04-16 13:23:51,380] {processor.py:153} INFO - Started process (PID=151) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:23:51,384] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 13:23:51,389] {logging_mixin.py:115} INFO - [2023-04-16 13:23:51,389] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:23:55,019] {logging_mixin.py:115} INFO - [2023-04-16 13:23:55,019] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 13:23:59,582] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:23:59,699] {logging_mixin.py:115} INFO - [2023-04-16 13:23:59,699] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 13:23:59,792] {logging_mixin.py:115} INFO - [2023-04-16 13:23:59,792] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 13:23:59,839] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 8.467 seconds
+[2023-04-16 13:25:03,791] {processor.py:153} INFO - Started process (PID=276) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:25:03,792] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 13:25:03,798] {logging_mixin.py:115} INFO - [2023-04-16 13:25:03,798] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:25:06,961] {logging_mixin.py:115} INFO - [2023-04-16 13:25:06,961] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 13:25:10,150] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:25:10,230] {logging_mixin.py:115} INFO - [2023-04-16 13:25:10,229] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 13:25:10,341] {logging_mixin.py:115} INFO - [2023-04-16 13:25:10,341] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 13:25:10,397] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 6.636 seconds
+[2023-04-16 13:26:37,556] {processor.py:153} INFO - Started process (PID=422) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:26:37,558] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 13:26:37,560] {logging_mixin.py:115} INFO - [2023-04-16 13:26:37,560] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:26:39,500] {logging_mixin.py:115} INFO - [2023-04-16 13:26:39,500] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 13:26:42,750] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:26:42,828] {logging_mixin.py:115} INFO - [2023-04-16 13:26:42,828] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 13:26:42,900] {logging_mixin.py:115} INFO - [2023-04-16 13:26:42,899] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 13:26:42,937] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 5.399 seconds
+[2023-04-16 13:27:18,562] {processor.py:153} INFO - Started process (PID=519) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:27:18,568] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 13:27:18,570] {logging_mixin.py:115} INFO - [2023-04-16 13:27:18,570] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:27:21,550] {logging_mixin.py:115} INFO - [2023-04-16 13:27:21,549] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 13:27:24,441] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:27:24,520] {logging_mixin.py:115} INFO - [2023-04-16 13:27:24,519] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 13:27:24,577] {logging_mixin.py:115} INFO - [2023-04-16 13:27:24,577] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 13:27:24,612] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 6.054 seconds
+[2023-04-16 13:27:58,576] {processor.py:153} INFO - Started process (PID=595) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:27:58,577] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 13:27:58,578] {logging_mixin.py:115} INFO - [2023-04-16 13:27:58,578] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:28:00,479] {logging_mixin.py:115} INFO - [2023-04-16 13:28:00,478] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 13:28:03,259] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:28:03,330] {logging_mixin.py:115} INFO - [2023-04-16 13:28:03,329] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 13:28:03,391] {logging_mixin.py:115} INFO - [2023-04-16 13:28:03,391] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 13:28:03,441] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 4.872 seconds
+[2023-04-16 13:28:43,697] {processor.py:153} INFO - Started process (PID=665) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:28:43,707] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 13:28:43,712] {logging_mixin.py:115} INFO - [2023-04-16 13:28:43,712] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:28:46,838] {logging_mixin.py:115} INFO - [2023-04-16 13:28:46,838] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 13:28:51,387] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:28:51,461] {logging_mixin.py:115} INFO - [2023-04-16 13:28:51,461] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 13:28:51,518] {logging_mixin.py:115} INFO - [2023-04-16 13:28:51,518] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 13:28:51,609] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 7.928 seconds
+[2023-04-16 13:34:28,327] {processor.py:153} INFO - Started process (PID=978) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:34:28,334] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 13:34:28,335] {logging_mixin.py:115} INFO - [2023-04-16 13:34:28,335] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:34:31,888] {logging_mixin.py:115} INFO - [2023-04-16 13:34:31,888] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 13:34:36,878] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:34:36,949] {logging_mixin.py:115} INFO - [2023-04-16 13:34:36,948] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 13:34:37,019] {logging_mixin.py:115} INFO - [2023-04-16 13:34:37,019] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 13:34:37,097] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 8.775 seconds
+[2023-04-16 13:35:51,377] {processor.py:153} INFO - Started process (PID=1080) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:35:51,386] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 13:35:51,388] {logging_mixin.py:115} INFO - [2023-04-16 13:35:51,387] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:35:54,467] {logging_mixin.py:115} INFO - [2023-04-16 13:35:54,466] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 13:35:59,236] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:35:59,494] {logging_mixin.py:115} INFO - [2023-04-16 13:35:59,459] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 13:35:59,708] {logging_mixin.py:115} INFO - [2023-04-16 13:35:59,707] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 13:35:59,805] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 8.437 seconds
+[2023-04-16 13:39:23,728] {processor.py:153} INFO - Started process (PID=1333) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:39:23,729] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 13:39:23,731] {logging_mixin.py:115} INFO - [2023-04-16 13:39:23,731] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:39:26,728] {logging_mixin.py:115} INFO - [2023-04-16 13:39:26,727] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 13:39:30,602] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:39:30,679] {logging_mixin.py:115} INFO - [2023-04-16 13:39:30,679] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 13:39:30,761] {logging_mixin.py:115} INFO - [2023-04-16 13:39:30,760] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 13:39:30,798] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 7.086 seconds
+[2023-04-16 13:42:42,640] {processor.py:153} INFO - Started process (PID=1548) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:42:42,660] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 13:42:42,670] {logging_mixin.py:115} INFO - [2023-04-16 13:42:42,670] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:42:46,185] {logging_mixin.py:115} INFO - [2023-04-16 13:42:46,184] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 13:42:50,770] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:42:50,850] {logging_mixin.py:115} INFO - [2023-04-16 13:42:50,850] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 13:42:50,952] {logging_mixin.py:115} INFO - [2023-04-16 13:42:50,952] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 13:42:51,020] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 8.397 seconds
+[2023-04-16 13:46:51,198] {processor.py:153} INFO - Started process (PID=70) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:46:51,206] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 13:46:51,208] {logging_mixin.py:115} INFO - [2023-04-16 13:46:51,208] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:46:53,755] {logging_mixin.py:115} INFO - [2023-04-16 13:46:53,750] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 13:46:56,306] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:46:56,358] {logging_mixin.py:115} INFO - [2023-04-16 13:46:56,358] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 13:46:56,416] {logging_mixin.py:115} INFO - [2023-04-16 13:46:56,416] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 13:46:56,448] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 5.263 seconds
+[2023-04-16 13:47:30,979] {processor.py:153} INFO - Started process (PID=158) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:47:30,981] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 13:47:30,982] {logging_mixin.py:115} INFO - [2023-04-16 13:47:30,982] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:47:33,448] {logging_mixin.py:115} INFO - [2023-04-16 13:47:33,448] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 13:47:36,208] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:47:36,296] {logging_mixin.py:115} INFO - [2023-04-16 13:47:36,296] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 13:47:36,348] {logging_mixin.py:115} INFO - [2023-04-16 13:47:36,347] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 13:47:36,387] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 5.418 seconds
+[2023-04-16 13:48:21,521] {processor.py:153} INFO - Started process (PID=259) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:48:21,528] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 13:48:21,530] {logging_mixin.py:115} INFO - [2023-04-16 13:48:21,529] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:48:24,320] {logging_mixin.py:115} INFO - [2023-04-16 13:48:24,320] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 13:48:28,169] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:48:28,239] {logging_mixin.py:115} INFO - [2023-04-16 13:48:28,238] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 13:48:28,322] {logging_mixin.py:115} INFO - [2023-04-16 13:48:28,322] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 13:48:28,378] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 6.867 seconds
+[2023-04-16 13:49:16,588] {processor.py:153} INFO - Started process (PID=361) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:49:16,589] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 13:49:16,596] {logging_mixin.py:115} INFO - [2023-04-16 13:49:16,595] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:49:19,168] {logging_mixin.py:115} INFO - [2023-04-16 13:49:19,167] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 13:49:24,206] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:49:24,348] {logging_mixin.py:115} INFO - [2023-04-16 13:49:24,348] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 13:49:24,509] {logging_mixin.py:115} INFO - [2023-04-16 13:49:24,509] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 13:49:24,626] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 8.056 seconds
+[2023-04-16 13:50:57,162] {processor.py:153} INFO - Started process (PID=485) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:50:57,164] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 13:50:57,166] {logging_mixin.py:115} INFO - [2023-04-16 13:50:57,165] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:50:59,352] {logging_mixin.py:115} INFO - [2023-04-16 13:50:59,347] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 13:51:02,097] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:51:02,175] {logging_mixin.py:115} INFO - [2023-04-16 13:51:02,174] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 13:51:02,249] {logging_mixin.py:115} INFO - [2023-04-16 13:51:02,248] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 13:51:02,295] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 5.150 seconds
+[2023-04-16 13:51:39,140] {processor.py:153} INFO - Started process (PID=575) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:51:39,142] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 13:51:39,148] {logging_mixin.py:115} INFO - [2023-04-16 13:51:39,148] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:51:40,999] {logging_mixin.py:115} INFO - [2023-04-16 13:51:40,999] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 13:51:43,240] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:51:43,340] {logging_mixin.py:115} INFO - [2023-04-16 13:51:43,340] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 13:51:43,398] {logging_mixin.py:115} INFO - [2023-04-16 13:51:43,393] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 13:51:43,430] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 4.300 seconds
+[2023-04-16 13:52:16,807] {processor.py:153} INFO - Started process (PID=665) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:52:16,808] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 13:52:16,809] {logging_mixin.py:115} INFO - [2023-04-16 13:52:16,809] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:52:18,548] {logging_mixin.py:115} INFO - [2023-04-16 13:52:18,547] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 13:52:20,936] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:52:21,016] {logging_mixin.py:115} INFO - [2023-04-16 13:52:21,016] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 13:52:21,078] {logging_mixin.py:115} INFO - [2023-04-16 13:52:21,078] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 13:52:21,116] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 4.317 seconds
+[2023-04-16 13:52:52,382] {processor.py:153} INFO - Started process (PID=750) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:52:52,388] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 13:52:52,389] {logging_mixin.py:115} INFO - [2023-04-16 13:52:52,389] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:52:54,080] {logging_mixin.py:115} INFO - [2023-04-16 13:52:54,080] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 13:52:56,521] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:52:56,620] {logging_mixin.py:115} INFO - [2023-04-16 13:52:56,619] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 13:52:56,691] {logging_mixin.py:115} INFO - [2023-04-16 13:52:56,691] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 13:52:56,732] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 4.361 seconds
+[2023-04-16 13:53:28,541] {processor.py:153} INFO - Started process (PID=826) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:53:28,542] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 13:53:28,548] {logging_mixin.py:115} INFO - [2023-04-16 13:53:28,548] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:53:30,378] {logging_mixin.py:115} INFO - [2023-04-16 13:53:30,373] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 13:53:32,856] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:53:32,919] {logging_mixin.py:115} INFO - [2023-04-16 13:53:32,918] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 13:53:32,977] {logging_mixin.py:115} INFO - [2023-04-16 13:53:32,977] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 13:53:33,019] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 4.488 seconds
+[2023-04-16 13:54:03,300] {processor.py:153} INFO - Started process (PID=909) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:54:03,301] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 13:54:03,303] {logging_mixin.py:115} INFO - [2023-04-16 13:54:03,302] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:54:05,570] {logging_mixin.py:115} INFO - [2023-04-16 13:54:05,570] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 13:54:08,132] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:54:08,193] {logging_mixin.py:115} INFO - [2023-04-16 13:54:08,192] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 13:54:08,253] {logging_mixin.py:115} INFO - [2023-04-16 13:54:08,252] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 13:54:08,293] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 5.002 seconds
+[2023-04-16 13:54:40,460] {processor.py:153} INFO - Started process (PID=997) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:54:40,461] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 13:54:40,462] {logging_mixin.py:115} INFO - [2023-04-16 13:54:40,462] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:54:42,152] {logging_mixin.py:115} INFO - [2023-04-16 13:54:42,151] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 13:54:44,148] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:54:44,198] {logging_mixin.py:115} INFO - [2023-04-16 13:54:44,198] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 13:54:44,261] {logging_mixin.py:115} INFO - [2023-04-16 13:54:44,261] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 13:54:44,310] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 3.858 seconds
+[2023-04-16 13:55:26,511] {processor.py:153} INFO - Started process (PID=1085) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:55:26,512] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 13:55:26,513] {logging_mixin.py:115} INFO - [2023-04-16 13:55:26,513] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:55:28,531] {logging_mixin.py:115} INFO - [2023-04-16 13:55:28,530] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 13:55:31,821] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:55:31,892] {logging_mixin.py:115} INFO - [2023-04-16 13:55:31,892] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 13:55:31,973] {logging_mixin.py:115} INFO - [2023-04-16 13:55:31,972] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 13:55:32,039] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 5.546 seconds
+[2023-04-16 13:56:16,688] {processor.py:153} INFO - Started process (PID=1171) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:56:16,695] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 13:56:16,698] {logging_mixin.py:115} INFO - [2023-04-16 13:56:16,697] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:56:20,429] {logging_mixin.py:115} INFO - [2023-04-16 13:56:20,429] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 13:56:24,336] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:56:24,408] {logging_mixin.py:115} INFO - [2023-04-16 13:56:24,408] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 13:56:24,498] {logging_mixin.py:115} INFO - [2023-04-16 13:56:24,497] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 13:56:24,537] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 7.860 seconds
+[2023-04-16 13:57:04,969] {processor.py:153} INFO - Started process (PID=1269) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:57:04,970] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 13:57:04,972] {logging_mixin.py:115} INFO - [2023-04-16 13:57:04,972] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:57:07,411] {logging_mixin.py:115} INFO - [2023-04-16 13:57:07,411] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 13:57:11,752] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:57:11,899] {logging_mixin.py:115} INFO - [2023-04-16 13:57:11,899] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 13:57:11,961] {logging_mixin.py:115} INFO - [2023-04-16 13:57:11,960] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 13:57:12,018] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 7.070 seconds
+[2023-04-16 13:57:55,805] {processor.py:153} INFO - Started process (PID=1369) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:57:55,806] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 13:57:55,808] {logging_mixin.py:115} INFO - [2023-04-16 13:57:55,807] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:57:58,056] {logging_mixin.py:115} INFO - [2023-04-16 13:57:58,056] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 13:58:00,496] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:58:00,564] {logging_mixin.py:115} INFO - [2023-04-16 13:58:00,563] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 13:58:00,624] {logging_mixin.py:115} INFO - [2023-04-16 13:58:00,624] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 13:58:00,675] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 4.880 seconds
+[2023-04-16 13:58:37,321] {processor.py:153} INFO - Started process (PID=1458) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:58:37,328] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 13:58:37,329] {logging_mixin.py:115} INFO - [2023-04-16 13:58:37,329] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:58:39,592] {logging_mixin.py:115} INFO - [2023-04-16 13:58:39,591] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 13:58:42,172] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:58:42,240] {logging_mixin.py:115} INFO - [2023-04-16 13:58:42,240] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 13:58:42,322] {logging_mixin.py:115} INFO - [2023-04-16 13:58:42,322] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 13:58:42,360] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 5.048 seconds
+[2023-04-16 13:59:18,272] {processor.py:153} INFO - Started process (PID=1549) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:59:18,273] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 13:59:18,279] {logging_mixin.py:115} INFO - [2023-04-16 13:59:18,279] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:59:20,552] {logging_mixin.py:115} INFO - [2023-04-16 13:59:20,551] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 13:59:23,530] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:59:23,593] {logging_mixin.py:115} INFO - [2023-04-16 13:59:23,593] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 13:59:23,671] {logging_mixin.py:115} INFO - [2023-04-16 13:59:23,670] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 13:59:23,713] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 5.445 seconds
+[2023-04-16 13:59:58,590] {processor.py:153} INFO - Started process (PID=1637) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 13:59:58,596] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 13:59:58,597] {logging_mixin.py:115} INFO - [2023-04-16 13:59:58,597] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:00:00,428] {logging_mixin.py:115} INFO - [2023-04-16 14:00:00,428] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 14:00:02,532] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:00:02,610] {logging_mixin.py:115} INFO - [2023-04-16 14:00:02,610] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 14:00:02,678] {logging_mixin.py:115} INFO - [2023-04-16 14:00:02,678] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 14:00:02,718] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 4.130 seconds
+[2023-04-16 14:00:38,447] {processor.py:153} INFO - Started process (PID=1731) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:00:38,449] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 14:00:38,450] {logging_mixin.py:115} INFO - [2023-04-16 14:00:38,450] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:00:40,266] {logging_mixin.py:115} INFO - [2023-04-16 14:00:40,266] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 14:00:42,317] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:00:42,376] {logging_mixin.py:115} INFO - [2023-04-16 14:00:42,376] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 14:00:42,418] {logging_mixin.py:115} INFO - [2023-04-16 14:00:42,418] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 14:00:42,458] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 4.021 seconds
+[2023-04-16 14:01:12,956] {processor.py:153} INFO - Started process (PID=1813) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:01:12,957] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 14:01:12,963] {logging_mixin.py:115} INFO - [2023-04-16 14:01:12,963] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:01:14,786] {logging_mixin.py:115} INFO - [2023-04-16 14:01:14,786] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 14:01:17,777] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:01:17,864] {logging_mixin.py:115} INFO - [2023-04-16 14:01:17,863] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 14:01:17,947] {logging_mixin.py:115} INFO - [2023-04-16 14:01:17,947] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 14:01:17,996] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 5.043 seconds
+[2023-04-16 14:01:54,672] {processor.py:153} INFO - Started process (PID=1907) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:01:54,678] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 14:01:54,680] {logging_mixin.py:115} INFO - [2023-04-16 14:01:54,680] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:01:56,718] {logging_mixin.py:115} INFO - [2023-04-16 14:01:56,712] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 14:01:59,539] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:01:59,639] {logging_mixin.py:115} INFO - [2023-04-16 14:01:59,639] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 14:01:59,731] {logging_mixin.py:115} INFO - [2023-04-16 14:01:59,731] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 14:01:59,781] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 5.112 seconds
+[2023-04-16 14:02:34,979] {processor.py:153} INFO - Started process (PID=1996) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:02:34,980] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 14:02:34,981] {logging_mixin.py:115} INFO - [2023-04-16 14:02:34,981] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:02:36,779] {logging_mixin.py:115} INFO - [2023-04-16 14:02:36,779] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 14:02:39,261] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:02:39,311] {logging_mixin.py:115} INFO - [2023-04-16 14:02:39,310] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 14:02:39,359] {logging_mixin.py:115} INFO - [2023-04-16 14:02:39,359] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 14:02:39,390] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 4.420 seconds
+[2023-04-16 14:03:11,880] {processor.py:153} INFO - Started process (PID=2083) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:03:11,882] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 14:03:11,883] {logging_mixin.py:115} INFO - [2023-04-16 14:03:11,883] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:03:14,081] {logging_mixin.py:115} INFO - [2023-04-16 14:03:14,081] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 14:03:16,069] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:03:16,138] {logging_mixin.py:115} INFO - [2023-04-16 14:03:16,133] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 14:03:16,190] {logging_mixin.py:115} INFO - [2023-04-16 14:03:16,190] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 14:03:16,232] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 4.361 seconds
+[2023-04-16 14:03:52,441] {processor.py:153} INFO - Started process (PID=2162) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:03:52,442] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 14:03:52,443] {logging_mixin.py:115} INFO - [2023-04-16 14:03:52,443] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:03:54,005] {logging_mixin.py:115} INFO - [2023-04-16 14:03:54,005] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 14:03:56,584] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:03:56,663] {logging_mixin.py:115} INFO - [2023-04-16 14:03:56,662] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 14:03:56,762] {logging_mixin.py:115} INFO - [2023-04-16 14:03:56,762] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 14:03:56,804] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 4.371 seconds
+[2023-04-16 14:04:27,557] {processor.py:153} INFO - Started process (PID=2254) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:04:27,558] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 14:04:27,560] {logging_mixin.py:115} INFO - [2023-04-16 14:04:27,559] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:04:29,450] {logging_mixin.py:115} INFO - [2023-04-16 14:04:29,450] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 14:04:31,688] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:04:31,749] {logging_mixin.py:115} INFO - [2023-04-16 14:04:31,748] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 14:04:31,809] {logging_mixin.py:115} INFO - [2023-04-16 14:04:31,809] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 14:04:31,849] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 4.298 seconds
+[2023-04-16 14:05:04,561] {processor.py:153} INFO - Started process (PID=2331) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:05:04,562] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 14:05:04,568] {logging_mixin.py:115} INFO - [2023-04-16 14:05:04,568] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:05:06,622] {logging_mixin.py:115} INFO - [2023-04-16 14:05:06,621] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 14:05:09,783] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:05:09,851] {logging_mixin.py:115} INFO - [2023-04-16 14:05:09,851] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 14:05:09,920] {logging_mixin.py:115} INFO - [2023-04-16 14:05:09,920] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 14:05:09,971] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 5.419 seconds
+[2023-04-16 14:05:45,410] {processor.py:153} INFO - Started process (PID=2421) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:05:45,411] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 14:05:45,412] {logging_mixin.py:115} INFO - [2023-04-16 14:05:45,412] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:05:46,911] {logging_mixin.py:115} INFO - [2023-04-16 14:05:46,911] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 14:05:48,798] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:05:48,869] {logging_mixin.py:115} INFO - [2023-04-16 14:05:48,868] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 14:05:48,918] {logging_mixin.py:115} INFO - [2023-04-16 14:05:48,913] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 14:05:48,950] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 3.549 seconds
+[2023-04-16 14:06:19,493] {processor.py:153} INFO - Started process (PID=2504) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:06:19,499] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 14:06:19,500] {logging_mixin.py:115} INFO - [2023-04-16 14:06:19,500] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:06:21,951] {logging_mixin.py:115} INFO - [2023-04-16 14:06:21,951] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 14:06:24,769] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:06:24,820] {logging_mixin.py:115} INFO - [2023-04-16 14:06:24,820] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 14:06:24,861] {logging_mixin.py:115} INFO - [2023-04-16 14:06:24,861] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 14:06:24,900] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 5.427 seconds
+[2023-04-16 14:06:55,286] {processor.py:153} INFO - Started process (PID=2568) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:06:55,288] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 14:06:55,289] {logging_mixin.py:115} INFO - [2023-04-16 14:06:55,288] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:06:57,096] {logging_mixin.py:115} INFO - [2023-04-16 14:06:57,096] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 14:06:59,449] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:06:59,527] {logging_mixin.py:115} INFO - [2023-04-16 14:06:59,527] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 14:06:59,627] {logging_mixin.py:115} INFO - [2023-04-16 14:06:59,627] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 14:06:59,669] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 4.390 seconds
+[2023-04-16 14:07:29,962] {processor.py:153} INFO - Started process (PID=2661) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:07:29,964] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 14:07:29,965] {logging_mixin.py:115} INFO - [2023-04-16 14:07:29,965] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:07:32,408] {logging_mixin.py:115} INFO - [2023-04-16 14:07:32,408] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 14:07:35,151] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:07:35,230] {logging_mixin.py:115} INFO - [2023-04-16 14:07:35,229] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 14:07:35,301] {logging_mixin.py:115} INFO - [2023-04-16 14:07:35,300] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 14:07:35,359] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 5.398 seconds
+[2023-04-16 14:08:09,744] {processor.py:153} INFO - Started process (PID=2744) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:08:09,750] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 14:08:09,751] {logging_mixin.py:115} INFO - [2023-04-16 14:08:09,751] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:08:11,532] {logging_mixin.py:115} INFO - [2023-04-16 14:08:11,532] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 14:08:14,052] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:08:14,132] {logging_mixin.py:115} INFO - [2023-04-16 14:08:14,131] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 14:08:14,212] {logging_mixin.py:115} INFO - [2023-04-16 14:08:14,212] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 14:08:14,253] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 4.513 seconds
+[2023-04-16 14:08:51,177] {processor.py:153} INFO - Started process (PID=2818) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:08:51,178] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 14:08:51,180] {logging_mixin.py:115} INFO - [2023-04-16 14:08:51,180] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:08:53,026] {logging_mixin.py:115} INFO - [2023-04-16 14:08:53,026] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 14:08:55,828] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:08:55,897] {logging_mixin.py:115} INFO - [2023-04-16 14:08:55,897] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 14:08:55,957] {logging_mixin.py:115} INFO - [2023-04-16 14:08:55,957] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 14:08:55,999] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 4.832 seconds
+[2023-04-16 14:09:31,173] {processor.py:153} INFO - Started process (PID=2889) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:09:31,180] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 14:09:31,181] {logging_mixin.py:115} INFO - [2023-04-16 14:09:31,181] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:09:33,369] {logging_mixin.py:115} INFO - [2023-04-16 14:09:33,369] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 14:09:36,747] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:09:36,829] {logging_mixin.py:115} INFO - [2023-04-16 14:09:36,829] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 14:09:36,907] {logging_mixin.py:115} INFO - [2023-04-16 14:09:36,907] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 14:09:36,948] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 5.782 seconds
+[2023-04-16 14:10:24,081] {processor.py:153} INFO - Started process (PID=2992) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:10:24,088] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 14:10:24,089] {logging_mixin.py:115} INFO - [2023-04-16 14:10:24,089] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:10:26,209] {logging_mixin.py:115} INFO - [2023-04-16 14:10:26,208] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 14:10:28,699] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:10:28,752] {logging_mixin.py:115} INFO - [2023-04-16 14:10:28,752] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 14:10:28,809] {logging_mixin.py:115} INFO - [2023-04-16 14:10:28,809] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 14:10:28,850] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 4.780 seconds
+[2023-04-16 14:11:01,108] {processor.py:153} INFO - Started process (PID=3076) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:11:01,114] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 14:11:01,116] {logging_mixin.py:115} INFO - [2023-04-16 14:11:01,116] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:11:02,809] {logging_mixin.py:115} INFO - [2023-04-16 14:11:02,808] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 14:11:05,659] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:11:05,746] {logging_mixin.py:115} INFO - [2023-04-16 14:11:05,741] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 14:11:05,847] {logging_mixin.py:115} INFO - [2023-04-16 14:11:05,847] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 14:11:05,906] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 4.795 seconds
+[2023-04-16 14:11:56,474] {processor.py:153} INFO - Started process (PID=3182) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:11:56,476] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 14:11:56,477] {logging_mixin.py:115} INFO - [2023-04-16 14:11:56,477] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:11:58,319] {logging_mixin.py:115} INFO - [2023-04-16 14:11:58,319] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 14:12:00,766] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:12:00,837] {logging_mixin.py:115} INFO - [2023-04-16 14:12:00,837] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 14:12:00,906] {logging_mixin.py:115} INFO - [2023-04-16 14:12:00,905] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 14:12:00,946] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 4.488 seconds
+[2023-04-16 14:12:43,059] {processor.py:153} INFO - Started process (PID=3274) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:12:43,061] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 14:12:43,068] {logging_mixin.py:115} INFO - [2023-04-16 14:12:43,068] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:12:44,821] {logging_mixin.py:115} INFO - [2023-04-16 14:12:44,821] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 14:12:47,210] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:12:47,281] {logging_mixin.py:115} INFO - [2023-04-16 14:12:47,281] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 14:12:47,343] {logging_mixin.py:115} INFO - [2023-04-16 14:12:47,342] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 14:12:47,388] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 4.338 seconds
+[2023-04-16 14:13:23,672] {processor.py:153} INFO - Started process (PID=3368) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:13:23,679] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 14:13:23,680] {logging_mixin.py:115} INFO - [2023-04-16 14:13:23,680] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:13:25,449] {logging_mixin.py:115} INFO - [2023-04-16 14:13:25,448] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 14:13:27,591] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:13:27,661] {logging_mixin.py:115} INFO - [2023-04-16 14:13:27,661] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 14:13:27,733] {logging_mixin.py:115} INFO - [2023-04-16 14:13:27,733] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 14:13:27,772] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 4.110 seconds
+[2023-04-16 14:13:58,044] {processor.py:153} INFO - Started process (PID=3445) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:13:58,045] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 14:13:58,046] {logging_mixin.py:115} INFO - [2023-04-16 14:13:58,046] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:14:00,146] {logging_mixin.py:115} INFO - [2023-04-16 14:14:00,146] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 14:14:03,898] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:14:03,978] {logging_mixin.py:115} INFO - [2023-04-16 14:14:03,973] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 14:14:04,089] {logging_mixin.py:115} INFO - [2023-04-16 14:14:04,088] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 14:14:04,150] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 6.109 seconds
+[2023-04-16 14:14:44,748] {processor.py:153} INFO - Started process (PID=3549) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:14:44,754] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 14:14:44,756] {logging_mixin.py:115} INFO - [2023-04-16 14:14:44,756] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:14:47,386] {logging_mixin.py:115} INFO - [2023-04-16 14:14:47,386] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 14:14:50,698] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:14:50,774] {logging_mixin.py:115} INFO - [2023-04-16 14:14:50,774] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 14:14:50,844] {logging_mixin.py:115} INFO - [2023-04-16 14:14:50,844] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 14:14:50,888] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 6.151 seconds
+[2023-04-16 14:15:25,320] {processor.py:153} INFO - Started process (PID=3644) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:15:25,321] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 14:15:25,323] {logging_mixin.py:115} INFO - [2023-04-16 14:15:25,323] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:15:27,271] {logging_mixin.py:115} INFO - [2023-04-16 14:15:27,270] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 14:15:29,520] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:15:29,591] {logging_mixin.py:115} INFO - [2023-04-16 14:15:29,591] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 14:15:29,642] {logging_mixin.py:115} INFO - [2023-04-16 14:15:29,642] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 14:15:29,681] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 4.371 seconds
+[2023-04-16 14:16:01,179] {processor.py:153} INFO - Started process (PID=3716) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:16:01,181] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 14:16:01,182] {logging_mixin.py:115} INFO - [2023-04-16 14:16:01,182] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:16:03,294] {logging_mixin.py:115} INFO - [2023-04-16 14:16:03,293] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 14:16:05,672] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:16:05,783] {logging_mixin.py:115} INFO - [2023-04-16 14:16:05,782] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 14:16:05,862] {logging_mixin.py:115} INFO - [2023-04-16 14:16:05,862] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 14:16:05,923] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 4.750 seconds
+[2023-04-16 14:16:40,664] {processor.py:153} INFO - Started process (PID=3802) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:16:40,686] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 14:16:40,692] {logging_mixin.py:115} INFO - [2023-04-16 14:16:40,692] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:16:42,641] {logging_mixin.py:115} INFO - [2023-04-16 14:16:42,636] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 14:16:45,163] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:16:45,244] {logging_mixin.py:115} INFO - [2023-04-16 14:16:45,244] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 14:16:45,322] {logging_mixin.py:115} INFO - [2023-04-16 14:16:45,322] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 14:16:45,374] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 4.721 seconds
+[2023-04-16 14:17:20,186] {processor.py:153} INFO - Started process (PID=3886) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:17:20,187] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 14:17:20,189] {logging_mixin.py:115} INFO - [2023-04-16 14:17:20,189] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:17:21,690] {logging_mixin.py:115} INFO - [2023-04-16 14:17:21,689] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 14:17:23,679] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:17:23,728] {logging_mixin.py:115} INFO - [2023-04-16 14:17:23,728] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 14:17:23,777] {logging_mixin.py:115} INFO - [2023-04-16 14:17:23,777] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 14:17:23,817] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 3.641 seconds
+[2023-04-16 14:18:00,040] {processor.py:153} INFO - Started process (PID=3975) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:18:00,041] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 14:18:00,043] {logging_mixin.py:115} INFO - [2023-04-16 14:18:00,042] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:18:01,918] {logging_mixin.py:115} INFO - [2023-04-16 14:18:01,913] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 14:18:03,932] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:18:03,982] {logging_mixin.py:115} INFO - [2023-04-16 14:18:03,982] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 14:18:04,031] {logging_mixin.py:115} INFO - [2023-04-16 14:18:04,031] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 14:18:04,080] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 4.049 seconds
+[2023-04-16 14:18:42,043] {processor.py:153} INFO - Started process (PID=4058) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:18:42,049] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 14:18:42,051] {logging_mixin.py:115} INFO - [2023-04-16 14:18:42,051] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:18:43,940] {logging_mixin.py:115} INFO - [2023-04-16 14:18:43,940] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 14:18:45,902] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:18:45,960] {logging_mixin.py:115} INFO - [2023-04-16 14:18:45,959] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 14:18:46,003] {logging_mixin.py:115} INFO - [2023-04-16 14:18:46,003] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 14:18:46,040] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 4.001 seconds
+[2023-04-16 14:19:20,411] {processor.py:153} INFO - Started process (PID=4143) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:19:20,412] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 14:19:20,418] {logging_mixin.py:115} INFO - [2023-04-16 14:19:20,418] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:19:22,700] {logging_mixin.py:115} INFO - [2023-04-16 14:19:22,699] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 14:19:26,261] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:19:26,422] {logging_mixin.py:115} INFO - [2023-04-16 14:19:26,422] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 14:19:26,529] {logging_mixin.py:115} INFO - [2023-04-16 14:19:26,523] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 14:19:26,589] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 6.187 seconds
+[2023-04-16 14:20:02,254] {processor.py:153} INFO - Started process (PID=4236) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:20:02,255] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 14:20:02,261] {logging_mixin.py:115} INFO - [2023-04-16 14:20:02,261] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:20:04,201] {logging_mixin.py:115} INFO - [2023-04-16 14:20:04,195] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 14:20:06,673] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:20:06,753] {logging_mixin.py:115} INFO - [2023-04-16 14:20:06,753] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 14:20:06,832] {logging_mixin.py:115} INFO - [2023-04-16 14:20:06,832] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 14:20:06,883] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 4.638 seconds
+[2023-04-16 14:20:42,820] {processor.py:153} INFO - Started process (PID=4325) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:20:42,822] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 14:20:42,823] {logging_mixin.py:115} INFO - [2023-04-16 14:20:42,823] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:20:44,819] {logging_mixin.py:115} INFO - [2023-04-16 14:20:44,819] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 14:20:47,320] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:20:47,392] {logging_mixin.py:115} INFO - [2023-04-16 14:20:47,392] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 14:20:47,469] {logging_mixin.py:115} INFO - [2023-04-16 14:20:47,469] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 14:20:47,512] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 4.701 seconds
+[2023-04-16 14:21:23,019] {processor.py:153} INFO - Started process (PID=4414) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:21:23,025] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 14:21:23,027] {logging_mixin.py:115} INFO - [2023-04-16 14:21:23,026] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:21:24,967] {logging_mixin.py:115} INFO - [2023-04-16 14:21:24,967] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 14:21:27,209] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:21:27,278] {logging_mixin.py:115} INFO - [2023-04-16 14:21:27,277] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 14:21:27,338] {logging_mixin.py:115} INFO - [2023-04-16 14:21:27,338] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 14:21:27,397] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 4.388 seconds
+[2023-04-16 14:22:03,994] {processor.py:153} INFO - Started process (PID=4504) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:22:03,995] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 14:22:04,001] {logging_mixin.py:115} INFO - [2023-04-16 14:22:04,001] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:22:06,121] {logging_mixin.py:115} INFO - [2023-04-16 14:22:06,121] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 14:22:08,963] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:22:09,021] {logging_mixin.py:115} INFO - [2023-04-16 14:22:09,016] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 14:22:09,072] {logging_mixin.py:115} INFO - [2023-04-16 14:22:09,072] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 14:22:09,113] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 5.131 seconds
+[2023-04-16 14:22:48,359] {processor.py:153} INFO - Started process (PID=4595) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:22:48,360] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 14:22:48,361] {logging_mixin.py:115} INFO - [2023-04-16 14:22:48,361] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:22:50,671] {logging_mixin.py:115} INFO - [2023-04-16 14:22:50,671] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 14:22:52,741] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:22:52,801] {logging_mixin.py:115} INFO - [2023-04-16 14:22:52,801] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 14:22:52,849] {logging_mixin.py:115} INFO - [2023-04-16 14:22:52,849] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 14:22:52,881] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 4.532 seconds
+[2023-04-16 14:23:25,444] {processor.py:153} INFO - Started process (PID=4667) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:23:25,450] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 14:23:25,451] {logging_mixin.py:115} INFO - [2023-04-16 14:23:25,451] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:23:27,161] {logging_mixin.py:115} INFO - [2023-04-16 14:23:27,161] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 14:23:30,150] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:23:30,251] {logging_mixin.py:115} INFO - [2023-04-16 14:23:30,250] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 14:23:30,341] {logging_mixin.py:115} INFO - [2023-04-16 14:23:30,341] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 14:23:30,400] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 4.959 seconds
+[2023-04-16 14:24:09,625] {processor.py:153} INFO - Started process (PID=4756) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:24:09,633] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 14:24:09,634] {logging_mixin.py:115} INFO - [2023-04-16 14:24:09,634] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:24:11,275] {logging_mixin.py:115} INFO - [2023-04-16 14:24:11,274] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 14:24:13,812] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:24:13,895] {logging_mixin.py:115} INFO - [2023-04-16 14:24:13,895] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 14:24:14,004] {logging_mixin.py:115} INFO - [2023-04-16 14:24:14,004] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 14:24:14,073] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 4.458 seconds
+[2023-04-16 14:24:48,649] {processor.py:153} INFO - Started process (PID=4843) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:24:48,651] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 14:24:48,652] {logging_mixin.py:115} INFO - [2023-04-16 14:24:48,652] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:24:50,280] {logging_mixin.py:115} INFO - [2023-04-16 14:24:50,280] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 14:24:52,370] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:24:52,458] {logging_mixin.py:115} INFO - [2023-04-16 14:24:52,457] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 14:24:52,521] {logging_mixin.py:115} INFO - [2023-04-16 14:24:52,520] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 14:24:52,569] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 3.930 seconds
+[2023-04-16 14:25:27,187] {processor.py:153} INFO - Started process (PID=4930) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:25:27,189] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 14:25:27,196] {logging_mixin.py:115} INFO - [2023-04-16 14:25:27,196] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:25:29,610] {logging_mixin.py:115} INFO - [2023-04-16 14:25:29,610] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 14:31:55,064] {logging_mixin.py:115} INFO - [2023-04-16 14:31:55,064] {timeout.py:67} ERROR - Process timed out, PID: 4930
+[2023-04-16 14:31:55,355] {logging_mixin.py:115} INFO - [2023-04-16 14:31:55,107] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/estimator_match.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/estimator_match.py", line 1, in <module>
+    from helpers import *
+  File "/opt/airflow/dags/helpers.py", line 10, in <module>
+    from art.estimators.classification import PyTorchClassifier
+  File "/home/airflow/.local/lib/python3.7/site-packages/art/__init__.py", line 7, in <module>
+    from art import attacks
+  File "/home/airflow/.local/lib/python3.7/site-packages/art/attacks/__init__.py", line 9, in <module>
+    from art.attacks import evasion
+  File "/home/airflow/.local/lib/python3.7/site-packages/art/attacks/evasion/__init__.py", line 7, in <module>
+    from art.attacks.evasion.adversarial_patch.adversarial_patch import AdversarialPatch
+  File "/home/airflow/.local/lib/python3.7/site-packages/art/attacks/evasion/adversarial_patch/adversarial_patch.py", line 31, in <module>
+    from art.attacks.evasion.adversarial_patch.adversarial_patch_numpy import AdversarialPatchNumpy
+  File "/home/airflow/.local/lib/python3.7/site-packages/art/attacks/evasion/adversarial_patch/adversarial_patch_numpy.py", line 37, in <module>
+    from art.estimators.estimator import BaseEstimator, NeuralNetworkMixin
+  File "/home/airflow/.local/lib/python3.7/site-packages/art/estimators/__init__.py", line 17, in <module>
+    from art.estimators import certification
+  File "/home/airflow/.local/lib/python3.7/site-packages/art/estimators/certification/__init__.py", line 9, in <module>
+    from art.estimators.certification import deep_z
+  File "/home/airflow/.local/lib/python3.7/site-packages/art/estimators/certification/deep_z/__init__.py", line 4, in <module>
+    from art.estimators.certification.deep_z.deep_z import ZonoDenseLayer
+  File "/home/airflow/.local/lib/python3.7/site-packages/art/estimators/certification/deep_z/deep_z.py", line 26, in <module>
+    import torch
+  File "/home/airflow/.local/lib/python3.7/site-packages/torch/__init__.py", line 881, in <module>
+    from torch import onnx as onnx
+  File "/home/airflow/.local/lib/python3.7/site-packages/torch/onnx/__init__.py", line 12, in <module>
+    from . import (  # usort:skip. Keep the order instead of sorting lexicographically
+  File "/home/airflow/.local/lib/python3.7/site-packages/torch/onnx/errors.py", line 9, in <module>
+    from torch.onnx._internal import diagnostics
+  File "/home/airflow/.local/lib/python3.7/site-packages/torch/onnx/_internal/diagnostics/__init__.py", line 1, in <module>
+    from ._diagnostic import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/torch/onnx/_internal/diagnostics/_diagnostic.py", line 7, in <module>
+    from torch.onnx._internal.diagnostics import _rules, infra
+  File "/home/airflow/.local/lib/python3.7/site-packages/torch/onnx/_internal/diagnostics/_rules.py", line 12, in <module>
+    from torch.onnx._internal.diagnostics import infra
+  File "/home/airflow/.local/lib/python3.7/site-packages/torch/onnx/_internal/diagnostics/infra/__init__.py", line 1, in <module>
+    from ._infra import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/torch/onnx/_internal/diagnostics/infra/_infra.py", line 9, in <module>
+    from torch.onnx._internal.diagnostics.infra import formatter, sarif
+  File "/home/airflow/.local/lib/python3.7/site-packages/torch/onnx/_internal/diagnostics/infra/formatter.py", line 6, in <module>
+    from torch.onnx._internal.diagnostics.infra import sarif
+  File "/home/airflow/.local/lib/python3.7/site-packages/torch/onnx/_internal/diagnostics/infra/sarif/__init__.py", line 18, in <module>
+    from torch.onnx._internal.diagnostics.infra.sarif._conversion import Conversion
+  File "/home/airflow/.local/lib/python3.7/site-packages/torch/onnx/_internal/diagnostics/infra/sarif/_conversion.py", line 9, in <module>
+    from torch.onnx._internal.diagnostics.infra.sarif import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/torch/onnx/_internal/diagnostics/infra/sarif/_tool.py", line 9, in <module>
+    from torch.onnx._internal.diagnostics.infra.sarif import _property_bag, _tool_component
+  File "/home/airflow/.local/lib/python3.7/site-packages/torch/onnx/_internal/diagnostics/infra/sarif/_tool_component.py", line 11, in <module>
+    from torch.onnx._internal.diagnostics.infra.sarif import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/torch/onnx/_internal/diagnostics/infra/sarif/_translation_metadata.py", line 16, in <module>
+    class TranslationMetadata(object):
+  File "/usr/local/lib/python3.7/dataclasses.py", line 1010, in dataclass
+    return wrap(_cls)
+  File "/usr/local/lib/python3.7/dataclasses.py", line 1002, in wrap
+    return _process_class(cls, init, repr, eq, order, unsafe_hash, frozen)
+  File "/usr/local/lib/python3.7/dataclasses.py", line 921, in _process_class
+    globals,
+  File "/usr/local/lib/python3.7/dataclasses.py", line 502, in _init_fn
+    line = _field_init(f, frozen, locals, self_name)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 68, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/estimator_match.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.3.0/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.3.0/best-practices.html#reducing-dag-complexity, PID: 4930
+[2023-04-16 14:31:55,375] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:31:55,677] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 388.569 seconds
+[2023-04-16 14:32:17,464] {processor.py:153} INFO - Started process (PID=4965) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:32:17,465] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 14:32:17,466] {logging_mixin.py:115} INFO - [2023-04-16 14:32:17,466] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:32:19,275] {logging_mixin.py:115} INFO - [2023-04-16 14:32:19,275] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 14:32:21,645] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:32:21,698] {logging_mixin.py:115} INFO - [2023-04-16 14:32:21,698] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 14:32:21,748] {logging_mixin.py:115} INFO - [2023-04-16 14:32:21,747] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 14:32:21,787] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 4.339 seconds
+[2023-04-16 14:32:55,225] {processor.py:153} INFO - Started process (PID=5046) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:32:55,232] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 14:32:55,233] {logging_mixin.py:115} INFO - [2023-04-16 14:32:55,233] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:32:57,075] {logging_mixin.py:115} INFO - [2023-04-16 14:32:57,075] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 14:32:59,345] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:32:59,405] {logging_mixin.py:115} INFO - [2023-04-16 14:32:59,405] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 14:32:59,454] {logging_mixin.py:115} INFO - [2023-04-16 14:32:59,454] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 14:32:59,486] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 4.270 seconds
+[2023-04-16 14:33:32,459] {processor.py:153} INFO - Started process (PID=5131) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:33:32,460] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 14:33:32,461] {logging_mixin.py:115} INFO - [2023-04-16 14:33:32,461] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:33:33,921] {logging_mixin.py:115} INFO - [2023-04-16 14:33:33,921] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 14:33:36,162] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:33:36,219] {logging_mixin.py:115} INFO - [2023-04-16 14:33:36,218] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 14:33:36,269] {logging_mixin.py:115} INFO - [2023-04-16 14:33:36,268] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 14:33:36,320] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 3.870 seconds
+[2023-04-16 14:34:06,658] {processor.py:153} INFO - Started process (PID=5221) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:34:06,659] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 14:34:06,669] {logging_mixin.py:115} INFO - [2023-04-16 14:34:06,669] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:34:08,217] {logging_mixin.py:115} INFO - [2023-04-16 14:34:08,217] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 14:34:10,016] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:34:10,058] {logging_mixin.py:115} INFO - [2023-04-16 14:34:10,058] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 14:34:10,105] {logging_mixin.py:115} INFO - [2023-04-16 14:34:10,105] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 14:34:10,129] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 3.483 seconds
+[2023-04-16 14:34:47,105] {processor.py:153} INFO - Started process (PID=5311) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:34:47,106] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 14:34:47,107] {logging_mixin.py:115} INFO - [2023-04-16 14:34:47,106] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:34:48,627] {logging_mixin.py:115} INFO - [2023-04-16 14:34:48,626] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 14:34:50,438] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:34:50,479] {logging_mixin.py:115} INFO - [2023-04-16 14:34:50,478] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 14:34:50,526] {logging_mixin.py:115} INFO - [2023-04-16 14:34:50,526] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 14:34:50,566] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 3.470 seconds
+[2023-04-16 14:35:26,579] {processor.py:153} INFO - Started process (PID=5407) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:35:26,580] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 14:35:26,581] {logging_mixin.py:115} INFO - [2023-04-16 14:35:26,581] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:35:28,180] {logging_mixin.py:115} INFO - [2023-04-16 14:35:28,179] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 14:35:29,992] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:35:30,032] {logging_mixin.py:115} INFO - [2023-04-16 14:35:30,032] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 14:35:30,070] {logging_mixin.py:115} INFO - [2023-04-16 14:35:30,070] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 14:35:30,099] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 3.529 seconds
+[2023-04-16 14:36:06,458] {processor.py:153} INFO - Started process (PID=5496) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:36:06,459] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 14:36:06,460] {logging_mixin.py:115} INFO - [2023-04-16 14:36:06,460] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:36:08,511] {logging_mixin.py:115} INFO - [2023-04-16 14:36:08,510] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 14:36:10,423] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 14:36:10,491] {logging_mixin.py:115} INFO - [2023-04-16 14:36:10,491] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 14:36:10,522] {logging_mixin.py:115} INFO - [2023-04-16 14:36:10,522] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 14:36:10,573] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 4.131 seconds
+[2023-04-16 15:30:29,292] {processor.py:153} INFO - Started process (PID=62) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:30:29,302] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 15:30:29,303] {logging_mixin.py:115} INFO - [2023-04-16 15:30:29,303] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:30:31,042] {logging_mixin.py:115} INFO - [2023-04-16 15:30:31,041] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 15:30:34,492] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:30:34,604] {logging_mixin.py:115} INFO - [2023-04-16 15:30:34,604] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 15:30:34,721] {logging_mixin.py:115} INFO - [2023-04-16 15:30:34,721] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 15:30:34,774] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 5.491 seconds
+[2023-04-16 15:31:42,620] {processor.py:153} INFO - Started process (PID=189) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:31:42,630] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 15:31:42,631] {logging_mixin.py:115} INFO - [2023-04-16 15:31:42,630] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:31:44,540] {logging_mixin.py:115} INFO - [2023-04-16 15:31:44,540] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 15:31:47,592] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:31:47,663] {logging_mixin.py:115} INFO - [2023-04-16 15:31:47,662] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 15:31:47,729] {logging_mixin.py:115} INFO - [2023-04-16 15:31:47,729] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 15:31:47,770] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 5.158 seconds
+[2023-04-16 15:32:22,476] {processor.py:153} INFO - Started process (PID=273) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:32:22,477] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 15:32:22,478] {logging_mixin.py:115} INFO - [2023-04-16 15:32:22,478] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:32:24,829] {logging_mixin.py:115} INFO - [2023-04-16 15:32:24,828] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 15:32:27,769] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:32:27,841] {logging_mixin.py:115} INFO - [2023-04-16 15:32:27,840] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 15:32:27,921] {logging_mixin.py:115} INFO - [2023-04-16 15:32:27,921] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 15:32:27,980] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 5.518 seconds
+[2023-04-16 15:33:05,208] {processor.py:153} INFO - Started process (PID=362) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:33:05,209] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 15:33:05,210] {logging_mixin.py:115} INFO - [2023-04-16 15:33:05,210] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:33:07,566] {logging_mixin.py:115} INFO - [2023-04-16 15:33:07,566] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 15:33:10,929] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:33:11,049] {logging_mixin.py:115} INFO - [2023-04-16 15:33:11,048] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 15:33:11,160] {logging_mixin.py:115} INFO - [2023-04-16 15:33:11,159] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 15:33:11,227] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 6.028 seconds
+[2023-04-16 15:33:53,167] {processor.py:153} INFO - Started process (PID=451) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:33:53,168] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 15:33:53,176] {logging_mixin.py:115} INFO - [2023-04-16 15:33:53,175] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:33:56,454] {logging_mixin.py:115} INFO - [2023-04-16 15:33:56,453] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 15:34:00,143] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:34:00,251] {logging_mixin.py:115} INFO - [2023-04-16 15:34:00,251] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 15:34:00,333] {logging_mixin.py:115} INFO - [2023-04-16 15:34:00,333] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 15:34:00,412] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 7.268 seconds
+[2023-04-16 15:34:37,109] {processor.py:153} INFO - Started process (PID=536) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:34:37,116] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 15:34:37,117] {logging_mixin.py:115} INFO - [2023-04-16 15:34:37,117] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:34:39,820] {logging_mixin.py:115} INFO - [2023-04-16 15:34:39,819] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 15:34:43,917] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:34:44,008] {logging_mixin.py:115} INFO - [2023-04-16 15:34:44,008] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 15:34:44,098] {logging_mixin.py:115} INFO - [2023-04-16 15:34:44,098] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 15:34:44,169] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 7.063 seconds
+[2023-04-16 15:35:38,018] {processor.py:153} INFO - Started process (PID=640) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:35:38,026] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 15:35:38,028] {logging_mixin.py:115} INFO - [2023-04-16 15:35:38,028] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:35:40,680] {logging_mixin.py:115} INFO - [2023-04-16 15:35:40,679] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 15:35:43,866] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:35:43,949] {logging_mixin.py:115} INFO - [2023-04-16 15:35:43,949] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 15:35:44,028] {logging_mixin.py:115} INFO - [2023-04-16 15:35:44,027] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 15:35:44,086] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 6.079 seconds
+[2023-04-16 15:36:40,661] {processor.py:153} INFO - Started process (PID=744) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:36:40,663] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 15:36:40,673] {logging_mixin.py:115} INFO - [2023-04-16 15:36:40,673] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:36:44,780] {logging_mixin.py:115} INFO - [2023-04-16 15:36:44,779] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 15:36:49,220] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:36:49,332] {logging_mixin.py:115} INFO - [2023-04-16 15:36:49,331] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 15:36:49,439] {logging_mixin.py:115} INFO - [2023-04-16 15:36:49,439] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 15:36:49,483] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 8.833 seconds
+[2023-04-16 15:38:33,329] {processor.py:153} INFO - Started process (PID=909) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:38:33,337] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 15:38:33,338] {logging_mixin.py:115} INFO - [2023-04-16 15:38:33,338] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:38:35,979] {logging_mixin.py:115} INFO - [2023-04-16 15:38:35,979] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 15:38:39,298] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:38:39,389] {logging_mixin.py:115} INFO - [2023-04-16 15:38:39,389] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 15:38:39,450] {logging_mixin.py:115} INFO - [2023-04-16 15:38:39,450] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 15:38:39,506] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 6.199 seconds
+[2023-04-16 15:40:05,765] {processor.py:153} INFO - Started process (PID=1044) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:40:05,766] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 15:40:05,767] {logging_mixin.py:115} INFO - [2023-04-16 15:40:05,767] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:40:08,925] {logging_mixin.py:115} INFO - [2023-04-16 15:40:08,918] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 15:40:12,675] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:40:12,765] {logging_mixin.py:115} INFO - [2023-04-16 15:40:12,758] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 15:40:12,856] {logging_mixin.py:115} INFO - [2023-04-16 15:40:12,856] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 15:40:12,907] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 7.152 seconds
+[2023-04-16 15:41:06,023] {processor.py:153} INFO - Started process (PID=1146) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:41:06,024] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 15:41:06,026] {logging_mixin.py:115} INFO - [2023-04-16 15:41:06,026] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:41:08,544] {logging_mixin.py:115} INFO - [2023-04-16 15:41:08,544] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 15:41:12,165] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:41:12,263] {logging_mixin.py:115} INFO - [2023-04-16 15:41:12,263] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 15:41:12,344] {logging_mixin.py:115} INFO - [2023-04-16 15:41:12,343] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 15:41:12,386] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 6.380 seconds
+[2023-04-16 15:43:03,806] {processor.py:153} INFO - Started process (PID=1304) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:43:03,814] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 15:43:03,816] {logging_mixin.py:115} INFO - [2023-04-16 15:43:03,816] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:43:07,896] {logging_mixin.py:115} INFO - [2023-04-16 15:43:07,896] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 15:43:14,437] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:43:14,557] {logging_mixin.py:115} INFO - [2023-04-16 15:43:14,557] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 15:43:14,685] {logging_mixin.py:115} INFO - [2023-04-16 15:43:14,685] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 15:43:14,755] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 10.968 seconds
+[2023-04-16 15:45:04,247] {processor.py:153} INFO - Started process (PID=1469) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:45:04,248] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 15:45:04,250] {logging_mixin.py:115} INFO - [2023-04-16 15:45:04,250] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:45:06,856] {logging_mixin.py:115} INFO - [2023-04-16 15:45:06,850] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 15:45:10,609] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:45:10,709] {logging_mixin.py:115} INFO - [2023-04-16 15:45:10,709] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 15:45:10,818] {logging_mixin.py:115} INFO - [2023-04-16 15:45:10,818] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 15:45:10,879] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 6.649 seconds
+[2023-04-16 15:46:58,266] {processor.py:153} INFO - Started process (PID=1627) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:46:58,268] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 15:46:58,275] {logging_mixin.py:115} INFO - [2023-04-16 15:46:58,275] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:47:01,646] {logging_mixin.py:115} INFO - [2023-04-16 15:47:01,645] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 15:47:06,245] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:47:06,338] {logging_mixin.py:115} INFO - [2023-04-16 15:47:06,338] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 15:47:06,456] {logging_mixin.py:115} INFO - [2023-04-16 15:47:06,456] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 15:47:06,517] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 8.269 seconds
+[2023-04-16 15:49:24,066] {processor.py:153} INFO - Started process (PID=1827) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:49:24,067] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 15:49:24,075] {logging_mixin.py:115} INFO - [2023-04-16 15:49:24,075] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:49:28,153] {logging_mixin.py:115} INFO - [2023-04-16 15:49:28,152] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 15:49:31,542] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:49:31,612] {logging_mixin.py:115} INFO - [2023-04-16 15:49:31,611] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 15:49:31,671] {logging_mixin.py:115} INFO - [2023-04-16 15:49:31,671] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 15:49:31,720] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 7.678 seconds
+[2023-04-16 15:51:58,040] {processor.py:153} INFO - Started process (PID=2016) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:51:58,060] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 15:51:58,061] {logging_mixin.py:115} INFO - [2023-04-16 15:51:58,061] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:52:02,190] {logging_mixin.py:115} INFO - [2023-04-16 15:52:02,189] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 15:52:05,701] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:52:05,771] {logging_mixin.py:115} INFO - [2023-04-16 15:52:05,771] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 15:52:05,852] {logging_mixin.py:115} INFO - [2023-04-16 15:52:05,843] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 15:52:05,910] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 7.911 seconds
+[2023-04-16 15:53:00,508] {processor.py:153} INFO - Started process (PID=2100) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:53:00,509] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 15:53:00,516] {logging_mixin.py:115} INFO - [2023-04-16 15:53:00,516] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:53:03,149] {logging_mixin.py:115} INFO - [2023-04-16 15:53:03,148] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 15:53:08,057] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:53:08,179] {logging_mixin.py:115} INFO - [2023-04-16 15:53:08,178] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 15:53:08,297] {logging_mixin.py:115} INFO - [2023-04-16 15:53:08,297] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 15:53:08,350] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 7.861 seconds
+[2023-04-16 15:54:02,203] {processor.py:153} INFO - Started process (PID=2189) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:54:02,211] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 15:54:02,213] {logging_mixin.py:115} INFO - [2023-04-16 15:54:02,212] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:54:05,072] {logging_mixin.py:115} INFO - [2023-04-16 15:54:05,071] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 15:54:08,501] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:54:08,582] {logging_mixin.py:115} INFO - [2023-04-16 15:54:08,582] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 15:54:08,652] {logging_mixin.py:115} INFO - [2023-04-16 15:54:08,652] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 15:54:08,719] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 6.527 seconds
+[2023-04-16 15:54:53,478] {processor.py:153} INFO - Started process (PID=2276) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:54:53,480] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 15:54:53,487] {logging_mixin.py:115} INFO - [2023-04-16 15:54:53,487] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:54:56,329] {logging_mixin.py:115} INFO - [2023-04-16 15:54:56,323] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 15:55:00,620] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:55:00,733] {logging_mixin.py:115} INFO - [2023-04-16 15:55:00,733] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 15:55:00,833] {logging_mixin.py:115} INFO - [2023-04-16 15:55:00,833] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 15:55:00,891] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 7.429 seconds
+[2023-04-16 15:55:54,949] {processor.py:153} INFO - Started process (PID=2373) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:55:54,957] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 15:55:54,958] {logging_mixin.py:115} INFO - [2023-04-16 15:55:54,958] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:55:57,340] {logging_mixin.py:115} INFO - [2023-04-16 15:55:57,340] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 15:56:02,300] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:56:02,420] {logging_mixin.py:115} INFO - [2023-04-16 15:56:02,420] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 15:56:02,559] {logging_mixin.py:115} INFO - [2023-04-16 15:56:02,552] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 15:56:02,619] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 7.671 seconds
+[2023-04-16 15:57:06,107] {processor.py:153} INFO - Started process (PID=2488) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:57:06,108] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 15:57:06,117] {logging_mixin.py:115} INFO - [2023-04-16 15:57:06,116] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:57:09,477] {logging_mixin.py:115} INFO - [2023-04-16 15:57:09,477] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 15:57:12,626] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:57:12,699] {logging_mixin.py:115} INFO - [2023-04-16 15:57:12,698] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 15:57:12,766] {logging_mixin.py:115} INFO - [2023-04-16 15:57:12,766] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 15:57:12,808] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 6.712 seconds
+[2023-04-16 15:58:36,836] {processor.py:153} INFO - Started process (PID=2624) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:58:36,838] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 15:58:36,845] {logging_mixin.py:115} INFO - [2023-04-16 15:58:36,845] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:58:39,327] {logging_mixin.py:115} INFO - [2023-04-16 15:58:39,326] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 15:58:43,498] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:58:43,579] {logging_mixin.py:115} INFO - [2023-04-16 15:58:43,578] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 15:58:43,676] {logging_mixin.py:115} INFO - [2023-04-16 15:58:43,676] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 15:58:43,737] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 6.919 seconds
+[2023-04-16 15:59:58,612] {processor.py:153} INFO - Started process (PID=2749) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 15:59:58,613] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 15:59:58,620] {logging_mixin.py:115} INFO - [2023-04-16 15:59:58,620] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 16:00:01,221] {logging_mixin.py:115} INFO - [2023-04-16 16:00:01,213] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 16:00:05,142] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 16:00:05,250] {logging_mixin.py:115} INFO - [2023-04-16 16:00:05,250] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 16:00:05,342] {logging_mixin.py:115} INFO - [2023-04-16 16:00:05,342] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 16:00:05,411] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 6.809 seconds
+[2023-04-16 16:01:22,778] {processor.py:153} INFO - Started process (PID=2884) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 16:01:22,785] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 16:01:22,786] {logging_mixin.py:115} INFO - [2023-04-16 16:01:22,786] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 16:01:26,088] {logging_mixin.py:115} INFO - [2023-04-16 16:01:26,088] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 16:01:29,704] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 16:01:29,775] {logging_mixin.py:115} INFO - [2023-04-16 16:01:29,775] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 16:01:29,835] {logging_mixin.py:115} INFO - [2023-04-16 16:01:29,835] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 16:01:29,895] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 7.132 seconds
+[2023-04-16 16:02:23,049] {processor.py:153} INFO - Started process (PID=2968) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 16:02:23,051] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 16:02:23,052] {logging_mixin.py:115} INFO - [2023-04-16 16:02:23,052] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 16:02:25,961] {logging_mixin.py:115} INFO - [2023-04-16 16:02:25,960] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 16:02:30,053] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 16:02:30,165] {logging_mixin.py:115} INFO - [2023-04-16 16:02:30,165] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 16:02:30,254] {logging_mixin.py:115} INFO - [2023-04-16 16:02:30,254] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 16:02:30,315] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 7.291 seconds
+[2023-04-16 16:03:44,176] {processor.py:153} INFO - Started process (PID=3090) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 16:03:44,177] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 16:03:44,178] {logging_mixin.py:115} INFO - [2023-04-16 16:03:44,178] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 16:03:47,027] {logging_mixin.py:115} INFO - [2023-04-16 16:03:47,027] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 16:03:50,425] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 16:03:50,535] {logging_mixin.py:115} INFO - [2023-04-16 16:03:50,528] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 16:03:50,598] {logging_mixin.py:115} INFO - [2023-04-16 16:03:50,598] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 16:03:50,638] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 6.489 seconds
+[2023-04-16 16:08:07,676] {processor.py:153} INFO - Started process (PID=3196) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 16:08:07,687] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 16:08:07,688] {logging_mixin.py:115} INFO - [2023-04-16 16:08:07,688] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 16:08:10,057] {logging_mixin.py:115} INFO - [2023-04-16 16:08:10,057] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 16:08:13,398] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 16:08:13,469] {logging_mixin.py:115} INFO - [2023-04-16 16:08:13,468] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 16:08:13,529] {logging_mixin.py:115} INFO - [2023-04-16 16:08:13,529] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 16:08:13,589] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 5.930 seconds
+[2023-04-16 16:08:59,662] {processor.py:153} INFO - Started process (PID=3296) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 16:08:59,670] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 16:08:59,671] {logging_mixin.py:115} INFO - [2023-04-16 16:08:59,670] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 16:09:02,002] {logging_mixin.py:115} INFO - [2023-04-16 16:09:02,002] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 16:09:05,080] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 16:09:05,151] {logging_mixin.py:115} INFO - [2023-04-16 16:09:05,151] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 16:09:05,212] {logging_mixin.py:115} INFO - [2023-04-16 16:09:05,212] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 16:09:05,310] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 5.658 seconds
+[2023-04-16 16:10:13,957] {processor.py:153} INFO - Started process (PID=3410) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 16:10:13,958] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 16:10:13,967] {logging_mixin.py:115} INFO - [2023-04-16 16:10:13,966] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 16:10:16,716] {logging_mixin.py:115} INFO - [2023-04-16 16:10:16,709] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 16:10:19,668] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 16:10:19,738] {logging_mixin.py:115} INFO - [2023-04-16 16:10:19,738] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 16:10:19,806] {logging_mixin.py:115} INFO - [2023-04-16 16:10:19,806] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 16:10:19,848] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 5.910 seconds
+[2023-04-16 16:11:11,931] {processor.py:153} INFO - Started process (PID=3500) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 16:11:11,932] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 16:11:11,939] {logging_mixin.py:115} INFO - [2023-04-16 16:11:11,939] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 16:11:14,950] {logging_mixin.py:115} INFO - [2023-04-16 16:11:14,950] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 16:11:19,451] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 16:11:19,551] {logging_mixin.py:115} INFO - [2023-04-16 16:11:19,550] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 16:11:19,622] {logging_mixin.py:115} INFO - [2023-04-16 16:11:19,622] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 16:11:19,682] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 7.770 seconds
+[2023-04-16 16:13:28,289] {processor.py:153} INFO - Started process (PID=3671) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 16:13:28,297] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 16:13:28,298] {logging_mixin.py:115} INFO - [2023-04-16 16:13:28,298] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 16:13:31,508] {logging_mixin.py:115} INFO - [2023-04-16 16:13:31,507] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 16:13:35,327] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 16:13:35,409] {logging_mixin.py:115} INFO - [2023-04-16 16:13:35,409] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 16:13:35,536] {logging_mixin.py:115} INFO - [2023-04-16 16:13:35,536] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 16:13:35,579] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 7.302 seconds
+[2023-04-16 16:15:11,196] {processor.py:153} INFO - Started process (PID=3805) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 16:15:11,217] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 16:15:11,219] {logging_mixin.py:115} INFO - [2023-04-16 16:15:11,218] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 16:15:15,027] {logging_mixin.py:115} INFO - [2023-04-16 16:15:15,026] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 16:15:18,396] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 16:15:18,487] {logging_mixin.py:115} INFO - [2023-04-16 16:15:18,487] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 16:15:18,557] {logging_mixin.py:115} INFO - [2023-04-16 16:15:18,557] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 16:15:18,608] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 7.432 seconds
+[2023-04-16 16:16:32,309] {processor.py:153} INFO - Started process (PID=3909) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 16:16:32,310] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 16:16:32,319] {logging_mixin.py:115} INFO - [2023-04-16 16:16:32,318] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 16:16:36,307] {logging_mixin.py:115} INFO - [2023-04-16 16:16:36,300] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 16:16:39,888] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 16:16:39,988] {logging_mixin.py:115} INFO - [2023-04-16 16:16:39,988] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 16:16:40,058] {logging_mixin.py:115} INFO - [2023-04-16 16:16:40,058] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 16:16:40,099] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 7.810 seconds
+[2023-04-16 16:18:05,163] {processor.py:153} INFO - Started process (PID=4017) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 16:18:05,170] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 16:18:05,172] {logging_mixin.py:115} INFO - [2023-04-16 16:18:05,171] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 16:18:07,870] {logging_mixin.py:115} INFO - [2023-04-16 16:18:07,870] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 16:18:12,050] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 16:18:12,152] {logging_mixin.py:115} INFO - [2023-04-16 16:18:12,152] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 16:18:12,271] {logging_mixin.py:115} INFO - [2023-04-16 16:18:12,271] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 16:18:12,371] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 7.219 seconds
+[2023-04-16 16:19:56,989] {processor.py:153} INFO - Started process (PID=4158) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 16:19:56,991] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 16:19:56,992] {logging_mixin.py:115} INFO - [2023-04-16 16:19:56,992] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 16:20:00,166] {logging_mixin.py:115} INFO - [2023-04-16 16:20:00,159] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 16:20:03,838] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 16:20:03,958] {logging_mixin.py:115} INFO - [2023-04-16 16:20:03,958] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 16:20:04,078] {logging_mixin.py:115} INFO - [2023-04-16 16:20:04,078] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 16:20:04,147] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 7.179 seconds
+[2023-04-16 16:21:52,992] {processor.py:153} INFO - Started process (PID=4291) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 16:21:53,000] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 16:21:53,002] {logging_mixin.py:115} INFO - [2023-04-16 16:21:53,001] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 16:21:56,591] {logging_mixin.py:115} INFO - [2023-04-16 16:21:56,591] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 16:22:02,010] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 16:22:02,111] {logging_mixin.py:115} INFO - [2023-04-16 16:22:02,110] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 16:22:02,221] {logging_mixin.py:115} INFO - [2023-04-16 16:22:02,221] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 16:22:02,290] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 9.310 seconds
+[2023-04-16 16:23:55,860] {processor.py:153} INFO - Started process (PID=4434) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 16:23:55,862] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 16:23:55,862] {logging_mixin.py:115} INFO - [2023-04-16 16:23:55,862] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 16:23:58,933] {logging_mixin.py:115} INFO - [2023-04-16 16:23:58,933] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 16:24:05,084] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 16:24:05,224] {logging_mixin.py:115} INFO - [2023-04-16 16:24:05,223] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 16:24:05,345] {logging_mixin.py:115} INFO - [2023-04-16 16:24:05,345] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 16:24:05,426] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 9.580 seconds
+[2023-04-16 16:29:15,172] {processor.py:153} INFO - Started process (PID=99) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 16:29:15,181] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 16:29:15,183] {logging_mixin.py:115} INFO - [2023-04-16 16:29:15,182] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 16:29:19,012] {logging_mixin.py:115} INFO - [2023-04-16 16:29:19,012] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 16:29:23,811] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 16:29:23,923] {logging_mixin.py:115} INFO - [2023-04-16 16:29:23,922] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 16:29:24,052] {logging_mixin.py:115} INFO - [2023-04-16 16:29:24,052] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 16:29:24,131] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 8.988 seconds
+[2023-04-16 16:55:55,730] {processor.py:153} INFO - Started process (PID=117) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 16:55:55,740] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 16:55:55,741] {logging_mixin.py:115} INFO - [2023-04-16 16:55:55,741] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 16:55:59,785] {logging_mixin.py:115} INFO - [2023-04-16 16:55:59,785] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 16:56:04,894] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 16:56:05,034] {logging_mixin.py:115} INFO - [2023-04-16 16:56:05,033] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 16:56:05,145] {logging_mixin.py:115} INFO - [2023-04-16 16:56:05,136] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 16:56:05,254] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 9.539 seconds
+[2023-04-16 17:05:18,687] {processor.py:153} INFO - Started process (PID=247) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 17:05:18,697] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 17:05:18,706] {logging_mixin.py:115} INFO - [2023-04-16 17:05:18,706] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 17:05:24,317] {logging_mixin.py:115} INFO - [2023-04-16 17:05:24,308] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 17:05:36,325] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 17:05:36,545] {logging_mixin.py:115} INFO - [2023-04-16 17:05:36,537] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 17:05:36,776] {logging_mixin.py:115} INFO - [2023-04-16 17:05:36,776] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 17:05:36,905] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 18.248 seconds
+[2023-04-16 17:11:08,627] {processor.py:153} INFO - Started process (PID=574) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 17:11:08,629] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 17:11:08,637] {logging_mixin.py:115} INFO - [2023-04-16 17:11:08,637] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 17:11:13,778] {logging_mixin.py:115} INFO - [2023-04-16 17:11:13,777] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 17:11:17,609] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 17:11:17,717] {logging_mixin.py:115} INFO - [2023-04-16 17:11:17,717] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 17:11:17,809] {logging_mixin.py:115} INFO - [2023-04-16 17:11:17,809] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 17:11:17,878] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 9.271 seconds
+[2023-04-16 17:26:06,850] {processor.py:153} INFO - Started process (PID=318) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 17:26:06,861] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 17:26:06,870] {logging_mixin.py:115} INFO - [2023-04-16 17:26:06,870] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py
+[2023-04-16 17:26:12,102] {logging_mixin.py:115} INFO - [2023-04-16 17:26:12,101] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-16 17:26:18,131] {processor.py:651} INFO - DAG(s) dict_keys(['estimator_match_DAG']) retrieved from /opt/airflow/dags/estimator_match.py
+[2023-04-16 17:26:18,271] {logging_mixin.py:115} INFO - [2023-04-16 17:26:18,270] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-16 17:26:18,412] {logging_mixin.py:115} INFO - [2023-04-16 17:26:18,412] {dag.py:2919} INFO - Setting next_dagrun for estimator_match_DAG to 2023-04-16T00:00:00+00:00, run_after=2023-04-17T00:00:00+00:00
+[2023-04-16 17:26:18,500] {processor.py:161} INFO - Processing /opt/airflow/dags/estimator_match.py took 11.669 seconds
+[2023-04-16 17:42:20,161] {processor.py:153} INFO - Started process (PID=370) to work on /opt/airflow/dags/estimator_match.py
+[2023-04-16 17:42:20,172] {processor.py:641} INFO - Processing file /opt/airflow/dags/estimator_match.py for tasks to queue
+[2023-04-16 17:42:20,183] {logging_mixin.py:115} INFO - [2023-04-16 17:42:20,182] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/estimator_match.py

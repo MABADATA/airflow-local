@@ -1,0 +1,23 @@
+[2023-03-12 08:56:44,573] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: cycle.choose_best_attack scheduled__2023-01-24T00:00:00+00:00 [queued]>
+[2023-03-12 08:56:44,594] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: cycle.choose_best_attack scheduled__2023-01-24T00:00:00+00:00 [queued]>
+[2023-03-12 08:56:44,595] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-12 08:56:44,596] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2023-03-12 08:56:44,597] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-12 08:56:44,630] {taskinstance.py:1377} INFO - Executing <Task(_PythonDecoratedOperator): choose_best_attack> on 2023-01-24 00:00:00+00:00
+[2023-03-12 08:56:44,650] {standard_task_runner.py:52} INFO - Started process 287 to run task
+[2023-03-12 08:56:44,656] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'cycle', 'choose_best_attack', 'scheduled__2023-01-24T00:00:00+00:00', '--job-id', '220', '--raw', '--subdir', 'DAGS_FOLDER/cycle_dag.py', '--cfg-path', '/tmp/tmpe7r6l09b', '--error-file', '/tmp/tmp3e675bse']
+[2023-03-12 08:56:44,658] {standard_task_runner.py:80} INFO - Job 220: Subtask choose_best_attack
+[2023-03-12 08:56:44,894] {task_command.py:369} INFO - Running <TaskInstance: cycle.choose_best_attack scheduled__2023-01-24T00:00:00+00:00 [running]> on host 596adcca7378
+[2023-03-12 08:56:45,072] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=cycle
+AIRFLOW_CTX_TASK_ID=choose_best_attack
+AIRFLOW_CTX_EXECUTION_DATE=2023-01-24T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-01-24T00:00:00+00:00
+[2023-03-12 08:56:45,076] {python.py:173} INFO - Done. Returned value was: {'best_attack_score': 100, 'best_attack_name': ''}
+[2023-03-12 08:56:45,220] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=cycle, task_id=choose_best_attack, execution_date=20230124T000000, start_date=20230312T085644, end_date=20230312T085645
+[2023-03-12 08:56:45,278] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-03-12 08:56:45,344] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,22 @@
+[2023-04-23 09:38:37,528] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.trigger_defence manual__2023-04-23T09:37:58.439142+00:00 [queued]>
+[2023-04-23 09:38:37,542] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: multi_attack_dag.trigger_defence manual__2023-04-23T09:37:58.439142+00:00 [queued]>
+[2023-04-23 09:38:37,543] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-23 09:38:37,548] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2023-04-23 09:38:37,549] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-23 09:38:37,566] {taskinstance.py:1377} INFO - Executing <Task(TriggerDagRunOperator): trigger_defence> on 2023-04-23 09:37:58.439142+00:00
+[2023-04-23 09:38:37,574] {standard_task_runner.py:52} INFO - Started process 1500 to run task
+[2023-04-23 09:38:37,578] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'multi_attack_dag', 'trigger_defence', 'manual__2023-04-23T09:37:58.439142+00:00', '--job-id', '6156', '--raw', '--subdir', 'DAGS_FOLDER/attack_dag.py', '--cfg-path', '/tmp/tmpkyrn81bi', '--error-file', '/tmp/tmpjcxjret9']
+[2023-04-23 09:38:37,579] {standard_task_runner.py:80} INFO - Job 6156: Subtask trigger_defence
+[2023-04-23 09:38:37,653] {task_command.py:369} INFO - Running <TaskInstance: multi_attack_dag.trigger_defence manual__2023-04-23T09:37:58.439142+00:00 [running]> on host a3dd7d962104
+[2023-04-23 09:38:37,761] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=multi_attack_dag
+AIRFLOW_CTX_TASK_ID=trigger_defence
+AIRFLOW_CTX_EXECUTION_DATE=2023-04-23T09:37:58.439142+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-04-23T09:37:58.439142+00:00
+[2023-04-23 09:38:38,652] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=multi_attack_dag, task_id=trigger_defence, execution_date=20230423T093758, start_date=20230423T093837, end_date=20230423T093838
+[2023-04-23 09:38:38,716] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-04-23 09:38:38,749] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
