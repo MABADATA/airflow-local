@@ -4721,3 +4721,11 @@ ModuleNotFoundError: No module named 'helpers'
 [2023-04-30 14:27:54,707] {logging_mixin.py:115} INFO - [2023-04-30 14:27:54,707] {dag.py:2371} INFO - Sync 1 DAGs
 [2023-04-30 14:27:54,789] {logging_mixin.py:115} INFO - [2023-04-30 14:27:54,789] {dag.py:2919} INFO - Setting next_dagrun for multi_attack_dag to 2023-04-30T00:00:00+00:00, run_after=2023-05-01T00:00:00+00:00
 [2023-04-30 14:27:54,828] {processor.py:161} INFO - Processing /opt/airflow/dags/attack_dag.py took 4.338 seconds
+[2023-04-30 14:28:26,834] {processor.py:153} INFO - Started process (PID=22372) to work on /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:28:26,836] {processor.py:641} INFO - Processing file /opt/airflow/dags/attack_dag.py for tasks to queue
+[2023-04-30 14:28:26,838] {logging_mixin.py:115} INFO - [2023-04-30 14:28:26,837] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:28:30,372] {logging_mixin.py:115} INFO - [2023-04-30 14:28:30,371] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-30 14:28:34,815] {processor.py:651} INFO - DAG(s) dict_keys(['multi_attack_dag']) retrieved from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:28:34,985] {logging_mixin.py:115} INFO - [2023-04-30 14:28:34,984] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-30 14:28:35,079] {logging_mixin.py:115} INFO - [2023-04-30 14:28:35,079] {dag.py:2919} INFO - Setting next_dagrun for multi_attack_dag to 2023-04-30T00:00:00+00:00, run_after=2023-05-01T00:00:00+00:00
+[2023-04-30 14:28:35,146] {processor.py:161} INFO - Processing /opt/airflow/dags/attack_dag.py took 8.319 seconds

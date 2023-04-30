@@ -13546,3 +13546,18 @@ ModuleNotFoundError: No module named 'dags'
 [2023-04-30 14:28:21,809] {logging_mixin.py:115} INFO - [2023-04-30 14:28:21,808] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
 [2023-04-30 14:28:21,811] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
 [2023-04-30 14:28:21,852] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.055 seconds
+[2023-04-30 14:28:32,905] {processor.py:153} INFO - Started process (PID=22393) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:28:32,907] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:28:32,909] {logging_mixin.py:115} INFO - [2023-04-30 14:28:32,908] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:28:32,912] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:28:33,037] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.144 seconds
+[2023-04-30 14:28:42,274] {processor.py:153} INFO - Started process (PID=22413) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:28:42,275] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:28:42,276] {logging_mixin.py:115} INFO - [2023-04-30 14:28:42,275] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:28:42,277] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:28:42,289] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.019 seconds
+[2023-04-30 14:28:42,328] {processor.py:153} INFO - Started process (PID=22414) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:28:42,329] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:28:42,330] {logging_mixin.py:115} INFO - [2023-04-30 14:28:42,330] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:28:42,332] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:28:42,353] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.029 seconds
