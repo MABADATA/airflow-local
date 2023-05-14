@@ -36,7 +36,7 @@ def get_obj_from_str(obj_as_str):
 
 def get_estimator():
     logging.info("Getting estimator...")
-    # args = load_from_bucket("Estimator_params.json", as_json=True)
+    args = load_from_bucket("Estimator_params.json", as_json=True)
     args = {"object": "PyTorchClassifier", "params": {"loss": True, "optimizer": True, "nb_classes": 2, "input_shape":(1,29)}}
     model = load_from_bucket("ML_model.pickle")
     # model = NeuralNetworkClassificationModel(29,2)

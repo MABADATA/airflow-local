@@ -13721,3 +13721,1088 @@ ModuleNotFoundError: No module named 'dags'
 [2023-04-30 14:31:54,727] {logging_mixin.py:115} INFO - [2023-04-30 14:31:54,727] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
 [2023-04-30 14:31:54,728] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
 [2023-04-30 14:31:54,753] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.040 seconds
+[2023-04-30 14:32:05,301] {processor.py:153} INFO - Started process (PID=22870) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:32:05,302] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:32:05,304] {logging_mixin.py:115} INFO - [2023-04-30 14:32:05,304] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:32:05,306] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:32:05,347] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.055 seconds
+[2023-04-30 14:32:14,883] {processor.py:153} INFO - Started process (PID=22897) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:32:14,885] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:32:14,887] {logging_mixin.py:115} INFO - [2023-04-30 14:32:14,887] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:32:14,890] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:32:14,918] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.042 seconds
+[2023-04-30 14:32:14,965] {processor.py:153} INFO - Started process (PID=22898) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:32:14,967] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:32:14,968] {logging_mixin.py:115} INFO - [2023-04-30 14:32:14,968] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:32:14,970] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:32:14,995] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.037 seconds
+[2023-04-30 14:32:24,978] {processor.py:153} INFO - Started process (PID=22912) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:32:24,979] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:32:24,980] {logging_mixin.py:115} INFO - [2023-04-30 14:32:24,980] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:32:24,982] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:32:25,005] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.033 seconds
+[2023-04-30 14:32:25,108] {processor.py:153} INFO - Started process (PID=22914) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:32:25,110] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:32:25,111] {logging_mixin.py:115} INFO - [2023-04-30 14:32:25,111] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:32:25,113] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:32:25,134] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.032 seconds
+[2023-04-30 14:32:35,261] {processor.py:153} INFO - Started process (PID=22931) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:32:35,263] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:32:35,265] {logging_mixin.py:115} INFO - [2023-04-30 14:32:35,264] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:32:35,267] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:32:35,297] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.044 seconds
+[2023-04-30 14:32:45,204] {processor.py:153} INFO - Started process (PID=22971) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:32:45,205] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:32:45,206] {logging_mixin.py:115} INFO - [2023-04-30 14:32:45,206] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:32:45,208] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:32:45,229] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.032 seconds
+[2023-04-30 14:32:45,316] {processor.py:153} INFO - Started process (PID=22973) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:32:45,317] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:32:45,318] {logging_mixin.py:115} INFO - [2023-04-30 14:32:45,318] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:32:45,319] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:32:45,339] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.029 seconds
+[2023-04-30 14:32:55,322] {processor.py:153} INFO - Started process (PID=22988) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:32:55,323] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:32:55,324] {logging_mixin.py:115} INFO - [2023-04-30 14:32:55,324] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:32:55,326] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:32:55,358] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.042 seconds
+[2023-04-30 14:32:55,460] {processor.py:153} INFO - Started process (PID=22990) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:32:55,462] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:32:55,463] {logging_mixin.py:115} INFO - [2023-04-30 14:32:55,463] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:32:55,465] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:32:55,491] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.037 seconds
+[2023-04-30 14:33:05,425] {processor.py:153} INFO - Started process (PID=22996) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:33:05,426] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:33:05,427] {logging_mixin.py:115} INFO - [2023-04-30 14:33:05,427] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:33:05,428] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:33:05,449] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.030 seconds
+[2023-04-30 14:33:05,543] {processor.py:153} INFO - Started process (PID=22998) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:33:05,544] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:33:05,545] {logging_mixin.py:115} INFO - [2023-04-30 14:33:05,545] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:33:05,547] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:33:05,567] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.028 seconds
+[2023-04-30 14:33:15,693] {processor.py:153} INFO - Started process (PID=23036) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:33:15,694] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:33:15,695] {logging_mixin.py:115} INFO - [2023-04-30 14:33:15,695] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:33:15,697] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:33:15,728] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.042 seconds
+[2023-04-30 14:33:25,567] {processor.py:153} INFO - Started process (PID=23056) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:33:25,568] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:33:25,569] {logging_mixin.py:115} INFO - [2023-04-30 14:33:25,569] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:33:25,571] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:33:25,591] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.029 seconds
+[2023-04-30 14:33:25,683] {processor.py:153} INFO - Started process (PID=23058) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:33:25,684] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:33:25,686] {logging_mixin.py:115} INFO - [2023-04-30 14:33:25,686] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:33:25,687] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:33:25,706] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.028 seconds
+[2023-04-30 14:33:35,691] {processor.py:153} INFO - Started process (PID=23073) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:33:35,692] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:33:35,694] {logging_mixin.py:115} INFO - [2023-04-30 14:33:35,693] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:33:35,695] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:33:35,721] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.035 seconds
+[2023-04-30 14:33:35,756] {processor.py:153} INFO - Started process (PID=23075) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:33:35,758] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:33:35,760] {logging_mixin.py:115} INFO - [2023-04-30 14:33:35,760] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:33:35,762] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:33:35,789] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.041 seconds
+[2023-04-30 14:33:46,719] {processor.py:153} INFO - Started process (PID=23090) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:33:46,721] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:33:46,723] {logging_mixin.py:115} INFO - [2023-04-30 14:33:46,722] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:33:46,724] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:33:46,752] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.040 seconds
+[2023-04-30 14:33:55,978] {processor.py:153} INFO - Started process (PID=23131) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:33:55,979] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:33:55,981] {logging_mixin.py:115} INFO - [2023-04-30 14:33:55,980] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:33:55,982] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:33:56,003] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.032 seconds
+[2023-04-30 14:33:56,042] {processor.py:153} INFO - Started process (PID=23132) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:33:56,043] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:33:56,044] {logging_mixin.py:115} INFO - [2023-04-30 14:33:56,044] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:33:56,046] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:33:56,073] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.037 seconds
+[2023-04-30 14:34:06,113] {processor.py:153} INFO - Started process (PID=23138) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:34:06,116] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:34:06,117] {logging_mixin.py:115} INFO - [2023-04-30 14:34:06,117] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:34:06,119] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:34:06,146] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.039 seconds
+[2023-04-30 14:34:06,183] {processor.py:153} INFO - Started process (PID=23140) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:34:06,184] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:34:06,186] {logging_mixin.py:115} INFO - [2023-04-30 14:34:06,186] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:34:06,187] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:34:06,206] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.030 seconds
+[2023-04-30 14:34:16,180] {processor.py:153} INFO - Started process (PID=23151) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:34:16,181] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:34:16,182] {logging_mixin.py:115} INFO - [2023-04-30 14:34:16,182] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:34:16,183] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:34:16,200] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.025 seconds
+[2023-04-30 14:34:16,301] {processor.py:153} INFO - Started process (PID=23153) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:34:16,303] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:34:16,304] {logging_mixin.py:115} INFO - [2023-04-30 14:34:16,304] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:34:16,306] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:34:16,331] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.038 seconds
+[2023-04-30 14:34:26,312] {processor.py:153} INFO - Started process (PID=23198) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:34:26,313] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:34:26,315] {logging_mixin.py:115} INFO - [2023-04-30 14:34:26,314] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:34:26,317] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:34:26,355] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.048 seconds
+[2023-04-30 14:34:26,392] {processor.py:153} INFO - Started process (PID=23200) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:34:26,393] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:34:26,394] {logging_mixin.py:115} INFO - [2023-04-30 14:34:26,394] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:34:26,396] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:34:26,417] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.030 seconds
+[2023-04-30 14:34:36,458] {processor.py:153} INFO - Started process (PID=23216) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:34:36,459] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:34:36,460] {logging_mixin.py:115} INFO - [2023-04-30 14:34:36,460] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:34:36,461] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:34:36,484] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.031 seconds
+[2023-04-30 14:34:36,585] {processor.py:153} INFO - Started process (PID=23218) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:34:36,587] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:34:36,588] {logging_mixin.py:115} INFO - [2023-04-30 14:34:36,588] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:34:36,590] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:34:36,650] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.071 seconds
+[2023-04-30 14:34:46,510] {processor.py:153} INFO - Started process (PID=23230) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:34:46,516] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:34:46,517] {logging_mixin.py:115} INFO - [2023-04-30 14:34:46,517] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:34:46,518] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:34:46,598] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.093 seconds
+[2023-04-30 14:34:46,670] {processor.py:153} INFO - Started process (PID=23232) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:34:46,672] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:34:46,673] {logging_mixin.py:115} INFO - [2023-04-30 14:34:46,673] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:34:46,675] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:34:46,699] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.043 seconds
+[2023-04-30 14:34:56,911] {processor.py:153} INFO - Started process (PID=23245) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:34:56,913] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:34:56,914] {logging_mixin.py:115} INFO - [2023-04-30 14:34:56,914] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:34:56,915] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:34:56,933] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.027 seconds
+[2023-04-30 14:35:06,967] {processor.py:153} INFO - Started process (PID=23283) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:35:06,969] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:35:06,971] {logging_mixin.py:115} INFO - [2023-04-30 14:35:06,971] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:35:06,973] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:35:06,996] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.035 seconds
+[2023-04-30 14:35:07,057] {processor.py:153} INFO - Started process (PID=23284) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:35:07,059] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:35:07,061] {logging_mixin.py:115} INFO - [2023-04-30 14:35:07,060] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:35:07,063] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:35:07,121] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.072 seconds
+[2023-04-30 14:35:17,047] {processor.py:153} INFO - Started process (PID=23296) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:35:17,048] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:35:17,052] {logging_mixin.py:115} INFO - [2023-04-30 14:35:17,051] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:35:17,053] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:35:17,075] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.033 seconds
+[2023-04-30 14:35:17,106] {processor.py:153} INFO - Started process (PID=23298) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:35:17,107] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:35:17,108] {logging_mixin.py:115} INFO - [2023-04-30 14:35:17,108] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:35:17,109] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:35:17,128] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.026 seconds
+[2023-04-30 14:35:29,847] {processor.py:153} INFO - Started process (PID=23313) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:35:29,848] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:35:29,850] {logging_mixin.py:115} INFO - [2023-04-30 14:35:29,849] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:35:29,851] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:35:29,873] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.032 seconds
+[2023-04-30 14:35:37,349] {processor.py:153} INFO - Started process (PID=23359) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:35:37,351] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:35:37,355] {logging_mixin.py:115} INFO - [2023-04-30 14:35:37,355] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:35:37,358] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:35:37,433] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.097 seconds
+[2023-04-30 14:35:37,500] {processor.py:153} INFO - Started process (PID=23360) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:35:37,501] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:35:37,503] {logging_mixin.py:115} INFO - [2023-04-30 14:35:37,503] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:35:37,505] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:35:37,546] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.054 seconds
+[2023-04-30 14:35:47,459] {processor.py:153} INFO - Started process (PID=23372) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:35:47,460] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:35:47,461] {logging_mixin.py:115} INFO - [2023-04-30 14:35:47,461] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:35:47,463] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:35:47,498] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.045 seconds
+[2023-04-30 14:35:47,556] {processor.py:153} INFO - Started process (PID=23373) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:35:47,558] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:35:47,559] {logging_mixin.py:115} INFO - [2023-04-30 14:35:47,559] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:35:47,561] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:35:47,585] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.036 seconds
+[2023-04-30 14:35:57,574] {processor.py:153} INFO - Started process (PID=23375) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:35:57,575] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:35:57,577] {logging_mixin.py:115} INFO - [2023-04-30 14:35:57,576] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:35:57,579] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:35:57,604] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.036 seconds
+[2023-04-30 14:35:57,810] {processor.py:153} INFO - Started process (PID=23377) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:35:57,812] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:35:57,814] {logging_mixin.py:115} INFO - [2023-04-30 14:35:57,814] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:35:57,818] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:35:57,868] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.070 seconds
+[2023-04-30 14:36:07,673] {processor.py:153} INFO - Started process (PID=23425) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:36:07,674] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:36:07,675] {logging_mixin.py:115} INFO - [2023-04-30 14:36:07,675] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:36:07,676] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:36:07,696] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.027 seconds
+[2023-04-30 14:36:07,727] {processor.py:153} INFO - Started process (PID=23427) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:36:07,729] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:36:07,730] {logging_mixin.py:115} INFO - [2023-04-30 14:36:07,730] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:36:07,731] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:36:07,749] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.027 seconds
+[2023-04-30 14:36:17,767] {processor.py:153} INFO - Started process (PID=23439) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:36:17,768] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:36:17,770] {logging_mixin.py:115} INFO - [2023-04-30 14:36:17,770] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:36:17,771] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:36:17,789] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.028 seconds
+[2023-04-30 14:36:17,890] {processor.py:153} INFO - Started process (PID=23441) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:36:17,891] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:36:17,892] {logging_mixin.py:115} INFO - [2023-04-30 14:36:17,892] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:36:17,894] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:36:17,914] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.030 seconds
+[2023-04-30 14:36:27,899] {processor.py:153} INFO - Started process (PID=23453) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:36:27,900] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:36:27,902] {logging_mixin.py:115} INFO - [2023-04-30 14:36:27,902] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:36:27,903] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:36:27,919] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.026 seconds
+[2023-04-30 14:36:27,961] {processor.py:153} INFO - Started process (PID=23454) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:36:27,962] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:36:27,964] {logging_mixin.py:115} INFO - [2023-04-30 14:36:27,963] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:36:27,965] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:36:27,988] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.033 seconds
+[2023-04-30 14:36:38,159] {processor.py:153} INFO - Started process (PID=23474) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:36:38,160] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:36:38,162] {logging_mixin.py:115} INFO - [2023-04-30 14:36:38,162] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:36:38,163] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:36:38,185] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.032 seconds
+[2023-04-30 14:36:48,155] {processor.py:153} INFO - Started process (PID=23514) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:36:48,156] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:36:48,157] {logging_mixin.py:115} INFO - [2023-04-30 14:36:48,157] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:36:48,158] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:36:48,186] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.037 seconds
+[2023-04-30 14:36:48,228] {processor.py:153} INFO - Started process (PID=23515) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:36:48,230] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:36:48,231] {logging_mixin.py:115} INFO - [2023-04-30 14:36:48,231] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:36:48,233] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:36:48,254] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.031 seconds
+[2023-04-30 14:36:58,289] {processor.py:153} INFO - Started process (PID=23517) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:36:58,290] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:36:58,292] {logging_mixin.py:115} INFO - [2023-04-30 14:36:58,291] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:36:58,293] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:36:58,323] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.039 seconds
+[2023-04-30 14:36:58,429] {processor.py:153} INFO - Started process (PID=23519) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:36:58,430] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:36:58,432] {logging_mixin.py:115} INFO - [2023-04-30 14:36:58,432] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:36:58,433] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:36:58,457] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.034 seconds
+[2023-04-30 14:37:08,525] {processor.py:153} INFO - Started process (PID=23532) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:37:08,526] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:37:08,528] {logging_mixin.py:115} INFO - [2023-04-30 14:37:08,528] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:37:08,530] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:37:08,555] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.040 seconds
+[2023-04-30 14:37:18,534] {processor.py:153} INFO - Started process (PID=23581) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:37:18,535] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:37:18,537] {logging_mixin.py:115} INFO - [2023-04-30 14:37:18,536] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:37:18,541] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:37:18,567] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.039 seconds
+[2023-04-30 14:37:18,606] {processor.py:153} INFO - Started process (PID=23583) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:37:18,609] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:37:18,612] {logging_mixin.py:115} INFO - [2023-04-30 14:37:18,612] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:37:18,614] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:37:18,642] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.043 seconds
+[2023-04-30 14:37:28,677] {processor.py:153} INFO - Started process (PID=23594) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:37:28,678] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:37:28,680] {logging_mixin.py:115} INFO - [2023-04-30 14:37:28,680] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:37:28,682] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:37:28,707] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.037 seconds
+[2023-04-30 14:37:28,760] {processor.py:153} INFO - Started process (PID=23596) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:37:28,762] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:37:28,765] {logging_mixin.py:115} INFO - [2023-04-30 14:37:28,765] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:37:28,767] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:37:28,794] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.044 seconds
+[2023-04-30 14:37:38,763] {processor.py:153} INFO - Started process (PID=23598) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:37:38,765] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:37:38,766] {logging_mixin.py:115} INFO - [2023-04-30 14:37:38,766] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:37:38,768] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:37:38,851] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.093 seconds
+[2023-04-30 14:37:38,907] {processor.py:153} INFO - Started process (PID=23606) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:37:38,915] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:37:38,917] {logging_mixin.py:115} INFO - [2023-04-30 14:37:38,917] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:37:38,923] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:37:38,955] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.055 seconds
+[2023-04-30 14:37:48,877] {processor.py:153} INFO - Started process (PID=23649) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:37:48,879] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:37:48,880] {logging_mixin.py:115} INFO - [2023-04-30 14:37:48,880] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:37:48,881] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:37:48,901] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.029 seconds
+[2023-04-30 14:37:48,934] {processor.py:153} INFO - Started process (PID=23650) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:37:48,936] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:37:48,937] {logging_mixin.py:115} INFO - [2023-04-30 14:37:48,937] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:37:48,938] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:37:48,958] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.030 seconds
+[2023-04-30 14:37:59,027] {processor.py:153} INFO - Started process (PID=23661) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:37:59,029] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:37:59,032] {logging_mixin.py:115} INFO - [2023-04-30 14:37:59,031] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:37:59,034] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:37:59,061] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.052 seconds
+[2023-04-30 14:37:59,111] {processor.py:153} INFO - Started process (PID=23663) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:37:59,113] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:37:59,115] {logging_mixin.py:115} INFO - [2023-04-30 14:37:59,115] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:37:59,120] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:37:59,147] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.046 seconds
+[2023-04-30 14:38:09,130] {processor.py:153} INFO - Started process (PID=23674) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:38:09,132] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:38:09,135] {logging_mixin.py:115} INFO - [2023-04-30 14:38:09,135] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:38:09,141] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:38:09,182] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.057 seconds
+[2023-04-30 14:38:09,226] {processor.py:153} INFO - Started process (PID=23676) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:38:09,227] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:38:09,228] {logging_mixin.py:115} INFO - [2023-04-30 14:38:09,228] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:38:09,229] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:38:09,255] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.035 seconds
+[2023-04-30 14:38:19,474] {processor.py:153} INFO - Started process (PID=23697) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:38:19,476] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:38:19,477] {logging_mixin.py:115} INFO - [2023-04-30 14:38:19,477] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:38:19,478] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:38:19,501] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.031 seconds
+[2023-04-30 14:38:29,442] {processor.py:153} INFO - Started process (PID=23737) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:38:29,443] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:38:29,444] {logging_mixin.py:115} INFO - [2023-04-30 14:38:29,444] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:38:29,446] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:38:29,463] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.026 seconds
+[2023-04-30 14:38:29,497] {processor.py:153} INFO - Started process (PID=23738) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:38:29,498] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:38:29,500] {logging_mixin.py:115} INFO - [2023-04-30 14:38:29,499] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:38:29,501] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:38:29,519] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.026 seconds
+[2023-04-30 14:38:39,559] {processor.py:153} INFO - Started process (PID=23750) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:38:39,560] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:38:39,561] {logging_mixin.py:115} INFO - [2023-04-30 14:38:39,561] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:38:39,562] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:38:39,593] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.038 seconds
+[2023-04-30 14:38:39,705] {processor.py:153} INFO - Started process (PID=23752) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:38:39,707] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:38:39,708] {logging_mixin.py:115} INFO - [2023-04-30 14:38:39,708] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:38:39,709] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:38:39,734] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.034 seconds
+[2023-04-30 14:38:49,647] {processor.py:153} INFO - Started process (PID=23760) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:38:49,648] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:38:49,649] {logging_mixin.py:115} INFO - [2023-04-30 14:38:49,649] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:38:49,650] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:38:49,671] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.029 seconds
+[2023-04-30 14:38:49,767] {processor.py:153} INFO - Started process (PID=23762) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:38:49,769] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:38:49,770] {logging_mixin.py:115} INFO - [2023-04-30 14:38:49,770] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:38:49,771] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:38:49,795] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.033 seconds
+[2023-04-30 14:38:59,768] {processor.py:153} INFO - Started process (PID=23805) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:38:59,769] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:38:59,770] {logging_mixin.py:115} INFO - [2023-04-30 14:38:59,770] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:38:59,772] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:38:59,798] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.036 seconds
+[2023-04-30 14:38:59,895] {processor.py:153} INFO - Started process (PID=23807) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:38:59,896] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:38:59,897] {logging_mixin.py:115} INFO - [2023-04-30 14:38:59,897] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:38:59,899] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:38:59,920] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.031 seconds
+[2023-04-30 14:39:09,872] {processor.py:153} INFO - Started process (PID=23818) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:39:09,874] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:39:09,875] {logging_mixin.py:115} INFO - [2023-04-30 14:39:09,875] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:39:09,877] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:39:09,914] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.047 seconds
+[2023-04-30 14:39:09,947] {processor.py:153} INFO - Started process (PID=23820) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:39:09,950] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:39:09,952] {logging_mixin.py:115} INFO - [2023-04-30 14:39:09,952] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:39:09,954] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:39:09,976] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.035 seconds
+[2023-04-30 14:39:20,044] {processor.py:153} INFO - Started process (PID=23837) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:39:20,046] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:39:20,059] {logging_mixin.py:115} INFO - [2023-04-30 14:39:20,059] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:39:20,068] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:39:20,129] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.090 seconds
+[2023-04-30 14:39:20,200] {processor.py:153} INFO - Started process (PID=23839) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:39:20,205] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:39:20,207] {logging_mixin.py:115} INFO - [2023-04-30 14:39:20,207] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:39:20,212] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:39:20,252] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.062 seconds
+[2023-04-30 14:39:30,153] {processor.py:153} INFO - Started process (PID=23882) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:39:30,155] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:39:30,166] {logging_mixin.py:115} INFO - [2023-04-30 14:39:30,165] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:39:30,167] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:39:30,196] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.049 seconds
+[2023-04-30 14:39:30,241] {processor.py:153} INFO - Started process (PID=23884) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:39:30,242] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:39:30,243] {logging_mixin.py:115} INFO - [2023-04-30 14:39:30,243] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:39:30,245] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:39:30,268] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.033 seconds
+[2023-04-30 14:39:40,272] {processor.py:153} INFO - Started process (PID=23886) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:39:40,274] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:39:40,275] {logging_mixin.py:115} INFO - [2023-04-30 14:39:40,275] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:39:40,277] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:39:40,321] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.055 seconds
+[2023-04-30 14:39:40,360] {processor.py:153} INFO - Started process (PID=23893) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:39:40,362] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:39:40,363] {logging_mixin.py:115} INFO - [2023-04-30 14:39:40,363] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:39:40,364] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:39:40,388] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.034 seconds
+[2023-04-30 14:39:50,432] {processor.py:153} INFO - Started process (PID=23903) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:39:50,433] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:39:50,435] {logging_mixin.py:115} INFO - [2023-04-30 14:39:50,435] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:39:50,437] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:39:50,459] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.033 seconds
+[2023-04-30 14:39:50,491] {processor.py:153} INFO - Started process (PID=23905) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:39:50,492] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:39:50,493] {logging_mixin.py:115} INFO - [2023-04-30 14:39:50,493] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:39:50,494] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:39:50,513] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.026 seconds
+[2023-04-30 14:40:01,476] {processor.py:153} INFO - Started process (PID=23920) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:40:01,477] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:40:01,478] {logging_mixin.py:115} INFO - [2023-04-30 14:40:01,478] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:40:01,480] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:40:01,506] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.037 seconds
+[2023-04-30 14:40:10,639] {processor.py:153} INFO - Started process (PID=23960) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:40:10,640] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:40:10,641] {logging_mixin.py:115} INFO - [2023-04-30 14:40:10,641] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:40:10,642] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:40:10,656] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.022 seconds
+[2023-04-30 14:40:10,692] {processor.py:153} INFO - Started process (PID=23961) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:40:10,693] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:40:10,694] {logging_mixin.py:115} INFO - [2023-04-30 14:40:10,694] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:40:10,696] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:40:10,715] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.028 seconds
+[2023-04-30 14:40:20,737] {processor.py:153} INFO - Started process (PID=23979) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:40:20,738] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:40:20,739] {logging_mixin.py:115} INFO - [2023-04-30 14:40:20,739] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:40:20,740] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:40:20,758] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.026 seconds
+[2023-04-30 14:40:20,856] {processor.py:153} INFO - Started process (PID=23981) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:40:20,857] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:40:20,859] {logging_mixin.py:115} INFO - [2023-04-30 14:40:20,859] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:40:20,861] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:40:20,881] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.030 seconds
+[2023-04-30 14:40:30,925] {processor.py:153} INFO - Started process (PID=23992) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:40:30,926] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:40:30,927] {logging_mixin.py:115} INFO - [2023-04-30 14:40:30,927] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:40:30,929] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:40:30,957] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.039 seconds
+[2023-04-30 14:40:31,002] {processor.py:153} INFO - Started process (PID=23994) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:40:31,003] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:40:31,005] {logging_mixin.py:115} INFO - [2023-04-30 14:40:31,005] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:40:31,007] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:40:31,035] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.040 seconds
+[2023-04-30 14:40:41,095] {processor.py:153} INFO - Started process (PID=24027) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:40:41,096] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:40:41,097] {logging_mixin.py:115} INFO - [2023-04-30 14:40:41,097] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:40:41,104] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:40:41,130] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.039 seconds
+[2023-04-30 14:40:51,117] {processor.py:153} INFO - Started process (PID=24045) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:40:51,120] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:40:51,122] {logging_mixin.py:115} INFO - [2023-04-30 14:40:51,122] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:40:51,126] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:40:51,183] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.073 seconds
+[2023-04-30 14:40:51,232] {processor.py:153} INFO - Started process (PID=24047) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:40:51,234] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:40:51,239] {logging_mixin.py:115} INFO - [2023-04-30 14:40:51,235] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:40:51,244] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:40:51,277] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.052 seconds
+[2023-04-30 14:41:01,149] {processor.py:153} INFO - Started process (PID=24059) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:41:01,150] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:41:01,152] {logging_mixin.py:115} INFO - [2023-04-30 14:41:01,151] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:41:01,153] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:41:01,181] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.038 seconds
+[2023-04-30 14:41:01,277] {processor.py:153} INFO - Started process (PID=24061) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:41:01,278] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:41:01,280] {logging_mixin.py:115} INFO - [2023-04-30 14:41:01,279] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:41:01,281] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:41:01,307] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.036 seconds
+[2023-04-30 14:41:11,604] {processor.py:153} INFO - Started process (PID=24076) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:41:11,606] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:41:11,607] {logging_mixin.py:115} INFO - [2023-04-30 14:41:11,607] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:41:11,609] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:41:11,643] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.045 seconds
+[2023-04-30 14:41:21,378] {processor.py:153} INFO - Started process (PID=24121) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:41:21,379] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:41:21,381] {logging_mixin.py:115} INFO - [2023-04-30 14:41:21,380] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:41:21,382] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:41:21,403] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.031 seconds
+[2023-04-30 14:41:21,437] {processor.py:153} INFO - Started process (PID=24122) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:41:21,438] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:41:21,439] {logging_mixin.py:115} INFO - [2023-04-30 14:41:21,439] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:41:21,440] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:41:21,468] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.037 seconds
+[2023-04-30 14:41:31,535] {processor.py:153} INFO - Started process (PID=24134) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:41:31,536] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:41:31,538] {logging_mixin.py:115} INFO - [2023-04-30 14:41:31,538] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:41:31,539] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:41:31,567] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.038 seconds
+[2023-04-30 14:41:31,615] {processor.py:153} INFO - Started process (PID=24136) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:41:31,616] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:41:31,620] {logging_mixin.py:115} INFO - [2023-04-30 14:41:31,620] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:41:31,622] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:41:31,646] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.039 seconds
+[2023-04-30 14:41:41,639] {processor.py:153} INFO - Started process (PID=24138) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:41:41,640] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:41:41,641] {logging_mixin.py:115} INFO - [2023-04-30 14:41:41,641] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:41:41,643] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:41:41,659] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.025 seconds
+[2023-04-30 14:41:41,692] {processor.py:153} INFO - Started process (PID=24139) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:41:41,693] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:41:41,694] {logging_mixin.py:115} INFO - [2023-04-30 14:41:41,694] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:41:41,695] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:41:41,714] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.027 seconds
+[2023-04-30 14:41:51,767] {processor.py:153} INFO - Started process (PID=24187) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:41:51,768] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:41:51,769] {logging_mixin.py:115} INFO - [2023-04-30 14:41:51,769] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:41:51,770] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:41:51,793] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.032 seconds
+[2023-04-30 14:41:51,837] {processor.py:153} INFO - Started process (PID=24189) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:41:51,838] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:41:51,840] {logging_mixin.py:115} INFO - [2023-04-30 14:41:51,840] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:41:51,842] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:41:51,866] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.035 seconds
+[2023-04-30 14:42:01,876] {processor.py:153} INFO - Started process (PID=24200) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:42:01,877] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:42:01,878] {logging_mixin.py:115} INFO - [2023-04-30 14:42:01,878] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:42:01,879] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:42:01,901] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.030 seconds
+[2023-04-30 14:42:01,997] {processor.py:153} INFO - Started process (PID=24202) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:42:01,999] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:42:02,000] {logging_mixin.py:115} INFO - [2023-04-30 14:42:02,000] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:42:02,002] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:42:02,023] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.030 seconds
+[2023-04-30 14:42:12,048] {processor.py:153} INFO - Started process (PID=24213) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:42:12,050] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:42:12,052] {logging_mixin.py:115} INFO - [2023-04-30 14:42:12,052] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:42:12,054] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:42:12,083] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.043 seconds
+[2023-04-30 14:42:12,204] {processor.py:153} INFO - Started process (PID=24215) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:42:12,206] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:42:12,207] {logging_mixin.py:115} INFO - [2023-04-30 14:42:12,207] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:42:12,209] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:42:12,237] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.040 seconds
+[2023-04-30 14:42:22,356] {processor.py:153} INFO - Started process (PID=24255) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:42:22,357] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:42:22,359] {logging_mixin.py:115} INFO - [2023-04-30 14:42:22,359] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:42:22,361] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:42:22,393] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.051 seconds
+[2023-04-30 14:42:32,296] {processor.py:153} INFO - Started process (PID=24266) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:42:32,297] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:42:32,298] {logging_mixin.py:115} INFO - [2023-04-30 14:42:32,298] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:42:32,299] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:42:32,320] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.028 seconds
+[2023-04-30 14:42:32,442] {processor.py:153} INFO - Started process (PID=24274) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:42:32,443] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:42:32,444] {logging_mixin.py:115} INFO - [2023-04-30 14:42:32,444] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:42:32,446] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:42:32,468] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.032 seconds
+[2023-04-30 14:42:42,388] {processor.py:153} INFO - Started process (PID=24279) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:42:42,389] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:42:42,390] {logging_mixin.py:115} INFO - [2023-04-30 14:42:42,390] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:42:42,391] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:42:42,410] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.026 seconds
+[2023-04-30 14:42:42,494] {processor.py:153} INFO - Started process (PID=24281) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:42:42,495] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:42:42,496] {logging_mixin.py:115} INFO - [2023-04-30 14:42:42,496] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:42:42,498] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:42:42,518] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.029 seconds
+[2023-04-30 14:42:52,586] {processor.py:153} INFO - Started process (PID=24302) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:42:52,587] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:42:52,589] {logging_mixin.py:115} INFO - [2023-04-30 14:42:52,588] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:42:52,590] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:42:52,612] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.032 seconds
+[2023-04-30 14:43:02,593] {processor.py:153} INFO - Started process (PID=24342) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:43:02,597] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:43:02,598] {logging_mixin.py:115} INFO - [2023-04-30 14:43:02,598] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:43:02,599] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:43:02,636] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.052 seconds
+[2023-04-30 14:43:02,679] {processor.py:153} INFO - Started process (PID=24344) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:43:02,680] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:43:02,682] {logging_mixin.py:115} INFO - [2023-04-30 14:43:02,681] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:43:02,683] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:43:02,705] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.032 seconds
+[2023-04-30 14:43:12,694] {processor.py:153} INFO - Started process (PID=24355) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:43:12,696] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:43:12,697] {logging_mixin.py:115} INFO - [2023-04-30 14:43:12,696] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:43:12,698] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:43:12,719] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.030 seconds
+[2023-04-30 14:43:12,815] {processor.py:153} INFO - Started process (PID=24357) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:43:12,816] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:43:12,818] {logging_mixin.py:115} INFO - [2023-04-30 14:43:12,818] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:43:12,819] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:43:12,839] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.029 seconds
+[2023-04-30 14:43:22,849] {processor.py:153} INFO - Started process (PID=24372) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:43:22,851] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:43:22,852] {logging_mixin.py:115} INFO - [2023-04-30 14:43:22,852] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:43:22,862] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:43:22,902] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.069 seconds
+[2023-04-30 14:43:22,973] {processor.py:153} INFO - Started process (PID=24374) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:43:22,982] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:43:22,986] {logging_mixin.py:115} INFO - [2023-04-30 14:43:22,985] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:43:22,989] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:43:23,026] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.061 seconds
+[2023-04-30 14:43:32,914] {processor.py:153} INFO - Started process (PID=24410) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:43:32,915] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:43:32,916] {logging_mixin.py:115} INFO - [2023-04-30 14:43:32,916] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:43:32,917] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:43:32,937] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.029 seconds
+[2023-04-30 14:43:33,030] {processor.py:153} INFO - Started process (PID=24412) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:43:33,031] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:43:33,032] {logging_mixin.py:115} INFO - [2023-04-30 14:43:33,032] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:43:33,033] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:43:33,055] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.031 seconds
+[2023-04-30 14:43:43,040] {processor.py:153} INFO - Started process (PID=24423) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:43:43,041] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:43:43,042] {logging_mixin.py:115} INFO - [2023-04-30 14:43:43,042] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:43:43,044] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:43:43,064] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.030 seconds
+[2023-04-30 14:43:43,099] {processor.py:153} INFO - Started process (PID=24425) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:43:43,100] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:43:43,102] {logging_mixin.py:115} INFO - [2023-04-30 14:43:43,102] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:43:43,104] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:43:43,130] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.037 seconds
+[2023-04-30 14:43:53,146] {processor.py:153} INFO - Started process (PID=24441) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:43:53,147] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:43:53,149] {logging_mixin.py:115} INFO - [2023-04-30 14:43:53,148] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:43:53,150] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:43:53,172] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.032 seconds
+[2023-04-30 14:43:53,300] {processor.py:153} INFO - Started process (PID=24443) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:43:53,302] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:43:53,303] {logging_mixin.py:115} INFO - [2023-04-30 14:43:53,303] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:43:53,304] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:43:53,328] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.034 seconds
+[2023-04-30 14:44:03,431] {processor.py:153} INFO - Started process (PID=24475) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:44:03,432] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:44:03,434] {logging_mixin.py:115} INFO - [2023-04-30 14:44:03,433] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:44:03,436] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:44:03,461] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.043 seconds
+[2023-04-30 14:44:13,395] {processor.py:153} INFO - Started process (PID=24500) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:44:13,396] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:44:13,398] {logging_mixin.py:115} INFO - [2023-04-30 14:44:13,398] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:44:13,399] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:44:13,425] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.035 seconds
+[2023-04-30 14:44:13,460] {processor.py:153} INFO - Started process (PID=24502) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:44:13,461] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:44:13,463] {logging_mixin.py:115} INFO - [2023-04-30 14:44:13,463] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:44:13,464] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:44:13,530] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.075 seconds
+[2023-04-30 14:44:23,495] {processor.py:153} INFO - Started process (PID=24517) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:44:23,496] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:44:23,497] {logging_mixin.py:115} INFO - [2023-04-30 14:44:23,497] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:44:23,498] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:44:23,515] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.024 seconds
+[2023-04-30 14:44:23,610] {processor.py:153} INFO - Started process (PID=24519) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:44:23,611] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:44:23,612] {logging_mixin.py:115} INFO - [2023-04-30 14:44:23,612] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:44:23,614] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:44:23,634] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.029 seconds
+[2023-04-30 14:44:35,392] {processor.py:153} INFO - Started process (PID=24543) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:44:35,394] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:44:35,395] {logging_mixin.py:115} INFO - [2023-04-30 14:44:35,395] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:44:35,397] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:44:35,417] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.031 seconds
+[2023-04-30 14:44:43,727] {processor.py:153} INFO - Started process (PID=24565) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:44:43,728] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:44:43,729] {logging_mixin.py:115} INFO - [2023-04-30 14:44:43,729] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:44:43,730] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:44:43,750] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.028 seconds
+[2023-04-30 14:44:43,853] {processor.py:153} INFO - Started process (PID=24567) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:44:43,854] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:44:43,856] {logging_mixin.py:115} INFO - [2023-04-30 14:44:43,856] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:44:43,857] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:44:43,877] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.030 seconds
+[2023-04-30 14:44:53,866] {processor.py:153} INFO - Started process (PID=24582) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:44:53,868] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:44:53,870] {logging_mixin.py:115} INFO - [2023-04-30 14:44:53,870] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:44:53,874] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:44:53,901] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.043 seconds
+[2023-04-30 14:44:53,946] {processor.py:153} INFO - Started process (PID=24584) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:44:53,947] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:44:53,949] {logging_mixin.py:115} INFO - [2023-04-30 14:44:53,949] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:44:53,950] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:44:53,989] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.049 seconds
+[2023-04-30 14:45:03,995] {processor.py:153} INFO - Started process (PID=24606) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:45:03,996] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:45:03,998] {logging_mixin.py:115} INFO - [2023-04-30 14:45:03,998] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:45:03,999] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:45:04,031] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.043 seconds
+[2023-04-30 14:45:04,149] {processor.py:153} INFO - Started process (PID=24608) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:45:04,151] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:45:04,152] {logging_mixin.py:115} INFO - [2023-04-30 14:45:04,152] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:45:04,154] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:45:04,181] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.039 seconds
+[2023-04-30 14:45:14,023] {processor.py:153} INFO - Started process (PID=24643) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:45:14,025] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:45:14,026] {logging_mixin.py:115} INFO - [2023-04-30 14:45:14,026] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:45:14,027] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:45:14,049] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.030 seconds
+[2023-04-30 14:45:14,141] {processor.py:153} INFO - Started process (PID=24645) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:45:14,142] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:45:14,143] {logging_mixin.py:115} INFO - [2023-04-30 14:45:14,143] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:45:14,145] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:45:14,166] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.030 seconds
+[2023-04-30 14:45:24,140] {processor.py:153} INFO - Started process (PID=24660) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:45:24,141] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:45:24,142] {logging_mixin.py:115} INFO - [2023-04-30 14:45:24,142] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:45:24,143] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:45:24,164] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.029 seconds
+[2023-04-30 14:45:24,264] {processor.py:153} INFO - Started process (PID=24662) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:45:24,265] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:45:24,266] {logging_mixin.py:115} INFO - [2023-04-30 14:45:24,266] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:45:24,268] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:45:24,288] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.030 seconds
+[2023-04-30 14:45:34,255] {processor.py:153} INFO - Started process (PID=24683) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:45:34,256] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:45:34,257] {logging_mixin.py:115} INFO - [2023-04-30 14:45:34,257] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:45:34,259] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:45:34,278] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.033 seconds
+[2023-04-30 14:45:34,331] {processor.py:153} INFO - Started process (PID=24685) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:45:34,332] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:45:34,334] {logging_mixin.py:115} INFO - [2023-04-30 14:45:34,333] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:45:34,335] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:45:34,359] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.037 seconds
+[2023-04-30 14:45:44,489] {processor.py:153} INFO - Started process (PID=24700) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:45:44,490] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:45:44,492] {logging_mixin.py:115} INFO - [2023-04-30 14:45:44,492] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:45:44,493] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:45:44,520] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.037 seconds
+[2023-04-30 14:45:54,536] {processor.py:153} INFO - Started process (PID=24726) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:45:54,538] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:45:54,539] {logging_mixin.py:115} INFO - [2023-04-30 14:45:54,539] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:45:54,541] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:45:54,558] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.028 seconds
+[2023-04-30 14:45:54,604] {processor.py:153} INFO - Started process (PID=24728) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:45:54,606] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:45:54,608] {logging_mixin.py:115} INFO - [2023-04-30 14:45:54,607] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:45:54,612] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:45:54,640] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.042 seconds
+[2023-04-30 14:46:04,700] {processor.py:153} INFO - Started process (PID=24749) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:46:04,702] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:46:04,703] {logging_mixin.py:115} INFO - [2023-04-30 14:46:04,703] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:46:04,706] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:46:04,731] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.039 seconds
+[2023-04-30 14:46:04,784] {processor.py:153} INFO - Started process (PID=24751) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:46:04,785] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:46:04,787] {logging_mixin.py:115} INFO - [2023-04-30 14:46:04,787] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:46:04,788] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:46:04,819] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.046 seconds
+[2023-04-30 14:46:19,443] {processor.py:153} INFO - Started process (PID=24772) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:46:19,445] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:46:19,448] {logging_mixin.py:115} INFO - [2023-04-30 14:46:19,447] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:46:19,450] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:46:19,484] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.050 seconds
+[2023-04-30 14:46:24,962] {processor.py:153} INFO - Started process (PID=24801) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:46:24,963] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:46:24,965] {logging_mixin.py:115} INFO - [2023-04-30 14:46:24,965] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:46:24,967] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:46:25,001] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.046 seconds
+[2023-04-30 14:46:25,047] {processor.py:153} INFO - Started process (PID=24803) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:46:25,049] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:46:25,050] {logging_mixin.py:115} INFO - [2023-04-30 14:46:25,050] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:46:25,052] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:46:25,083] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.044 seconds
+[2023-04-30 14:46:34,996] {processor.py:153} INFO - Started process (PID=24822) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:46:34,998] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:46:35,000] {logging_mixin.py:115} INFO - [2023-04-30 14:46:34,999] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:46:35,006] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:46:35,033] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.044 seconds
+[2023-04-30 14:46:35,085] {processor.py:153} INFO - Started process (PID=24823) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:46:35,087] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:46:35,089] {logging_mixin.py:115} INFO - [2023-04-30 14:46:35,088] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:46:35,090] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:46:35,110] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.032 seconds
+[2023-04-30 14:46:45,094] {processor.py:153} INFO - Started process (PID=24832) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:46:45,095] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:46:45,096] {logging_mixin.py:115} INFO - [2023-04-30 14:46:45,096] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:46:45,097] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:46:45,120] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.031 seconds
+[2023-04-30 14:46:45,213] {processor.py:153} INFO - Started process (PID=24834) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:46:45,214] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:46:45,216] {logging_mixin.py:115} INFO - [2023-04-30 14:46:45,216] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:46:45,217] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:46:45,238] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.030 seconds
+[2023-04-30 14:46:55,225] {processor.py:153} INFO - Started process (PID=24868) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:46:55,226] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:46:55,227] {logging_mixin.py:115} INFO - [2023-04-30 14:46:55,227] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:46:55,230] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:46:55,275] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.054 seconds
+[2023-04-30 14:46:55,323] {processor.py:153} INFO - Started process (PID=24870) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:46:55,327] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:46:55,330] {logging_mixin.py:115} INFO - [2023-04-30 14:46:55,329] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:46:55,331] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:46:55,353] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.038 seconds
+[2023-04-30 14:47:05,356] {processor.py:153} INFO - Started process (PID=24891) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:47:05,357] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:47:05,358] {logging_mixin.py:115} INFO - [2023-04-30 14:47:05,358] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:47:05,360] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:47:05,380] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.030 seconds
+[2023-04-30 14:47:15,390] {processor.py:153} INFO - Started process (PID=24908) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:47:15,391] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:47:15,392] {logging_mixin.py:115} INFO - [2023-04-30 14:47:15,392] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:47:15,393] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:47:15,419] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.033 seconds
+[2023-04-30 14:47:15,457] {processor.py:153} INFO - Started process (PID=24910) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:47:15,458] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:47:15,460] {logging_mixin.py:115} INFO - [2023-04-30 14:47:15,460] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:47:15,462] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:47:15,483] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.032 seconds
+[2023-04-30 14:47:26,497] {processor.py:153} INFO - Started process (PID=24929) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:47:26,499] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:47:26,500] {logging_mixin.py:115} INFO - [2023-04-30 14:47:26,500] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:47:26,502] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:47:26,527] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.036 seconds
+[2023-04-30 14:47:35,774] {processor.py:153} INFO - Started process (PID=24954) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:47:35,775] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:47:35,776] {logging_mixin.py:115} INFO - [2023-04-30 14:47:35,776] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:47:35,777] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:47:35,797] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.027 seconds
+[2023-04-30 14:47:35,904] {processor.py:153} INFO - Started process (PID=24956) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:47:35,905] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:47:35,906] {logging_mixin.py:115} INFO - [2023-04-30 14:47:35,906] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:47:35,908] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:47:35,927] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.029 seconds
+[2023-04-30 14:47:45,869] {processor.py:153} INFO - Started process (PID=24974) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:47:45,870] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:47:45,871] {logging_mixin.py:115} INFO - [2023-04-30 14:47:45,871] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:47:45,873] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:47:45,892] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.027 seconds
+[2023-04-30 14:47:45,984] {processor.py:153} INFO - Started process (PID=24976) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:47:45,986] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:47:45,987] {logging_mixin.py:115} INFO - [2023-04-30 14:47:45,987] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:47:45,988] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:47:46,009] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.029 seconds
+[2023-04-30 14:47:55,976] {processor.py:153} INFO - Started process (PID=24991) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:47:55,977] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:47:55,978] {logging_mixin.py:115} INFO - [2023-04-30 14:47:55,978] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:47:55,979] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:47:56,000] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.030 seconds
+[2023-04-30 14:47:56,096] {processor.py:153} INFO - Started process (PID=24993) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:47:56,097] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:47:56,099] {logging_mixin.py:115} INFO - [2023-04-30 14:47:56,098] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:47:56,101] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:47:56,121] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.030 seconds
+[2023-04-30 14:48:06,073] {processor.py:153} INFO - Started process (PID=25031) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:48:06,076] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:48:06,077] {logging_mixin.py:115} INFO - [2023-04-30 14:48:06,077] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:48:06,079] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:48:06,100] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.033 seconds
+[2023-04-30 14:48:06,138] {processor.py:153} INFO - Started process (PID=25033) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:48:06,140] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:48:06,141] {logging_mixin.py:115} INFO - [2023-04-30 14:48:06,141] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:48:06,143] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:48:06,172] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.043 seconds
+[2023-04-30 14:48:16,170] {processor.py:153} INFO - Started process (PID=25051) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:48:16,170] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:48:16,171] {logging_mixin.py:115} INFO - [2023-04-30 14:48:16,171] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:48:16,173] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:48:16,191] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.027 seconds
+[2023-04-30 14:48:16,280] {processor.py:153} INFO - Started process (PID=25053) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:48:16,281] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:48:16,282] {logging_mixin.py:115} INFO - [2023-04-30 14:48:16,282] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:48:16,283] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:48:16,301] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.027 seconds
+[2023-04-30 14:48:26,296] {processor.py:153} INFO - Started process (PID=25067) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:48:26,305] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:48:26,306] {logging_mixin.py:115} INFO - [2023-04-30 14:48:26,306] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:48:26,308] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:48:26,341] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.050 seconds
+[2023-04-30 14:48:26,391] {processor.py:153} INFO - Started process (PID=25070) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:48:26,392] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:48:26,393] {logging_mixin.py:115} INFO - [2023-04-30 14:48:26,393] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:48:26,395] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:48:26,426] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.041 seconds
+[2023-04-30 14:48:36,391] {processor.py:153} INFO - Started process (PID=25099) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:48:36,392] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:48:36,393] {logging_mixin.py:115} INFO - [2023-04-30 14:48:36,393] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:48:36,395] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:48:36,421] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.036 seconds
+[2023-04-30 14:48:36,454] {processor.py:153} INFO - Started process (PID=25101) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:48:36,455] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:48:36,457] {logging_mixin.py:115} INFO - [2023-04-30 14:48:36,456] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:48:36,458] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:48:36,478] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.029 seconds
+[2023-04-30 14:48:46,505] {processor.py:153} INFO - Started process (PID=25119) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:48:46,506] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:48:46,507] {logging_mixin.py:115} INFO - [2023-04-30 14:48:46,507] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:48:46,508] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:48:46,536] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.037 seconds
+[2023-04-30 14:48:46,651] {processor.py:153} INFO - Started process (PID=25121) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:48:46,653] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:48:46,654] {logging_mixin.py:115} INFO - [2023-04-30 14:48:46,654] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:48:46,656] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:48:46,681] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.036 seconds
+[2023-04-30 14:48:56,583] {processor.py:153} INFO - Started process (PID=25137) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:48:56,584] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:48:56,585] {logging_mixin.py:115} INFO - [2023-04-30 14:48:56,584] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:48:56,586] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:48:56,605] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.027 seconds
+[2023-04-30 14:48:56,689] {processor.py:153} INFO - Started process (PID=25139) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:48:56,690] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:48:56,692] {logging_mixin.py:115} INFO - [2023-04-30 14:48:56,692] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:48:56,693] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:48:56,713] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.031 seconds
+[2023-04-30 14:49:07,641] {processor.py:153} INFO - Started process (PID=25157) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:49:07,643] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:49:07,645] {logging_mixin.py:115} INFO - [2023-04-30 14:49:07,644] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:49:07,647] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:49:07,674] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.040 seconds
+[2023-04-30 14:49:16,906] {processor.py:153} INFO - Started process (PID=25195) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:49:16,907] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:49:16,909] {logging_mixin.py:115} INFO - [2023-04-30 14:49:16,908] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:49:16,910] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:49:16,930] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.030 seconds
+[2023-04-30 14:49:17,024] {processor.py:153} INFO - Started process (PID=25197) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:49:17,025] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:49:17,026] {logging_mixin.py:115} INFO - [2023-04-30 14:49:17,026] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:49:17,028] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:49:17,047] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.029 seconds
+[2023-04-30 14:49:27,060] {processor.py:153} INFO - Started process (PID=25213) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:49:27,062] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:49:27,063] {logging_mixin.py:115} INFO - [2023-04-30 14:49:27,063] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:49:27,065] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:49:27,090] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.040 seconds
+[2023-04-30 14:49:27,137] {processor.py:153} INFO - Started process (PID=25215) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:49:27,139] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:49:27,141] {logging_mixin.py:115} INFO - [2023-04-30 14:49:27,141] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:49:27,143] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:49:27,169] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.037 seconds
+[2023-04-30 14:49:37,091] {processor.py:153} INFO - Started process (PID=25220) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:49:37,092] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:49:37,093] {logging_mixin.py:115} INFO - [2023-04-30 14:49:37,093] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:49:37,094] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:49:37,113] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.026 seconds
+[2023-04-30 14:49:37,200] {processor.py:153} INFO - Started process (PID=25222) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:49:37,201] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:49:37,202] {logging_mixin.py:115} INFO - [2023-04-30 14:49:37,202] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:49:37,204] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:49:37,228] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.033 seconds
+[2023-04-30 14:49:47,196] {processor.py:153} INFO - Started process (PID=25264) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:49:47,197] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:49:47,198] {logging_mixin.py:115} INFO - [2023-04-30 14:49:47,198] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:49:47,200] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:49:47,218] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.027 seconds
+[2023-04-30 14:49:47,310] {processor.py:153} INFO - Started process (PID=25266) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:49:47,311] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:49:47,312] {logging_mixin.py:115} INFO - [2023-04-30 14:49:47,312] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:49:47,314] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:49:47,334] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.029 seconds
+[2023-04-30 14:49:57,283] {processor.py:153} INFO - Started process (PID=25281) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:49:57,284] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:49:57,285] {logging_mixin.py:115} INFO - [2023-04-30 14:49:57,285] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:49:57,286] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:49:57,304] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.025 seconds
+[2023-04-30 14:49:57,348] {processor.py:153} INFO - Started process (PID=25282) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:49:57,349] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:49:57,350] {logging_mixin.py:115} INFO - [2023-04-30 14:49:57,350] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:49:57,351] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:49:57,371] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.029 seconds
+[2023-04-30 14:50:07,402] {processor.py:153} INFO - Started process (PID=25296) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:50:07,403] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:50:07,405] {logging_mixin.py:115} INFO - [2023-04-30 14:50:07,404] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:50:07,406] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:50:07,432] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.036 seconds
+[2023-04-30 14:50:07,473] {processor.py:153} INFO - Started process (PID=25297) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:50:07,476] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:50:07,477] {logging_mixin.py:115} INFO - [2023-04-30 14:50:07,477] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:50:07,498] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:50:07,531] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.063 seconds
+[2023-04-30 14:50:17,505] {processor.py:153} INFO - Started process (PID=25339) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:50:17,506] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:50:17,507] {logging_mixin.py:115} INFO - [2023-04-30 14:50:17,507] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:50:17,509] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:50:17,527] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.027 seconds
+[2023-04-30 14:50:17,559] {processor.py:153} INFO - Started process (PID=25340) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:50:17,560] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:50:17,562] {logging_mixin.py:115} INFO - [2023-04-30 14:50:17,562] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:50:17,563] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:50:17,582] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.029 seconds
+[2023-04-30 14:50:27,606] {processor.py:153} INFO - Started process (PID=25355) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:50:27,607] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:50:27,609] {logging_mixin.py:115} INFO - [2023-04-30 14:50:27,609] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:50:27,610] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:50:27,631] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.032 seconds
+[2023-04-30 14:50:27,741] {processor.py:153} INFO - Started process (PID=25357) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:50:27,742] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:50:27,743] {logging_mixin.py:115} INFO - [2023-04-30 14:50:27,743] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:50:27,745] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:50:27,768] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.034 seconds
+[2023-04-30 14:50:37,736] {processor.py:153} INFO - Started process (PID=25362) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:50:37,738] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:50:37,739] {logging_mixin.py:115} INFO - [2023-04-30 14:50:37,739] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:50:37,741] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:50:37,769] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.041 seconds
+[2023-04-30 14:50:37,837] {processor.py:153} INFO - Started process (PID=25363) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:50:37,838] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:50:37,841] {logging_mixin.py:115} INFO - [2023-04-30 14:50:37,840] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:50:37,843] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:50:37,877] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.048 seconds
+[2023-04-30 14:50:48,764] {processor.py:153} INFO - Started process (PID=25387) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:50:48,766] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:50:48,767] {logging_mixin.py:115} INFO - [2023-04-30 14:50:48,767] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:50:48,769] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:50:48,799] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.043 seconds
+[2023-04-30 14:50:57,984] {processor.py:153} INFO - Started process (PID=25420) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:50:57,985] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:50:57,988] {logging_mixin.py:115} INFO - [2023-04-30 14:50:57,988] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:50:57,993] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:50:58,010] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.039 seconds
+[2023-04-30 14:50:58,047] {processor.py:153} INFO - Started process (PID=25422) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:50:58,048] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:50:58,050] {logging_mixin.py:115} INFO - [2023-04-30 14:50:58,049] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:50:58,052] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:50:58,082] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.041 seconds
+[2023-04-30 14:51:08,094] {processor.py:153} INFO - Started process (PID=25437) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:51:08,095] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:51:08,097] {logging_mixin.py:115} INFO - [2023-04-30 14:51:08,096] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:51:08,098] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:51:08,117] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.029 seconds
+[2023-04-30 14:51:08,148] {processor.py:153} INFO - Started process (PID=25439) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:51:08,149] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:51:08,150] {logging_mixin.py:115} INFO - [2023-04-30 14:51:08,150] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:51:08,152] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:51:08,173] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.030 seconds
+[2023-04-30 14:51:18,199] {processor.py:153} INFO - Started process (PID=25459) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:51:18,200] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:51:18,201] {logging_mixin.py:115} INFO - [2023-04-30 14:51:18,201] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:51:18,202] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:51:18,219] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.025 seconds
+[2023-04-30 14:51:18,251] {processor.py:153} INFO - Started process (PID=25460) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:51:18,252] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:51:18,253] {logging_mixin.py:115} INFO - [2023-04-30 14:51:18,253] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:51:18,255] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:51:18,274] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.027 seconds
+[2023-04-30 14:51:28,312] {processor.py:153} INFO - Started process (PID=25498) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:51:28,313] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:51:28,315] {logging_mixin.py:115} INFO - [2023-04-30 14:51:28,314] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:51:28,316] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:51:28,336] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.028 seconds
+[2023-04-30 14:51:28,417] {processor.py:153} INFO - Started process (PID=25500) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:51:28,419] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:51:28,420] {logging_mixin.py:115} INFO - [2023-04-30 14:51:28,420] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:51:28,421] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:51:28,440] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.027 seconds
+[2023-04-30 14:51:38,410] {processor.py:153} INFO - Started process (PID=25512) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:51:38,411] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:51:38,413] {logging_mixin.py:115} INFO - [2023-04-30 14:51:38,412] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:51:38,415] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:51:38,435] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.030 seconds
+[2023-04-30 14:51:38,526] {processor.py:153} INFO - Started process (PID=25514) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:51:38,527] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:51:38,528] {logging_mixin.py:115} INFO - [2023-04-30 14:51:38,528] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:51:38,529] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:51:38,551] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.029 seconds
+[2023-04-30 14:51:48,558] {processor.py:153} INFO - Started process (PID=25527) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:51:48,560] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:51:48,562] {logging_mixin.py:115} INFO - [2023-04-30 14:51:48,561] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:51:48,564] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:51:48,596] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.044 seconds
+[2023-04-30 14:51:48,666] {processor.py:153} INFO - Started process (PID=25529) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:51:48,669] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:51:48,675] {logging_mixin.py:115} INFO - [2023-04-30 14:51:48,674] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:51:48,677] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:51:48,706] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.052 seconds
+[2023-04-30 14:51:58,901] {processor.py:153} INFO - Started process (PID=25553) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:51:58,903] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:51:58,909] {logging_mixin.py:115} INFO - [2023-04-30 14:51:58,908] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:51:58,912] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:51:58,959] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.073 seconds
+[2023-04-30 14:52:09,026] {processor.py:153} INFO - Started process (PID=25582) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:52:09,028] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:52:09,031] {logging_mixin.py:115} INFO - [2023-04-30 14:52:09,031] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:52:09,033] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:52:09,061] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.043 seconds
+[2023-04-30 14:52:09,111] {processor.py:153} INFO - Started process (PID=25584) to work on /opt/airflow/dags/defese.py
+[2023-04-30 14:52:09,112] {processor.py:641} INFO - Processing file /opt/airflow/dags/defese.py for tasks to queue
+[2023-04-30 14:52:09,114] {logging_mixin.py:115} INFO - [2023-04-30 14:52:09,114] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/defese.py
+[2023-04-30 14:52:09,117] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/defese.py
+[2023-04-30 14:52:09,152] {processor.py:161} INFO - Processing /opt/airflow/dags/defese.py took 0.048 seconds

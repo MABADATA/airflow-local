@@ -4769,3 +4769,291 @@ ModuleNotFoundError: No module named 'helpers'
 [2023-04-30 14:31:25,732] {logging_mixin.py:115} INFO - [2023-04-30 14:31:25,731] {dag.py:2371} INFO - Sync 1 DAGs
 [2023-04-30 14:31:25,769] {logging_mixin.py:115} INFO - [2023-04-30 14:31:25,769] {dag.py:2919} INFO - Setting next_dagrun for multi_attack_dag to 2023-04-30T00:00:00+00:00, run_after=2023-05-01T00:00:00+00:00
 [2023-04-30 14:31:25,812] {processor.py:161} INFO - Processing /opt/airflow/dags/attack_dag.py took 3.531 seconds
+[2023-04-30 14:31:56,800] {processor.py:153} INFO - Started process (PID=22850) to work on /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:31:56,801] {processor.py:641} INFO - Processing file /opt/airflow/dags/attack_dag.py for tasks to queue
+[2023-04-30 14:31:56,802] {logging_mixin.py:115} INFO - [2023-04-30 14:31:56,802] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:31:59,523] {logging_mixin.py:115} INFO - [2023-04-30 14:31:59,523] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-30 14:32:04,060] {processor.py:651} INFO - DAG(s) dict_keys(['multi_attack_dag']) retrieved from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:32:04,112] {logging_mixin.py:115} INFO - [2023-04-30 14:32:04,111] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-30 14:32:04,149] {logging_mixin.py:115} INFO - [2023-04-30 14:32:04,149] {dag.py:2919} INFO - Setting next_dagrun for multi_attack_dag to 2023-04-30T00:00:00+00:00, run_after=2023-05-01T00:00:00+00:00
+[2023-04-30 14:32:04,171] {processor.py:161} INFO - Processing /opt/airflow/dags/attack_dag.py took 7.377 seconds
+[2023-04-30 14:32:34,525] {processor.py:153} INFO - Started process (PID=22927) to work on /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:32:34,526] {processor.py:641} INFO - Processing file /opt/airflow/dags/attack_dag.py for tasks to queue
+[2023-04-30 14:32:34,527] {logging_mixin.py:115} INFO - [2023-04-30 14:32:34,527] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:32:36,392] {logging_mixin.py:115} INFO - [2023-04-30 14:32:36,391] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-30 14:32:38,588] {processor.py:651} INFO - DAG(s) dict_keys(['multi_attack_dag']) retrieved from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:32:38,632] {logging_mixin.py:115} INFO - [2023-04-30 14:32:38,631] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-30 14:32:38,663] {logging_mixin.py:115} INFO - [2023-04-30 14:32:38,663] {dag.py:2919} INFO - Setting next_dagrun for multi_attack_dag to 2023-04-30T00:00:00+00:00, run_after=2023-05-01T00:00:00+00:00
+[2023-04-30 14:32:38,683] {processor.py:161} INFO - Processing /opt/airflow/dags/attack_dag.py took 4.162 seconds
+[2023-04-30 14:33:09,580] {processor.py:153} INFO - Started process (PID=23010) to work on /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:33:09,582] {processor.py:641} INFO - Processing file /opt/airflow/dags/attack_dag.py for tasks to queue
+[2023-04-30 14:33:09,583] {logging_mixin.py:115} INFO - [2023-04-30 14:33:09,583] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:33:10,855] {logging_mixin.py:115} INFO - [2023-04-30 14:33:10,854] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-30 14:33:12,702] {processor.py:651} INFO - DAG(s) dict_keys(['multi_attack_dag']) retrieved from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:33:12,743] {logging_mixin.py:115} INFO - [2023-04-30 14:33:12,742] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-30 14:33:12,777] {logging_mixin.py:115} INFO - [2023-04-30 14:33:12,777] {dag.py:2919} INFO - Setting next_dagrun for multi_attack_dag to 2023-04-30T00:00:00+00:00, run_after=2023-05-01T00:00:00+00:00
+[2023-04-30 14:33:12,803] {processor.py:161} INFO - Processing /opt/airflow/dags/attack_dag.py took 3.229 seconds
+[2023-04-30 14:33:42,907] {processor.py:153} INFO - Started process (PID=23086) to work on /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:33:42,910] {processor.py:641} INFO - Processing file /opt/airflow/dags/attack_dag.py for tasks to queue
+[2023-04-30 14:33:42,912] {logging_mixin.py:115} INFO - [2023-04-30 14:33:42,912] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:33:44,796] {logging_mixin.py:115} INFO - [2023-04-30 14:33:44,796] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-30 14:33:46,552] {processor.py:651} INFO - DAG(s) dict_keys(['multi_attack_dag']) retrieved from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:33:46,605] {logging_mixin.py:115} INFO - [2023-04-30 14:33:46,604] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-30 14:33:46,649] {logging_mixin.py:115} INFO - [2023-04-30 14:33:46,649] {dag.py:2919} INFO - Setting next_dagrun for multi_attack_dag to 2023-04-30T00:00:00+00:00, run_after=2023-05-01T00:00:00+00:00
+[2023-04-30 14:33:46,675] {processor.py:161} INFO - Processing /opt/airflow/dags/attack_dag.py took 3.784 seconds
+[2023-04-30 14:34:17,308] {processor.py:153} INFO - Started process (PID=23155) to work on /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:34:17,309] {processor.py:641} INFO - Processing file /opt/airflow/dags/attack_dag.py for tasks to queue
+[2023-04-30 14:34:17,310] {logging_mixin.py:115} INFO - [2023-04-30 14:34:17,310] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:34:18,802] {logging_mixin.py:115} INFO - [2023-04-30 14:34:18,801] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-30 14:34:21,444] {processor.py:651} INFO - DAG(s) dict_keys(['multi_attack_dag']) retrieved from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:34:21,536] {logging_mixin.py:115} INFO - [2023-04-30 14:34:21,535] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-30 14:34:21,571] {logging_mixin.py:115} INFO - [2023-04-30 14:34:21,571] {dag.py:2919} INFO - Setting next_dagrun for multi_attack_dag to 2023-04-30T00:00:00+00:00, run_after=2023-05-01T00:00:00+00:00
+[2023-04-30 14:34:21,623] {processor.py:161} INFO - Processing /opt/airflow/dags/attack_dag.py took 4.320 seconds
+[2023-04-30 14:34:51,749] {processor.py:153} INFO - Started process (PID=23234) to work on /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:34:51,750] {processor.py:641} INFO - Processing file /opt/airflow/dags/attack_dag.py for tasks to queue
+[2023-04-30 14:34:51,751] {logging_mixin.py:115} INFO - [2023-04-30 14:34:51,751] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:34:53,386] {logging_mixin.py:115} INFO - [2023-04-30 14:34:53,385] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-30 14:34:55,696] {processor.py:651} INFO - DAG(s) dict_keys(['multi_attack_dag']) retrieved from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:34:55,767] {logging_mixin.py:115} INFO - [2023-04-30 14:34:55,767] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-30 14:34:55,806] {logging_mixin.py:115} INFO - [2023-04-30 14:34:55,806] {dag.py:2919} INFO - Setting next_dagrun for multi_attack_dag to 2023-04-30T00:00:00+00:00, run_after=2023-05-01T00:00:00+00:00
+[2023-04-30 14:34:55,843] {processor.py:161} INFO - Processing /opt/airflow/dags/attack_dag.py took 4.099 seconds
+[2023-04-30 14:35:26,191] {processor.py:153} INFO - Started process (PID=23309) to work on /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:35:26,194] {processor.py:641} INFO - Processing file /opt/airflow/dags/attack_dag.py for tasks to queue
+[2023-04-30 14:35:26,197] {logging_mixin.py:115} INFO - [2023-04-30 14:35:26,196] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:35:27,553] {logging_mixin.py:115} INFO - [2023-04-30 14:35:27,552] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-30 14:35:29,618] {processor.py:651} INFO - DAG(s) dict_keys(['multi_attack_dag']) retrieved from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:35:29,666] {logging_mixin.py:115} INFO - [2023-04-30 14:35:29,665] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-30 14:35:29,697] {logging_mixin.py:115} INFO - [2023-04-30 14:35:29,697] {dag.py:2919} INFO - Setting next_dagrun for multi_attack_dag to 2023-04-30T00:00:00+00:00, run_after=2023-05-01T00:00:00+00:00
+[2023-04-30 14:35:29,724] {processor.py:161} INFO - Processing /opt/airflow/dags/attack_dag.py took 3.539 seconds
+[2023-04-30 14:35:59,806] {processor.py:153} INFO - Started process (PID=23387) to work on /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:35:59,807] {processor.py:641} INFO - Processing file /opt/airflow/dags/attack_dag.py for tasks to queue
+[2023-04-30 14:35:59,809] {logging_mixin.py:115} INFO - [2023-04-30 14:35:59,808] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:36:01,305] {logging_mixin.py:115} INFO - [2023-04-30 14:36:01,304] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-30 14:36:03,097] {processor.py:651} INFO - DAG(s) dict_keys(['multi_attack_dag']) retrieved from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:36:03,139] {logging_mixin.py:115} INFO - [2023-04-30 14:36:03,139] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-30 14:36:03,183] {logging_mixin.py:115} INFO - [2023-04-30 14:36:03,183] {dag.py:2919} INFO - Setting next_dagrun for multi_attack_dag to 2023-04-30T00:00:00+00:00, run_after=2023-05-01T00:00:00+00:00
+[2023-04-30 14:36:03,216] {processor.py:161} INFO - Processing /opt/airflow/dags/attack_dag.py took 3.416 seconds
+[2023-04-30 14:36:34,018] {processor.py:153} INFO - Started process (PID=23456) to work on /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:36:34,019] {processor.py:641} INFO - Processing file /opt/airflow/dags/attack_dag.py for tasks to queue
+[2023-04-30 14:36:34,021] {logging_mixin.py:115} INFO - [2023-04-30 14:36:34,021] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:36:35,470] {logging_mixin.py:115} INFO - [2023-04-30 14:36:35,469] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-30 14:36:37,135] {processor.py:651} INFO - DAG(s) dict_keys(['multi_attack_dag']) retrieved from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:36:37,222] {logging_mixin.py:115} INFO - [2023-04-30 14:36:37,221] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-30 14:36:37,282] {logging_mixin.py:115} INFO - [2023-04-30 14:36:37,282] {dag.py:2919} INFO - Setting next_dagrun for multi_attack_dag to 2023-04-30T00:00:00+00:00, run_after=2023-05-01T00:00:00+00:00
+[2023-04-30 14:36:37,323] {processor.py:161} INFO - Processing /opt/airflow/dags/attack_dag.py took 3.313 seconds
+[2023-04-30 14:37:07,561] {processor.py:153} INFO - Started process (PID=23529) to work on /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:37:07,562] {processor.py:641} INFO - Processing file /opt/airflow/dags/attack_dag.py for tasks to queue
+[2023-04-30 14:37:07,564] {logging_mixin.py:115} INFO - [2023-04-30 14:37:07,563] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:37:09,011] {logging_mixin.py:115} INFO - [2023-04-30 14:37:09,011] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-30 14:37:10,999] {processor.py:651} INFO - DAG(s) dict_keys(['multi_attack_dag']) retrieved from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:37:11,051] {logging_mixin.py:115} INFO - [2023-04-30 14:37:11,050] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-30 14:37:11,093] {logging_mixin.py:115} INFO - [2023-04-30 14:37:11,092] {dag.py:2919} INFO - Setting next_dagrun for multi_attack_dag to 2023-04-30T00:00:00+00:00, run_after=2023-05-01T00:00:00+00:00
+[2023-04-30 14:37:11,123] {processor.py:161} INFO - Processing /opt/airflow/dags/attack_dag.py took 3.569 seconds
+[2023-04-30 14:37:42,011] {processor.py:153} INFO - Started process (PID=23610) to work on /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:37:42,012] {processor.py:641} INFO - Processing file /opt/airflow/dags/attack_dag.py for tasks to queue
+[2023-04-30 14:37:42,014] {logging_mixin.py:115} INFO - [2023-04-30 14:37:42,013] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:37:43,521] {logging_mixin.py:115} INFO - [2023-04-30 14:37:43,521] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-30 14:37:45,474] {processor.py:651} INFO - DAG(s) dict_keys(['multi_attack_dag']) retrieved from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:37:45,519] {logging_mixin.py:115} INFO - [2023-04-30 14:37:45,518] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-30 14:37:45,555] {logging_mixin.py:115} INFO - [2023-04-30 14:37:45,554] {dag.py:2919} INFO - Setting next_dagrun for multi_attack_dag to 2023-04-30T00:00:00+00:00, run_after=2023-05-01T00:00:00+00:00
+[2023-04-30 14:37:45,574] {processor.py:161} INFO - Processing /opt/airflow/dags/attack_dag.py took 3.570 seconds
+[2023-04-30 14:38:16,028] {processor.py:153} INFO - Started process (PID=23690) to work on /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:38:16,029] {processor.py:641} INFO - Processing file /opt/airflow/dags/attack_dag.py for tasks to queue
+[2023-04-30 14:38:16,031] {logging_mixin.py:115} INFO - [2023-04-30 14:38:16,030] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:38:17,355] {logging_mixin.py:115} INFO - [2023-04-30 14:38:17,355] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-30 14:38:19,198] {processor.py:651} INFO - DAG(s) dict_keys(['multi_attack_dag']) retrieved from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:38:19,245] {logging_mixin.py:115} INFO - [2023-04-30 14:38:19,242] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-30 14:38:19,287] {logging_mixin.py:115} INFO - [2023-04-30 14:38:19,287] {dag.py:2919} INFO - Setting next_dagrun for multi_attack_dag to 2023-04-30T00:00:00+00:00, run_after=2023-05-01T00:00:00+00:00
+[2023-04-30 14:38:19,331] {processor.py:161} INFO - Processing /opt/airflow/dags/attack_dag.py took 3.312 seconds
+[2023-04-30 14:38:49,844] {processor.py:153} INFO - Started process (PID=23764) to work on /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:38:49,845] {processor.py:641} INFO - Processing file /opt/airflow/dags/attack_dag.py for tasks to queue
+[2023-04-30 14:38:49,847] {logging_mixin.py:115} INFO - [2023-04-30 14:38:49,847] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:38:51,339] {logging_mixin.py:115} INFO - [2023-04-30 14:38:51,339] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-30 14:38:53,318] {processor.py:651} INFO - DAG(s) dict_keys(['multi_attack_dag']) retrieved from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:38:53,371] {logging_mixin.py:115} INFO - [2023-04-30 14:38:53,371] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-30 14:38:53,408] {logging_mixin.py:115} INFO - [2023-04-30 14:38:53,408] {dag.py:2919} INFO - Setting next_dagrun for multi_attack_dag to 2023-04-30T00:00:00+00:00, run_after=2023-05-01T00:00:00+00:00
+[2023-04-30 14:38:53,444] {processor.py:161} INFO - Processing /opt/airflow/dags/attack_dag.py took 3.607 seconds
+[2023-04-30 14:39:24,216] {processor.py:153} INFO - Started process (PID=23841) to work on /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:39:24,218] {processor.py:641} INFO - Processing file /opt/airflow/dags/attack_dag.py for tasks to queue
+[2023-04-30 14:39:24,219] {logging_mixin.py:115} INFO - [2023-04-30 14:39:24,219] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:39:25,585] {logging_mixin.py:115} INFO - [2023-04-30 14:39:25,584] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-30 14:39:27,057] {processor.py:651} INFO - DAG(s) dict_keys(['multi_attack_dag']) retrieved from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:39:27,099] {logging_mixin.py:115} INFO - [2023-04-30 14:39:27,098] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-30 14:39:27,131] {logging_mixin.py:115} INFO - [2023-04-30 14:39:27,131] {dag.py:2919} INFO - Setting next_dagrun for multi_attack_dag to 2023-04-30T00:00:00+00:00, run_after=2023-05-01T00:00:00+00:00
+[2023-04-30 14:39:27,156] {processor.py:161} INFO - Processing /opt/airflow/dags/attack_dag.py took 2.944 seconds
+[2023-04-30 14:39:57,549] {processor.py:153} INFO - Started process (PID=23916) to work on /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:39:57,550] {processor.py:641} INFO - Processing file /opt/airflow/dags/attack_dag.py for tasks to queue
+[2023-04-30 14:39:57,552] {logging_mixin.py:115} INFO - [2023-04-30 14:39:57,552] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:39:59,122] {logging_mixin.py:115} INFO - [2023-04-30 14:39:59,121] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-30 14:40:01,450] {processor.py:651} INFO - DAG(s) dict_keys(['multi_attack_dag']) retrieved from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:40:01,508] {logging_mixin.py:115} INFO - [2023-04-30 14:40:01,508] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-30 14:40:01,548] {logging_mixin.py:115} INFO - [2023-04-30 14:40:01,547] {dag.py:2919} INFO - Setting next_dagrun for multi_attack_dag to 2023-04-30T00:00:00+00:00, run_after=2023-05-01T00:00:00+00:00
+[2023-04-30 14:40:01,569] {processor.py:161} INFO - Processing /opt/airflow/dags/attack_dag.py took 4.025 seconds
+[2023-04-30 14:40:32,080] {processor.py:153} INFO - Started process (PID=23996) to work on /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:40:32,081] {processor.py:641} INFO - Processing file /opt/airflow/dags/attack_dag.py for tasks to queue
+[2023-04-30 14:40:32,084] {logging_mixin.py:115} INFO - [2023-04-30 14:40:32,083] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:40:34,661] {logging_mixin.py:115} INFO - [2023-04-30 14:40:34,660] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-30 14:40:37,156] {processor.py:651} INFO - DAG(s) dict_keys(['multi_attack_dag']) retrieved from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:40:37,214] {logging_mixin.py:115} INFO - [2023-04-30 14:40:37,213] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-30 14:40:37,263] {logging_mixin.py:115} INFO - [2023-04-30 14:40:37,262] {dag.py:2919} INFO - Setting next_dagrun for multi_attack_dag to 2023-04-30T00:00:00+00:00, run_after=2023-05-01T00:00:00+00:00
+[2023-04-30 14:40:37,296] {processor.py:161} INFO - Processing /opt/airflow/dags/attack_dag.py took 5.223 seconds
+[2023-04-30 14:41:08,384] {processor.py:153} INFO - Started process (PID=24072) to work on /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:41:08,385] {processor.py:641} INFO - Processing file /opt/airflow/dags/attack_dag.py for tasks to queue
+[2023-04-30 14:41:08,387] {logging_mixin.py:115} INFO - [2023-04-30 14:41:08,386] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:41:10,221] {logging_mixin.py:115} INFO - [2023-04-30 14:41:10,220] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-30 14:41:12,127] {processor.py:651} INFO - DAG(s) dict_keys(['multi_attack_dag']) retrieved from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:41:12,167] {logging_mixin.py:115} INFO - [2023-04-30 14:41:12,167] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-30 14:41:12,203] {logging_mixin.py:115} INFO - [2023-04-30 14:41:12,202] {dag.py:2919} INFO - Setting next_dagrun for multi_attack_dag to 2023-04-30T00:00:00+00:00, run_after=2023-05-01T00:00:00+00:00
+[2023-04-30 14:41:12,224] {processor.py:161} INFO - Processing /opt/airflow/dags/attack_dag.py took 3.845 seconds
+[2023-04-30 14:41:42,789] {processor.py:153} INFO - Started process (PID=24148) to work on /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:41:42,791] {processor.py:641} INFO - Processing file /opt/airflow/dags/attack_dag.py for tasks to queue
+[2023-04-30 14:41:42,792] {logging_mixin.py:115} INFO - [2023-04-30 14:41:42,792] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:41:44,549] {logging_mixin.py:115} INFO - [2023-04-30 14:41:44,548] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-30 14:41:46,228] {processor.py:651} INFO - DAG(s) dict_keys(['multi_attack_dag']) retrieved from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:41:46,269] {logging_mixin.py:115} INFO - [2023-04-30 14:41:46,268] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-30 14:41:46,300] {logging_mixin.py:115} INFO - [2023-04-30 14:41:46,299] {dag.py:2919} INFO - Setting next_dagrun for multi_attack_dag to 2023-04-30T00:00:00+00:00, run_after=2023-05-01T00:00:00+00:00
+[2023-04-30 14:41:46,321] {processor.py:161} INFO - Processing /opt/airflow/dags/attack_dag.py took 3.537 seconds
+[2023-04-30 14:42:16,977] {processor.py:153} INFO - Started process (PID=24221) to work on /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:42:16,978] {processor.py:641} INFO - Processing file /opt/airflow/dags/attack_dag.py for tasks to queue
+[2023-04-30 14:42:16,979] {logging_mixin.py:115} INFO - [2023-04-30 14:42:16,979] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:42:18,322] {logging_mixin.py:115} INFO - [2023-04-30 14:42:18,322] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-30 14:42:19,897] {processor.py:651} INFO - DAG(s) dict_keys(['multi_attack_dag']) retrieved from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:42:19,967] {logging_mixin.py:115} INFO - [2023-04-30 14:42:19,966] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-30 14:42:19,999] {logging_mixin.py:115} INFO - [2023-04-30 14:42:19,999] {dag.py:2919} INFO - Setting next_dagrun for multi_attack_dag to 2023-04-30T00:00:00+00:00, run_after=2023-05-01T00:00:00+00:00
+[2023-04-30 14:42:20,028] {processor.py:161} INFO - Processing /opt/airflow/dags/attack_dag.py took 3.057 seconds
+[2023-04-30 14:42:50,158] {processor.py:153} INFO - Started process (PID=24298) to work on /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:42:50,159] {processor.py:641} INFO - Processing file /opt/airflow/dags/attack_dag.py for tasks to queue
+[2023-04-30 14:42:50,160] {logging_mixin.py:115} INFO - [2023-04-30 14:42:50,160] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:42:51,546] {logging_mixin.py:115} INFO - [2023-04-30 14:42:51,546] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-30 14:42:53,075] {processor.py:651} INFO - DAG(s) dict_keys(['multi_attack_dag']) retrieved from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:42:53,175] {logging_mixin.py:115} INFO - [2023-04-30 14:42:53,175] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-30 14:42:53,214] {logging_mixin.py:115} INFO - [2023-04-30 14:42:53,214] {dag.py:2919} INFO - Setting next_dagrun for multi_attack_dag to 2023-04-30T00:00:00+00:00, run_after=2023-05-01T00:00:00+00:00
+[2023-04-30 14:42:53,238] {processor.py:161} INFO - Processing /opt/airflow/dags/attack_dag.py took 3.086 seconds
+[2023-04-30 14:43:25,200] {processor.py:153} INFO - Started process (PID=24380) to work on /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:43:25,206] {processor.py:641} INFO - Processing file /opt/airflow/dags/attack_dag.py for tasks to queue
+[2023-04-30 14:43:25,208] {logging_mixin.py:115} INFO - [2023-04-30 14:43:25,208] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:43:26,833] {logging_mixin.py:115} INFO - [2023-04-30 14:43:26,833] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-30 14:43:28,792] {processor.py:651} INFO - DAG(s) dict_keys(['multi_attack_dag']) retrieved from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:43:28,838] {logging_mixin.py:115} INFO - [2023-04-30 14:43:28,837] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-30 14:43:28,883] {logging_mixin.py:115} INFO - [2023-04-30 14:43:28,883] {dag.py:2919} INFO - Setting next_dagrun for multi_attack_dag to 2023-04-30T00:00:00+00:00, run_after=2023-05-01T00:00:00+00:00
+[2023-04-30 14:43:28,909] {processor.py:161} INFO - Processing /opt/airflow/dags/attack_dag.py took 3.714 seconds
+[2023-04-30 14:43:59,249] {processor.py:153} INFO - Started process (PID=24460) to work on /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:43:59,251] {processor.py:641} INFO - Processing file /opt/airflow/dags/attack_dag.py for tasks to queue
+[2023-04-30 14:43:59,253] {logging_mixin.py:115} INFO - [2023-04-30 14:43:59,253] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:44:00,722] {logging_mixin.py:115} INFO - [2023-04-30 14:44:00,722] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-30 14:44:02,501] {processor.py:651} INFO - DAG(s) dict_keys(['multi_attack_dag']) retrieved from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:44:02,544] {logging_mixin.py:115} INFO - [2023-04-30 14:44:02,544] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-30 14:44:02,582] {logging_mixin.py:115} INFO - [2023-04-30 14:44:02,581] {dag.py:2919} INFO - Setting next_dagrun for multi_attack_dag to 2023-04-30T00:00:00+00:00, run_after=2023-05-01T00:00:00+00:00
+[2023-04-30 14:44:02,626] {processor.py:161} INFO - Processing /opt/airflow/dags/attack_dag.py took 3.383 seconds
+[2023-04-30 14:44:32,759] {processor.py:153} INFO - Started process (PID=24531) to work on /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:44:32,760] {processor.py:641} INFO - Processing file /opt/airflow/dags/attack_dag.py for tasks to queue
+[2023-04-30 14:44:32,762] {logging_mixin.py:115} INFO - [2023-04-30 14:44:32,762] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:44:34,256] {logging_mixin.py:115} INFO - [2023-04-30 14:44:34,256] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-30 14:44:36,159] {processor.py:651} INFO - DAG(s) dict_keys(['multi_attack_dag']) retrieved from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:44:36,200] {logging_mixin.py:115} INFO - [2023-04-30 14:44:36,199] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-30 14:44:36,236] {logging_mixin.py:115} INFO - [2023-04-30 14:44:36,236] {dag.py:2919} INFO - Setting next_dagrun for multi_attack_dag to 2023-04-30T00:00:00+00:00, run_after=2023-05-01T00:00:00+00:00
+[2023-04-30 14:44:36,259] {processor.py:161} INFO - Processing /opt/airflow/dags/attack_dag.py took 3.507 seconds
+[2023-04-30 14:45:06,634] {processor.py:153} INFO - Started process (PID=24613) to work on /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:45:06,636] {processor.py:641} INFO - Processing file /opt/airflow/dags/attack_dag.py for tasks to queue
+[2023-04-30 14:45:06,637] {logging_mixin.py:115} INFO - [2023-04-30 14:45:06,637] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:45:07,961] {logging_mixin.py:115} INFO - [2023-04-30 14:45:07,960] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-30 14:45:09,891] {processor.py:651} INFO - DAG(s) dict_keys(['multi_attack_dag']) retrieved from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:45:10,000] {logging_mixin.py:115} INFO - [2023-04-30 14:45:09,999] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-30 14:45:10,064] {logging_mixin.py:115} INFO - [2023-04-30 14:45:10,063] {dag.py:2919} INFO - Setting next_dagrun for multi_attack_dag to 2023-04-30T00:00:00+00:00, run_after=2023-05-01T00:00:00+00:00
+[2023-04-30 14:45:10,091] {processor.py:161} INFO - Processing /opt/airflow/dags/attack_dag.py took 3.459 seconds
+[2023-04-30 14:45:40,555] {processor.py:153} INFO - Started process (PID=24692) to work on /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:45:40,567] {processor.py:641} INFO - Processing file /opt/airflow/dags/attack_dag.py for tasks to queue
+[2023-04-30 14:45:40,568] {logging_mixin.py:115} INFO - [2023-04-30 14:45:40,568] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:45:42,366] {logging_mixin.py:115} INFO - [2023-04-30 14:45:42,366] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-30 14:45:44,081] {processor.py:651} INFO - DAG(s) dict_keys(['multi_attack_dag']) retrieved from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:45:44,127] {logging_mixin.py:115} INFO - [2023-04-30 14:45:44,127] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-30 14:45:44,176] {logging_mixin.py:115} INFO - [2023-04-30 14:45:44,175] {dag.py:2919} INFO - Setting next_dagrun for multi_attack_dag to 2023-04-30T00:00:00+00:00, run_after=2023-05-01T00:00:00+00:00
+[2023-04-30 14:45:44,208] {processor.py:161} INFO - Processing /opt/airflow/dags/attack_dag.py took 3.661 seconds
+[2023-04-30 14:46:14,604] {processor.py:153} INFO - Started process (PID=24768) to work on /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:46:14,605] {processor.py:641} INFO - Processing file /opt/airflow/dags/attack_dag.py for tasks to queue
+[2023-04-30 14:46:14,606] {logging_mixin.py:115} INFO - [2023-04-30 14:46:14,606] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:46:16,016] {logging_mixin.py:115} INFO - [2023-04-30 14:46:16,016] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-30 14:46:19,097] {processor.py:651} INFO - DAG(s) dict_keys(['multi_attack_dag']) retrieved from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:46:19,166] {logging_mixin.py:115} INFO - [2023-04-30 14:46:19,165] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-30 14:46:19,233] {logging_mixin.py:115} INFO - [2023-04-30 14:46:19,233] {dag.py:2919} INFO - Setting next_dagrun for multi_attack_dag to 2023-04-30T00:00:00+00:00, run_after=2023-05-01T00:00:00+00:00
+[2023-04-30 14:46:19,281] {processor.py:161} INFO - Processing /opt/airflow/dags/attack_dag.py took 4.683 seconds
+[2023-04-30 14:46:50,251] {processor.py:153} INFO - Started process (PID=24846) to work on /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:46:50,253] {processor.py:641} INFO - Processing file /opt/airflow/dags/attack_dag.py for tasks to queue
+[2023-04-30 14:46:50,254] {logging_mixin.py:115} INFO - [2023-04-30 14:46:50,254] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:46:51,399] {logging_mixin.py:115} INFO - [2023-04-30 14:46:51,399] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-30 14:46:52,877] {processor.py:651} INFO - DAG(s) dict_keys(['multi_attack_dag']) retrieved from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:46:52,919] {logging_mixin.py:115} INFO - [2023-04-30 14:46:52,919] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-30 14:46:52,959] {logging_mixin.py:115} INFO - [2023-04-30 14:46:52,958] {dag.py:2919} INFO - Setting next_dagrun for multi_attack_dag to 2023-04-30T00:00:00+00:00, run_after=2023-05-01T00:00:00+00:00
+[2023-04-30 14:46:52,984] {processor.py:161} INFO - Processing /opt/airflow/dags/attack_dag.py took 2.739 seconds
+[2023-04-30 14:47:23,303] {processor.py:153} INFO - Started process (PID=24916) to work on /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:47:23,304] {processor.py:641} INFO - Processing file /opt/airflow/dags/attack_dag.py for tasks to queue
+[2023-04-30 14:47:23,306] {logging_mixin.py:115} INFO - [2023-04-30 14:47:23,306] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:47:25,015] {logging_mixin.py:115} INFO - [2023-04-30 14:47:25,014] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-30 14:47:26,811] {processor.py:651} INFO - DAG(s) dict_keys(['multi_attack_dag']) retrieved from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:47:26,860] {logging_mixin.py:115} INFO - [2023-04-30 14:47:26,860] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-30 14:47:26,897] {logging_mixin.py:115} INFO - [2023-04-30 14:47:26,896] {dag.py:2919} INFO - Setting next_dagrun for multi_attack_dag to 2023-04-30T00:00:00+00:00, run_after=2023-05-01T00:00:00+00:00
+[2023-04-30 14:47:26,917] {processor.py:161} INFO - Processing /opt/airflow/dags/attack_dag.py took 3.621 seconds
+[2023-04-30 14:47:57,111] {processor.py:153} INFO - Started process (PID=24995) to work on /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:47:57,112] {processor.py:641} INFO - Processing file /opt/airflow/dags/attack_dag.py for tasks to queue
+[2023-04-30 14:47:57,113] {logging_mixin.py:115} INFO - [2023-04-30 14:47:57,113] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:47:58,454] {logging_mixin.py:115} INFO - [2023-04-30 14:47:58,453] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-30 14:48:00,631] {processor.py:651} INFO - DAG(s) dict_keys(['multi_attack_dag']) retrieved from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:48:00,698] {logging_mixin.py:115} INFO - [2023-04-30 14:48:00,698] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-30 14:48:00,741] {logging_mixin.py:115} INFO - [2023-04-30 14:48:00,741] {dag.py:2919} INFO - Setting next_dagrun for multi_attack_dag to 2023-04-30T00:00:00+00:00, run_after=2023-05-01T00:00:00+00:00
+[2023-04-30 14:48:00,771] {processor.py:161} INFO - Processing /opt/airflow/dags/attack_dag.py took 3.664 seconds
+[2023-04-30 14:48:31,437] {processor.py:153} INFO - Started process (PID=25073) to work on /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:48:31,438] {processor.py:641} INFO - Processing file /opt/airflow/dags/attack_dag.py for tasks to queue
+[2023-04-30 14:48:31,440] {logging_mixin.py:115} INFO - [2023-04-30 14:48:31,440] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:48:32,761] {logging_mixin.py:115} INFO - [2023-04-30 14:48:32,760] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-30 14:48:34,416] {processor.py:651} INFO - DAG(s) dict_keys(['multi_attack_dag']) retrieved from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:48:34,464] {logging_mixin.py:115} INFO - [2023-04-30 14:48:34,463] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-30 14:48:34,500] {logging_mixin.py:115} INFO - [2023-04-30 14:48:34,500] {dag.py:2919} INFO - Setting next_dagrun for multi_attack_dag to 2023-04-30T00:00:00+00:00, run_after=2023-05-01T00:00:00+00:00
+[2023-04-30 14:48:34,526] {processor.py:161} INFO - Processing /opt/airflow/dags/attack_dag.py took 3.095 seconds
+[2023-04-30 14:49:04,780] {processor.py:153} INFO - Started process (PID=25153) to work on /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:49:04,781] {processor.py:641} INFO - Processing file /opt/airflow/dags/attack_dag.py for tasks to queue
+[2023-04-30 14:49:04,785] {logging_mixin.py:115} INFO - [2023-04-30 14:49:04,784] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:49:06,397] {logging_mixin.py:115} INFO - [2023-04-30 14:49:06,396] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-30 14:49:08,682] {processor.py:651} INFO - DAG(s) dict_keys(['multi_attack_dag']) retrieved from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:49:08,736] {logging_mixin.py:115} INFO - [2023-04-30 14:49:08,735] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-30 14:49:08,774] {logging_mixin.py:115} INFO - [2023-04-30 14:49:08,774] {dag.py:2919} INFO - Setting next_dagrun for multi_attack_dag to 2023-04-30T00:00:00+00:00, run_after=2023-05-01T00:00:00+00:00
+[2023-04-30 14:49:08,799] {processor.py:161} INFO - Processing /opt/airflow/dags/attack_dag.py took 4.026 seconds
+[2023-04-30 14:49:38,976] {processor.py:153} INFO - Started process (PID=25237) to work on /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:49:38,977] {processor.py:641} INFO - Processing file /opt/airflow/dags/attack_dag.py for tasks to queue
+[2023-04-30 14:49:38,979] {logging_mixin.py:115} INFO - [2023-04-30 14:49:38,979] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:49:40,350] {logging_mixin.py:115} INFO - [2023-04-30 14:49:40,349] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-30 14:49:42,076] {processor.py:651} INFO - DAG(s) dict_keys(['multi_attack_dag']) retrieved from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:49:42,123] {logging_mixin.py:115} INFO - [2023-04-30 14:49:42,123] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-30 14:49:42,157] {logging_mixin.py:115} INFO - [2023-04-30 14:49:42,157] {dag.py:2919} INFO - Setting next_dagrun for multi_attack_dag to 2023-04-30T00:00:00+00:00, run_after=2023-05-01T00:00:00+00:00
+[2023-04-30 14:49:42,178] {processor.py:161} INFO - Processing /opt/airflow/dags/attack_dag.py took 3.210 seconds
+[2023-04-30 14:50:12,380] {processor.py:153} INFO - Started process (PID=25305) to work on /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:50:12,381] {processor.py:641} INFO - Processing file /opt/airflow/dags/attack_dag.py for tasks to queue
+[2023-04-30 14:50:12,382] {logging_mixin.py:115} INFO - [2023-04-30 14:50:12,382] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:50:13,674] {logging_mixin.py:115} INFO - [2023-04-30 14:50:13,673] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-30 14:50:15,480] {processor.py:651} INFO - DAG(s) dict_keys(['multi_attack_dag']) retrieved from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:50:15,538] {logging_mixin.py:115} INFO - [2023-04-30 14:50:15,538] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-30 14:50:15,572] {logging_mixin.py:115} INFO - [2023-04-30 14:50:15,572] {dag.py:2919} INFO - Setting next_dagrun for multi_attack_dag to 2023-04-30T00:00:00+00:00, run_after=2023-05-01T00:00:00+00:00
+[2023-04-30 14:50:15,594] {processor.py:161} INFO - Processing /opt/airflow/dags/attack_dag.py took 3.219 seconds
+[2023-04-30 14:50:46,145] {processor.py:153} INFO - Started process (PID=25383) to work on /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:50:46,146] {processor.py:641} INFO - Processing file /opt/airflow/dags/attack_dag.py for tasks to queue
+[2023-04-30 14:50:46,148] {logging_mixin.py:115} INFO - [2023-04-30 14:50:46,148] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:50:47,408] {logging_mixin.py:115} INFO - [2023-04-30 14:50:47,408] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-30 14:50:49,023] {processor.py:651} INFO - DAG(s) dict_keys(['multi_attack_dag']) retrieved from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:50:49,076] {logging_mixin.py:115} INFO - [2023-04-30 14:50:49,076] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-30 14:50:49,116] {logging_mixin.py:115} INFO - [2023-04-30 14:50:49,116] {dag.py:2919} INFO - Setting next_dagrun for multi_attack_dag to 2023-04-30T00:00:00+00:00, run_after=2023-05-01T00:00:00+00:00
+[2023-04-30 14:50:49,136] {processor.py:161} INFO - Processing /opt/airflow/dags/attack_dag.py took 2.998 seconds
+[2023-04-30 14:51:19,268] {processor.py:153} INFO - Started process (PID=25462) to work on /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:51:19,269] {processor.py:641} INFO - Processing file /opt/airflow/dags/attack_dag.py for tasks to queue
+[2023-04-30 14:51:19,271] {logging_mixin.py:115} INFO - [2023-04-30 14:51:19,271] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:51:20,548] {logging_mixin.py:115} INFO - [2023-04-30 14:51:20,548] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-30 14:51:22,246] {processor.py:651} INFO - DAG(s) dict_keys(['multi_attack_dag']) retrieved from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:51:22,294] {logging_mixin.py:115} INFO - [2023-04-30 14:51:22,294] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-30 14:51:22,331] {logging_mixin.py:115} INFO - [2023-04-30 14:51:22,331] {dag.py:2919} INFO - Setting next_dagrun for multi_attack_dag to 2023-04-30T00:00:00+00:00, run_after=2023-05-01T00:00:00+00:00
+[2023-04-30 14:51:22,355] {processor.py:161} INFO - Processing /opt/airflow/dags/attack_dag.py took 3.091 seconds
+[2023-04-30 14:51:52,803] {processor.py:153} INFO - Started process (PID=25541) to work on /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:51:52,805] {processor.py:641} INFO - Processing file /opt/airflow/dags/attack_dag.py for tasks to queue
+[2023-04-30 14:51:52,807] {logging_mixin.py:115} INFO - [2023-04-30 14:51:52,806] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:51:54,148] {logging_mixin.py:115} INFO - [2023-04-30 14:51:54,148] {config.py:55} INFO - set ART_DATA_PATH to /home/airflow/.art/data
+[2023-04-30 14:51:56,473] {processor.py:651} INFO - DAG(s) dict_keys(['multi_attack_dag']) retrieved from /opt/airflow/dags/attack_dag.py
+[2023-04-30 14:51:56,564] {logging_mixin.py:115} INFO - [2023-04-30 14:51:56,563] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-04-30 14:51:56,639] {logging_mixin.py:115} INFO - [2023-04-30 14:51:56,639] {dag.py:2919} INFO - Setting next_dagrun for multi_attack_dag to 2023-04-30T00:00:00+00:00, run_after=2023-05-01T00:00:00+00:00
+[2023-04-30 14:51:56,844] {processor.py:161} INFO - Processing /opt/airflow/dags/attack_dag.py took 4.048 seconds

@@ -44,8 +44,8 @@ CLASSIFIER_DICT = {
 
 
 def get_client():
-    ACOUNT_SERVICE_KEY= "mabadata-733abc189d01.json"
-    BUCKET_NAME='mabdata207125196'
+    ACOUNT_SERVICE_KEY = os.environ.get('ACCOUNT_SERVICE_KEY')
+    BUCKET_NAME = os.environ.get('BUCKET_NAME')
     os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = ACOUNT_SERVICE_KEY
     os.environ["DONT_PICKLE"] = 'False'
     storage_client = storage.Client()
@@ -80,24 +80,31 @@ def get_client():
 #         return
 def get_data():
     #need to get x_train,y_train for estimator fit and x_test, y_test for acc
-    features_file_name = 'X.csv'
-    label_file_name = 'y.csv'
+    train_features_file_name = 'X_train.csv'
+    test_features_file_name = 'X_test.csv'
+    train_label_file_name = 'y_train.csv'
+    test_label_file_name = 'y_test.csv'
     data_size = -1
     bucket = get_client()
     try:
-        #get X - features set
-        blob = bucket.blob(features_file_name)
-        blob.download_to_filename(features_file_name)
-        X = pd.read_csv(features_file_name)[:data_size].to_numpy()
-        # get y - label set
-        blob = bucket.blob(label_file_name)
-        blob.download_to_filename(label_file_name)
-        y = pd.read_csv(label_file_name)[:data_size].to_numpy()
-        x_train,x_test,y_train,y_test = sklearn.model_selection.train_test_split(X, y, test_size=0.2)
-        data = [(x_train,y_train),(x_test,y_test)]
+        #get X_train - train features set
+        blob = bucket.blob(train_features_file_name)
+        blob.download_to_filename(train_features_file_name)
+        X_train = pd.read_csv(train_features_file_name)[:data_size].to_numpy()
+        #get X_test - test features set
+        blob = bucket.blob(test_features_file_name)
+        blob.download_to_filename(test_features_file_name)
+        X_test = pd.read_csv(test_features_file_name)[:data_size].to_numpy()
+        # get y_train - train label set
+        blob = bucket.blob(train_label_file_name)
+        blob.download_to_filename(train_label_file_name)
+        y_train = pd.read_csv(train_label_file_name)[:data_size].to_numpy()
+        # get y_test - train label set
+        blob = bucket.blob(test_label_file_name)
+        blob.download_to_filename(test_label_file_name)
+        y_test = pd.read_csv(test_label_file_name)[:data_size].to_numpy()
+        data = [(X_train,y_train),(X_test,y_test)]
         return data
-        # for i in range(len(data)):
-        #     yield data[i]
     except Exception as err:
         return
 def load_from_bucket(file_name, as_json=False,as_csv=False):

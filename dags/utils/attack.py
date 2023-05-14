@@ -14,15 +14,7 @@ from art.attacks.evasion import SquareAttack,\
 
 def attack(attack_obj):
 
-    attack_parameter_range = {'CarliniL2Method': {'confidence': 0.2},
-                              'BasicIterativeMethod': {'eps': 0.3, 'eps_step': 0.15,'max_iter':10000},
-                              'FastGradientMethod': {'eps': 0.005},
-                              'ProjectedGradientDescent': {'eps': 0.03,'max_iter':10000},
-                              'MomentumIterativeMethod': {'eps': 0.1},
-                              'NewtonFool': {'eta': 0.035},
-                              'ProjectedGradientDescentPyTorch': {'eps': 0.2, 'random_eps': True},
-                              'UniversalPerturbation': {'attacker': 'deepfool', 'delta': 0.5}
-                              }
+
 
     # data = get_data()
     (x_train, y_train),(x_test, y_test) = get_data()
@@ -199,7 +191,7 @@ def attack_OverTheAirFlickeringPyTorch(ti):
 
 def attack_BasicIterativeMethod(ti):
     ti.xcom_push(key='Module_BasicIter', value=__name__)
-    model_acc, adversarial_examples  = attack(BasicIterativeMethod)
+    model_acc, adversarial_examples = attack(BasicIterativeMethod)
     ti.xcom_push(key='attack_BasicIterativeMethod_adv', value=adversarial_examples.tolist())
     ti.xcom_push(key='attack_BasicIterativeMethod_score', value=model_acc)
 
