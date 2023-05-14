@@ -220,3 +220,4 @@ class Input_validatior:
         else:
             logging.info("Input is not valid!")
             return None
+

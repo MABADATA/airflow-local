@@ -2,10 +2,25 @@ import logging
 import json
 import pickle
 import os
+import torch.nn as nn
 from gcloud import storage
-
-ACOUNT_SERVICE_KEY=r"C:\Users\Administrator\Desktop\mabadata-733abc189d01.json"
-BUCKET_NAME='mabdata207125196'
+from torch.optim import Optimizer,SGD
+from art.estimators.classification import PyTorchClassifier
+from art.estimators.regression.pytorch import PyTorchRegressor
+from art.estimators.classification import TensorFlowV2Classifier
+from art.estimators.regression.keras import KerasRegressor
+from art.estimators.regression.scikitlearn import ScikitlearnDecisionTreeRegressor
+from art.estimators.classification.scikitlearn import (ScikitlearnAdaBoostClassifier,
+  ScikitlearnBaggingClassifier,
+  ScikitlearnDecisionTreeClassifier,
+  ScikitlearnExtraTreesClassifier,
+  ScikitlearnGradientBoostingClassifier,
+  ScikitlearnLogisticRegression,
+  ScikitlearnRandomForestClassifier,
+  ScikitlearnSVC,
+  ScikitlearnGaussianNB)
+ACOUNT_SERVICE_KEY=r""
+BUCKET_NAME=''
 
 
 if __name__ == '__main__':
@@ -79,6 +94,10 @@ class Bucket_loader:
               requirements.txt: {meta:{file_id: str(id)
                 }
               },
+              # attack_param: {param1:,param2: ...},
+              #
+              # defence_param: {param1:,param2: ...},
+
               authentication:{
                               bucket_name: str(name), access_key_id: str(id),
                               secret_access_key: str(key),region: str(region)
@@ -126,9 +145,7 @@ class Bucket_loader:
                   },
                   "authentication": {
                   "bucket_name": "MyBucket",
-                  "access_key_id": "2k4k2jU992",
-                  "secret_access_key": "882LPh87",
-                  "region": "us.central"
+                  "account_service_key": "ACOUNT_SERVICE_KEY.json"
                   }
                 }
 
@@ -155,15 +172,16 @@ class Bucket_loader:
         if isinstance(self.metadata, str):
             self.metadata = json.loads(self.metadata)
         if isinstance(self.metadata, dict):
-            self.__bucket = self.metadata['authentication']['bucket_name']
-            self.__access_key_id = self.metadata['authentication']['access_key_id']
-            self.__secret_access_key = self.metadata['authentication']['secret_access_key']
-            self.__region = self.metadata['authentication']['region']
             self.__ML_model_file_id = self.metadata['ML_model']['meta']['file_id']
             self.__loss_function_file_id = self.metadata['ML_model']['loss']['meta']['file_id']
             self.__optimizer_file_id = self.metadata['ML_model']['optimizer']['meta']['file_id']
             self.__dataloader_file_id = self.metadata['dataloader']['meta']['file_id']
             self.__requirements_file_id = self.metadata['requirements.txt']['meta']['file_id']
+            self.__account_service_key = self.metadata['authentication']['account_service_key']
+            BUCKET_NAME = self.metadata['authentication']['bucket_name']
+            ACOUNT_SERVICE_KEY = "account_service_key.json"
+            with open(ACOUNT_SERVICE_KEY, 'w') as f:
+                json.dump(self.__account_service_key, f)
         else:
             raise TypeError('meta data need to be type dict or str')
 
@@ -176,11 +194,14 @@ class Bucket_loader:
         blob.upload_from_filename(src_file_name)
 
     @staticmethod
-    def download_from_gcp(src_file_name):
+    def download_from_gcp(src_file_name,as_json=False):
         os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = ACOUNT_SERVICE_KEY
         storage_client = storage.Client()
         bucket = storage_client.bucket(BUCKET_NAME)
         blob = bucket.blob(src_file_name)
+        if as_json:
+            json_string = blob.download_as_string()
+            return json_string
         blob.download_to_filename(src_file_name)
     @staticmethod
     def to_pickle(file_name,obj):
@@ -241,21 +262,74 @@ class Bucket_loader:
 
     def get_requirements(self):
         try:
-            file_name = "requirements.txt"
+            file_name = self.__requirements_file_id
             self.download_from_gcp(file_name)
             with open(file_name, 'r') as f:
                 return f.read()
         except Exception as err:
             logging.error(f"Downloading requirements.txt file from GCP bucket failed!\nError:\n{err}")
-
     # Setters starts here
+    def get_attack_defence_json(self):
+        try:
+            file_name = 'attack_defence_metadata.json'
+            json_string = self.download_from_gcp(file_name,as_json=True)
+            data = json.loads(json_string)
+            return data
+        except Exception as err:
+            logging.error(f"Downloading attack_defence_metadata.json file from GCP bucket failed!\nError:\n{err}")
+
+    def get_estimator(self):
+        def get_obj_from_str(obj_as_str):
+            estimator_map = {
+                "PyTorchClassifier": PyTorchClassifier,
+                "PyTorchRegressor": PyTorchRegressor,
+                "TensorFlowV2Classifier": TensorFlowV2Classifier,
+                "KerasRegressor": KerasRegressor,
+                "ScikitlearnDecisionTreeClassifier": ScikitlearnDecisionTreeClassifier,
+                "ScikitlearnExtraTreesClassifier": ScikitlearnExtraTreesClassifier,
+                "ScikitlearnAdaBoostClassifier": ScikitlearnAdaBoostClassifier,
+                "ScikitlearnBaggingClassifier": ScikitlearnBaggingClassifier,
+                "ScikitlearnGradientBoostingClassifier": ScikitlearnGradientBoostingClassifier,
+                "ScikitlearnRandomForestClassifier": ScikitlearnRandomForestClassifier,
+                "ScikitlearnLogisticRegression": ScikitlearnLogisticRegression,
+                "ScikitlearnGaussianNB": ScikitlearnGaussianNB,
+                "ScikitlearnSVC": ScikitlearnSVC,
+                "ScikitlearnDecisionTreeRegressor": ScikitlearnDecisionTreeRegressor
+            }
+            return estimator_map[obj_as_str]
+
+        def assign_vars(cls, args_dict, ML_model):
+            if args_dict.get("optimizer"):
+                optimizer = SGD(ML_model.parameters(), lr=0.01)
+                args_dict["optimizer"] = optimizer
+            if args_dict.get("loss"):
+                try:
+                    loss = self.get_loss()
+                    # only from test
+                    args_dict["loss"] = loss
+                except:
+                    args_dict["loss"] = nn.CrossEntropyLoss()
+            obj = cls(**args_dict, model=ML_model)
+            return obj
+        logging.info("Getting estimator...")
+        json_string = self.download_from_gcp("Estimator_params.json")
+        estimator_params = json.loads(json_string)
+        model = self.get_model()
+        # model = NeuralNetworkClassificationModel(29,2)
+        estimator_str = estimator_params['object']
+        estimator_obj = get_obj_from_str(estimator_str)
+        params = estimator_params['params']
+        estimator = assign_vars(cls=estimator_obj, args_dict=params, ML_model=model)
+        return estimator
+
     def upload(self, obj, obj_type, to_pickle=True):
         hashmap = {"ML_model": self.__ML_model_file_id,
                    "loss": self.__loss_function_file_id,
                    "optimizer": self.__optimizer_file_id,
                    "dataloader": self.__dataloader_file_id,
                    "requirements.txt": self.__requirements_file_id,
-                   "Estimator_params": "Estimator_params.json"}
+                   "Estimator_params": "Estimator_params.json",
+                   "attack_defence_metadata": "attack_defence_metadata.json"}
         try:
             file_name = hashmap[obj_type]
             if to_pickle:
