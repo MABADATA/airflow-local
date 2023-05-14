@@ -14,9 +14,6 @@ from art.attacks.evasion import SquareAttack,\
 
 def attack(attack_obj):
 
-
-
-    # data = get_data()
     (x_train, y_train),(x_test, y_test) = get_data()
     x_train = np.transpose(x_train, (0, 1)).astype(np.float32)
     x_test = np.transpose(x_test, (0, 1)).astype(np.float32)
