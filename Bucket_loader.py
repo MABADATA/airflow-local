@@ -94,9 +94,6 @@ class Bucket_loader:
               requirements.txt: {meta:{file_id: str(id)
                 }
               },
-              # attack_param: {param1:,param2: ...},
-              #
-              # defence_param: {param1:,param2: ...},
 
               authentication:{
                               bucket_name: str(name), access_key_id: str(id),

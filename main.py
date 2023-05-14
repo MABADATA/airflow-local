@@ -2,6 +2,7 @@ from Input_validation import Input_validatior
 from Bucket_loader import Bucket_loader
 from Env_prep import Envsetter
 from Estimator_match import Estimator_handler
+from attack_defence_validation import  AttackDefenceValidator
 # metadata = {
 #     "ML_model": {
 #         "meta": {
@@ -55,6 +56,8 @@ def validation_process(params_from_api):
         f.write(req_txt)
     env_setter = Envsetter("requirements.txt")
     env_setter.install_requirements()
+    attack_defence_validator = AttackDefenceValidator()
+    attack_defence_validator.validate()
     input_validator = Input_validatior()
     if input_validator.validate():
         input = input_validator.get_input()
