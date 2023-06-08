@@ -1,7 +1,11 @@
+import numpy as np
 from sklearn.metrics import accuracy_score
 from skopt import gp_minimize
-from .helpers import *
-
+from art.attacks.evasion import *
+from art.attacks.poisoning import *
+from art.attacks.inference import *
+from art.attacks.extraction import *
+from file_loader.file_handler import *
 
 def optimize_evasion_attack(attack,classifier,data,true_labels):
     """
@@ -28,7 +32,7 @@ def optimize_evasion_attack(attack,classifier,data,true_labels):
         , 'NewtonFool': ['eta'], 'ProjectedGradientDescent': ['eps', 'random_eps'],
                           'ProjectedGradientDescentPyTorch': ['eps', 'random_eps'],
                           'UniversalPerturbation': ['attacker', 'delta']}
-    def _optimize(attack_to_optimize, hyperparams, classifier,data,true_labels):
+    def _optimize(attack, hyperparams, classifier,data,true_labels):
 
         HP = {k: v for k, v in zip(attacks_parameters[attack.__name__], hyperparams)}
         print(f'This is the attack : {attack} and its HP : {HP}')
@@ -52,46 +56,28 @@ def optimize_evasion_attack(attack,classifier,data,true_labels):
     return optimized_attack
 
 
-def pars_attack_json(ti):
-    attack_json = json.loads(load_from_bucket('attack_defence_metadata.json'))['attack']
-
-    ti.xcom_push(key='Module_pars', value=__name__)
-    for attack, bool_val in attack_json.items():
-        ti.xcom_push(key=attack, value=bool_val)
-
-def set_or_create(ti):
-    try:
-        metadata = load_from_bucket(file_name='attack_defence_dag_metadata.json',as_json=True)
-        ti.xcom_push(key='metadata', value='exist')
-    except:
-        ti.xcom_push(key='metadata', value='not exist...creating....')
-        metadata = {"cycles": 0, "attack_best_scores": [], "defence_best_scores": []}
-        upload_to_bucket(obj=metadata, file_name='attack_defence_dag_metadata.json',as_json=True)
-        ti.xcom_push(key='metadata', value='uploaded')
-
-def sent_model_after_attack(estimator):
-    upload_to_bucket(estimator.model, 'ML_model.pickle')
+# def set_or_create(ti):
+#     try:
+#         metadata = load_from_bucket(file_name='attack_defence_dag_metadata.json',as_json=True)
+#         ti.xcom_push(key='metadata', value='exist')
+#     except:
+#         # ti.xcom_push(key='metadata', value='not exist...creating....')
+#         # metadata = {"cycles": 0, "attack_best_scores": [], "defence_best_scores": []}
+#         # upload_to_bucket(obj=metadata, file_name='attack_defence_dag_metadata.json',as_json=True)
+#         # ti.xcom_push(key='metadata', value='uploaded')
+#         pass
+#
+# def sent_model_after_attack(estimator):
+#     upload_to_bucket(estimator.model, 'ML_model.pickle')
 
 def set_attack_params(attack, params,estimator ):
     attack_with_params = attack(**params,estimator=estimator)
     return attack_with_params
 
 def choose_best_attack(ti):
-
-    attack_score_pair = {'attack_BasicIterativeMethod': 0,
-                   'attack_FastGradientMethod': 0, 'attack_ProjectedGradientDescent': 0,
-                   'SquareAttack':0,
-                  'TargetedUniversalPerturbation':0,
-                  'UniversalPerturbation':0,
-                  'VirtualAdversarialMethod':0, 'Wasserstein':0, 'ZooAttack':0,
-                  'FrameSaliencyAttack':0, 'GeoDA':0, 'ElasticNet':0, 'CarliniL2Method':0, 'BoundaryAttack':0,
-                  'AutoProjectedGradientDescent':0, 'DeepFool':0, 'AutoAttack':0,
-                   'LowProFool':0, 'NewtonFool':0,
-                  'MalwareGDTensorFlow':0, 'PixelAttack':0, 'SaliencyMapMethod':0, 'ShadowAttack':0,
-                  'SpatialTransformation':0, 'ShapeShifter':0, 'SignOPTAttack':0, 'AdversarialPatch':True, 'AdversarialPatchPyTorch':True,
-                  'FeatureAdversariesPyTorch':0, 'GRAPHITEBlackbox':0, 'GRAPHITEWhiteboxPyTorch':0, 'LaserAttack':0,
-                  'OverTheAirFlickeringPyTorch':0
-    }
+    # attacks = load_from_bucket(file_name='attack_defence_metadata.json', as_json=True)['attacks']
+    attacks = {ZooAttack.__name__:True,ProjectedGradientDescent.__name__:True}
+    attack_score_pair = dict.fromkeys(attacks,0)
     for index, attack_score in enumerate(attack_score_pair):  # attack score is the key
         score = ti.xcom_pull(key=attack_score + "_score",
                              task_ids=f'{attack_score}')
@@ -100,11 +86,12 @@ def choose_best_attack(ti):
 
     best_attack = max(attack_score_pair, key=attack_score_pair.get)
     best_score = attack_score_pair[best_attack]
-    metadata = load_from_bucket(file_name='attack_defence_dag_metadata.json',as_json=True)
-    metadata['attack_best_scores'].append((best_attack,best_score))
-    ti.xcom_push(key=f'best: {best_attack} in round {metadata["cycles"]} : ', value=best_score)
+    # metadata = load_from_bucket(file_name='attack_defence_dag_metadata.json',as_json=True)
+    # metadata['attack_best_scores'].append((best_attack,best_score))
+    # ti.xcom_push(key=f'best: {best_attack} in round {metadata["cycles"]} : ', value=best_score)
     adv_examples = ti.xcom_pull(key=best_attack + "_adv",
                  task_ids=f'{best_attack}')
-    upload_to_bucket(obj=adv_examples,file_name="adv.csv", as_csv=True)
-    upload_to_bucket(obj=metadata,file_name='attack_defence_dag_metadata.json',as_json=True)
+    # upload_to_bucket(obj=adv_examples,file_name="adv.csv", as_csv=True)
+    # upload_to_bucket(obj=metadata,file_name='attack_defence_dag_metadata.json',as_json=True)
     return
+

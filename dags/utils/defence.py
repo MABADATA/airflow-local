@@ -1,10 +1,10 @@
 import numpy as np
-from helpers import get_data
-from estimator_helpers import get_estimator
 from helpers import load_from_bucket
 from defence_helpers import *
 from art.defences.postprocessor import GaussianNoise, ReverseSigmoid, Rounded,HighConfidence
-
+from file_loader.file_handler import *
+from user_files.dataloader.dataloader_def import *
+from user_files.model.model_def import *
 def defend_GaussianNoise(ti):
     defence_accuracy,defense_HP = defence(GaussianNoise)
     defence_dict = {"accuracy": defence_accuracy, "HP": defense_HP}
@@ -30,7 +30,7 @@ def defence(post_defense):
     (x_train, y_train) ,(x_test, y_test) = get_data()
     estimator = get_estimator()
     estimator.fit(x_train ,y_train)
-    adv_examples = load_from_bucket("adv.csv" ,as_csv=True)
+    adv_examples = load_from_bucket("adv.csv", as_csv=True)
     acc, opt_defense_HP = try_defense(classifier=estimator,
                                    defense=post_defense,
                                    adv_examples=adv_examples,
@@ -38,3 +38,4 @@ def defence(post_defense):
     return acc, opt_defense_HP
 
 
+#defense here
