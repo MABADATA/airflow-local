@@ -1,23 +1,20 @@
 from sklearn.ensemble import (AdaBoostClassifier,BaggingClassifier,
                               GradientBoostingClassifier,RandomForestClassifier)
-from sklearn.base import BaseEstimator
-from sklearn.tree import DecisionTreeClassifier,ExtraTreeClassifier,DecisionTreeRegressor
+from sklearn.tree import DecisionTreeClassifier,ExtraTreeClassifier
 from sklearn.svm import SVC, LinearSVC
 from sklearn.naive_bayes import GaussianNB
 from sklearn.linear_model import LogisticRegression
 from torch.nn.modules.loss import _Loss
-from torch.optim import Optimizer,SGD
-import logging
+from torch.optim import SGD
 import json
 import torch.nn as nn
-import collections
-from Estimator_match import Estimator_handler
-from Input_validation import Input_validatior
+from Estimator_match import EstimatorHandler
+from Input_validation import InputValidator
 from Env_prep import Envsetter
 
 from torch.utils.data import Dataset
 
-from Bucket_loader import Bucket_loader
+from file_loader.bucket_loader import BucketLoader
 import tensorflow as tf
 from keras.losses import Loss
 import pandas as pd
@@ -287,7 +284,7 @@ class Test:
         loss = self.gen_loss()
         optimizer = self.gen_optimizer()
         dataloader = self.gen_dataloader()
-        loader = Bucket_loader()
+        loader = BucketLoader()
         loader.upload(obj=model, obj_type="ML_model")
         loader.upload(obj=loss, obj_type='loss')
         loader.upload(obj=optimizer, obj_type='optimizer')
@@ -299,10 +296,10 @@ class Test:
         env_setter = Envsetter("requirements.txt")
         # Installing the file
         # env_setter.install_requirements()
-        input_validatior = Input_validatior()
+        input_validatior = InputValidator(metadata)
         if input_validatior.validate():
             input = input_validatior.get_input()
-            wrapper = Estimator_handler(input)
+            wrapper = EstimatorHandler(input, metadata)
             wrapper.wrap()
             print('Test passed!')
             return True

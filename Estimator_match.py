@@ -1,6 +1,7 @@
-from Bucket_loader import Bucket_loader
 import json
-class Estimator_handler:
+import file_loader.file_handler
+from user_files.helpers import get_files_package_root
+class EstimatorHandler:
     """
     Attributes:
     ----------
@@ -19,8 +20,8 @@ class Estimator_handler:
     wrap_model(): wraps the ML model in the estimator.
     wrap(): serves as main that match, wrap and upload to GCP.
     """
-    def __init__(self, input):
-        self.__file_loader = Bucket_loader()
+    def __init__(self, input, metadata):
+        self.__file_loader = file_loader.FileLoader(metadata)
         if isinstance(self.__file_loader.metadata, str):
             self.metadata = json.loads(self.__file_loader.metadata)
         if isinstance(self.__file_loader.metadata, dict):
@@ -114,7 +115,5 @@ class Estimator_handler:
         estimator_obj = self._estimator_match()
         params = self._estimator_params()
         estimator_dict ={"object": estimator_obj, "prams": params}
-        with open("Estimator_params.json", 'w') as f:
-            json.dump(estimator_dict, f)
-
-        self.__file_loader.upload(obj=estimator_dict, obj_type="Estimator_params", to_pickle=False)
+        dest_path = get_files_package_root() + "/Estimator_params.json"
+        self.__file_loader.save_file(obj=estimator_dict, path=dest_path, as_json=True)

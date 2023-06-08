@@ -1,8 +1,9 @@
-from Input_validation import Input_validatior
-from Bucket_loader import Bucket_loader
+from Input_validation import InputValidator
+from file_loader.bucket_loader import BucketLoader
 from Env_prep import Envsetter
-from Estimator_match import Estimator_handler
+from Estimator_match import EstimatorHandler
 from attack_defence_validation import  AttackDefenceValidator
+import file_loader.file_handler
 # metadata = {
 #     "ML_model": {
 #         "meta": {
@@ -50,18 +51,15 @@ from attack_defence_validation import  AttackDefenceValidator
 # }
 
 def validation_process(params_from_api):
-    bucket_loader = Bucket_loader(dict(params_from_api))
-    req_txt = bucket_loader.get_requirements()
-    with open("requirements.txt", 'w') as f:
-        f.write(req_txt)
-    env_setter = Envsetter("requirements.txt")
+    metadata = (dict(params_from_api))
+    env_setter = Envsetter(metadata)
     env_setter.install_requirements()
-    attack_defence_validator = AttackDefenceValidator()
+    attack_defence_validator = AttackDefenceValidator(metadata)
     attack_defence_validator.validate()
-    input_validator = Input_validatior()
+    input_validator = InputValidator(metadata)
     if input_validator.validate():
         input = input_validator.get_input()
-        wrapper = Estimator_handler(input)
+        wrapper = EstimatorHandler(input, metadata)
         wrapper.wrap()
         return True
     return False
