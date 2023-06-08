@@ -6,26 +6,23 @@ from sklearn.svm import SVC, LinearSVC
 from sklearn.naive_bayes import GaussianNB
 from sklearn.linear_model import LogisticRegression
 from torch.nn.modules.loss import _Loss
-from torch.optim import Optimizer,SGD
+from torch.optim import Optimizer
 import logging
 import json
 import torch.nn as nn
 import collections
-from Bucket_loader import Bucket_loader
+import file_loader.file_handler
 import tensorflow as tf
-import keras
 from keras.losses import Loss
-
-class Input_validatior:
-    def __init__(self, json_meta_data) -> None:
-
-        if isinstance(json_meta_data, str):
-            json_meta_data = json.loads(json_meta_data)
-        if isinstance(json_meta_data, dict):
-            self.metadata = json_meta_data
+class InputValidator:
+    def __init__(self, metadata) -> None:
+        self.__file_loader = file_loader.FileLoader(metadata)
+        if isinstance(self.__file_loader.metadata, str):
+            self.metadata = json.loads(self.__file_loader.metadata)
+        if isinstance(self.__file_loader.metadata, dict):
+            self.metadata = self.__file_loader.metadata
         else:
             raise TypeError('meta data need to be type dict or str')
-        self.__file_loader = Bucket_loader(self.metadata)
         self.__input = {"ML_type": self.metadata['ML_model']['meta']['ML_type']
             , "implementation": None, "algorithm": None,
                         "Loss": None, "Optimizer": None}
@@ -68,18 +65,17 @@ class Input_validatior:
             }
         }
 
-    def _validate_model(self):
+    def validate_model(self, model):
         """
         validate the ML model input
         """
         try:
-            model = self.__file_loader.get_model()
             # e.g pytorch, tensorflow
             model_implementation_type = self.metadata['ML_model']['meta']['model_type']
             self.__input['implementation'] = model_implementation_type
             if model_implementation_type == 'sklearn':
                 if self.metadata['ML_model']['meta']['algorithm'] is not None:
-                    # e.g reggerssion, classification
+                    # e.g regression, classification
                     input_ml_type = self.metadata['ML_model']['meta']['ML_type']
                     # e.g ExtraTree, SVC as string
                     input_algorithm = self.metadata['ML_model']['meta']['algorithm']
@@ -100,7 +96,7 @@ class Input_validatior:
             logging.error(f'Did not mannage to validate ML model, Error occurred\nError:\n{err}')
             return False
 
-    def _validate_dataloder(self):
+    def validate_dataloder(self,dataloader):
         try:
             dataloader = self.__file_loader.get_dataloader()
             return isinstance(dataloader, collections.abc.Iterable)
@@ -108,9 +104,10 @@ class Input_validatior:
             logging.error(f'Did not mannage to validate dataloder, Error occurred\nError:\n{err}')
             return False
 
-    def _validate_loss_func(self):
+    def validate_loss_func(self):
         try:
-            loss_func = self.__file_loader.get_loss()
+            loss_function_file_id = self.metadata['ML_model']['loss']['meta']['file_id']
+            loss_func = self.__file_loader.get_file(loss_function_file_id)
             if loss_func:
                 model_implementation_type = self.metadata['ML_model']['meta']['model_type']
                 valid_loss_func_type = self.map['Loss']['implementation'][model_implementation_type]
@@ -126,9 +123,10 @@ class Input_validatior:
             logging.error(f'Did not mannage to validate loss function, Error occurred\nError:\n{err}')
             return False
 
-    def _validate_optimizer(self):
+    def validate_optimizer(self):
         try:
-            optimizer = self.__file_loader.get_optimizer()
+            optimizer_file_id = self.metadata['ML_model']['optimizer']['meta']['file_id']
+            optimizer = self.__file_loader.get_file(optimizer_file_id)
             if optimizer:
                 model_implementation_type = self.metadata['ML_model']['meta']['model_type']
                 valid_optimizer_type = self.map['Optimizer']['implementation'][model_implementation_type]
@@ -141,7 +139,7 @@ class Input_validatior:
             logging.error(f'Did not mannage to validate optimzier, Error occurred\nError:\n{err}')
             return False
 
-    def _validate_input_shape(self):
+    def validate_input_shape(self):
         try:
             shape = self.metadata['ML_model']['input']["input_shape"]
             is_shape = all([shape is not None,
@@ -153,7 +151,7 @@ class Input_validatior:
             logging.error(f'Did not mannage to validate parameter, Error occurred\nError:\n{err}')
             return False
 
-    def _validate_num_of_classes(self):
+    def validate_num_of_classes(self):
         try:
             num_classes = self.metadata['ML_model']['input']["num_of_classes"]
             is_classes = num_classes is not None and isinstance(num_classes, int)
@@ -162,7 +160,7 @@ class Input_validatior:
             logging.error(f'Did not mannage to validate parameter, Error occurred\nError:\n{err}')
             return False
 
-    def _validate_range_of_vals(self):
+    def validate_range_of_vals(self):
         range = self.metadata['ML_model']['input']["input_val_range"]
         is_singel_range = all([range is not None,
                                isinstance(range, tuple) and
@@ -176,26 +174,26 @@ class Input_validatior:
             is_var_of_ranges = [False]
         return is_singel_range or all(is_var_of_ranges)
 
-    def _validatae_model_param(self):
+    def validatae_model_param(self):
         try:
             model_implementation_type = self.metadata['ML_model']['meta']['model_type']
             ml_type = self.metadata['ML_model']['meta']['ML_type']
             if model_implementation_type == "sklearn":
                 # needed prarams are: clip_values --> range of values
-                return self._validate_range_of_vals()
+                return self.validate_range_of_vals()
             elif model_implementation_type == "tensorflow":
                 if ml_type == 'regression':
                     # need only the model
                     return True
                 # needed params are: nb_classes --> number of classes as int,
                 # input_shape --> tuple of ints
-                return self._validate_num_of_classes() and self._validate_input_shape()
+                return self.validate_num_of_classes() and self.validate_input_shape()
             elif model_implementation_type == "pytorch":
                 if ml_type == 'regression':
                     # need input shape
-                    return self._validate_input_shape()
+                    return self.validate_input_shape()
                 elif ml_type == "classification":
-                    return self._validate_num_of_classes() and self._validate_input_shape()
+                    return self.validate_num_of_classes() and self.validate_input_shape()
                 else:
                     logging.info(f"No such ML type {ml_type}")
                     return False
@@ -205,12 +203,14 @@ class Input_validatior:
             logging.error(f'Did not manage to validate params, Error occurred\nError:\n{err}')
             return False
 
-    def validate(self,print_res=True):
-        model_validity = self._validate_model()
-        loss_func_validity = self._validate_loss_func()
-        optimizer_validity = self._validate_optimizer()
-        dataloader_validity = self._validate_dataloder()
-        model_params_validity = self._validatae_model_param()
+    def validate(self, print_res=True):
+        model = self.__file_loader.get_model()
+        dataloader = self.__file_loader.get_dataloader()
+        model_validity = self.validate_model(model)
+        loss_func_validity = self.validate_loss_func()
+        optimizer_validity = self.validate_optimizer()
+        dataloader_validity = self.validate_dataloder(dataloader)
+        model_params_validity = self.validatae_model_param()
         if print_res:
             print(f"""Validation results:\nmodel: {model_validity}\nloss function: {loss_func_validity}\noptimzer: {optimizer_validity}\ndataloader: {dataloader_validity}\nparams: {model_params_validity} """)
         return all([model_validity, loss_func_validity, optimizer_validity, dataloader_validity, model_params_validity])
@@ -221,3 +221,4 @@ class Input_validatior:
         else:
             logging.info("Input is not valid!")
             return None
+

@@ -1,21 +1,7 @@
-from Bucket_loader import Bucket_loader
 import json
-from art.estimators.classification import PyTorchClassifier
-from art.estimators.regression.pytorch import PyTorchRegressor
-from art.estimators.classification import TensorFlowClassifier, TensorFlowV2Classifier
-from art.estimators.regression.keras import KerasRegressor
-from art.estimators.regression.scikitlearn import ScikitlearnDecisionTreeRegressor
-from art.estimators.classification.scikitlearn import (ScikitlearnAdaBoostClassifier,
-  ScikitlearnBaggingClassifier,
-  ScikitlearnDecisionTreeClassifier,
-  ScikitlearnExtraTreesClassifier,
-  ScikitlearnGradientBoostingClassifier,
-  ScikitlearnLogisticRegression,
-  ScikitlearnRandomForestClassifier,
-  ScikitlearnSVC,
-  ScikitlearnGaussianNB)
-from torch.optim import SGD
-class Estimator_handler:
+import file_loader.file_handler
+from user_files.helpers import get_files_package_root
+class EstimatorHandler:
     """
     Attributes:
     ----------
@@ -34,14 +20,15 @@ class Estimator_handler:
     wrap_model(): wraps the ML model in the estimator.
     wrap(): serves as main that match, wrap and upload to GCP.
     """
-    def __init__(self, input, json_meta_data):
-        if isinstance(json_meta_data, str):
-            json_meta_data = json.loads(json_meta_data)
-        if isinstance(json_meta_data, dict):
-            self.metadata = json_meta_data
+    def __init__(self, input, metadata):
+        self.__file_loader = file_loader.FileLoader(metadata)
+        if isinstance(self.__file_loader.metadata, str):
+            self.metadata = json.loads(self.__file_loader.metadata)
+        if isinstance(self.__file_loader.metadata, dict):
+            self.metadata = self.__file_loader.metadata
         else:
             raise TypeError('meta data need to be type dict or str')
-        self.__file_loader = Bucket_loader(self.metadata)
+
         self.__ml_type = input["ML_type"]
         self.__implementation = input["implementation"]
         self.__algorithm = input['algorithm']
@@ -52,33 +39,33 @@ class Estimator_handler:
         self.map = {"implementation": {
             "pytorch": {
                 "ML_type": {
-                    "classification": PyTorchClassifier,
-                    "regression": PyTorchRegressor
+                    "classification": "PyTorchClassifier",
+                    "regression": "PyTorchRegressor"
                 }
             },
             "tensorflow": {
                 "ML_type": {
-                    "classification": TensorFlowV2Classifier,
-                    "regression": KerasRegressor
+                    "classification": "TensorFlowV2Classifier",
+                    "regression": "KerasRegressor"
 
                 }
             },
             "sklearn": {
                 "ML_type": {
                     "classification": {
-                        "DecisionTree": ScikitlearnDecisionTreeClassifier,
-                        "ExtraTree": ScikitlearnExtraTreesClassifier,
-                        "AdaBoost": ScikitlearnAdaBoostClassifier,
-                        "Bagging": ScikitlearnBaggingClassifier,
-                        "GradientBoosting": ScikitlearnGradientBoostingClassifier,
-                        "RandomForest": ScikitlearnRandomForestClassifier,
-                        "LogisticRegression": ScikitlearnLogisticRegression,
-                        "GaussianNB": ScikitlearnGaussianNB,
-                        "SVC": ScikitlearnSVC,
-                        "LinearSVC": ScikitlearnSVC,
+                        "DecisionTree": "ScikitlearnDecisionTreeClassifier",
+                        "ExtraTree": "ScikitlearnExtraTreesClassifier",
+                        "AdaBoost": "ScikitlearnAdaBoostClassifier",
+                        "Bagging": "ScikitlearnBaggingClassifier",
+                        "GradientBoosting": "ScikitlearnGradientBoostingClassifier",
+                        "RandomForest": "ScikitlearnRandomForestClassifier",
+                        "LogisticRegression": "ScikitlearnLogisticRegression",
+                        "GaussianNB": "ScikitlearnGaussianNB",
+                        "SVC": "ScikitlearnSVC",
+                        "LinearSVC": "ScikitlearnSVC",
                     },
                     "regression": {
-                        "DecisionTree":  ScikitlearnDecisionTreeRegressor}}
+                        "DecisionTree":  "ScikitlearnDecisionTreeRegressor"}}
             }
         }
 
@@ -91,42 +78,42 @@ class Estimator_handler:
             estimator = self.map['implementation'][self.__implementation]['ML_type'][self.__ml_type]
         return estimator
 
-    def _wrap_model(self, estimator_obj):
-        my_model = self.__file_loader.get_model()
+    def _estimator_params(self):
+        param_dict = {'loss': False, 'optimizer': False, 'clip_values': None, 'nb_classes': None, 'input_shape': None}
         if self.__implementation == 'sklearn':
-            my_estimator = estimator_obj(model=my_model, clip_values=self.__input_val_range)
+            param_dict['clip_values'] = self.__input_val_range
         elif self.__implementation == 'tensorflow':
             if self.__ml_type == "regression":
-                my_estimator = estimator_obj(model=my_model)
+                pass
             elif self.__ml_type == "classification":
-                my_estimator = estimator_obj(model=my_model,
-                                             nb_classes=self.__num_of_classes,
-                                             input_shape=self.__input_shape)
+                param_dict['nb_classes'] = self.__num_of_classes
+                param_dict['input_shape'] = self.__input_shape
             else:
                 raise Exception("Can't wrap model!\nML type must be classification or regression")
         elif self.__implementation == 'pytorch':
-            optimizer = SGD(my_model.parameters(), lr=0.01)
             if self.metadata['ML_model']['optimizer']['meta']['optimizer_type']:
-                optimizer = self.__file_loader.get_optimizer()
-            loss = self.__file_loader.get_loss()
+                param_dict['optimizer'] = True
+            param_dict['loss'] = True
             if self.__ml_type == "regression":
-                my_estimator = estimator_obj(model=my_model, loss=loss,
-                                             input_shape=self.__input_shape,
-                                             optimizer=optimizer)
+                param_dict['input_shape'] = self.__input_shape
+
             elif self.__ml_type == "classification":
-                my_estimator = estimator_obj(model=my_model, loss=loss,
-                                             nb_classes=self.__num_of_classes,
-                                             input_shape=self.__input_shape,
-                                             optimizer=optimizer)
+                param_dict['input_shape'] = self.__input_shape
+                param_dict['nb_classes'] = self.__num_of_classes
+
             else:
                 raise Exception("Can't wrap model!\nML type must be classification or regression")
 
         else:
             raise Exception("Can't wrap model!\nImplementation type must be sklearn,pytorch or tensorflow")
+        #extract the params that needed - meaning not None
+        param_dict = {k: v for k, v in param_dict.items() if v}
+        return param_dict
 
-        return my_estimator
 
     def wrap(self):
         estimator_obj = self._estimator_match()
-        wrap_model = self._wrap_model(estimator_obj)
-        self.__file_loader.upload(obj=wrap_model, obj_type="Estimator")
+        params = self._estimator_params()
+        estimator_dict ={"object": estimator_obj, "prams": params}
+        dest_path = get_files_package_root() + "/Estimator_params.json"
+        self.__file_loader.save_file(obj=estimator_dict, path=dest_path, as_json=True)
