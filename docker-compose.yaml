@@ -61,10 +61,14 @@ x-airflow-common:
     _PIP_ADDITIONAL_REQUIREMENTS: ${_PIP_ADDITIONAL_REQUIREMENTS:-}
     BUCKET_NAME: ${BUCKET_NAME}
     ACCOUNT_SERVICE_KEY: ${ACCOUNT_SERVICE_KEY}
+    FROM_BUCKET: ${FROM_BUCKET}
   volumes:
     - ./dags:/opt/airflow/dags
     - ./logs:/opt/airflow/logs
     - ./plugins:/opt/airflow/pluginss
+    - ./user_files:/opt/airflow/user_files
+    - ./Preprocess:/opt/airflow/Preprocess
+    - ./file_loader:/opt/airflow/file_loader
   user: "${AIRFLOW_UID:-50000}:0"
 #  user: "airflow"
   depends_on:

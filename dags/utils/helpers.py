@@ -8,6 +8,7 @@ import json
 import re
 import pandas as pd
 import json
+import importlib.util
 from art.estimators.classification import PyTorchClassifier
 from art.estimators.regression.pytorch import PyTorchRegressor
 from art.estimators.classification import TensorFlowV2Classifier
@@ -22,7 +23,7 @@ from art.estimators.classification.scikitlearn import (ScikitlearnAdaBoostClassi
   ScikitlearnRandomForestClassifier,
   ScikitlearnSVC,
   ScikitlearnGaussianNB)
-
+from art.attacks.evasion import ZooAttack
 CLASSIFIER_DICT = {
                     "PyTorchClassifier": PyTorchClassifier,
                     "PyTorchRegressor": PyTorchRegressor,
@@ -43,19 +44,11 @@ CLASSIFIER_DICT = {
 
 
 
-def get_client():
-    ACOUNT_SERVICE_KEY = os.environ.get('ACCOUNT_SERVICE_KEY')
-    BUCKET_NAME = os.environ.get('BUCKET_NAME')
-    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = ACOUNT_SERVICE_KEY
-    os.environ["DONT_PICKLE"] = 'False'
-    storage_client = storage.Client()
-    bucket = storage_client.bucket(BUCKET_NAME)
-    return bucket
 
-# def get_data():
+# def get_data_from_data_loader():
 #
-#     features_file_name = 'X.csv'
-#     label_file_name = 'y.csv'
+#     test_features_file_name = 'X_test.pickle'
+#     test_label_file_name = 'y_test.pickle'
 #     data_size = 1000
 #     bucket = get_client()
 #     try:
@@ -78,7 +71,7 @@ def get_client():
 #             yield data[i]
 #     except Exception as err:
 #         return
-def get_data():
+def get_data_from_csv():
     #need to get x_train,y_train for estimator fit and x_test, y_test for acc
     train_features_file_name = 'X_train.csv'
     test_features_file_name = 'X_test.csv'
@@ -107,51 +100,50 @@ def get_data():
         return data
     except Exception as err:
         return
-def load_from_bucket(file_name, as_json=False,as_csv=False):
-
-    bucket = get_client()
-    try:
-        blob = bucket.blob(file_name)
-        if as_json:
-            json_string = blob.download_as_string()
-            data = json.loads(json_string)
-            return data
-        elif as_csv:
-            blob.download_to_filename(file_name)
-            df = pd.read_csv(file_name, dtype=float)
-            np_array = np.array(df)
-            return np_array
-        else:
-            blob.download_to_filename(file_name)
-            with open(file_name, 'rb') as f:
-                loaded_obj = cloudpickle.load(f)
-                return loaded_obj
-    except Exception as err:
-        raise err
-
-
-def upload_to_bucket(obj,file_name,as_json=False,as_csv=False):
-    bucket = get_client()
-    blob = bucket.blob(file_name)
-
-
-    if as_json:
-        json_file = json.dumps(obj)
-        blob.upload_from_string(json_file)
-    elif as_csv:
-        # obj_as_nparray = np.array(obj)
-        pd.DataFrame(obj).to_csv(file_name, index=False)
-        blob.upload_from_filename(file_name)
-    else:
-        with open(file_name, 'wb') as f:
-            cloudpickle.dump(obj, f, protocol=4)
-            blob.upload_from_filename(file_name)
+# def load_from_bucket(file_name, as_json=False,as_csv=False):
+#
+#     bucket = get_client()
+#     try:
+#         blob = bucket.blob(file_name)
+#         if as_json:
+#             json_string = blob.download_as_string()
+#             data = json.loads(json_string)
+#             return data
+#         elif as_csv:
+#             blob.download_to_filename(file_name)
+#             df = pd.read_csv(file_name, dtype=float)
+#             np_array = np.array(df)
+#             return np_array
+#         else:
+#             blob.download_to_filename(file_name)
+#             with open(file_name, 'rb') as f:
+#                 loaded_obj = cloudpickle.load(f)
+#                 return loaded_obj
+#     except Exception as err:
+#         raise err
+#
+#
+# def upload_to_bucket(obj,file_name,as_json=False,as_csv=False):
+#     bucket = get_client()
+#     blob = bucket.blob(file_name)
+#
+#
+#     if as_json:
+#         json_file = json.dumps(obj)
+#         blob.upload_from_string(json_file)
+#     elif as_csv:
+#         # obj_as_nparray = np.array(obj)
+#         pd.DataFrame(obj).to_csv(file_name, index=False)
+#         blob.upload_from_filename(file_name)
+#     else:
+#         with open(file_name, 'wb') as f:
+#             cloudpickle.dump(obj, f, protocol=4)
+#             blob.upload_from_filename(file_name)
 
 def get_estimator_object(classifier_name):
     return CLASSIFIER_DICT[classifier_name]
 
-def add_attack(attack_name,attack_file_name="dags/attack.py",
-               attack_check_file_name="dags/attack_check.py",attack_dag_file_name="dags/attack_dag.py"):
+def add_attack(attack_name,attack_file_name="./attack.py", attack_dag_file_name="../attack_dag.py"):
 
     def add_attack_inner(script, indent_pos, re_express,
                file_name):
@@ -172,35 +164,25 @@ def add_attack(attack_name,attack_file_name="dags/attack.py",
             f.writelines(lines)
 
     # scripts to add to the file
-    script_to_attack = f"""def to_attack_{attack_name}(ti):
-    to_attack = ti.xcom_pull(key='attack_{attack_name}',
-                             task_ids=f'choose_attack')
 
-    if to_attack:
-        return 'attack_{attack_name}'
-    else:
-        return 'default'"""
-
-    attack_script = f"""def attack_{attack_name}(ti):
+    attack_script = f"""\ndef attack_{attack_name}(ti):
     model_acc, adversarial_examples  = attack({attack_name})
     ti.xcom_push(key='attack_{attack_name}_adv', value=adversarial_examples.tolist())
     ti.xcom_push(key='attack_{attack_name}_score', value=model_acc)
 """
-    operator_script = f"""    branch_{attack_name} = BranchPythonOperator(
-        task_id='to_attack_{attack_name}',
-        python_callable=to_attack_{attack_name}
-    )
-
-    run_attack_{attack_name} = PythonOperator(
+    operator_script = f"""    run_attack_{attack_name} = PythonOperator(
             task_id=f"attack_{attack_name}",
             python_callable=attack_{attack_name})"""
 
-    dag_script = f"    choose_attack >> metadata >> branch_{attack_name} >> [run_attack_{attack_name}, run_default] >> choose_best"
+    dag_script = f"    metadata >> [run_attack_{attack_name}, run_default] >> choose_best"
     #
-    insert_param = {"to_attack":{"script":script_to_attack ,"indent": 0, "re": "^\s*def\s+to_attack_BasicIterativeMethod\s*\(","file_name":f"{attack_check_file_name}"},
-                    "attack":{"script":attack_script,"indent": 0, "re": "^\s*def\s+attack_BasicIterativeMethod\s*\(","file_name":f"{attack_file_name}"},
-                    "operator":{"script":operator_script,"indent": 0, "re": "^\s+branch_BasicIterativeMethod\s*","file_name":f"{attack_dag_file_name}" },
-                    "DAG_line":{"script":dag_script,"indent": 0, "re": "^\s+choose_best\s*>>\s*","file_name":f"{attack_dag_file_name}"} }
+    insert_param = {
+                    "attack":{"script":attack_script,"indent": 0, "re": "#attack here","file_name":f"{attack_file_name}"},
+                    "operator":{"script":operator_script,"indent": 0, "re": "#Python operator place","file_name":f"{attack_dag_file_name}" },
+                    "DAG_line":{"script":dag_script,"indent": 0, "re": "choose_best >> trigger_defence","file_name":f"{attack_dag_file_name}"}
+    }
 
     for key, params in insert_param.items():
         add_attack_inner(script=params['script'],indent_pos=params['indent'],re_express=params['re'],file_name=params['file_name'])
+
+
